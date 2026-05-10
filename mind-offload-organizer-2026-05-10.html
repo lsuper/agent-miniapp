@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mind Offload — AI Organizer</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+:root{color-scheme:dark;--bg:#070812;--ink:#f7f4ec;--muted:#a9b0c3;--soft:#d9deee;--panel:#121524;--panel2:#191d2e;--line:rgba(255,255,255,.12);--blue:#76c8ff;--green:#72e4ad;--amber:#ffd36d;--red:#ff6c7a;--violet:#b99aff;--pink:#ff93c8;--shadow:0 24px 80px rgba(0,0,0,.42)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:radial-gradient(circle at 12% -12%,rgba(118,200,255,.25),transparent 35%),radial-gradient(circle at 92% 0%,rgba(185,154,255,.18),transparent 34%),linear-gradient(180deg,#070812 0%,#0e1020 52%,#070812 100%);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,system-ui,sans-serif;color:var(--ink);padding:max(16px,env(safe-area-inset-top)) 12px max(28px,env(safe-area-inset-bottom))}main{max-width:1180px;margin:0 auto}.top{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:start;margin:4px 0 16px}.eyebrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center;color:var(--blue);font-weight:900;font-size:12px;letter-spacing:.12em;text-transform:uppercase}.pill{border:1px solid rgba(118,200,255,.34);background:rgba(118,200,255,.09);border-radius:999px;padding:7px 10px}.top h1{font-size:clamp(36px,9vw,82px);line-height:.9;letter-spacing:-.075em;margin:14px 0 10px;text-wrap:balance}.top p{margin:0;color:#dce4f4;font-size:clamp(15px,3.6vw,20px);line-height:1.45;max-width:760px}.status{min-width:160px;text-align:right;color:var(--muted);font-size:12px}.status strong{display:block;color:var(--ink);font-size:26px;letter-spacing:-.05em}.grid{display:grid;gap:14px}.layout{grid-template-columns:minmax(320px,.82fr) 1.18fr}@media(max-width:920px){.layout,.top{grid-template-columns:1fr}.status{text-align:left}.hideMobile{display:none!important}}.card{background:linear-gradient(180deg,rgba(25,29,46,.94),rgba(13,15,27,.96));border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow);padding:16px;overflow:hidden}.composer{position:sticky;top:10px}.composer h2,.card h2{font-size:22px;letter-spacing:-.04em;margin:0 0 12px}.inputWrap{position:relative}textarea{width:100%;min-height:185px;resize:vertical;border:1px solid rgba(255,255,255,.14);border-radius:22px;background:rgba(255,255,255,.055);color:var(--ink);padding:16px;font:500 16px/1.48 ui-sans-serif,system-ui;outline:none}textarea:focus{border-color:rgba(118,200,255,.65);box-shadow:0 0 0 4px rgba(118,200,255,.1)}.hint{color:var(--muted);font-size:12px;line-height:1.4;margin:8px 2px 0}.buttons{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:10px}.btn{appearance:none;border:1px solid var(--line);background:rgba(255,255,255,.06);color:var(--ink);border-radius:16px;min-height:46px;padding:11px 12px;font-weight:900;cursor:pointer}.btn.primary{background:linear-gradient(135deg,rgba(118,200,255,.95),rgba(185,154,255,.9));color:#06111e;border:0}.btn.green{background:rgba(114,228,173,.13);border-color:rgba(114,228,173,.28);color:#dfffee}.btn.red{background:rgba(255,108,122,.12);border-color:rgba(255,108,122,.28);color:#ffdfe3}.btn:active{transform:translateY(1px)}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.chip{border:1px solid var(--line);background:rgba(255,255,255,.045);color:#e6ebf8;border-radius:999px;padding:8px 10px;font-size:12px;font-weight:850;cursor:pointer}.chip.active{border-color:rgba(118,200,255,.6);background:rgba(118,200,255,.15);color:#fff}.voiceLine{display:none;margin-top:10px;border:1px solid rgba(255,211,109,.3);background:rgba(255,211,109,.08);border-radius:16px;padding:10px;color:#ffe7ad;font-size:13px;line-height:1.35}.voiceLine.on{display:block}.metrics{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:14px}@media(max-width:700px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}.metric .label{font-size:11px;color:var(--muted);font-weight:900;letter-spacing:.1em;text-transform:uppercase}.metric .value{font-size:28px;font-weight:1000;letter-spacing:-.06em;margin-top:6px}.search{display:grid;grid-template-columns:1fr auto;gap:8px;margin-bottom:12px}input,select{border:1px solid var(--line);background:rgba(255,255,255,.055);color:var(--ink);border-radius:14px;min-height:44px;padding:0 12px;font:800 14px ui-sans-serif,system-ui}select option{background:#101323}.groupGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}@media(max-width:760px){.groupGrid{grid-template-columns:1fr}}.group{border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.035);overflow:hidden}.groupHead{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px 13px;border-bottom:1px solid rgba(255,255,255,.09)}.groupTitle{display:flex;align-items:center;gap:8px;font-weight:1000;letter-spacing:-.02em}.dot{width:10px;height:10px;border-radius:99px;background:var(--blue);box-shadow:0 0 18px currentColor}.count{font-size:12px;color:var(--muted);font-weight:900}.items{padding:8px;display:grid;gap:8px}.item{border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.045);border-radius:17px;padding:11px;display:grid;gap:8px}.itemTop{display:flex;gap:8px;justify-content:space-between;align-items:start}.itemText{font-size:14px;line-height:1.42;color:#f4f7ff;white-space:pre-wrap}.itemMeta{display:flex;gap:6px;flex-wrap:wrap;align-items:center}.tag{font-size:11px;font-weight:900;color:#b9c1d4;border:1px solid rgba(255,255,255,.1);padding:4px 7px;border-radius:999px}.actions{display:flex;gap:6px;flex-wrap:wrap}.mini{border:1px solid rgba(255,255,255,.11);background:rgba(0,0,0,.12);color:#dfe6f7;border-radius:10px;min-height:30px;padding:5px 8px;font-size:11px;font-weight:900;cursor:pointer}.empty{color:var(--muted);font-size:14px;line-height:1.45;padding:24px;border:1px dashed rgba(255,255,255,.14);border-radius:20px;text-align:center}.panel{display:none}.panel.active{display:block}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.tab{appearance:none;border:1px solid var(--line);background:rgba(255,255,255,.05);color:#eef3ff;border-radius:999px;padding:10px 12px;min-height:42px;font-weight:950;cursor:pointer}.tab.active{background:rgba(118,200,255,.15);border-color:rgba(118,200,255,.52)}.reviewList{display:grid;gap:10px}.draftItem{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:start;border:1px solid rgba(255,255,255,.11);background:rgba(255,255,255,.04);border-radius:18px;padding:11px}.draftItem input[type=checkbox]{min-height:auto;width:18px;height:18px;margin-top:3px}.draftText{font-size:14px;line-height:1.4}.muted{color:var(--muted)}.footer{margin:18px 4px 0;color:#99a1b6;font-size:12px;line-height:1.45}.kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);padding:2px 5px;border-radius:6px}.toast{position:fixed;left:50%;bottom:max(20px,env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);opacity:0;pointer-events:none;background:#eef5ff;color:#07111e;border-radius:999px;padding:12px 16px;font-size:13px;font-weight:950;box-shadow:0 20px 60px rgba(0,0,0,.45);transition:.2s}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}.dangerZone{margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,.09)}
+</style>
+</head>
+<body>
+<main>
+  <section class="top">
+    <div>
+      <div class="eyebrow"><span class="pill">Mind Offload</span><span>typing + voice</span><span>local-first</span></div>
+      <h1>Dump thoughts. Get a clean map.</h1>
+      <p>Type or dictate whatever is on your mind. The organizer splits it into items, labels each thought, and groups everything into a clear board you can search, edit, export, or clear.</p>
+    </div>
+    <div class="status"><strong id="todayCount">0</strong><span>items captured today</span></div>
+  </section>
+
+  <section class="grid layout">
+    <aside class="card composer">
+      <h2>Capture</h2>
+      <div class="inputWrap"><textarea id="brainDump" placeholder="Example: Need to call mom. I’m worried about SIMO earnings. Maybe create a new video workflow. Ask Hermes to research Iran oil impact. Remember dentist appointment Friday."></textarea></div>
+      <div class="hint">Tip: write naturally. Separate thoughts with periods, line breaks, “and”, or commas. Voice uses your browser’s speech recognition if supported.</div>
+      <div class="buttons">
+        <button class="btn primary" id="organizeBtn">Organize thoughts</button>
+        <button class="btn green" id="voiceBtn">Start voice</button>
+      </div>
+      <div class="voiceLine" id="voiceLine">Listening… speak your thoughts. Tap stop when done.</div>
+      <div class="toolbar">
+        <button class="chip" data-template="I need to ">Task</button>
+        <button class="chip" data-template="I’m worried about ">Worry</button>
+        <button class="chip" data-template="Question: ">Question</button>
+        <button class="chip" data-template="Idea: ">Idea</button>
+        <button class="chip" data-template="Remember ">Remember</button>
+      </div>
+      <div class="dangerZone">
+        <div class="buttons">
+          <button class="btn" id="exportMdBtn">Export MD</button>
+          <button class="btn" id="exportJsonBtn">Export JSON</button>
+          <button class="btn" id="copyPromptBtn">Copy AI prompt</button>
+          <button class="btn red" id="clearBtn">Clear all</button>
+        </div>
+        <div class="hint">Privacy: entries stay in this browser via localStorage. This static version has no remote AI backend; the “AI prompt” button lets you send your dump to Hermes/ChatGPT for deeper restructuring if wanted.</div>
+      </div>
+    </aside>
+
+    <section class="grid">
+      <div class="grid metrics">
+        <div class="card metric"><div class="label">Total</div><div class="value" id="totalCount">0</div></div>
+        <div class="card metric"><div class="label">Tasks</div><div class="value" id="taskCount">0</div></div>
+        <div class="card metric"><div class="label">Questions</div><div class="value" id="questionCount">0</div></div>
+        <div class="card metric"><div class="label">Open loops</div><div class="value" id="openCount">0</div></div>
+      </div>
+
+      <div class="card">
+        <div class="tabs">
+          <button class="tab active" data-tab="board">Board</button>
+          <button class="tab" data-tab="review">Review new</button>
+          <button class="tab" data-tab="timeline">Timeline</button>
+        </div>
+        <div class="search"><input id="searchBox" placeholder="Search everything…"><select id="groupFilter"><option value="all">All groups</option></select></div>
+
+        <div id="board" class="panel active"><div id="boardGrid" class="groupGrid"></div></div>
+        <div id="review" class="panel"><div id="reviewList" class="reviewList"></div></div>
+        <div id="timeline" class="panel"><div id="timelineList" class="reviewList"></div></div>
+      </div>
+    </section>
+  </section>
+  <p class="footer">Designed for Telegram Mini App. Works in a normal browser too. Best next upgrade: add a private Hermes backend endpoint so “Organize thoughts” can use a real LLM instead of local heuristics.</p>
+</main>
+<div class="toast" id="toast">Saved</div>
+<script>
+let tg=null;
+try{tg=window.Telegram&&window.Telegram.WebApp?window.Telegram.WebApp:null}catch(e){tg=null;console.warn('Telegram bridge detection failed in browser preview',e)}
+if(tg){try{tg.ready();tg.expand();document.body.dataset.telegram='true'}catch(e){console.warn('Telegram bridge unavailable in browser preview',e)}}
+
+const STORAGE_KEY='mindOffload.items.v1';
+const GROUPS=[
+  {id:'tasks',label:'Tasks',color:'var(--green)',keywords:['need to','todo','do ','call','email','send','finish','buy','schedule','make','create','update','fix','pay','prepare']},
+  {id:'questions',label:'Questions',color:'var(--blue)',keywords:['?','question','ask','why','how','what','should i','can i','whether']},
+  {id:'decisions',label:'Decisions',color:'var(--amber)',keywords:['decide','decision','choose','pick','option','vs','whether','tradeoff']},
+  {id:'ideas',label:'Ideas',color:'var(--violet)',keywords:['idea','maybe','could','what if','build','prototype','experiment','try']},
+  {id:'worries',label:'Worries',color:'var(--red)',keywords:['worry','worried','anxious','concern','risk','afraid','stress','problem','issue','blocked']},
+  {id:'people',label:'People',color:'var(--pink)',keywords:['mom','dad','wife','kang','friend','team','client','prof','doctor','teacher','call']},
+  {id:'projects',label:'Projects',color:'var(--blue)',keywords:['project','video','stock','research','workflow','app','repo','mini app','dashboard','scotus','simo']},
+  {id:'later',label:'Later / Someday',color:'var(--muted)',keywords:['later','someday','eventually','not now','backlog','park']},
+  {id:'notes',label:'Notes',color:'var(--soft)',keywords:[]}
+];
+let items=[];let draft=[];let recognition=null;let listening=false;
+const $=id=>document.getElementById(id);
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,8)}
+function nowISO(){return new Date().toISOString()}
+function fmtDate(iso){const d=new Date(iso);return d.toLocaleString([], {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'})}
+function load(){try{items=JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]')}catch(e){items=[]}}
+function save(){localStorage.setItem(STORAGE_KEY,JSON.stringify(items));render()}
+function toast(msg='Saved'){const t=$('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1400)}
+function splitThoughts(text){return text.replace(/\s+/g,' ').split(/(?:\n+|[.!?]+\s+|;\s+|\s+-\s+|,\s+(?=(?:I |Need |Ask |Call |Email |Remember |Maybe |Question|Idea)))/i).map(s=>s.trim()).filter(s=>s.length>2)}
+function classify(text){const lower=text.toLowerCase();let best={id:'notes',score:0};for(const g of GROUPS){let score=0;for(const k of g.keywords){if(lower.includes(k))score+=k.length>2?2:1}if(/\?$/.test(text)&&g.id==='questions')score+=4;if(/^(need|todo|call|email|send|finish|buy|schedule|make|create|fix|pay)\b/i.test(text)&&g.id==='tasks')score+=5;if(/^(idea|maybe|what if|could)\b/i.test(text)&&g.id==='ideas')score+=4;if(score>best.score)best={id:g.id,score}}return best.id}
+function urgency(text){const l=text.toLowerCase();if(/today|now|urgent|asap|tonight|tomorrow|deadline/.test(l))return 'urgent';if(/this week|soon|friday|monday|tuesday|wednesday|thursday|saturday|sunday/.test(l))return 'soon';return 'normal'}
+function makeDraft(text){draft=splitThoughts(text).map(raw=>({id:uid(),text:raw,group:classify(raw),urgency:urgency(raw),createdAt:nowISO(),status:'open'}));renderReview();document.querySelector('[data-tab="review"]').click();toast(`${draft.length} thoughts organized`)}
+function addDraft(onlyChecked=true){const checked=[...document.querySelectorAll('.draftCheck')].filter(c=>!onlyChecked||c.checked).map(c=>c.value);const selected=draft.filter(d=>checked.includes(d.id));items=[...selected,...items];draft=[];$('brainDump').value='';save();document.querySelector('[data-tab="board"]').click();toast(`${selected.length} items saved`)}
+function updateItem(id,patch){items=items.map(it=>it.id===id?{...it,...patch,updatedAt:nowISO()}:it);save()}
+function deleteItem(id){items=items.filter(it=>it.id!==id);save();toast('Deleted')}
+function matches(it){const q=$('searchBox').value.trim().toLowerCase();const gf=$('groupFilter').value;return (!q||it.text.toLowerCase().includes(q)||it.group.includes(q)||it.urgency.includes(q))&&(gf==='all'||it.group===gf)}
+function groupName(id){return GROUPS.find(g=>g.id===id)?.label||id}
+function groupColor(id){return GROUPS.find(g=>g.id===id)?.color||'var(--soft)'}
+function render(){renderFilters();renderBoard();renderTimeline();renderMetrics();renderReview()}
+function renderFilters(){const sel=$('groupFilter');const current=sel.value||'all';sel.innerHTML='<option value="all">All groups</option>'+GROUPS.map(g=>`<option value="${g.id}">${g.label}</option>`).join('');sel.value=current}
+function renderMetrics(){const today=new Date().toISOString().slice(0,10);$('totalCount').textContent=items.length;$('taskCount').textContent=items.filter(i=>i.group==='tasks').length;$('questionCount').textContent=items.filter(i=>i.group==='questions').length;$('openCount').textContent=items.filter(i=>i.status!=='done').length;$('todayCount').textContent=items.filter(i=>(i.createdAt||'').slice(0,10)===today).length}
+function renderBoard(){const root=$('boardGrid');const visible=items.filter(matches);if(!visible.length){root.innerHTML='<div class="empty" style="grid-column:1/-1">No thoughts yet. Type a messy brain dump, tap <b>Organize thoughts</b>, then save the items you want.</div>';return}root.innerHTML=GROUPS.map(g=>{const arr=visible.filter(i=>i.group===g.id);if(!arr.length)return '';return `<section class="group"><div class="groupHead"><div class="groupTitle"><span class="dot" style="background:${g.color};color:${g.color}"></span>${g.label}</div><div class="count">${arr.length}</div></div><div class="items">${arr.map(renderItem).join('')}</div></section>`}).join('')}
+function renderItem(it){const done=it.status==='done';return `<article class="item" data-id="${it.id}" style="opacity:${done?.62:1}"><div class="itemTop"><div class="itemText" contenteditable="true" data-edit="${it.id}">${escapeHtml(it.text)}</div><div class="actions"><button class="mini" data-done="${it.id}">${done?'Open':'Done'}</button><button class="mini" data-del="${it.id}">Delete</button></div></div><div class="itemMeta"><span class="tag">${groupName(it.group)}</span><span class="tag">${it.urgency}</span><span class="tag">${fmtDate(it.createdAt)}</span></div></article>`}
+function renderReview(){const root=$('reviewList');if(!draft.length){root.innerHTML='<div class="empty">New organized items will appear here for review before saving.</div>';return}root.innerHTML=`<div class="buttons"><button class="btn primary" id="saveCheckedBtn">Save checked</button><button class="btn" id="saveAllBtn">Save all</button></div>`+draft.map(d=>`<div class="draftItem"><input class="draftCheck" type="checkbox" checked value="${d.id}"><div><div class="draftText" contenteditable="true" data-draft-edit="${d.id}">${escapeHtml(d.text)}</div><div class="itemMeta" style="margin-top:7px"><select data-draft-group="${d.id}">${GROUPS.map(g=>`<option value="${g.id}" ${g.id===d.group?'selected':''}>${g.label}</option>`).join('')}</select><span class="tag">${d.urgency}</span></div></div><button class="mini" data-draft-del="${d.id}">Remove</button></div>`).join('')}
+function renderTimeline(){const root=$('timelineList');const visible=items.filter(matches).slice().sort((a,b)=>new Date(b.createdAt)-new Date(a.createdAt));if(!visible.length){root.innerHTML='<div class="empty">Timeline is empty.</div>';return}root.innerHTML=visible.map(it=>`<div class="item"><div class="itemText">${escapeHtml(it.text)}</div><div class="itemMeta"><span class="tag">${fmtDate(it.createdAt)}</span><span class="tag">${groupName(it.group)}</span><span class="tag">${it.status||'open'}</span></div></div>`).join('')}
+function escapeHtml(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function exportMarkdown(){let md='# Mind Offload Export\n\nGenerated: '+new Date().toLocaleString()+'\n\n';for(const g of GROUPS){const arr=items.filter(i=>i.group===g.id);if(arr.length){md+=`## ${g.label}\n`;for(const it of arr)md+=`- [${it.status==='done'?'x':' '}] ${it.text} _(${it.urgency}, ${fmtDate(it.createdAt)})_\n`;md+='\n'}}navigator.clipboard.writeText(md);toast('Markdown copied')}
+function exportJson(){navigator.clipboard.writeText(JSON.stringify(items,null,2));toast('JSON copied')}
+function copyAIPrompt(){const text=$('brainDump').value.trim();const all=items.map(i=>`- [${groupName(i.group)} / ${i.urgency}] ${i.text}`).join('\n');const prompt=`Please help me offload and organize my mind.\n\nNew raw thoughts:\n${text||'(none)'}\n\nExisting organized items:\n${all||'(none)'}\n\nReturn:\n1. Clean grouped list by Tasks, Decisions, Questions, Ideas, Worries, People, Projects, Later, Notes.\n2. Top 3 priorities.\n3. Open loops I should close.\n4. Anything that can be deleted or ignored.`;navigator.clipboard.writeText(prompt);toast('AI prompt copied')}
+function setupVoice(){const SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR){$('voiceBtn').textContent='Voice unavailable';$('voiceBtn').disabled=true;return}recognition=new SR();recognition.continuous=true;recognition.interimResults=true;recognition.lang='en-US';recognition.onresult=e=>{let final='';let interim='';for(let i=e.resultIndex;i<e.results.length;i++){const txt=e.results[i][0].transcript;if(e.results[i].isFinal)final+=txt+' ';else interim+=txt}if(final){$('brainDump').value=($('brainDump').value+' '+final).trim()+' '}if(interim){$('voiceLine').textContent='Listening… '+interim}};recognition.onend=()=>{if(listening)recognition.start();else{$('voiceLine').classList.remove('on');$('voiceBtn').textContent='Start voice'}}}
+function bind(){document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));btn.classList.add('active');$(btn.dataset.tab).classList.add('active')}));$('organizeBtn').onclick=()=>{const text=$('brainDump').value.trim();if(!text)return toast('Type or dictate thoughts first');makeDraft(text)};$('voiceBtn').onclick=()=>{if(!recognition)return;if(!listening){listening=true;recognition.start();$('voiceBtn').textContent='Stop voice';$('voiceLine').textContent='Listening…';$('voiceLine').classList.add('on')}else{listening=false;recognition.stop()}};document.querySelectorAll('[data-template]').forEach(b=>b.onclick=()=>{$('brainDump').value+=($('brainDump').value?' ':'')+b.dataset.template;$('brainDump').focus()});$('searchBox').oninput=render;$('groupFilter').onchange=render;$('exportMdBtn').onclick=exportMarkdown;$('exportJsonBtn').onclick=exportJson;$('copyPromptBtn').onclick=copyAIPrompt;$('clearBtn').onclick=()=>{if(confirm('Clear all saved mind-offload items on this device?')){items=[];save();toast('Cleared')}};document.body.addEventListener('click',e=>{const t=e.target;if(t.id==='saveCheckedBtn')addDraft(true);if(t.id==='saveAllBtn')addDraft(false);if(t.dataset.del)deleteItem(t.dataset.del);if(t.dataset.done){const it=items.find(i=>i.id===t.dataset.done);updateItem(t.dataset.done,{status:it.status==='done'?'open':'done'});toast('Updated')}if(t.dataset.draftDel){draft=draft.filter(d=>d.id!==t.dataset.draftDel);renderReview()}});document.body.addEventListener('input',e=>{const t=e.target;if(t.dataset.edit){updateItem(t.dataset.edit,{text:t.textContent.trim()})}if(t.dataset.draftEdit){const d=draft.find(x=>x.id===t.dataset.draftEdit);if(d)d.text=t.textContent.trim()}if(t.dataset.draftGroup){const d=draft.find(x=>x.id===t.dataset.draftGroup);if(d)d.group=t.value}})}
+load();bind();setupVoice();render();
+</script>
+</body>
+</html>
