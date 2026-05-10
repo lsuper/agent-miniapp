@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Hermes Mini App Dashboard</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: var(--tg-theme-bg-color, #0b1020);
+      --text: var(--tg-theme-text-color, #eef2ff);
+      --hint: var(--tg-theme-hint-color, #93a4c7);
+      --card: var(--tg-theme-secondary-bg-color, rgba(255,255,255,.08));
+      --accent: var(--tg-theme-button-color, #6d8dff);
+      --accent-text: var(--tg-theme-button-text-color, #ffffff);
+      --border: rgba(148,163,184,.22);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: max(18px, env(safe-area-inset-top)) 16px max(18px, env(safe-area-inset-bottom));
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Inter, Segoe UI, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(109,141,255,.35), transparent 34rem),
+        radial-gradient(circle at 85% 10%, rgba(16,185,129,.22), transparent 24rem),
+        var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    .wrap { max-width: 860px; margin: 0 auto; }
+    .hero { display: flex; gap: 14px; align-items: flex-start; justify-content: space-between; margin-bottom: 16px; }
+    h1 { font-size: clamp(25px, 6vw, 42px); line-height: 1.02; margin: 0 0 8px; letter-spacing: -0.045em; }
+    p { color: var(--hint); margin: 0; line-height: 1.45; }
+    .pill { border: 1px solid var(--border); background: rgba(255,255,255,.08); border-radius: 999px; padding: 8px 11px; font-size: 12px; color: var(--hint); white-space: nowrap; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 18px 0; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 22px; padding: 14px; box-shadow: 0 16px 40px rgba(0,0,0,.18); backdrop-filter: blur(18px); }
+    .metric .label { color: var(--hint); font-size: 12px; margin-bottom: 8px; }
+    .metric .value { font-size: 24px; font-weight: 760; letter-spacing: -0.03em; }
+    .metric .delta { color: #34d399; font-size: 12px; margin-top: 6px; }
+    .chart-card { padding: 16px; }
+    canvas { width: 100% !important; height: 310px !important; }
+    .actions { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+    button, a.button { appearance: none; border: 0; border-radius: 14px; padding: 12px 14px; background: var(--accent); color: var(--accent-text); font-weight: 700; text-decoration: none; cursor: pointer; }
+    .secondary { background: rgba(255,255,255,.10); color: var(--text); border: 1px solid var(--border); }
+    pre { white-space: pre-wrap; word-break: break-word; color: var(--hint); font-size: 12px; margin: 10px 0 0; }
+    @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } .hero { display: block; } .pill { display: inline-flex; margin-top: 12px; } canvas { height: 260px !important; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <h1>Hermes Generative UI Dashboard</h1>
+        <p>This is a Telegram Mini App test: HTML + JavaScript chart rendered inside Telegram's internal WebView.</p>
+      </div>
+      <div id="status" class="pill">Checking Telegram WebApp…</div>
+    </section>
+
+    <section class="grid">
+      <div class="card metric"><div class="label">Mini App bridge</div><div id="bridge" class="value">—</div><div class="delta">window.Telegram.WebApp</div></div>
+      <div class="card metric"><div class="label">Render latency</div><div id="latency" class="value">—</div><div class="delta">measured locally</div></div>
+      <div class="card metric"><div class="label">Mode</div><div id="mode" class="value">GitHub Pages</div><div class="delta">static shell</div></div>
+    </section>
+
+    <section class="card chart-card">
+      <p style="margin-bottom:12px;color:var(--text);font-weight:700">Interactive JS chart</p>
+      <canvas id="chart"></canvas>
+      <div class="actions">
+        <button id="randomize">Randomize chart</button>
+        <button id="expand" class="secondary">Expand WebView</button>
+        <button id="close" class="secondary">Close</button>
+      </div>
+      <pre id="debug"></pre>
+    </section>
+  </main>
+
+  <script>
+    const start = performance.now();
+    const tg = window.Telegram && window.Telegram.WebApp ? window.Telegram.WebApp : null;
+
+    if (tg) {
+      tg.ready();
+      tg.expand();
+      document.getElementById('status').textContent = 'Running in Telegram Mini App';
+      document.getElementById('bridge').textContent = 'OK';
+    } else {
+      document.getElementById('status').textContent = 'Opened as normal browser';
+      document.getElementById('bridge').textContent = 'No';
+    }
+
+    const labels = ['Think', 'Tool', 'Render', 'Verify', 'Send', 'Open'];
+    let values = [42, 74, 58, 91, 66, 88];
+
+    const css = getComputedStyle(document.documentElement);
+    const accent = css.getPropertyValue('--accent').trim() || '#6d8dff';
+    const hint = css.getPropertyValue('--hint').trim() || '#93a4c7';
+    const text = css.getPropertyValue('--text').trim() || '#eef2ff';
+
+    const chart = new Chart(document.getElementById('chart'), {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [{
+          label: 'Generative UI signal',
+          data: values,
+          tension: 0.38,
+          borderColor: accent,
+          backgroundColor: 'rgba(109,141,255,.18)',
+          fill: true,
+          pointRadius: 5,
+          pointHoverRadius: 8
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { labels: { color: text } } },
+        scales: {
+          x: { ticks: { color: hint }, grid: { color: 'rgba(148,163,184,.13)' } },
+          y: { min: 0, max: 100, ticks: { color: hint }, grid: { color: 'rgba(148,163,184,.13)' } }
+        }
+      }
+    });
+
+    document.getElementById('randomize').onclick = () => {
+      chart.data.datasets[0].data = labels.map(() => Math.round(25 + Math.random() * 70));
+      chart.update();
+      if (tg && tg.HapticFeedback) tg.HapticFeedback.impactOccurred('light');
+    };
+    document.getElementById('expand').onclick = () => tg && tg.expand();
+    document.getElementById('close').onclick = () => tg ? tg.close() : alert('Close works inside Telegram Mini App.');
+
+    requestAnimationFrame(() => {
+      document.getElementById('latency').textContent = Math.round(performance.now() - start) + 'ms';
+      document.getElementById('debug').textContent = JSON.stringify({
+        href: location.href,
+        hasTelegramBridge: Boolean(tg),
+        platform: tg && tg.platform,
+        colorScheme: tg && tg.colorScheme,
+        initDataPresent: Boolean(tg && tg.initData)
+      }, null, 2);
+    });
+  </script>
+</body>
+</html>
