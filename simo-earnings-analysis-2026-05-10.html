@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SIMO Earnings Analysis — Post-Q1 Regime Map</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#080b12; --panel:#101623; --panel2:#151e2d; --ink:#eef5ff; --muted:#94a3b8;
+  --line:rgba(148,163,184,.22); --green:#31d38a; --red:#ff6b81; --amber:#ffc857; --cyan:#6ae4ff; --violet:#a78bfa;
+  --shadow:0 18px 60px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;background:radial-gradient(circle at 12% -10%,rgba(49,211,138,.22),transparent 34%),radial-gradient(circle at 90% 0%,rgba(106,228,255,.16),transparent 32%),linear-gradient(180deg,#080b12 0%,#0b1020 48%,#080b12 100%);color:var(--ink);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,system-ui,sans-serif;padding:max(18px,env(safe-area-inset-top)) 14px max(28px,env(safe-area-inset-bottom));}
+main{max-width:1100px;margin:0 auto}.hero{padding:22px 4px 16px}.eyebrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;color:var(--cyan);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800}.pill{border:1px solid rgba(106,228,255,.32);background:rgba(106,228,255,.08);padding:6px 9px;border-radius:999px}.hero h1{font-size:clamp(32px,8vw,74px);line-height:.93;margin:16px 0 12px;letter-spacing:-.07em;max-width:950px}.hero p{color:#cbd5e1;font-size:clamp(16px,3.8vw,21px);line-height:1.45;max-width:860px;margin:0}.hero strong{color:#fff}.grid{display:grid;gap:14px}.metrics{grid-template-columns:repeat(4,minmax(0,1fr));margin:18px 0}@media(max-width:780px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}.card{background:linear-gradient(180deg,rgba(21,30,45,.92),rgba(12,18,30,.92));border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);padding:18px;position:relative;overflow:hidden}.metric .label{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.08em;font-weight:800}.metric .value{font-size:28px;font-weight:900;letter-spacing:-.04em;margin:8px 0 2px}.metric .sub{color:#cbd5e1;font-size:13px}.green{color:var(--green)}.red{color:var(--red)}.amber{color:var(--amber)}.cyan{color:var(--cyan)}.section{margin:18px 0}.section h2{font-size:24px;margin:0 0 12px;letter-spacing:-.04em}.split{grid-template-columns:1.25fr .75fr}@media(max-width:900px){.split{grid-template-columns:1fr}}.chart-wrap{height:330px}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}.tab{appearance:none;border:1px solid var(--line);background:rgba(148,163,184,.08);color:#dbeafe;border-radius:999px;padding:10px 13px;font-weight:800;cursor:pointer;min-height:42px}.tab.active{background:rgba(106,228,255,.16);border-color:rgba(106,228,255,.46);color:white}.phase-row{display:grid;grid-template-columns:86px 1fr;gap:12px;margin:13px 0}.date{font-weight:900;color:#e2e8f0}.phase-title{font-weight:900}.phase-text{color:#cbd5e1;font-size:14px;line-height:1.45}.callout{border-left:3px solid var(--amber);padding-left:13px;color:#dbeafe;line-height:1.5}.insight-list{display:grid;gap:10px}.insight{padding:12px;border-radius:16px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.075)}.insight b{display:block;margin-bottom:4px}.insight span{color:#cbd5e1;font-size:14px;line-height:1.4}.range-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}@media(max-width:860px){.range-grid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.range-grid{grid-template-columns:1fr}}.range-card{padding:15px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.04)}.range-card h3{margin:0 0 8px}.range-card .range{font-size:21px;font-weight:900}.range-card p{color:#cbd5e1;font-size:13px;line-height:1.4}.bar{height:9px;background:rgba(255,255,255,.08);border-radius:999px;overflow:hidden;margin:11px 0}.bar>i{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--amber),var(--green));border-radius:999px}.footer{color:#94a3b8;font-size:12px;line-height:1.5;margin:22px 4px}.mini-note{font-size:12px;color:#94a3b8}.sticky{position:sticky;top:10px}.badge{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:6px 9px;font-size:12px;font-weight:800;border:1px solid var(--line);background:rgba(255,255,255,.06)}
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div class="eyebrow"><span class="pill">SIMO / Silicon Motion</span><span>Q1 2026 earnings aftermath</span><span>Built from May 8 research note</span></div>
+    <h1>Paradigm-shift quarter, but the tape just changed character.</h1>
+    <p><strong>Q1 blew out expectations</strong> and reset the AI-storage thesis. The stock re-rated violently from the ~$140s to the ~$240s. Now the mini-app view: <strong>fundamentals still strong, short-term regime flashing caution</strong>.</p>
+  </section>
+
+  <section class="grid metrics">
+    <div class="card metric"><div class="label">Q1 revenue</div><div class="value green">$342.1M</div><div class="sub">+105% YoY; above $292–306M guide</div></div>
+    <div class="card metric"><div class="label">Q2 guide</div><div class="value cyan">$393–411M</div><div class="sub">Further sequential acceleration</div></div>
+    <div class="card metric"><div class="label">AI / enterprise</div><div class="value green">+750%</div><div class="sub">Ferri + boot-drive sales YoY</div></div>
+    <div class="card metric"><div class="label">May 8 signal</div><div class="value red">VEL5 -3.8</div><div class="sub">Strategy engine 100% cash</div></div>
+  </section>
+
+  <section class="grid split section">
+    <div class="card">
+      <h2>Price shock + technical regime</h2>
+      <div class="chart-wrap"><canvas id="priceChart"></canvas></div>
+      <p class="mini-note">Data points from SIMO research ledger / May 8 note. May 8 uses intraday current price from the run.</p>
+    </div>
+    <div class="card sticky">
+      <h2>Bottom line</h2>
+      <div class="callout"><b>Investment read:</b> long-term AI-storage thesis remains alive; short/medium-term risk/reward is no longer clean because $250+ rejected twice, VEL5 turned negative, and first confirmed insider selling appeared.</div>
+      <div style="height:12px"></div>
+      <div class="insight-list">
+        <div class="insight"><b class="green">Bull case</b><span>Revenue beat + Q2 guide imply enterprise controller demand is now real, not narrative. Debt-free balance sheet supports patience.</span></div>
+        <div class="insight"><b class="red">Bear / caution case</b><span>FCF conversion is still unproven; Q1 10-Q due May 12–15 is the key hard data point. Strategy engine exited fully.</span></div>
+        <div class="insight"><b class="amber">Trigger level</b><span>Break above $251.71 with volume invalidates the double-top warning. Break below $238 confirms the rejection pattern.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid split section">
+    <div class="card">
+      <h2>RSI / VEL5 dashboard</h2>
+      <div class="chart-wrap"><canvas id="techChart"></canvas></div>
+      <p class="mini-note">The important shift: RSI stayed extreme, but VEL5 rolled from +17.1 to -3.8 as the Apr 29–30 monster bars left the 5-bar window.</p>
+    </div>
+    <div class="card">
+      <h2>Post-earnings phases</h2>
+      <div class="phase-row"><div class="date">Apr 28–29</div><div><div class="phase-title green">Phase 1 — gap-up repricing</div><div class="phase-text">Q1 revenue beat and Q2 guide reset the story; stock gaps from ~$149 reference toward $217+.</div></div></div>
+      <div class="phase-row"><div class="date">Apr 30–May 4</div><div><div class="phase-title amber">Phase 2 — consolidation / fade</div><div class="phase-text">RSI extreme; stock tests ATH then pulls back. Easy-money phase starts maturing.</div></div></div>
+      <div class="phase-row"><div class="date">May 5–6</div><div><div class="phase-title green">Phase 3 — resumption</div><div class="phase-text">VEL5 +17.1 and AMD semicap tailwind push SIMO to a new high near $248.59.</div></div></div>
+      <div class="phase-row"><div class="date">May 7–8</div><div><div class="phase-title red">Phase 4 — resistance / distribution</div><div class="phase-text">$251.71 and $251.18 highs reject; VEL5 turns negative; Mytutopia strategy exits fully.</div></div></div>
+    </div>
+  </section>
+
+  <section class="section card">
+    <h2>Prediction ranges from latest SIMO run</h2>
+    <div class="range-grid">
+      <div class="range-card"><h3>Today</h3><div class="badge red">flat_to_down · 48</div><div class="range">$235–252</div><div class="bar"><i style="width:48%"></i></div><p>Double-top + VEL5 breakdown vs powerful green macro / memory tape.</p></div>
+      <div class="range-card"><h3>30 days</h3><div class="badge red">flat_to_down · 45</div><div class="range">$200–260</div><div class="bar"><i style="width:45%"></i></div><p>First flip from UP to flat_to_down. Q1 10-Q / FCF is next catalyst.</p></div>
+      <div class="range-card"><h3>90 days</h3><div class="badge amber">flat_to_up · 50</div><div class="range">$190–275</div><div class="bar"><i style="width:50%"></i></div><p>Fundamental thesis intact but price is ahead of execution proof.</p></div>
+      <div class="range-card"><h3>1 year</h3><div class="badge green">up · 55</div><div class="range">$175–320</div><div class="bar"><i style="width:55%"></i></div><p>AI storage TAM + enterprise controller leadership, balanced by FCF and valuation risk.</p></div>
+    </div>
+  </section>
+
+  <section class="grid split section">
+    <div class="card">
+      <h2>What changed after earnings</h2>
+      <div class="insight-list">
+        <div class="insight"><b>Management signal</b><span>Q1 revenue $342.1M beat guidance by roughly $36–50M. Q2 guide $393–411M says acceleration continues.</span></div>
+        <div class="insight"><b>Product signal</b><span>SM8008 enterprise boot controller volume production and MonTitan H2 2026 CSP ramp remain the roadmap anchors.</span></div>
+        <div class="insight"><b>Balance-sheet signal</b><span>No debt and dividend support quality, but trailing levered FCF around -$125M is the biggest unresolved yellow flag.</span></div>
+        <div class="insight"><b>Market signal</b><span>Mainstream coverage has split into momentum bulls vs valuation skeptics — a middle-to-late rally phase signal.</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Next questions</h2>
+      <div class="insight-list">
+        <div class="insight"><b>1. Q1 10-Q</b><span>Does FCF improve or deteriorate with +105% revenue growth?</span></div>
+        <div class="insight"><b>2. Technical reset</b><span>Does VEL5 return positive, or stay negative for 4+ bars?</span></div>
+        <div class="insight"><b>3. Insider flow</b><span>Was the 1,500 ADS director sale one-off, or the first of more selling?</span></div>
+        <div class="insight"><b>4. Customer proof</b><span>Any new MonTitan / SM8008 customer announcements before Q2 earnings?</span></div>
+      </div>
+    </div>
+  </section>
+
+  <p class="footer">Source: local Obsidian investment vault — SIMO daily research notes dated 2026-04-29, 2026-05-06, 2026-05-08; entity page updated 2026-05-08. This is a research visualization, not financial advice.</p>
+</main>
+<script>
+const tg = window.Telegram && window.Telegram.WebApp ? window.Telegram.WebApp : null;
+if (tg) { tg.ready(); tg.expand(); document.body.dataset.telegram = 'true'; }
+
+const priceLabels = ['Apr 27','Apr 28','Apr 29','Apr 30','May 1','May 4','May 5','May 6','May 7','May 8'];
+const closes = [147.24,148.88,217.06,218.33,234.04,226.70,237.92,244.45,242.71,249.12];
+const rsi = [66.7,67.8,87.2,87.4,89.1,83.4,85.0,85.8,84.4,85.4];
+const vel5 = [0.9,-0.8,19.4,19.5,13.5,16.7,17.1,-1.4,-3.0,-3.8];
+Chart.defaults.color = '#cbd5e1';
+Chart.defaults.borderColor = 'rgba(148,163,184,.18)';
+new Chart(document.getElementById('priceChart'), {type:'line',data:{labels:priceLabels,datasets:[{label:'SIMO close / live',data:closes,borderColor:'#31d38a',backgroundColor:'rgba(49,211,138,.12)',fill:true,tension:.35,pointRadius:4,pointHoverRadius:7},{label:'$250 resistance zone',data:priceLabels.map(()=>250),borderColor:'#ff6b81',borderDash:[6,6],pointRadius:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{boxWidth:10,usePointStyle:true}},tooltip:{mode:'index',intersect:false}},scales:{y:{ticks:{callback:v=>'$'+v}},x:{grid:{display:false}}}}});
+new Chart(document.getElementById('techChart'), {type:'line',data:{labels:priceLabels,datasets:[{label:'RSI',data:rsi,borderColor:'#ffc857',backgroundColor:'rgba(255,200,87,.12)',yAxisID:'y',tension:.3,pointRadius:3},{label:'VEL5',data:vel5,borderColor:'#6ae4ff',backgroundColor:'rgba(106,228,255,.1)',yAxisID:'y1',tension:.3,pointRadius:3},{label:'VEL5 zero line',data:priceLabels.map(()=>0),borderColor:'rgba(255,107,129,.7)',borderDash:[4,4],pointRadius:0,yAxisID:'y1'}]},options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},plugins:{legend:{labels:{boxWidth:10,usePointStyle:true}}},scales:{y:{position:'left',min:55,max:95,title:{display:true,text:'RSI'}},y1:{position:'right',min:-8,max:24,grid:{drawOnChartArea:false},title:{display:true,text:'VEL5'}},x:{grid:{display:false}}}}});
+</script>
+</body>
+</html>
