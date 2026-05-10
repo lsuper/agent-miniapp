@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prof Jiang WW3 Interview — Mini App Summary</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+:root{color-scheme:dark;--bg:#07080b;--ink:#f7f2e8;--muted:#b9aea0;--panel:#14161d;--panel2:#1b1d25;--line:rgba(255,255,255,.13);--red:#ff5d5a;--amber:#f4bd5a;--blue:#62c6ff;--green:#5ee2a0;--violet:#b58cff;--shadow:0 24px 80px rgba(0,0,0,.46)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:radial-gradient(circle at 8% -12%,rgba(255,93,90,.28),transparent 36%),radial-gradient(circle at 92% 0%,rgba(98,198,255,.18),transparent 34%),linear-gradient(180deg,#07080b 0%,#101118 48%,#07080b 100%);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,system-ui,sans-serif;color:var(--ink);padding:max(18px,env(safe-area-inset-top)) 14px max(34px,env(safe-area-inset-bottom))}main{max-width:1120px;margin:0 auto}.hero{display:grid;grid-template-columns:1.08fr .92fr;gap:18px;align-items:stretch;padding:8px 0 16px}@media(max-width:860px){.hero{grid-template-columns:1fr}.hideMobile{display:none!important}}.eyebrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center;color:var(--amber);font:850 12px/1 ui-sans-serif;letter-spacing:.12em;text-transform:uppercase}.pill{border:1px solid rgba(244,189,90,.38);background:rgba(244,189,90,.1);border-radius:999px;padding:7px 10px}.hero h1{font-size:clamp(36px,8.6vw,82px);line-height:.9;letter-spacing:-.075em;margin:16px 0 12px;max-width:820px;text-wrap:balance}.hero p{font-size:clamp(16px,3.6vw,21px);line-height:1.48;color:#e5d9ca;margin:0;max-width:820px}.thumb{position:relative;min-height:275px;border:1px solid var(--line);border-radius:30px;overflow:hidden;background:#000;box-shadow:var(--shadow)}.thumb img{width:100%;height:100%;object-fit:cover;display:block;filter:contrast(1.05) saturate(.92)}.thumb:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 42%,rgba(0,0,0,.88))}.watch{position:absolute;left:18px;right:18px;bottom:18px;z-index:1;display:flex;gap:12px;align-items:end;justify-content:space-between}.watch b{font-size:18px;line-height:1.15;max-width:270px}.watch a{color:#08090d;background:var(--amber);text-decoration:none;border-radius:999px;padding:12px 14px;font-weight:950;white-space:nowrap}.grid{display:grid;gap:14px}.metrics{grid-template-columns:repeat(4,minmax(0,1fr));margin:12px 0 18px}@media(max-width:820px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}.card{background:linear-gradient(180deg,rgba(27,29,37,.93),rgba(14,15,21,.96));border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow);padding:18px;overflow:hidden}.metric .label{font-size:11px;font-weight:900;letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}.metric .value{font-size:30px;font-weight:1000;letter-spacing:-.06em;margin:8px 0 3px}.metric .sub{font-size:13px;line-height:1.35;color:#d1c5b8}.section{margin:18px 0}.section h2{font-size:25px;line-height:1.08;letter-spacing:-.045em;margin:0 0 14px}.split{grid-template-columns:1fr 1fr}@media(max-width:920px){.split{grid-template-columns:1fr}}.warning{border-left:4px solid var(--amber);padding:12px 14px;background:rgba(244,189,90,.08);border-radius:16px;color:#ffeccd;font-size:14px;line-height:1.45}.takeaways{display:grid;gap:10px}.take{padding:13px;border:1px solid rgba(255,255,255,.11);border-radius:18px;background:rgba(255,255,255,.04)}.take b{display:block;margin-bottom:5px;font-size:15px}.take span{display:block;color:#d7ccbf;font-size:14px;line-height:1.45}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}.tab{appearance:none;min-height:42px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:#f6ebdf;border-radius:999px;padding:10px 13px;font-weight:900;cursor:pointer}.tab.active{border-color:rgba(98,198,255,.55);background:rgba(98,198,255,.14);color:#fff}.panel{display:none}.panel.active{display:block}.chapter{display:grid;grid-template-columns:72px 1fr;gap:12px;padding:0 0 14px}.time{font-weight:950;color:var(--amber);font-size:13px}.chapter h3{font-size:16px;line-height:1.18;margin:0 0 5px}.chapter p{margin:0;color:#d7ccbf;font-size:14px;line-height:1.43}.tag{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:5px 8px;margin-bottom:8px;font-size:10.5px;font-weight:900;letter-spacing:.07em;text-transform:uppercase;color:#cfc3b7}.quote{font-family:ui-serif,Georgia,"Times New Roman",serif;font-size:clamp(20px,4vw,30px);line-height:1.22;letter-spacing:-.035em;margin:0;color:#fff4df}.quote small{display:block;margin-top:11px;font-family:ui-sans-serif,system-ui;font-size:12px;color:var(--muted);letter-spacing:0}.chartWrap{height:330px}.rail{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}.chip{flex:0 0 auto;border:1px solid var(--line);border-radius:999px;padding:8px 10px;font-size:12px;font-weight:850;color:#e7dccc;background:rgba(255,255,255,.04)}.red{color:var(--red)}.amber{color:var(--amber)}.blue{color:var(--blue)}.green{color:var(--green)}.violet{color:var(--violet)}.footer{font-size:12px;line-height:1.5;color:#a99f93;margin:22px 4px}.footer a{color:var(--amber)}
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div>
+      <div class="eyebrow"><span class="pill">Prof Jiang</span><span>Diary of a CEO / Predictive History</span><span>2:11:10</span></div>
+      <h1>World War 3 prediction map.</h1>
+      <p>Mini App summary of the supplied video: Jiang connects Iran, Russia, China, Israel, U.S. debt, maritime chokepoints, a possible draft, digital ID/currency, and media control into one sweeping grand-strategy forecast.</p>
+    </div>
+    <div class="thumb">
+      <img src="https://i.ytimg.com/vi/BTJGr78-zyw/maxresdefault.jpg" alt="YouTube thumbnail">
+      <div class="watch"><b>Professor Jiang: World War 3 Is About To Begin, Let Me Explain!</b><a href="https://www.youtube.com/watch?v=BTJGr78-zyw">Watch</a></div>
+    </div>
+  </section>
+
+  <section class="grid metrics">
+    <div class="card metric"><div class="label">Format</div><div class="value amber">2h 11m</div><div class="sub">long-form interview / prediction narrative</div></div>
+    <div class="card metric"><div class="label">Main arena</div><div class="value red">Iran</div><div class="sub">war as test of U.S. empire + dollar system</div></div>
+    <div class="card metric"><div class="label">Key chokepoint</div><div class="value blue">Hormuz</div><div class="sub">energy shock transmission channel</div></div>
+    <div class="card metric"><div class="label">Forecast style</div><div class="value violet">High</div><div class="sub">confidence, speculative, needs verification</div></div>
+  </section>
+
+  <section class="card section">
+    <h2>Read this first</h2>
+    <div class="warning"><b>Caution:</b> this summarizes Jiang’s claims and predictions from the transcript. Many points — third-term theories, secret deals, imminent draft, tanker-war escalation, Israeli expansion, or an “80% chance” of world war — are not established facts from the transcript alone. Treat the page as a map of his argument, not a verified intelligence brief.</div>
+  </section>
+
+  <section class="grid split section">
+    <div class="card">
+      <h2>Core argument in 6 moves</h2>
+      <div class="takeaways">
+        <div class="take"><b class="red">1. U.S. empire depends on dollar credibility</b><span>Jiang says sanctions against Russia weakened trust in the dollar system, forcing Washington to demonstrate control elsewhere.</span></div>
+        <div class="take"><b class="amber">2. Iran is a bad quick-war target</b><span>He argues Trump expected surrender but underestimated Iran’s terrain, nationalism, religious-political system, and attritional strategy.</span></div>
+        <div class="take"><b class="blue">3. Hormuz turns war into inflation</b><span>Iran’s leverage is framed as threatening oil flows, Gulf infrastructure, desalination, shipping insurance, bond yields, and market confidence.</span></div>
+        <div class="take"><b class="green">4. Russia cannot let Iran fall</b><span>In Jiang’s model, Iran anchors Russia’s southern flank and Eurasian access, making Russian support strategically compulsory.</span></div>
+        <div class="take"><b class="violet">5. China is squeezed through chokepoints</b><span>He claims U.S. maritime control around Malacca and the first island chain is a way to strangle China’s trade and energy.</span></div>
+        <div class="take"><b>6. Domestic control follows external war</b><span>The forecast ends with draft registration, digital ID/currency, surveillance, and media reality-control as wartime governance tools.</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Claim vs. evidence risk map</h2>
+      <div class="chartWrap"><canvas id="riskChart"></canvas></div>
+      <div class="rail"><span class="chip">Geography/chokepoints: stronger</span><span class="chip">Political forecasts: weaker</span><span class="chip">Hidden-plan claims: verify</span></div>
+    </div>
+  </section>
+
+  <section class="grid split section">
+    <div class="card">
+      <h2>Chapter digest</h2>
+      <div class="tabs"><button class="tab active" data-panel="early">War thesis</button><button class="tab" data-panel="middle">Great-power chess</button><button class="tab" data-panel="late">Predictions + reality</button></div>
+      <div id="early" class="panel active">
+        <div class="chapter"><div class="time">0:00</div><div><span class="tag">Intro</span><h3>The prediction slate</h3><p>Preview: Trump third term, Iran war, draft, AI civilian-control state, wider world war, and elite control of reality.</p></div></div>
+        <div class="chapter"><div class="time">2:11</div><div><span class="tag">Dollar empire</span><h3>Why he says the U.S. “had no choice”</h3><p>Jiang argues the U.S. attacks Iran to defend imperial-dollar power after Russia sanctions made countries fear dollar seizure.</p></div></div>
+        <div class="chapter"><div class="time">8:55</div><div><span class="tag">Misread</span><h3>Why Trump expected surrender</h3><p>He says Trump saw a leadership-strike path to quick collapse, but misread Iran’s culture and willingness to absorb pain.</p></div></div>
+        <div class="chapter"><div class="time">10:00</div><div><span class="tag">Terrain</span><h3>The mountain fortress</h3><p>Iran’s mountains, missile hiding places, and depth are described as reasons it can survive bombing and fight long.</p></div></div>
+        <div class="chapter"><div class="time">13:30</div><div><span class="tag">Markets</span><h3>Hormuz as the global economy trigger</h3><p>Oil, shipping, desalination, Gulf infrastructure, and inflation become part of the battlefield.</p></div></div>
+        <div class="chapter"><div class="time">16:00</div><div><span class="tag">Doctrine</span><h3>America’s alleged real plan</h3><p>Jiang reads U.S. defense strategy as Fortress America + allied burden-shifting + chokepoint control.</p></div></div>
+      </div>
+      <div id="middle" class="panel">
+        <div class="chapter"><div class="time">22:00</div><div><span class="tag">China</span><h3>Strangling China by sea</h3><p>The claim: U.S. control of Malacca and the island chains can pressure China’s imports, exports, and energy access.</p></div></div>
+        <div class="chapter"><div class="time">26:00</div><div><span class="tag">Iran</span><h3>Hidden war strategy</h3><p>Iran’s survival strategy is framed as hiding assets, threatening bases/energy, and making the world pressure Washington.</p></div></div>
+        <div class="chapter"><div class="time">31:00</div><div><span class="tag">Escalation</span><h3>“80% chance” world war claim</h3><p>He sketches escalation via financing pressure, unrest, forced exposure of forces, and infrastructure strangulation.</p></div></div>
+        <div class="chapter"><div class="time">34:30</div><div><span class="tag">Chessboard</span><h3>Four global powers</h3><p>America, Russia, Israel, and Iran are cast as players with incompatible incentives and different instruments of power.</p></div></div>
+        <div class="chapter"><div class="time">44:00</div><div><span class="tag">Tankers</span><h3>Shadow-fleet pressure</h3><p>Jiang interprets tanker seizures and maritime enforcement as early signs of broader energy war with Russia.</p></div></div>
+        <div class="chapter"><div class="time">50:00</div><div><span class="tag">Russia</span><h3>What happens if Russia joins Iran</h3><p>He argues Russia could use Caspian supply routes, China-backed logistics, and nuclear umbrella logic to keep Iran alive.</p></div></div>
+      </div>
+      <div id="late" class="panel">
+        <div class="chapter"><div class="time">56:30</div><div><span class="tag">Trump</span><h3>Third-term theory</h3><p>Jiang predicts Trump seeks a third term through emergency powers, succession theory, loyalist/family tickets, or political chaos.</p></div></div>
+        <div class="chapter"><div class="time">1:02:30</div><div><span class="tag">U.S.–China</span><h3>Secret deal claim</h3><p>He suggests a coming bargain or pressure point involving China, but the transcript alone does not establish this.</p></div></div>
+        <div class="chapter"><div class="time">1:04:30</div><div><span class="tag">Draft</span><h3>National draft prediction</h3><p>He points to automatic registration and argues a long Iran war may require ground troops; this is a prediction, not a current draft order.</p></div></div>
+        <div class="chapter"><div class="time">1:09:30</div><div><span class="tag">Israel</span><h3>Regional conquest forecast</h3><p>He predicts an expansionist Israel scenario; treat as speculative and requiring outside evidence.</p></div></div>
+        <div class="chapter"><div class="time">1:20:00</div><div><span class="tag">Personal advice</span><h3>What average people should do</h3><p>The practical frame is resilience: understand systems, reduce dependence, and recognize wartime domestic-control incentives.</p></div></div>
+        <div class="chapter"><div class="time">1:25:30</div><div><span class="tag">Reality</span><h3>Who controls reality</h3><p>Jiang shifts to Plato’s cave: institutions, media, platforms, and elites compete to define what people believe is real.</p></div></div>
+        <div class="chapter"><div class="time">1:42:00</div><div><span class="tag">Personal</span><h3>Why his wife saved his life</h3><p>The interview becomes biographical and reflective, linking personal redemption with his worldview.</p></div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Notable quotes / frames</h2>
+      <div class="tabs"><button class="tab active" data-panel="q1">Empire</button><button class="tab" data-panel="q2">Respect opponent</button><button class="tab" data-panel="q3">Digital state</button><button class="tab" data-panel="q4">Personal</button></div>
+      <div id="q1" class="panel active"><p class="quote">“The United States [invaded] Iran because it has no choice… if it were not to invade Iran, it would lose its empire.”<small>~2:55 — Jiang’s thesis, not an established fact</small></p></div>
+      <div id="q2" class="panel"><p class="quote">“When you disrespect your opponent, when you underestimate your opponent… you’re going to lose.”<small>~9:37 — why he thinks quick-war assumptions fail</small></p></div>
+      <div id="q3" class="panel"><p class="quote">“For the average person, it means two things: digital ID and digital currency.”<small>~1:22:44 — his domestic-control forecast</small></p></div>
+      <div id="q4" class="panel"><p class="quote">“My wife came as an angel.”<small>~2:03:46 — personal redemption section</small></p></div>
+    </div>
+  </section>
+
+  <section class="grid split section">
+    <div class="card"><h2>What is most useful</h2><div class="takeaways"><div class="take"><b>Geography matters</b><span>Iran’s mountains, Hormuz, Malacca, Odessa, and Seoul are treated as hard constraints on strategy.</span></div><div class="take"><b>Markets are part of the war map</b><span>Oil, insurance, dollar credibility, bond yields, and sanctions are not side effects; they are instruments.</span></div><div class="take"><b>Escalation is multi-domain</b><span>Military moves, information warfare, legal structures, digital money, and surveillance are linked in his model.</span></div></div></div>
+    <div class="card"><h2>What needs skepticism</h2><div class="takeaways"><div class="take"><b>Legal/political leaps</b><span>Third-term and draft claims need careful legal verification; the 22nd Amendment and current draft law are major constraints.</span></div><div class="take"><b>Hidden-plan certainty</b><span>Secret deals, intentional war timelines, and broad elite-control claims should not be accepted from transcript framing alone.</span></div><div class="take"><b>Precise probabilities</b><span>“80% chance of World War 3” reads more like rhetorical confidence than a measurable forecast.</span></div></div></div>
+  </section>
+
+  <section class="card section">
+    <h2>My read</h2>
+    <div class="warning" style="border-left-color:var(--blue);background:rgba(98,198,255,.08);color:#dff4ff">The interview is strongest as a grand-strategy map: geography + energy chokepoints + dollar politics + alliance incentives. It is weakest where it becomes highly confident about hidden motives, legal loopholes, and precise predictions. I would use it as a scenario generator, then verify each claim separately before acting on it.</div>
+  </section>
+
+  <p class="footer">Source: <a href="https://www.youtube.com/watch?v=BTJGr78-zyw">Professor Jiang: World War 3 Is About To Begin, Let Me Explain!</a>. Transcript fetched locally from YouTube captions. Summary labels claims as claims; it does not independently verify them.</p>
+</main>
+<script>
+let tg=null;
+try{tg=window.Telegram&&window.Telegram.WebApp?window.Telegram.WebApp:null}catch(e){tg=null;console.warn('Telegram bridge detection failed in browser preview',e)}
+if(tg){try{tg.ready();tg.expand();document.body.dataset.telegram='true'}catch(e){console.warn('Telegram bridge unavailable in browser preview',e)}}
+document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{const parent=btn.closest('.card');parent.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));parent.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));btn.classList.add('active');parent.querySelector('#'+btn.dataset.panel).classList.add('active')}));
+Chart.defaults.color='#d7ccbf';
+Chart.defaults.borderColor='rgba(255,255,255,.12)';
+new Chart(document.getElementById('riskChart'),{
+  type:'bar',
+  data:{
+    labels:['Geography / chokepoints','Dollar / sanctions','Iran war path','Russia joins','Trump 3rd term','Draft imminent','Digital control state'],
+    datasets:[
+      {label:'Analytical usefulness',data:[92,78,70,62,35,42,66],backgroundColor:'rgba(98,198,255,.62)',borderColor:'#62c6ff',borderWidth:1},
+      {label:'Verification burden',data:[35,52,72,82,95,78,74],backgroundColor:'rgba(255,93,90,.58)',borderColor:'#ff5d5a',borderWidth:1}
+    ]
+  },
+  options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{labels:{boxWidth:12,usePointStyle:true}},tooltip:{callbacks:{label:ctx=>ctx.dataset.label+': '+ctx.raw+'/100'}}},scales:{x:{min:0,max:100,ticks:{callback:v=>v+'%'}},y:{ticks:{font:{weight:'700'}}}}}
+});
+</script>
+</body>
+</html>
