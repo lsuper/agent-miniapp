@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prof Jiang Video Summary — Iran Nuclear Scenario</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+:root{color-scheme:dark;--bg:#090806;--paper:#15120d;--panel:#1d1710;--panel2:#251c13;--ink:#fff8eb;--muted:#c4b59f;--line:rgba(255,232,191,.17);--gold:#f5c86a;--red:#ff615c;--orange:#ff9a3d;--blue:#75d7ff;--green:#66e3a2;--shadow:0 22px 70px rgba(0,0,0,.42)}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 16% -8%,rgba(245,200,106,.22),transparent 34%),radial-gradient(circle at 90% 4%,rgba(255,97,92,.18),transparent 32%),linear-gradient(180deg,#090806 0%,#100c08 52%,#080706 100%);font-family:ui-serif,Georgia,"Times New Roman",serif;color:var(--ink);padding:max(18px,env(safe-area-inset-top)) 14px max(30px,env(safe-area-inset-bottom))}main{max-width:1120px;margin:0 auto}.sans{font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,system-ui,sans-serif}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;align-items:stretch;padding:10px 0 18px}@media(max-width:860px){.hero{grid-template-columns:1fr}}.eyebrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center;color:var(--gold);font:800 12px/1 ui-sans-serif,system-ui;letter-spacing:.12em;text-transform:uppercase}.pill{border:1px solid rgba(245,200,106,.38);background:rgba(245,200,106,.1);border-radius:999px;padding:7px 10px}.hero h1{font-size:clamp(34px,8.4vw,78px);letter-spacing:-.07em;line-height:.91;margin:16px 0 12px;text-wrap:balance}.hero p{font-size:clamp(16px,3.7vw,21px);line-height:1.48;color:#eadcc8;margin:0;max-width:820px}.thumb{min-height:260px;border-radius:30px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#000;position:relative}.thumb img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9) contrast(1.05)}.thumb:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.82));}.play{position:absolute;left:18px;right:18px;bottom:18px;z-index:1;display:flex;justify-content:space-between;gap:12px;align-items:end}.play b{font-size:18px;line-height:1.12}.play a{color:#090806;background:var(--gold);text-decoration:none;font:900 13px ui-sans-serif,system-ui;padding:11px 13px;border-radius:999px;white-space:nowrap}.card{background:linear-gradient(180deg,rgba(37,28,19,.92),rgba(18,14,10,.94));border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow);padding:18px;overflow:hidden}.grid{display:grid;gap:14px}.metrics{grid-template-columns:repeat(4,minmax(0,1fr));margin:12px 0 18px}@media(max-width:820px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}.metric .label{font:800 11px ui-sans-serif,system-ui;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}.metric .value{font:950 29px ui-sans-serif,system-ui;letter-spacing:-.06em;margin:8px 0 3px}.metric .sub{font:500 13px ui-sans-serif,system-ui;color:#d8c9b5;line-height:1.35}.section{margin:18px 0}.section h2{font:900 25px/1.05 ui-sans-serif,system-ui;margin:0 0 14px;letter-spacing:-.04em}.split{grid-template-columns:1fr 1fr}@media(max-width:900px){.split{grid-template-columns:1fr}}.warning{border-left:4px solid var(--red);padding:12px 14px;background:rgba(255,97,92,.08);border-radius:16px;color:#ffe1d8;font:600 14px/1.45 ui-sans-serif,system-ui}.takeaways{display:grid;gap:10px}.take{padding:13px;border:1px solid rgba(255,232,191,.12);background:rgba(255,255,255,.04);border-radius:18px}.take b{display:block;font:900 15px ui-sans-serif,system-ui;margin-bottom:4px}.take span{font:500 14px/1.45 ui-sans-serif,system-ui;color:#dccdb8}.timeline{position:relative}.chapter{display:grid;grid-template-columns:62px 1fr;gap:12px;margin:0;padding:0 0 16px}.time{font:900 13px ui-sans-serif,system-ui;color:var(--gold)}.chapter h3{font:900 16px/1.2 ui-sans-serif,system-ui;margin:0 0 5px}.chapter p{font:500 14px/1.45 ui-sans-serif,system-ui;color:#dccdb8;margin:0}.tag{display:inline-flex;font:800 11px ui-sans-serif,system-ui;letter-spacing:.07em;text-transform:uppercase;border-radius:999px;padding:5px 8px;border:1px solid var(--line);color:#dccdb8;margin-bottom:8px}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.tab{appearance:none;border:1px solid var(--line);background:rgba(255,255,255,.05);color:#f5ead8;border-radius:999px;padding:10px 13px;min-height:42px;font:900 13px ui-sans-serif,system-ui;cursor:pointer}.tab.active{background:rgba(245,200,106,.17);border-color:rgba(245,200,106,.5);color:#fff}.panel{display:none}.panel.active{display:block}.chartWrap{height:310px}.quote{font-size:21px;line-height:1.35;letter-spacing:-.02em;color:#fff2d7;margin:0}.quote small{display:block;margin-top:10px;color:var(--muted);font:700 13px ui-sans-serif,system-ui}.footer{color:#b8aa96;font:500 12px/1.5 ui-sans-serif,system-ui;margin:22px 4px}.blue{color:var(--blue)}.red{color:var(--red)}.gold{color:var(--gold)}.green{color:var(--green)}
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div>
+      <div class="eyebrow"><span class="pill">Professor Jiang Predictions</span><span>Latest video</span><span>19:27</span></div>
+      <h1>Iran nuclear shock scenario, summarized.</h1>
+      <p>A Telegram Mini App digest of the latest Prof Jiang video: the argument is that an alleged Iranian nuclear capability would change the U.S./Israel strike calculus, shift leverage toward China/Russia, and turn the Strait of Hormuz into a market-transmission channel.</p>
+    </div>
+    <div class="thumb">
+      <img src="https://i.ytimg.com/vi/ZbyipBwQSPg/hqdefault.jpg" alt="YouTube thumbnail for Prof Jiang video">
+      <div class="play"><b class="sans">IRAN Has NUCLEAR WEAPONS — America Cannot Strike...</b><a href="https://www.youtube.com/watch?v=ZbyipBwQSPg">Watch</a></div>
+    </div>
+  </section>
+
+  <section class="grid metrics sans">
+    <div class="card metric"><div class="label">Core claim</div><div class="value red">3–5</div><div class="sub">alleged assembled Iranian warheads</div></div>
+    <div class="card metric"><div class="label">Proposed source</div><div class="value gold">DPRK</div><div class="sub">oil/cash for nuclear know-how</div></div>
+    <div class="card metric"><div class="label">Policy window</div><div class="value blue">5 days</div><div class="sub">Trump pause framed as strategic timing</div></div>
+    <div class="card metric"><div class="label">Main choke point</div><div class="value green">Hormuz</div><div class="sub">oil → inflation → markets</div></div>
+  </section>
+
+  <section class="section card">
+    <h2>Verification posture</h2>
+    <div class="warning">Important: this page summarizes the video transcript. It does <b>not</b> independently verify the video’s most dramatic assertions, especially the claim that Iran already has assembled nuclear warheads. Treat those as the video’s scenario/claim, not established fact.</div>
+  </section>
+
+  <section class="grid split section">
+    <div class="card">
+      <h2>One-screen takeaways</h2>
+      <div class="takeaways">
+        <div class="take"><b class="red">1. The deterrence threshold changes</b><span>If Iran has usable warheads, the speaker argues U.S./Israeli airstrikes become far riskier because retaliation against bases or Israel enters nuclear territory.</span></div>
+        <div class="take"><b class="gold">2. Israel has no strategic depth</b><span>The video emphasizes that even one warhead penetrating defenses could be existential for Israel, making preemption pressure intense but dangerous.</span></div>
+        <div class="take"><b class="blue">3. U.S. credibility vs escalation</b><span>Washington faces a bind: not striking accepts a nuclear Iran; striking risks regional nuclear escalation and economic blowback.</span></div>
+        <div class="take"><b class="green">4. China/Russia gain leverage without firing</b><span>The argument says Beijing can trade diplomatic help for tech/tariff concessions while Moscow benefits from U.S. distraction and oil-price pressure.</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Risk map from the transcript</h2>
+      <div class="chartWrap"><canvas id="riskChart"></canvas></div>
+    </div>
+  </section>
+
+  <section class="grid split section">
+    <div class="card">
+      <h2>Chapter timeline</h2>
+      <div class="timeline sans">
+        <div class="chapter"><div class="time">0:00</div><div><span class="tag">Shock setup</span><h3>Alleged warheads discovered</h3><p>The video opens with a CIA/satellite-intelligence scenario claiming Iran possesses 3–5 assembled nuclear warheads.</p></div></div>
+        <div class="chapter"><div class="time">1:45</div><div><span class="tag">How it happened</span><h3>North Korea barter thesis</h3><p>It proposes a covert Iran–North Korea exchange: oil/cash from Tehran for nuclear expertise and on-site technical support from Pyongyang.</p></div></div>
+        <div class="chapter"><div class="time">4:20</div><div><span class="tag">Strategic bind</span><h3>Strike or accept</h3><p>America is framed as facing a binary: accept Iran as nuclear, or strike and risk retaliation against U.S. bases or Israel.</p></div></div>
+        <div class="chapter"><div class="time">6:55</div><div><span class="tag">Israel</span><h3>One missile is enough</h3><p>The video argues Israel’s small geography means even very high interception rates are not enough against a nuclear payload.</p></div></div>
+        <div class="chapter"><div class="time">9:20</div><div><span class="tag">Leverage</span><h3>China’s diplomatic option value</h3><p>Beijing is described as gaining bargaining power if Washington needs Chinese help pressuring Tehran.</p></div></div>
+        <div class="chapter"><div class="time">11:45</div><div><span class="tag">Pause</span><h3>The five-day window</h3><p>Trump’s temporary pause is interpreted either as hesitation or as a multi-purpose window for messaging, allied coordination, military prep, and market stabilization.</p></div></div>
+        <div class="chapter"><div class="time">13:55</div><div><span class="tag">Markets</span><h3>Hormuz as transmission belt</h3><p>Any Hormuz disruption can move oil, shipping insurance, inflation expectations, bond yields, equities, and currencies almost immediately.</p></div></div>
+        <div class="chapter"><div class="time">15:55</div><div><span class="tag">Caution</span><h3>Separate verified from speculative</h3><p>The transcript itself warns that dramatic claims about hidden timelines or synchronized war planning remain interpretations, not confirmed facts.</p></div></div>
+        <div class="chapter"><div class="time">18:00</div><div><span class="tag">Endgame</span><h3>No perfect solution</h3><p>The conclusion: nuclear brinkmanship, economic warfare, fractured alliances, and uncertainty may be the new operating environment.</p></div></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Key quotes / claims</h2>
+      <div class="tabs sans"><button class="tab active" data-panel="p1">Nuclear claim</button><button class="tab" data-panel="p2">U.S. dilemma</button><button class="tab" data-panel="p3">Market channel</button></div>
+      <div id="p1" class="panel active"><p class="quote">“Satellite imagery and top secret intelligence sources had just confirmed that Iran is currently in possession of no fewer than three to five fully assembled nuclear warheads.”<small>~0:50–1:05 — transcript claim, not independently verified here</small></p></div>
+      <div id="p2" class="panel"><p class="quote">“Strike or don’t strike. If Washington chooses not to act, then they effectively accept Iran as a nuclear power.”<small>~4:40 — the central policy dilemma</small></p></div>
+      <div id="p3" class="panel"><p class="quote">“Oil prices, bond yields, inflation expectations, stock indexes, and currency stability now influence political calculations at the highest level.”<small>~14:50 — economic-war framing</small></p></div>
+    </div>
+  </section>
+
+  <section class="grid split section">
+    <div class="card"><h2>What to watch next</h2><div class="takeaways sans"><div class="take"><b>1. Any credible confirmation/denial</b><span>Look for official IAEA, U.S., Israeli, or allied intelligence statements. This determines whether the video’s premise is scenario or reality.</span></div><div class="take"><b>2. U.S. force posture</b><span>Carrier movements, base alerts, evacuation notices, and congressional briefings would matter more than rhetoric.</span></div><div class="take"><b>3. Strait of Hormuz indicators</b><span>Oil, tanker rates, insurance costs, and naval incidents are the market early-warning system.</span></div></div></div>
+    <div class="card"><h2>My read</h2><div class="warning" style="border-left-color:var(--gold);background:rgba(245,200,106,.08);color:#fff1cf">The useful part is the framework: nuclear deterrence changes strike calculus; Hormuz connects geopolitics to inflation and markets; China can gain leverage through diplomacy. The weak part is the opening factual premise, which needs outside confirmation before being treated as actionable.</div></div>
+  </section>
+
+  <p class="footer">Source video: <a style="color:#f5c86a" href="https://www.youtube.com/watch?v=ZbyipBwQSPg">IRAN Has NUCLEAR WEAPONS — America Cannot Strike, ISRAEL Faces ANNIHILATION | Prof Jiang Xueqin</a>. Transcript fetched locally on 2026-05-10. Summary generated for Telegram Mini App viewing.</p>
+</main>
+<script>
+const tg=window.Telegram&&window.Telegram.WebApp?window.Telegram.WebApp:null;if(tg){tg.ready();tg.expand();document.body.dataset.telegram='true'}
+document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));btn.classList.add('active');document.getElementById(btn.dataset.panel).classList.add('active')}));
+Chart.defaults.color='#dccdb8';Chart.defaults.borderColor='rgba(255,232,191,.13)';
+new Chart(document.getElementById('riskChart'),{type:'radar',data:{labels:['Military escalation','Nuclear deterrence','Israel vulnerability','Hormuz/oil shock','Market instability','China/Russia leverage'],datasets:[{label:'Video emphasis',data:[86,94,90,82,76,72],borderColor:'#f5c86a',backgroundColor:'rgba(245,200,106,.20)',pointBackgroundColor:'#f5c86a'},{label:'Verification caution',data:[58,92,70,48,45,52],borderColor:'#ff615c',backgroundColor:'rgba(255,97,92,.10)',pointBackgroundColor:'#ff615c'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{boxWidth:12,usePointStyle:true}},tooltip:{callbacks:{label:ctx=>ctx.dataset.label+': '+ctx.raw+'/100'}}},scales:{r:{min:0,max:100,ticks:{display:false},grid:{color:'rgba(255,232,191,.14)'},angleLines:{color:'rgba(255,232,191,.14)'},pointLabels:{color:'#f4e6d0',font:{size:12,weight:'700'}}}}});
+</script>
+</body>
+</html>
