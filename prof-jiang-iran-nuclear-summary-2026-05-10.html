@@ -85,7 +85,8 @@
   <p class="footer">Source video: <a style="color:#f5c86a" href="https://www.youtube.com/watch?v=ZbyipBwQSPg">IRAN Has NUCLEAR WEAPONS — America Cannot Strike, ISRAEL Faces ANNIHILATION | Prof Jiang Xueqin</a>. Transcript fetched locally on 2026-05-10. Summary generated for Telegram Mini App viewing.</p>
 </main>
 <script>
-const tg=window.Telegram&&window.Telegram.WebApp?window.Telegram.WebApp:null;
+let tg=null;
+try{tg=window.Telegram&&window.Telegram.WebApp?window.Telegram.WebApp:null}catch(e){tg=null;console.warn('Telegram bridge detection failed in browser preview',e)}
 if(tg){try{tg.ready();tg.expand();document.body.dataset.telegram='true'}catch(e){console.warn('Telegram bridge unavailable in browser preview',e)}}
 document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));btn.classList.add('active');document.getElementById(btn.dataset.panel).classList.add('active')}));
 Chart.defaults.color='#dccdb8';Chart.defaults.borderColor='rgba(255,232,191,.13)';
