@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NET Q1 2026 Earnings — NotebookLM Brief</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+:root{color-scheme:dark;--bg:#07101f;--panel:#0f1b2d;--panel2:#13243a;--ink:#eef6ff;--muted:#9fb3c8;--line:rgba(255,255,255,.12);--blue:#4fb3ff;--green:#51d88a;--amber:#f6b84b;--red:#ff6b7a;--violet:#a78bfa;--shadow:0 24px 80px rgba(0,0,0,.35)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,system-ui,sans-serif;background:radial-gradient(circle at top left,rgba(79,179,255,.22),transparent 34rem),radial-gradient(circle at 90% 12%,rgba(167,139,250,.18),transparent 30rem),linear-gradient(180deg,#07101f,#08111e 48%,#050914);color:var(--ink);padding:calc(18px + env(safe-area-inset-top)) 14px calc(22px + env(safe-area-inset-bottom));}
+main{max-width:1080px;margin:0 auto}.hero{display:grid;gap:16px;padding:20px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(135deg,rgba(15,27,45,.94),rgba(19,36,58,.72));box-shadow:var(--shadow);position:relative;overflow:hidden}.hero:after{content:"";position:absolute;right:-70px;top:-70px;width:210px;height:210px;border-radius:50%;border:1px solid rgba(79,179,255,.22)}
+.kicker{display:flex;align-items:center;gap:8px;color:#b8d8ff;font-size:12px;font-weight:750;letter-spacing:.14em;text-transform:uppercase}.dot{width:9px;height:9px;border-radius:50%;background:var(--blue);box-shadow:0 0 20px var(--blue)}h1{margin:0;font-size:clamp(30px,8vw,64px);line-height:.94;letter-spacing:-.06em;text-wrap:balance}.sub{margin:0;color:var(--muted);font-size:15px;line-height:1.55;max-width:760px}.verdict{display:grid;grid-template-columns:1fr;gap:10px;margin-top:2px}.verdict-card{border:1px solid rgba(255,255,255,.14);border-radius:20px;background:rgba(255,255,255,.045);padding:14px}.verdict-card b{display:block;font-size:13px;color:#dbeafe;margin-bottom:4px}.verdict-card span{color:var(--muted);font-size:13px;line-height:1.45}
+.nav{position:sticky;top:0;z-index:10;margin:14px -2px 18px;padding:8px 2px;display:flex;gap:8px;overflow:auto;background:linear-gradient(180deg,rgba(7,16,31,.96),rgba(7,16,31,.72));backdrop-filter:blur(14px)}.nav a{white-space:nowrap;color:#dbeafe;text-decoration:none;font-size:13px;font-weight:700;border:1px solid var(--line);background:rgba(255,255,255,.055);padding:10px 13px;border-radius:999px;min-height:40px;display:inline-flex;align-items:center}.grid{display:grid;gap:14px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.metric{border:1px solid var(--line);background:rgba(15,27,45,.82);border-radius:22px;padding:15px;min-height:112px}.label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:800}.value{font-size:28px;font-weight:850;letter-spacing:-.04em;margin-top:8px}.delta{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.35}.good{color:var(--green)}.bad{color:var(--red)}.warn{color:var(--amber)}
+section{margin:18px 0}.section-title{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:0 4px 10px}h2{font-size:22px;margin:0;letter-spacing:-.03em}.small{font-size:12px;color:var(--muted)}.card{border:1px solid var(--line);background:rgba(15,27,45,.82);border-radius:24px;padding:16px;box-shadow:0 14px 45px rgba(0,0,0,.18)}.chart-card{min-height:320px}.chart-wrap{height:260px;position:relative}.tabs{display:flex;gap:8px;margin-bottom:12px;overflow:auto}.tab{border:1px solid var(--line);background:rgba(255,255,255,.045);color:#dbeafe;padding:9px 12px;border-radius:999px;font-weight:800;font-size:12px;cursor:pointer}.tab.active{background:rgba(79,179,255,.18);border-color:rgba(79,179,255,.5);color:white}.panel{display:none}.panel.active{display:block}.bullets{display:grid;gap:10px}.bullet{display:flex;gap:10px;align-items:flex-start;color:#d8e7f5;line-height:1.45;font-size:14px}.bullet:before{content:"";flex:0 0 7px;width:7px;height:7px;border-radius:50%;background:var(--blue);margin-top:.55em}.bear .bullet:before{background:var(--red)}.neutral .bullet:before{background:var(--amber)}
+.quote{border-left:3px solid var(--blue);padding:10px 0 10px 14px;color:#dbeafe;font-size:15px;line-height:1.55}.quote small{display:block;color:var(--muted);margin-top:8px}.signal{display:grid;gap:12px}.signal-item{border:1px solid var(--line);border-radius:18px;padding:14px;background:rgba(255,255,255,.035)}.signal-item h3{margin:0 0 6px;font-size:16px}.signal-item p{margin:0;color:var(--muted);line-height:1.45;font-size:13px}.ranges{grid-template-columns:1fr}.range{position:relative;padding:16px;border-radius:20px;background:rgba(255,255,255,.04);border:1px solid var(--line)}.range h3{margin:0 0 8px}.bar{height:12px;border-radius:999px;background:linear-gradient(90deg,var(--red),var(--amber),var(--green));opacity:.9}.range-row{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-top:8px}.pill{display:inline-flex;align-items:center;border-radius:999px;border:1px solid var(--line);padding:5px 9px;font-size:12px;color:#dbeafe;background:rgba(255,255,255,.045)}.footer{color:var(--muted);font-size:12px;line-height:1.45;margin:24px 4px 4px}.two{grid-template-columns:1fr}.source{font-size:12px;color:var(--muted);line-height:1.45}
+@media(min-width:760px){body{padding-left:24px;padding-right:24px}.hero{padding:32px}.verdict{grid-template-columns:repeat(3,1fr)}.metrics{grid-template-columns:repeat(4,1fr)}.two{grid-template-columns:1.08fr .92fr}.ranges{grid-template-columns:1fr 1fr}.signal{grid-template-columns:repeat(2,1fr)}}
+@media(prefers-reduced-motion:no-preference){.metric,.card,.signal-item{transition:transform .2s ease,border-color .2s ease}.metric:hover,.card:hover,.signal-item:hover{transform:translateY(-2px);border-color:rgba(79,179,255,.35)}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div class="kicker"><span class="dot"></span> NotebookLM Earnings Agent · NET Q1 2026</div>
+    <h1>Strong growth, radical AI pivot, ugly margin optics.</h1>
+    <p class="sub">Cloudflare’s latest official earnings documents show 34% revenue growth and strong enterprise demand. The call adds the real controversy: a 20% workforce reduction tied to an “agentic AI-first” operating model, while developer/AI products pressure gross margin.</p>
+    <div class="verdict">
+      <div class="verdict-card"><b>Fundamental read</b><span>Long-term constructive: AI traffic + Workers + security platform remain powerful.</span></div>
+      <div class="verdict-card"><b>Near-term setup</b><span>Cautious: the market repriced execution risk, margin mix, and restructuring disruption.</span></div>
+      <div class="verdict-card"><b>Watch level</b><span>Reclaiming $210–$220 would be the first sign of repair; failure keeps the chart damaged.</span></div>
+    </div>
+  </header>
+  <nav class="nav" aria-label="Sections"><a href="#metrics">Metrics</a><a href="#charts">Charts</a><a href="#signals">Signals</a><a href="#call">Call Q&A</a><a href="#technical">Technical</a><a href="#ranges">Ranges</a></nav>
+  <section id="metrics">
+    <div class="section-title"><h2>Official-document snapshot</h2><span class="small">SEC 8-K / 10-Q / Cloudflare release</span></div>
+    <div class="grid metrics">
+      <div class="metric"><div class="label">Revenue</div><div class="value">$639.8M</div><div class="delta good">+34% YoY</div></div>
+      <div class="metric"><div class="label">Large customers</div><div class="value">4,416</div><div class="delta good">+25% YoY over $100K ARR</div></div>
+      <div class="metric"><div class="label">RPO</div><div class="value">$2.54B</div><div class="delta good">Current RPO +34% YoY</div></div>
+      <div class="metric"><div class="label">FCF</div><div class="value">$84.1M</div><div class="delta good">13% FCF margin</div></div>
+      <div class="metric"><div class="label">Non-GAAP GM</div><div class="value bad">72.8%</div><div class="delta bad">Down from 77.1% YoY</div></div>
+      <div class="metric"><div class="label">Op margin</div><div class="value">11.4%</div><div class="delta warn">Slightly down YoY</div></div>
+      <div class="metric"><div class="label">Cash + securities</div><div class="value">$4.16B</div><div class="delta">Strong balance sheet cushion</div></div>
+      <div class="metric"><div class="label">Restructuring</div><div class="value bad">20%</div><div class="delta bad">~1,100 employees; $140–150M charges</div></div>
+    </div>
+  </section>
+  <section id="charts" class="grid two">
+    <div class="card chart-card"><div class="section-title"><h2>Growth vs margin pressure</h2><span class="small">Q1 2025 → Q1 2026</span></div><div class="chart-wrap"><canvas id="fundChart"></canvas></div></div>
+    <div class="card chart-card"><div class="section-title"><h2>Post-earnings repricing</h2><span class="small">Recent close series</span></div><div class="chart-wrap"><canvas id="priceChart"></canvas></div></div>
+  </section>
+  <section id="signals">
+    <div class="section-title"><h2>Unusual management signals</h2><span class="small">What matters beyond headline EPS</span></div>
+    <div class="signal">
+      <div class="signal-item"><h3>1. “Agentic AI-first” is not normal restructuring language</h3><p>Cloudflare is explicitly framing the 20% workforce reduction as a company-architecture shift, not ordinary cost cutting. That is either a major productivity unlock or a disruption risk.</p></div>
+      <div class="signal-item"><h3>2. AI is both product and internal operating system</h3><p>Management says AI/agents are core to the workforce; call transcript says 97% of engineers use AI coding tools and 100% of production code contributions are reviewed by autonomous agents.</p></div>
+      <div class="signal-item"><h3>3. Developer / AI products are pressuring gross margin</h3><p>The CFO acknowledged developer products are currently weaker on gross margin. Management wants investors to focus more on operating margin over time.</p></div>
+      <div class="signal-item"><h3>4. AI traffic monetization is a potential new lane</h3><p>Cloudflare highlighted AI pay-per-crawl discussions, AI Gateway, Dynamic Workers, and the idea that agents generate far more requests than humans.</p></div>
+    </div>
+  </section>
+  <section id="call" class="card">
+    <div class="section-title"><h2>Call evidence map</h2><span class="small">Transcript source is third-party; official numbers from filings</span></div>
+    <div class="tabs" role="tablist"><button class="tab active" data-tab="bull">Bullish</button><button class="tab" data-tab="bear">Risks</button><button class="tab" data-tab="neutral">Neutral</button></div>
+    <div id="bull" class="panel active"><div class="bullets"><div class="bullet">$1M+ deals reportedly grew 73% YoY, fastest growth since 2024.</div><div class="bullet">Workers developer platform reportedly added 1M developers in one quarter, reaching ~5.5M.</div><div class="bullet">Partner channel rose to ~30% of revenue, supporting larger consultative Act Two deals.</div><div class="bullet">Management claims GPU utilization approaching 70–80%, far above hyperscaler “single digit” levels.</div></div></div>
+    <div id="bear" class="panel bear"><div class="bullets"><div class="bullet">Gross margin compression is visible and material.</div><div class="bullet">20% workforce reduction creates execution, morale, and customer-support risk.</div><div class="bullet">10-Q still flags lengthened sales cycles, churn risk, and payment timing issues.</div><div class="bullet">Analysts directly challenged RIF timing, AI compute costs, and gross-margin degradation.</div></div></div>
+    <div id="neutral" class="panel neutral"><div class="bullets"><div class="bullet">Network CapEx was 9% of revenue in Q1, but full-year guide remains 14–15%, implying heavier spend later.</div><div class="bullet">Pool-of-funds contracting is sticky, but changes how commitments and product expansion are interpreted.</div><div class="bullet">Quota-carrying sales capacity was largely protected, suggesting the cuts were not aimed at demand-generation capacity.</div></div></div>
+  </section>
+  <section class="card">
+    <div class="section-title"><h2>Key quotes</h2><span class="small">NotebookLM extracted</span></div>
+    <div class="quote">“AI is driving a fundamental re-platforming of the Internet… shaping up to be the biggest tailwind we’ve ever seen in Cloudflare’s history.”<small>Matthew Prince — official press release</small></div>
+    <div class="quote">“This is not a cost-cutting exercise… It is about defining how a world-class, high-growth company operates and creates value in the agentic AI era.”<small>Matthew Prince — third-party call transcript</small></div>
+  </section>
+  <section id="technical" class="grid two">
+    <div class="card"><div class="section-title"><h2>Mytutopia technical context</h2><span class="pill">High volatility</span></div><div class="grid metrics"><div class="metric"><div class="label">Close</div><div class="value">$196.13</div><div class="delta bad">−23.62% vs prior close</div></div><div class="metric"><div class="label">RSI</div><div class="value">44.1</div><div class="delta bad">Δ1 −28.4 crash bar</div></div><div class="metric"><div class="label">VEL5</div><div class="value bad">−13.9</div><div class="delta bad">From +21.2 prior bar</div></div><div class="metric"><div class="label">Volatility</div><div class="value">55.21%</div><div class="delta">Wide ranges required</div></div></div></div>
+    <div class="card"><div class="section-title"><h2>Interpretation</h2><span class="small">Not investment advice</span></div><div class="bullets bear"><div class="bullet">This is a momentum-crash event, not a normal earnings pullback.</div><div class="bullet">A bounce is possible after a −24% reaction, but first bounce should be treated as repair risk, not trend resumption.</div><div class="bullet">Technical repair begins only if price reclaims $210–$220 with improving VEL5.</div></div></div>
+  </section>
+  <section id="ranges">
+    <div class="section-title"><h2>Trading ranges to watch</h2><span class="small">From latest close $196.13</span></div>
+    <div class="grid ranges">
+      <div class="range"><h3>Today / next session: $185–$210</h3><div class="bar"></div><div class="range-row"><span>−5.7%</span><span>Bias: volatile / neutral-to-down</span><span>+7.1%</span></div></div>
+      <div class="range"><h3>30-day: $175–$230</h3><div class="bar"></div><div class="range-row"><span>−10.8%</span><span>Bias: wide neutral</span><span>+17.3%</span></div></div>
+    </div>
+  </section>
+  <section class="card"><div class="section-title"><h2>Decision summary</h2><span class="small">My read</span></div><p class="source"><b>Long-term:</b> constructive if Cloudflare really owns the agentic traffic / AI infrastructure layer. <b>Near-term:</b> cautious until the market sees margin stabilization, evidence from the AI operating-model transition, and price repair above $210–$220.</p></section>
+  <p class="footer">Generated from NotebookLM analysis of Cloudflare Q1 2026 official docs plus a third-party earnings call transcript. Official financials should be anchored to SEC filings and Cloudflare’s release; call transcript quotes are marked separately.</p>
+</main>
+<script>
+let tg = null;
+try { tg = window.Telegram && window.Telegram.WebApp ? window.Telegram.WebApp : null; } catch (e) { tg = null; console.warn('Telegram bridge detection failed in browser preview', e); }
+if (tg) { try { tg.ready(); tg.expand(); document.body.dataset.telegram = 'true'; } catch (e) { console.warn('Telegram bridge unavailable in browser preview', e); } }
+const tabButtons = Array.from(document.querySelectorAll('.tab'));
+tabButtons.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    tabButtons.forEach((b) => b.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach((p) => p.classList.remove('active'));
+    btn.classList.add('active');
+    const panel = document.getElementById(btn.dataset.tab);
+    if (panel) panel.classList.add('active');
+  });
+});
+function cssVar(name){ return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
+function makeCharts(){
+  if (!window.Chart) return;
+  Chart.defaults.color = '#9fb3c8';
+  Chart.defaults.borderColor = 'rgba(255,255,255,.10)';
+  new Chart(document.getElementById('fundChart'), {
+    type: 'bar',
+    data: { labels: ['Revenue', 'Non-GAAP GM', 'FCF margin', 'Op margin'], datasets: [{ label: 'Q1 2026', data: [34, 72.8, 13, 11.4], backgroundColor: [cssVar('--green'), cssVar('--red'), cssVar('--blue'), cssVar('--amber')], borderRadius: 10 }] },
+    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => ctx.label === 'Revenue' ? '+34% YoY' : ctx.raw + '%' } } }, scales: { y: { beginAtZero: true, ticks: { callback: (v) => v + '%' } }, x: { grid: { display: false } } } }
+  });
+  new Chart(document.getElementById('priceChart'), {
+    type: 'line',
+    data: { labels: ['May 4','May 5','May 6','May 7','May 8'], datasets: [{ label: 'Close', data: [224.17,244.43,248.59,256.79,196.13], borderColor: cssVar('--blue'), backgroundColor: 'rgba(79,179,255,.16)', fill: true, tension: .32, pointRadius: 4, pointHoverRadius: 6 }] },
+    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { label: (ctx) => '$' + ctx.raw.toFixed(2) } } }, scales: { y: { ticks: { callback: (v) => '$' + v } }, x: { grid: { display: false } } } }
+  });
+}
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', makeCharts); else makeCharts();
+</script>
+</body>
+</html>
