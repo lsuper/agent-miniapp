@@ -1,0 +1,7 @@
+.DS_Store
+.wrangler/
+dist-pages/
+dist-router/
+__pycache__/
+*.pyc
+.dev.vars*
