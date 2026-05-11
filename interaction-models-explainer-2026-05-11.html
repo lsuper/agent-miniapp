@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Interaction Models Explainer — Thinking Machines</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #080a0f;
+    --panel: #10141d;
+    --panel-2: #151c27;
+    --ink: #f5f1e8;
+    --muted: #a9afa9;
+    --line: rgba(245, 241, 232, .14);
+    --gold: #ffcf70;
+    --blue: #8bc7ff;
+    --green: #8ff0ba;
+    --pink: #ff98b9;
+    --red: #ff756f;
+    --shadow: 0 24px 80px rgba(0,0,0,.45);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "SF Pro Text", Inter, system-ui, sans-serif;
+    background:
+      radial-gradient(circle at 12% 8%, rgba(139,199,255,.18), transparent 28rem),
+      radial-gradient(circle at 88% 12%, rgba(255,207,112,.15), transparent 24rem),
+      linear-gradient(180deg, #0b0e14 0%, var(--bg) 50%, #050609 100%);
+    color: var(--ink);
+    padding: max(18px, env(safe-area-inset-top)) 14px max(28px, env(safe-area-inset-bottom));
+  }
+  main { max-width: 1100px; margin: 0 auto; }
+  a { color: inherit; }
+  .topbar { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:16px; }
+  .brand { display:flex; align-items:center; gap:10px; color:var(--muted); font-size:12px; letter-spacing:.12em; text-transform:uppercase; }
+  .dot { width:10px; height:10px; border-radius:50%; background:var(--gold); box-shadow: 0 0 20px var(--gold); }
+  .source { min-height: 40px; display:inline-flex; align-items:center; justify-content:center; border:1px solid var(--line); border-radius:999px; padding:0 14px; text-decoration:none; color:var(--ink); background:rgba(255,255,255,.04); font-size:13px; }
+  .hero { border:1px solid var(--line); border-radius:30px; background:linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.025)); box-shadow:var(--shadow); padding:26px; overflow:hidden; position:relative; }
+  .hero:after { content:""; position:absolute; right:-80px; top:-120px; width:320px; height:320px; border-radius:50%; border:1px solid rgba(255,207,112,.24); opacity:.8; }
+  .eyebrow { color:var(--gold); font-weight:700; font-size:13px; letter-spacing:.08em; text-transform:uppercase; margin-bottom:10px; }
+  h1 { font-size: clamp(34px, 7vw, 78px); line-height:.92; letter-spacing:-.07em; margin:0 0 18px; max-width:900px; }
+  .dek { color:#d9d6cc; font-size: clamp(17px, 2.5vw, 23px); line-height:1.42; max-width:850px; margin:0; }
+  .tweet { margin-top:22px; display:grid; grid-template-columns: 1fr; gap:12px; border-top:1px solid var(--line); padding-top:18px; color:var(--muted); }
+  .tweet b { color:var(--ink); }
+  .statrow { display:grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap:10px; margin-top:18px; }
+  .stat { background:rgba(0,0,0,.28); border:1px solid var(--line); border-radius:18px; padding:14px; }
+  .stat .n { font-size:24px; font-weight:800; letter-spacing:-.04em; }
+  .stat .l { color:var(--muted); font-size:12px; margin-top:2px; }
+  .section-title { margin:30px 4px 12px; display:flex; align-items:end; justify-content:space-between; gap:12px; }
+  h2 { margin:0; font-size:24px; letter-spacing:-.04em; }
+  .hint { color:var(--muted); font-size:13px; }
+  .cards { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:12px; }
+  .card { background:linear-gradient(180deg, var(--panel), rgba(16,20,29,.72)); border:1px solid var(--line); border-radius:22px; padding:18px; min-height:160px; }
+  .card h3 { margin:0 0 8px; font-size:18px; letter-spacing:-.03em; }
+  .card p { margin:0; color:var(--muted); line-height:1.45; font-size:14px; }
+  .tag { display:inline-flex; min-height:26px; align-items:center; border-radius:999px; padding:0 10px; background:rgba(255,207,112,.12); color:var(--gold); font-size:12px; font-weight:700; margin-bottom:12px; }
+  .compare { display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
+  .lane { border:1px solid var(--line); border-radius:26px; padding:18px; background:var(--panel); overflow:hidden; }
+  .lane h3 { margin:0 0 14px; font-size:20px; }
+  .flow { display:grid; gap:10px; }
+  .step { display:flex; gap:10px; align-items:flex-start; padding:12px; border-radius:16px; background:rgba(255,255,255,.045); color:#dcd8cf; }
+  .step .icon { width:28px; height:28px; border-radius:50%; display:grid; place-items:center; flex:0 0 28px; font-weight:900; color:#0b0e14; }
+  .turn .icon { background:var(--red); }
+  .inter .icon { background:var(--green); }
+  .micro { margin-top:12px; height:18px; border-radius:999px; background:repeating-linear-gradient(90deg, rgba(143,240,186,.9) 0 18px, rgba(139,199,255,.75) 18px 36px, rgba(255,207,112,.8) 36px 54px); position:relative; overflow:hidden; }
+  .micro:after { content:"200ms micro-turns"; position:absolute; inset:0; display:grid; place-items:center; color:#07100b; font-size:11px; font-weight:900; letter-spacing:.08em; text-transform:uppercase; }
+  .tabs { display:flex; gap:8px; overflow:auto; padding-bottom:8px; }
+  .tab { min-height:44px; border:1px solid var(--line); color:var(--muted); background:rgba(255,255,255,.04); border-radius:999px; padding:0 14px; font-weight:700; cursor:pointer; white-space:nowrap; }
+  .tab.active { background:var(--ink); color:#080a0f; border-color:transparent; }
+  .panel { display:none; border:1px solid var(--line); border-radius:26px; background:var(--panel); padding:18px; }
+  .panel.active { display:block; }
+  .cap-grid { display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:12px; }
+  .cap { border-radius:18px; background:rgba(255,255,255,.045); padding:14px; border:1px solid rgba(255,255,255,.08); }
+  .cap strong { display:block; margin-bottom:6px; }
+  .cap span { color:var(--muted); font-size:14px; line-height:1.4; }
+  .bars { display:grid; gap:12px; }
+  .bar { display:grid; grid-template-columns: 150px 1fr auto; gap:10px; align-items:center; font-size:13px; }
+  .barlabel { color:#ddd8cf; }
+  .track { height:16px; border-radius:999px; background:rgba(255,255,255,.07); overflow:hidden; }
+  .fill { height:100%; border-radius:999px; background:linear-gradient(90deg,var(--blue),var(--green)); width:var(--w); }
+  .score { color:var(--muted); font-variant-numeric:tabular-nums; }
+  .arch { display:grid; grid-template-columns: 1fr auto 1fr; align-items:center; gap:10px; margin-top:8px; }
+  .node { border-radius:22px; padding:16px; background:rgba(255,255,255,.055); border:1px solid var(--line); min-height:130px; }
+  .node h3 { margin:0 0 8px; }
+  .node p { margin:0; color:var(--muted); line-height:1.45; font-size:14px; }
+  .arrow { color:var(--gold); font-size:28px; }
+  .takeaway { background:linear-gradient(135deg, rgba(255,207,112,.15), rgba(139,199,255,.09)); border:1px solid rgba(255,207,112,.25); border-radius:26px; padding:20px; margin-top:12px; }
+  .takeaway h2 { margin-bottom:8px; }
+  .takeaway p { margin:0; color:#e5dfd2; line-height:1.55; }
+  .small { color:var(--muted); font-size:12px; line-height:1.4; margin-top:12px; }
+  footer { color:var(--muted); font-size:12px; text-align:center; margin:28px 0 4px; }
+  @media (max-width: 760px) {
+    .hero { padding:20px; border-radius:24px; }
+    .statrow, .cards, .compare, .cap-grid, .arch { grid-template-columns:1fr; }
+    .arrow { transform:rotate(90deg); text-align:center; }
+    .bar { grid-template-columns: 1fr; gap:6px; }
+    h1 { font-size: 42px; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .card, .lane, .panel, .takeaway { animation: rise .55s ease both; }
+    @keyframes rise { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:none; } }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="topbar">
+    <div class="brand"><span class="dot"></span> Explainer mini app</div>
+    <a class="source" href="https://thinkingmachines.ai/blog/interaction-models/" target="_blank" rel="noreferrer">Read source</a>
+  </div>
+
+  <section class="hero">
+    <div class="eyebrow">Thinking Machines Lab · May 11, 2026</div>
+    <h1>“Interaction models” in plain English</h1>
+    <p class="dek">The post argues that the next big interface shift is not just smarter autonomous agents. It is AI that can stay present with you: listening, watching, speaking, thinking, using tools, and adapting at the same time.</p>
+    <div class="tweet">
+      <div><b>The tweet:</b> “People talk, listen, watch, think, and collaborate at the same time, in real time. We’ve designed an AI that works with people the same way.”</div>
+      <div class="small">Source: @thinkymachines post linking to “Interaction Models: A Scalable Approach to Human-AI Collaboration.”</div>
+    </div>
+    <div class="statrow" aria-label="Key numbers">
+      <div class="stat"><div class="n">200ms</div><div class="l">micro-turn chunk size</div></div>
+      <div class="stat"><div class="n">276B</div><div class="l">MoE parameters</div></div>
+      <div class="stat"><div class="n">12B</div><div class="l">active parameters</div></div>
+      <div class="stat"><div class="n">0.40s</div><div class="l">reported turn latency</div></div>
+    </div>
+  </section>
+
+  <div class="section-title"><h2>The bottleneck they’re attacking</h2><span class="hint">Turn-taking vs. real collaboration</span></div>
+  <section class="compare">
+    <div class="lane turn">
+      <h3>Most chat/voice AI today</h3>
+      <div class="flow">
+        <div class="step"><span class="icon">1</span><span>User finishes a turn before the model really processes the full request.</span></div>
+        <div class="step"><span class="icon">2</span><span>Model generates while perception is effectively frozen.</span></div>
+        <div class="step"><span class="icon">3</span><span>Interruptions, visual cues, timing, and tool work are handled by external “harness” glue.</span></div>
+      </div>
+    </div>
+    <div class="lane inter">
+      <h3>Interaction-model idea</h3>
+      <div class="flow">
+        <div class="step"><span class="icon">1</span><span>Audio, video, and text stream in continuously.</span></div>
+        <div class="step"><span class="icon">2</span><span>The model can produce output while still listening or watching.</span></div>
+        <div class="step"><span class="icon">3</span><span>Timing, interjections, silence, and tool updates become model behavior, not UI plumbing.</span></div>
+      </div>
+      <div class="micro"></div>
+    </div>
+  </section>
+
+  <div class="section-title"><h2>What becomes possible</h2><span class="hint">Tap a topic</span></div>
+  <div class="tabs" role="tablist" aria-label="Explainer tabs">
+    <button class="tab active" data-tab="capabilities">Capabilities</button>
+    <button class="tab" data-tab="architecture">Architecture</button>
+    <button class="tab" data-tab="benchmarks">Benchmarks</button>
+    <button class="tab" data-tab="limits">Limits</button>
+  </div>
+
+  <section id="capabilities" class="panel active">
+    <div class="cap-grid">
+      <div class="cap"><strong>Seamless dialog management</strong><span>The model infers whether you are thinking, yielding, self-correcting, or inviting a response — without a separate turn detector.</span></div>
+      <div class="cap"><strong>Verbal + visual interjections</strong><span>It can jump in when context demands: “you just wrote a bug,” “that rep counted,” or “that pronunciation was off.”</span></div>
+      <div class="cap"><strong>Simultaneous speech</strong><span>User and model can overlap, which matters for live translation, coaching, and backchanneling.</span></div>
+      <div class="cap"><strong>Time-awareness</strong><span>The model has a direct sense of elapsed time, enabling reminders, pacing, and timed coaching.</span></div>
+      <div class="cap"><strong>Concurrent tool work</strong><span>It can browse, search, or generate UI while continuing the conversation.</span></div>
+      <div class="cap"><strong>Continuous collaboration</strong><span>The experience aims to feel less like prompting and more like working side-by-side.</span></div>
+    </div>
+  </section>
+
+  <section id="architecture" class="panel">
+    <div class="arch">
+      <div class="node"><h3>Interaction model</h3><p>Always present. Handles live audio/video/text, 200ms micro-turns, timing, interruptions, and immediate responses.</p></div>
+      <div class="arrow">⇄</div>
+      <div class="node"><h3>Background model</h3><p>Runs asynchronously for deeper reasoning, tool use, search, and longer-horizon work. Streams results back when useful.</p></div>
+    </div>
+    <div class="cards" style="margin-top:12px">
+      <div class="card"><span class="tag">Early fusion</span><h3>Less encoder scaffolding</h3><p>Audio and image inputs are fed with minimal preprocessing and co-trained with the transformer rather than bolted on as separate systems.</p></div>
+      <div class="card"><span class="tag">Streaming sessions</span><h3>Persistent GPU sequence</h3><p>Each 200ms request appends to an existing sequence, avoiding repeated memory allocation and metadata overhead.</p></div>
+      <div class="card"><span class="tag">Alignment</span><h3>Speech-native safety</h3><p>They trained colloquial but firm refusals and red-teamed extended speech-to-speech sessions.</p></div>
+    </div>
+  </section>
+
+  <section id="benchmarks" class="panel">
+    <p class="small" style="margin-top:0">Selected reported scores for TML-Interaction-Small. Bars are normalized within their natural scale; lower is better only for latency.</p>
+    <div class="bars">
+      <div class="bar"><div class="barlabel">FD-bench V1.5 avg</div><div class="track"><div class="fill" style="--w:77.8%"></div></div><div class="score">77.8</div></div>
+      <div class="bar"><div class="barlabel">FD-bench V3 quality</div><div class="track"><div class="fill" style="--w:82.8%"></div></div><div class="score">82.8%</div></div>
+      <div class="bar"><div class="barlabel">Audio MultiChallenge</div><div class="track"><div class="fill" style="--w:43.4%"></div></div><div class="score">43.4 APR</div></div>
+      <div class="bar"><div class="barlabel">IFEval voice</div><div class="track"><div class="fill" style="--w:82.1%"></div></div><div class="score">82.1%</div></div>
+      <div class="bar"><div class="barlabel">Harmbench refusal</div><div class="track"><div class="fill" style="--w:99%"></div></div><div class="score">99.0%</div></div>
+      <div class="bar"><div class="barlabel">Turn latency</div><div class="track"><div class="fill" style="--w:84%"></div></div><div class="score">0.40s</div></div>
+    </div>
+  </section>
+
+  <section id="limits" class="panel">
+    <div class="cap-grid">
+      <div class="cap"><strong>Very long sessions</strong><span>Continuous streams accumulate context quickly; long-session memory and compression remain hard.</span></div>
+      <div class="cap"><strong>Compute + connectivity</strong><span>Low-latency audio/video needs reliable networks and optimized serving.</span></div>
+      <div class="cap"><strong>Safety in real time</strong><span>Live multimodal interaction changes refusal style, interruption policy, and long-horizon robustness.</span></div>
+      <div class="cap"><strong>Scaling</strong><span>The preview model is “small” by their roadmap; larger pretrained models are currently too slow for this setting.</span></div>
+    </div>
+  </section>
+
+  <div class="section-title"><h2>Why it matters</h2><span class="hint">My read</span></div>
+  <section class="takeaway">
+    <h2>The bet: interactivity should scale with intelligence.</h2>
+    <p>If interaction is just a wrapper, smarter base models do not automatically become better collaborators. Thinking Machines is trying to make collaboration itself part of the model’s training and serving loop. That would make “AI teammate” less about a long-running agent you send away, and more about a live partner you can interrupt, show things to, talk over, and steer moment by moment.</p>
+    <div class="small">Caveat: the post is a research preview, not a general product launch. The most interesting claims are qualitative capabilities that existing benchmarks do not fully capture yet.</div>
+  </section>
+
+  <footer>Built as a Telegram Mini App · Public source summary, no private data.</footer>
+</main>
+<script>
+let tg = null;
+try {
+  tg = window.Telegram && window.Telegram.WebApp ? window.Telegram.WebApp : null;
+} catch (e) {
+  tg = null;
+  console.warn('Telegram bridge detection failed in browser preview', e);
+}
+if (tg) {
+  try {
+    tg.ready();
+    tg.expand();
+    document.body.dataset.telegram = 'true';
+  } catch (e) {
+    console.warn('Telegram bridge unavailable in browser preview', e);
+  }
+}
+
+const tabs = Array.from(document.querySelectorAll('.tab'));
+const panels = Array.from(document.querySelectorAll('.panel'));
+tabs.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.dataset.tab;
+    tabs.forEach(t => t.classList.toggle('active', t === btn));
+    panels.forEach(p => p.classList.toggle('active', p.id === target));
+  });
+});
+</script>
+</body>
+</html>
