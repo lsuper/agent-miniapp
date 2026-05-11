@@ -1,0 +1,10 @@
+name = "agent-miniapp-router"
+main = "worker/src/index.js"
+compatibility_date = "2026-05-10"
+
+# Set these after Cloudflare Tunnel and backup origin are known:
+# wrangler secret put LOCAL_ORIGIN   # e.g. https://agent-miniapp-local.example.com
+# wrangler secret put BACKUP_ORIGIN  # e.g. https://agent-miniapp.pages.dev or https://lsuper.github.io/agent-miniapp/
+
+[observability]
+enabled = true
