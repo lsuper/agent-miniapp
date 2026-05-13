@@ -1,0 +1,121 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Daily Stock Summary — 2026-05-12</title><script src="https://telegram.org/js/telegram-web-app.js"></script><script src="https://cdn.jsdelivr.net/npm/chart.js"></script><style>:root{color-scheme:dark;--bg:#070b16;--panel:#111827;--text:#f8fafc;--muted:#94a3b8;--line:#263244;--green:#22c55e;--red:#fb7185;--amber:#f59e0b;--blue:#60a5fa}*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,sans-serif;background:radial-gradient(circle at 20% 0%,rgba(96,165,250,.25),transparent 28%),radial-gradient(circle at 80% 10%,rgba(167,139,250,.20),transparent 28%),var(--bg);color:var(--text);padding:max(18px,env(safe-area-inset-top)) 14px max(28px,env(safe-area-inset-bottom))}main{max-width:1180px;margin:0 auto}.hero,.section{border:1px solid rgba(148,163,184,.16);background:rgba(15,23,42,.74);box-shadow:0 24px 80px rgba(0,0,0,.30)}.hero{padding:22px;border-radius:28px;background:linear-gradient(135deg,rgba(17,24,39,.94),rgba(15,23,42,.74))}.eyebrow{color:#93c5fd;text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:800}h1{font-size:clamp(28px,7vw,54px);line-height:.98;margin:8px 0 12px}.sub{color:var(--muted);font-size:16px;line-height:1.55}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:18px}.stat{border:1px solid rgba(148,163,184,.16);background:rgba(15,23,42,.65);border-radius:18px;padding:14px}.stat b{font-size:24px;display:block}.stat span{color:var(--muted);font-size:12px}.section{margin-top:16px;padding:18px;border-radius:24px}.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{padding:8px 11px;border-radius:999px;background:#182235;color:#cbd5e1;border:1px solid rgba(148,163,184,.18);font-size:13px}.chip.up{color:#86efac;background:rgba(34,197,94,.12)}.chip.down{color:#fecdd3;background:rgba(251,113,133,.12)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}.card{border:1px solid rgba(148,163,184,.16);border-radius:22px;background:linear-gradient(180deg,rgba(30,41,59,.9),rgba(15,23,42,.86));padding:16px}.cardHead{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.ticker{font-size:24px;font-weight:900}.company{color:var(--muted);font-size:12px;margin-top:2px}.badge{padding:7px 10px;border-radius:999px;font-weight:800;font-size:12px}.badge.up{background:rgba(34,197,94,.18);color:#86efac}.badge.down{background:rgba(251,113,133,.18);color:#fecdd3}.badge.flat{background:rgba(245,158,11,.18);color:#fde68a}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}.metric{background:rgba(2,6,23,.34);border:1px solid rgba(148,163,184,.12);padding:10px;border-radius:14px}.metric span{display:block;color:var(--muted);font-size:11px}.metric b{font-size:14px}.thesis{color:#dbeafe;line-height:1.45;font-size:14px}.mini{color:var(--muted);font-size:12px;line-height:1.45}.horizons{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}.horizon{padding:9px;border-radius:12px;background:rgba(15,23,42,.65);font-size:12px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.btn{appearance:none;border:1px solid rgba(148,163,184,.24);background:rgba(30,41,59,.8);color:var(--text);border-radius:999px;padding:10px 13px;font-weight:800;cursor:pointer;min-height:42px}.btn.active{background:#2563eb;border-color:#60a5fa}.table{width:100%;border-collapse:separate;border-spacing:0 8px}.table th{text-align:left;color:var(--muted);font-size:12px}.table td{background:rgba(15,23,42,.8);padding:10px;border-top:1px solid rgba(148,163,184,.12);border-bottom:1px solid rgba(148,163,184,.12);font-size:13px}.table td:first-child{border-left:1px solid rgba(148,163,184,.12);border-radius:12px 0 0 12px;font-weight:900}.table td:last-child{border-right:1px solid rgba(148,163,184,.12);border-radius:0 12px 12px 0}.foot{color:var(--muted);font-size:12px;line-height:1.5;margin:20px 4px}@media(max-width:800px){.stats,.grid,.cards{grid-template-columns:1fr}.horizons{grid-template-columns:1fr}.wideOnly{display:none}}</style></head><body><main><section class="hero"><div class="eyebrow">Daily Stock Research Synthesis</div><h1>Semiconductor / AI stock dashboard</h1><div class="sub" id="marketRead"></div><div class="stats"><div class="stat"><b id="coverage"></b><span>same-day notes used</span></div><div class="stat"><b id="ups"></b><span>today calls leaning up</span></div><div class="stat"><b id="avgConf"></b><span>avg today confidence</span></div><div class="stat"><b>2</b><span>skipped by request: ASML, SIMO</span></div></div></section><section class="section"><h2>Market read</h2><div class="chips" id="chips"></div></section><section class="grid"><div class="section"><h2>Confidence by ticker</h2><canvas id="confidenceChart" height="240"></canvas></div><div class="section"><h2>RSI vs VEL5</h2><canvas id="scatterChart" height="240"></canvas></div></section><section class="section"><h2>Ticker cards</h2><div class="toolbar"><button class="btn active" data-filter="all">All</button><button class="btn" data-filter="up">Up</button><button class="btn" data-filter="flat">Flat/Mixed</button><button class="btn" data-filter="down">Down</button><button class="btn" data-filter="risk">RSI risk</button></div><div class="cards" id="cards"></div></section><section class="section"><h2>Scan table</h2><div style="overflow:auto"><table class="table"><thead><tr><th>Ticker</th><th>Today</th><th>Range</th><th>RSI</th><th>VEL5</th><th class="wideOnly">30D</th><th class="wideOnly">Top signal</th></tr></thead><tbody id="scanRows"></tbody></table></div></section><p class="foot">Source: Obsidian daily stock run notes under <code>investment/research/daily-stock-runs/&lt;TICKER&gt;/2026-05-12.md</code>. This is a synthesis of existing notes, not a fresh research run. ASML and SIMO were intentionally skipped per user instruction.</p></main><script>
+let tg = null;
+try {
+  tg = window.Telegram && window.Telegram.WebApp ? window.Telegram.WebApp : null;
+} catch (e) {
+  tg = null;
+  console.warn('Telegram bridge detection failed in browser preview', e);
+}
+if (tg) {
+  try { tg.ready(); tg.expand(); document.body.dataset.telegram = 'true'; }
+  catch (e) { console.warn('Telegram bridge unavailable in browser preview', e); }
+}
+
+const DATA = {"date": "2026-05-12", "generated_at": "2026-05-12 19:26 PDT", "coverage": 8, "total": 10, "skipped": ["ASML", "SIMO"], "items": [{"ticker": "NVDA", "company": "NVIDIA", "status": "same-day", "note_path": "research/daily-stock-runs/NVDA/2026-05-12.md", "reference_price": 219.44, "premarket_price": 218.545, "pct": -0.40785636164783545, "rsi": 69.0, "vel5": 18.2, "delta1": 0.6, "gate": "MOMENTUM-GATE SELLING", "today": {"direction": "up", "confidence": 52.0, "range": "$217.00–$225.50", "thesis": "Mytutopia RSI 69.0 / VEL5 +18.2 confirms positive momentum reacceleration and NVDA is green despite a red semi tape, but the run is mid session after a new intraday/52 week high and peers are fading, so confidence stays capped and the lower bound includes the "}, "d30": {"direction": "up", "range": "$205.00–$275.00"}, "d90": {"direction": "up", "range": "$200.00–$305.00"}, "y1": {"direction": "up", "range": "$200.00–$390.00"}, "unusual": "Technical acceleration into earnings: Mytutopia VEL5 moved from 23.3 (May 4) to +18.2 (May 12) in eight calendar days. That is a strong regime change, not just a one day bounce.", "catalyst": "Run timing: this is an intraday / mid session run, not a true premarket only run. Current context was about 10:10 AM ET ; predictions are still anchored to the prior regular session close, but NVDA has already traded thr", "risk": "X/Twitter / Nitter: attempted https://nitter.net/search?f=tweets&q=%24NVDA; page returned empty content. No reliable X post extraction; I did not infer X sentiment.", "live_last": null, "live_prev_close": null, "live_pct_vs_prev": null}, {"ticker": "AMD", "company": "Advanced Micro Devices", "status": "same-day", "note_path": "research/daily-stock-runs/AMD/2026-05-12.md", "reference_price": 458.7900085449219, "premarket_price": 442.84, "pct": -3.476537903584309, "rsi": null, "vel5": 11.2, "delta1": 0.3, "gate": "SELLING", "today": {"direction": "flat_to_down", "confidence": 49.0, "range": "$430.00–$465.00", "thesis": "Premarket profit taking is already material after the post earnings melt up, so the session bias is flat to down from the prior close. VEL5 +11.2 argues against a clean bearish reversal, but RSI 81.1 and the overnight 3.5% move make a consolidation day more li"}, "d30": {"direction": "flat_to_up", "range": "$390.00–$520.00"}, "d90": {"direction": "up", "range": "$400.00–$575.00"}, "y1": {"direction": "up", "range": "$450.00–$700.00"}, "unusual": "Technical / tape divergence: Mytutopia shows RSI 81.1 and VEL5 +11.2 , a strong positive re acceleration, but live premarket price is down 3.48% . This is unusual because the internal momentum signal says the trend is st", "catalyst": "Trading day check: 2026 05 12 is a US trading day. This is a premarket run at about 09:17 ET.", "risk": "Old Reddit was accessible, but the global AMD search was mostly noisy product/build help content rather than investment discussion. The only market relevant visible post was a low signal retail anxiety item in r/Daytradi…", "live_last": null, "live_prev_close": null, "live_pct_vs_prev": null}, {"ticker": "MU", "company": "Micron", "status": "same-day", "note_path": "research/daily-stock-runs/MU/2026-05-12.md", "reference_price": 795.33, "premarket_price": 769.8, "pct": -3.209988306740609, "rsi": 85.8, "vel5": 9.7, "delta1": 2.1, "gate": "n/a", "today": {"direction": "flat", "confidence": 49.0, "range": "$745.00–$805.00", "thesis": "MU is indicated down ~3.2% premarket after another ATH close, while Mytutopia RSI 85.8 is extremely overbought and VEL5 remains positive but decelerated to +9.7. The positive VEL5/momentum gate rule prevents a clean bearish flip, so the call is flat/volatile c"}, "d30": {"direction": "up", "range": "$700.00–$950.00"}, "d90": {"direction": "up", "range": "$620.00–$1,050.00"}, "y1": {"direction": "up", "range": "$520.00–$1,200.00"}, "unusual": "Overbought but not yet momentum broken: Mytutopia RSI is 85.8 , above all sell ladder thresholds (75/80/85), but VEL5 remains +9.7 . This is exactly the MU regime where a simple “RSI high = short” rule has failed recentl", "catalyst": "Trading day check: 2026 05 12 is a Tuesday and a normal U.S. trading day. This is a premarket run at roughly 08:11 ET .", "risk": "Reddit / old.reddit search (https://old.reddit.com/search?q=MU%20Micron%20HBM&sort=new&t=week) was accessible today. High signal content was limited; most visible posts were momentum/technical rather than detailed fundam", "live_last": null, "live_prev_close": null, "live_pct_vs_prev": null}, {"ticker": "LRCX", "company": "Lam Research", "status": "same-day", "note_path": "research/daily-stock-runs/LRCX/2026-05-12.md", "reference_price": 296.05, "premarket_price": 288.5, "pct": -2.5502448910657023, "rsi": 66.5, "vel5": 11.4, "delta1": 0.6, "gate": "SELLING", "today": {"direction": "down", "confidence": 55.0, "range": "$284.00–$297.00", "thesis": "Failed $300 breakout plus 2.5% premarket favors consolidation/down day; RSI 66.5 and VEL5 +11.4 keep bearish confidence capped."}, "d30": {"direction": null, "range": "n/a"}, "d90": {"direction": null, "range": "n/a"}, "y1": {"direction": null, "range": "n/a"}, "unusual": "Fresh $300 high + immediate premarket rejection: the stock crossed the psychological $300 level intraday but is indicated near $288 premarket the next morning. This is a classic breakout test failure unless regular tradi", "catalyst": "LRCX made another high yesterday: open $292.51 / high $300.00 / low $292.51 / close $296.05 , up 0.68% from Friday’s close. It printed a fresh 52 week/all time high at $300.00 , but did not close near the high.", "risk": "X/Twitter / Nitter: attempted https://nitter.net/search?f=tweets&q=%24LRCX; page returned empty. Treat X as structurally blocked again (10+ consecutive blocked runs per LRCX config).", "live_last": null, "live_prev_close": null, "live_pct_vs_prev": null}, {"ticker": "TSM", "company": "TSMC", "status": "same-day", "note_path": "research/daily-stock-runs/TSM/2026-05-12.md", "reference_price": 404.54, "premarket_price": 397.38, "pct": -1.769911504424785, "rsi": 59.6, "vel5": -5.3, "delta1": -4.4, "gate": "n/a", "today": {"direction": "down", "confidence": 58.0, "range": "$394.00–$406.00", "thesis": "Premarket gap down and Mytutopia RSI 59.6 / VEL5 5.3 outweigh positive capex news for today; likely tests $394 $400 support."}, "d30": {"direction": "up", "range": "$390.00–$435.00"}, "d90": {"direction": "up", "range": "$400.00–$465.00"}, "y1": {"direction": "up", "range": "$455.00–$610.00"}, "unusual": "Failed ATH / follow through pullback: TSM hit $420.00 on May 7 after the May 6 surge and then failed to hold the high. The next two closes were $411.68 and $404.54, and premarket today is around $397. This is now more th", "catalyst": "Reference close: TSM closed $404.54 on 2026 05 11 (yfinance), down from $411.68 on May 8 and $414.15 on May 7. The stock is now 3.6% below the May 6 close / ATH reference area around $419.50 $420.", "risk": "(Supplementary only; separate from official earnings and SEC analysis.)", "live_last": null, "live_prev_close": null, "live_pct_vs_prev": null}, {"ticker": "ARM", "company": "Arm Holdings", "status": "same-day", "note_path": "research/daily-stock-runs/ARM/2026-05-12.md", "reference_price": 212.65, "premarket_price": 206.5, "pct": -2.8920761815189304, "rsi": 59.6, "vel5": -2.4, "delta1": -0.3, "gate": "n/a", "today": {"direction": "down", "confidence": 56.0, "range": "$203.00–$211.50", "thesis": "Premarket is again ~ 3% and crowd positioning is crowded bullish, while Mytutopia RSI 59.6 / VEL5 2.4 shows negative but improving momentum. Bias is down from the close, but improving VEL5 argues against a breakdown below low $200s without fresh bad news."}, "d30": {"direction": "flat_to_up", "range": "$195.00–$245.00"}, "d90": {"direction": "up", "range": "$185.00–$265.00"}, "y1": {"direction": "up", "range": "$165.00–$310.00"}, "unusual": "1. Two consecutive weak premarkets with intraday recovery risk: May 11 premarket weakness did not produce a close below $212; today again starts near $206. This argues for downside bias but warns against extrapolating pr…", "catalyst": "Reference close: $212.65 on 2026 05 11 ; open $206.54 , high $215.50 , low $206.08 , volume ~10.5M. This was an intraday recovery from the weak premarket rather than a clean selloff.", "risk": "Reddit: https://old.reddit.com/search?q=ARM%20Holdings%20OR%20%24ARM&sort=new&t=week returned “You've been blocked by network security.” I did not infer Reddit sentiment.", "live_last": null, "live_prev_close": null, "live_pct_vs_prev": null}, {"ticker": "NET", "company": "Cloudflare", "status": "same-day", "note_path": "research/daily-stock-runs/NET/2026-05-12.md", "reference_price": 193.52, "premarket_price": 194.24, "pct": 0.37205456800330655, "rsi": 43.3, "vel5": -17.8, "delta1": -0.8, "gate": "n/a", "today": {"direction": "flat_to_up / stabilization bounce", "confidence": 51.0, "range": "$188.00–$201.00", "thesis": "Premarket is modestly green and tech tape is supportive, but Mytutopia RSI 43.3 and VEL5 17.8 show post earnings downside velocity has not stabilized cleanly; expect volatile stabilization/bounce attempt rather than a clean trend day."}, "d30": {"direction": "up / mean-reversion into Investor Day", "range": "$180.00–$220.00"}, "d90": {"direction": "up but volatile", "range": "$170.00–$235.00"}, "y1": {"direction": "flat_to_down / valuation-constrained", "range": "$150.00–$230.00"}, "unusual": "The market punished communication/operating model risk more than financial results. A company with +34% revenue growth, EPS beat, and raised FY guide usually does not lose ~24% unless the surprise changes how investors d", "catalyst": "Reference close: yfinance recorded $193.52 on 2026 05 11 , down 1.33% from the May 8 post earnings close of $196.13.", "risk": "Supplementary evidence only — not weighted equal to primary earnings/SEC materials.", "live_last": null, "live_prev_close": null, "live_pct_vs_prev": null}, {"ticker": "FSLY", "company": "Fastly", "status": "same-day", "note_path": "research/daily-stock-runs/FSLY/2026-05-12.md", "reference_price": 19.58, "premarket_price": 19.38, "pct": -1.0214504596527034, "rsi": 40.4, "vel5": -14.0, "delta1": -1.2, "gate": "MOMENTUM-GATE SELLING", "today": {"direction": "neutral-to-down", "confidence": 47.0, "range": "$18.70–$20.30", "thesis": "RSI 40.4 is near buy ladder territory, but VEL5 14.0, Δ1 1.2, and soft premarket argue against an aggressive bounce call."}, "d30": {"direction": "neutral-to-up", "range": "$16.50–$24.50"}, "d90": {"direction": "neutral", "range": "$14.50–$26.50"}, "y1": {"direction": "neutral-to-up", "range": "$12.00–$30.00"}, "unusual": "", "catalyst": "Price action: FSLY fell from $20.51 on May 8 to $19.58 on May 11 ( 4.5%), giving back much of the reflex bounce after the earnings washout. May 11 intraday range was $19.05 $21.59 on 16.2M shares.", "risk": "This section is supplementary only and is not weighted equally with SEC filings, earnings materials, or price / technical data.", "live_last": null, "live_prev_close": null, "live_pct_vs_prev": null}], "market_read": "Coverage 8/10 after skipping ASML and SIMO. Today calls lean 1 up, 4 flat/mixed, 3 down; technical risk is concentrated where RSI is elevated.", "opportunities": ["TSM", "ARM", "LRCX"], "risks": ["MU"]};
+
+function money(x) {
+  return x == null ? 'n/a' : '$' + Number(x).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+function pct(x) {
+  return x == null ? 'n/a' : (x >= 0 ? '+' : '') + Number(x).toFixed(2) + '%';
+}
+function esc(s) {
+  return String(s ?? '').replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+}
+function dirClass(d) {
+  d = String(d || 'n/a').toLowerCase();
+  if (d.startsWith('up')) return 'up';
+  if (d.startsWith('down')) return 'down';
+  return 'flat';
+}
+
+function init() {
+  document.getElementById('marketRead').textContent = DATA.market_read;
+  const items = DATA.items;
+  const ups = items.filter(i => dirClass(i.today.direction) === 'up').length;
+  const confs = items.map(i => i.today.confidence).filter(x => x != null);
+  const avg = confs.length ? Math.round(confs.reduce((a,b) => a + b, 0) / confs.length) : 0;
+  document.getElementById('coverage').textContent = DATA.coverage + '/' + DATA.total;
+  document.getElementById('ups').textContent = ups;
+  document.getElementById('avgConf').textContent = avg + '/100';
+  document.getElementById('chips').innerHTML = [
+    `<span class="chip up">Opportunities: ${esc(DATA.opportunities.join(', '))}</span>`,
+    `<span class="chip down">Watch risk: ${esc(DATA.risks.join(', '))}</span>`,
+    `<span class="chip">Skipped: ${esc(DATA.skipped.join(', '))}</span>`,
+    `<span class="chip">Generated: ${esc(DATA.generated_at)}</span>`
+  ].join('');
+  renderCards('all');
+  renderTable();
+  renderCharts();
+  document.querySelectorAll('.btn').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    renderCards(b.dataset.filter);
+  }));
+}
+
+function renderCards(filter) {
+  const items = DATA.items.filter(i => {
+    const c = dirClass(i.today.direction);
+    if (filter === 'all') return true;
+    if (filter === 'risk') return (i.rsi || 0) >= 70;
+    return c === filter;
+  });
+  document.getElementById('cards').innerHTML = items.map(i => {
+    const c = dirClass(i.today.direction);
+    return `<article class="card">
+      <div class="cardHead"><div><div class="ticker">${esc(i.ticker)}</div><div class="company">${esc(i.company)}</div></div><div class="badge ${c}">${esc(i.today.direction)} · ${i.today.confidence ?? 'n/a'}</div></div>
+      <div class="metrics"><div class="metric"><span>Last / vs prev</span><b>${money(i.live_last)} · ${pct(i.live_pct_vs_prev)}</b></div><div class="metric"><span>RSI</span><b>${i.rsi ?? 'n/a'}</b></div><div class="metric"><span>VEL5</span><b>${i.vel5 ?? 'n/a'}</b></div></div>
+      <p class="thesis">${esc(i.today.thesis)}</p><p class="mini"><b>Signal:</b> ${esc(i.unusual)}</p><p class="mini"><b>Catalyst:</b> ${esc(i.catalyst)}</p>
+      <div class="horizons"><div class="horizon"><b>Today</b><br>${esc(i.today.range)}</div><div class="horizon"><b>30D</b><br>${esc(i.d30.direction)} · ${esc(i.d30.range)}</div><div class="horizon"><b>90D / 1Y</b><br>${esc(i.d90.direction)} · ${esc(i.y1.direction)}</div></div>
+    </article>`;
+  }).join('');
+}
+
+function renderTable() {
+  document.getElementById('scanRows').innerHTML = DATA.items.map(i =>
+    `<tr><td>${esc(i.ticker)}</td><td>${esc(i.today.direction)} / ${i.today.confidence ?? 'n/a'}</td><td>${esc(i.today.range)}</td><td>${i.rsi ?? 'n/a'}</td><td>${i.vel5 ?? 'n/a'}</td><td class="wideOnly">${esc(i.d30.direction)} · ${esc(i.d30.range)}</td><td class="wideOnly">${esc(i.unusual)}</td></tr>`
+  ).join('');
+}
+
+function renderCharts() {
+  const labels = DATA.items.map(i => i.ticker);
+  const confidenceCanvas = document.getElementById('confidenceChart');
+  new Chart(confidenceCanvas, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        label: 'Today confidence',
+        data: DATA.items.map(i => i.today.confidence ?? 0),
+        backgroundColor: DATA.items.map(i => dirClass(i.today.direction) === 'up' ? 'rgba(34,197,94,.7)' : (dirClass(i.today.direction) === 'down' ? 'rgba(251,113,133,.7)' : 'rgba(245,158,11,.7)')),
+        borderRadius: 10
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: {
+        y: { beginAtZero: true, max: 100, grid: { color: 'rgba(148,163,184,.12)' } },
+        x: { grid: { display: false } }
+      }
+    }
+  });
+
+  const pts = DATA.items.filter(i => i.rsi != null && i.vel5 != null).map(i => ({ x: i.vel5, y: i.rsi, ticker: i.ticker }));
+  const scatterCanvas = document.getElementById('scatterChart');
+  new Chart(scatterCanvas, {
+    type: 'scatter',
+    data: { datasets: [{ label: 'RSI vs VEL5', data: pts, pointRadius: 7, backgroundColor: 'rgba(96,165,250,.8)' }] },
+    options: {
+      responsive: true,
+      plugins: { tooltip: { callbacks: { label: ctx => ctx.raw.ticker + ': VEL5 ' + ctx.raw.x + ', RSI ' + ctx.raw.y } } },
+      scales: {
+        x: { title: { display: true, text: 'VEL5' }, grid: { color: 'rgba(148,163,184,.12)' } },
+        y: { title: { display: true, text: 'RSI' }, suggestedMin: 30, suggestedMax: 90, grid: { color: 'rgba(148,163,184,.12)' } }
+      }
+    }
+  });
+}
+window.addEventListener('DOMContentLoaded', init);
+</script></body></html>
