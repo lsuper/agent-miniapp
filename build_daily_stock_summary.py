@@ -175,16 +175,66 @@ def normalize_horizons(record: dict[str, Any], note_pred_sec: str | None) -> dic
             if not isinstance(h, dict):
                 continue
             name = str(h.get("horizon", "")).lower().strip()
-            key = {"today": "today", "30d": "30d", "30 days": "30d", "90d": "90d", "1y": "1y", "1 year": "1y"}.get(name)
+            key = {
+                "today": "today",
+                "1 day": "today",
+                "1d": "today",
+                "30d": "30d",
+                "30 days": "30d",
+                "30 day": "30d",
+                "days_30": "30d",
+                "90d": "90d",
+                "90 days": "90d",
+                "90 day": "90d",
+                "days_90": "90d",
+                "1y": "1y",
+                "1 year": "1y",
+                "year_1": "1y",
+            }.get(name)
             if key:
                 out[key] = normalize_horizon_obj(h)
     preds = record.get("predictions")
     if isinstance(preds, dict):
         for key, value in preds.items():
             lk = str(key).lower().strip()
-            lk = {"today": "today", "30d": "30d", "90d": "90d", "1y": "1y"}.get(lk, lk)
+            lk = {
+                "today": "today",
+                "1d": "today",
+                "30d": "30d",
+                "30 days": "30d",
+                "days_30": "30d",
+                "90d": "90d",
+                "90 days": "90d",
+                "days_90": "90d",
+                "1y": "1y",
+                "1 year": "1y",
+                "year_1": "1y",
+            }.get(lk, lk)
             if lk in {"today", "30d", "90d", "1y"} and isinstance(value, dict) and lk not in out:
                 out[lk] = normalize_horizon_obj(value)
+    elif isinstance(preds, list):
+        for item in preds:
+            if not isinstance(item, dict):
+                continue
+            lk = str(item.get("horizon", "")).lower().strip()
+            lk = {
+                "today": "today",
+                "1 day": "today",
+                "1d": "today",
+                "30d": "30d",
+                "30 days": "30d",
+                "30 day": "30d",
+                "days_30": "30d",
+                "90d": "90d",
+                "90 days": "90d",
+                "90 day": "90d",
+                "days_90": "90d",
+                "1y": "1y",
+                "1 year": "1y",
+                "year_1": "1y",
+            }.get(lk, lk)
+            if lk in {"today", "30d", "90d", "1y"} and lk not in out:
+                out[lk] = normalize_horizon_obj(item)
     for key, value in note_fallback_horizons(note_pred_sec).items():
         out.setdefault(key, value)
     for key in ["today", "30d", "90d", "1y"]:
@@ -245,6 +295,20 @@ def extract_note_value(section: str | None, *patterns: str) -> str | None:
     return None
 
 
+def extract_first_falsifier(obj: dict[str, Any] | None) -> str | None:
+    if not isinstance(obj, dict):
+        return None
+    falsifiers = obj.get("falsifiers")
+    if isinstance(falsifiers, list):
+        for item in falsifiers:
+            cleaned = clean_text(str(item))
+            if cleaned:
+                return cleaned
+    elif falsifiers is not None:
+        return clean_text(str(falsifiers))
+    return None
+
+
 def build_card(ticker: str, today: str) -> dict[str, Any]:
     status, note_path = pick_note(ticker, today)
     note_text = note_path.read_text() if note_path and note_path.exists() else ""
@@ -269,7 +333,15 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
     ref = parse_floatish(ledger.get("reference_price"))
     current = parse_floatish(ledger.get("premarket_price") or ledger.get("current_price") or ledger.get("intraday_price"))
     current_label = "premarket" if ledger.get("premarket_price") is not None else ("current" if current is not None else "live")
-    current_time = ledger.get("premarket_time_et") or ledger.get("current_time_et") or ledger.get("intraday_time_et")
+    current_time = (
+        ledger.get("premarket_time_et")
+        or ledger.get("premarket_time")
+        or ledger.get("premarket_timestamp")
+        or ledger.get("google_finance_premarket_timestamp")
+        or ledger.get("current_time_et")
+        or ledger.get("intraday_time_et")
+        or ledger.get("intraday_timestamp")
+    )
 
     raw_my = ledger.get("mytutopia")
     my: dict[str, Any] = raw_my if isinstance(raw_my, dict) else {}
@@ -296,7 +368,13 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
 
     unusual = first_meaningful_line(sections["Unusual signals"])
     catalyst = first_meaningful_line(sections["Deep dive on earnings / major catalysts"])
-    risk = first_meaningful_line(sections["Balance sheet and capital allocation"])
+    risk = (
+        extract_first_falsifier(horizons["today"])
+        or extract_first_falsifier(next((item for item in ledger.get("predictions", []) if isinstance(item, dict) and str(item.get("horizon", "")).lower().strip() in {"today", "1 day", "1d"}), None) if isinstance(ledger.get("predictions"), list) else None)
+        or first_meaningful_line(sections["Unusual signals"])
+        or first_meaningful_line(sections["Deep dive on earnings / major catalysts"])
+        or first_meaningful_line(sections["Balance sheet and capital allocation"])
+    )
     social = first_meaningful_line(sections["Social-media / public-discussion signals"])
     calibration = first_meaningful_line(sections["Historical calibration review"])
     adjustments = first_meaningful_line(sections["Research adjustments based on past accuracy"])
