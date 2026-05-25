@@ -446,16 +446,23 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
 
 def market_bullets(cards: list[dict[str, Any]]) -> list[str]:
     generated = [c for c in cards if c["status"] == "generated"]
-    upish = [c for c in generated if c["today"]["direction"] in {"up", "flat_to_up"}]
-    downish = [c for c in generated if c["today"]["direction"] in {"down", "flat_to_down"}]
-    hot = [c for c in generated if isinstance(c["mytutopia"]["rsi"], (int, float)) and c["mytutopia"]["rsi"] >= 75]
-    neg_vel = [c for c in generated if isinstance(c["mytutopia"]["vel5"], (int, float)) and c["mytutopia"]["vel5"] < 0]
-    big_red = [c for c in generated if isinstance(c["pct_vs_ref"], (int, float)) and c["pct_vs_ref"] <= -2.0]
-    semi = [c for c in generated if c["ticker"] in {"NVDA", "MU", "LRCX", "ARM", "ASML", "TSM", "SIMO", "AMD"}]
-    software = [c for c in generated if c["ticker"] in {"FSLY", "NET"}]
+    basis = generated if generated else [c for c in cards if c["status"] in {"generated", "stale"}]
+    upish = [c for c in basis if c["today"]["direction"] in {"up", "flat_to_up"}]
+    downish = [c for c in basis if c["today"]["direction"] in {"down", "flat_to_down"}]
+    hot = [c for c in basis if isinstance(c["mytutopia"]["rsi"], (int, float)) and c["mytutopia"]["rsi"] >= 75]
+    neg_vel = [c for c in basis if isinstance(c["mytutopia"]["vel5"], (int, float)) and c["mytutopia"]["vel5"] < 0]
+    big_red = [c for c in basis if isinstance(c["pct_vs_ref"], (int, float)) and c["pct_vs_ref"] <= -2.0]
+    semi = [c for c in basis if c["ticker"] in {"NVDA", "MU", "LRCX", "ARM", "ASML", "TSM", "SIMO", "AMD"}]
+    software = [c for c in basis if c["ticker"] in {"FSLY", "NET"}]
 
     bullets = []
-    bullets.append(f"Coverage is {len(generated)}/{len(cards)} same-day notes; {len(upish)} names lean up or flat-to-up, while {len(downish)} lean flat-to-down or down.")
+    if not generated:
+        note_dates = sorted(str(c.get("note_date")) for c in basis if c.get("note_date"))
+        latest_note_date = note_dates[-1] if note_dates else "n/a"
+        bullets.append(f"No same-day ticker notes were found for this cycle, so the dashboard falls back to the latest available notes/ledgers, which currently top out at {latest_note_date}.")
+        bullets.append(f"On that fallback set, {len(upish)} names leaned up or flat-to-up and {len(downish)} leaned flat-to-down or down across the most recent available calls.")
+    else:
+        bullets.append(f"Coverage is {len(generated)}/{len(cards)} same-day notes; {len(upish)} names lean up or flat-to-up, while {len(downish)} lean flat-to-down or down.")
     if hot:
         bullets.append(f"Momentum remains crowded in parts of AI semis: high-RSI names include {', '.join(c['ticker'] for c in hot[:5])}, which caps 1-day confidence even when longer-horizon calls stay constructive.")
     if neg_vel:
@@ -466,16 +473,19 @@ def market_bullets(cards: list[dict[str, Any]]) -> list[str]:
         bullets.append(f"Semiconductor / infrastructure names still dominate the medium-term upside stack: {', '.join(c['ticker'] for c in sorted(semi, key=lambda x: x['_opp_score'], reverse=True)[:4])} carry the strongest multi-horizon constructive bias.")
     if software:
         bullets.append("Software-edge names remain more idiosyncratic than the semis: NET and FSLY are still trading as special situations driven by credibility, ownership, and reset dynamics rather than simple sector beta.")
-    bullets.append("The most common pattern today is constructive 30D/90D/1Y framing paired with lower-conviction same-day calls, meaning tape damage is tactical while the business thesis often stays intact.")
+    bullets.append("The most common pattern is constructive 30D/90D/1Y framing paired with lower-conviction same-day calls, meaning tape damage is tactical while the business thesis often stays intact.")
     bullets.append("Calibration lessons continue to point to range-width discipline: recent misses skew more toward undershooting move magnitude than getting the broad direction wrong.")
     return bullets[:8]
 
 
 def headline_from_cards(cards: list[dict[str, Any]]) -> str:
     generated = [c for c in cards if c["status"] == "generated"]
-    upish = sum(1 for c in generated if c["today"]["direction"] in {"up", "flat_to_up"})
-    downish = sum(1 for c in generated if c["today"]["direction"] in {"down", "flat_to_down"})
-    hot = sum(1 for c in generated if isinstance(c["mytutopia"]["rsi"], (int, float)) and c["mytutopia"]["rsi"] >= 75)
+    basis = generated if generated else [c for c in cards if c["status"] in {"generated", "stale"}]
+    upish = sum(1 for c in basis if c["today"]["direction"] in {"up", "flat_to_up"})
+    downish = sum(1 for c in basis if c["today"]["direction"] in {"down", "flat_to_down"})
+    hot = sum(1 for c in basis if isinstance(c["mytutopia"]["rsi"], (int, float)) and c["mytutopia"]["rsi"] >= 75)
+    if not generated:
+        return "No same-day stock notes were available, so this dashboard is a clearly labeled stale fallback built from the latest prior run artifacts."
     if downish > upish:
         return "Long-horizon AI and semiconductor theses remain broadly intact, but today's tape is skewing defensive, crowded, and digestion-heavy."
     if hot >= 3:
@@ -488,6 +498,8 @@ def telegram_summary(data: dict[str, Any]) -> str:
     risks = ", ".join(x["ticker"] for x in data["top_risks"][:2]) or "n/a"
     covered = len(data["coverage"]["generated"])
     total = sum(len(v) for v in data["coverage"].values())
+    if covered == 0:
+        return f"No same-day ticker notes were available. Showing latest stale fallback notes for {total}/{total} tracked names. Top stale opportunities: {opps}. Top stale risks: {risks}."
     return f"{data['headline']} Coverage {covered}/{total}. Top opportunities: {opps}. Top risks: {risks}."
 
 
