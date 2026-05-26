@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>MRAAY / Murata Earnings Mini App</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    :root{
+      --bg:#07111f;--bg2:#0d1830;--panel:#0d182be8;--panel2:#122342;--line:#90a4c933;
+      --text:#ebf2ff;--muted:#9db0d3;--green:#4ade80;--red:#fb7185;--amber:#fbbf24;--cyan:#22d3ee;--purple:#a78bfa;
+      color-scheme:dark;
+    }
+    *{box-sizing:border-box} html,body{margin:0} body{
+      min-height:100vh;font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif;
+      background:radial-gradient(circle at top,#183564 0%,#07111f 52%);
+      color:var(--text);padding:max(16px,env(safe-area-inset-top)) 14px max(28px,env(safe-area-inset-bottom));
+    }
+    main{max-width:1180px;margin:0 auto}
+    h1,h2,h3,p{margin:0}
+    .hero,.panel{background:var(--panel);border:1px solid var(--line);border-radius:24px}
+    .hero{padding:22px}
+    .panel{padding:18px;margin-top:18px}
+    .eyebrow,.muted,.small{color:var(--muted)}
+    .eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:.12em}
+    .small{font-size:12px}
+    .headline{font-size:clamp(28px,6vw,46px);line-height:1.03;margin-top:8px}
+    .subhead{font-size:16px;line-height:1.55;max-width:950px;margin-top:10px;color:#d9e6ff}
+    .grid,.metric-grid,.split,.summary-grid,.segment-grid,.app-grid,.chart-grid{display:grid;gap:14px}
+    .metric-grid{grid-template-columns:repeat(6,minmax(0,1fr));margin-top:18px}
+    .summary-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:18px}
+    .split{grid-template-columns:1.1fr .9fr}
+    .chart-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .segment-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+    .app-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+    .card,.metric,.list-card,.chart-box,.callout{background:var(--panel2);border:1px solid var(--line);border-radius:18px;padding:14px}
+    .metric .value{font-size:26px;font-weight:800;margin-top:6px}
+    .metric .label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.09em}
+    .chip,.pill,.tab{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:#ffffff0d;color:var(--text);font-size:12px}
+    .chip.green,.pill.green{background:#4ade8020;color:#baf7cd}.chip.red,.pill.red{background:#fb718520;color:#fecdd3}.chip.amber,.pill.amber{background:#fbbf2420;color:#fde68a}.chip.purple{background:#a78bfa20;color:#e9ddff}
+    .tabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.tab{cursor:pointer;min-height:42px}.tab.active{border-color:var(--cyan);box-shadow:0 0 0 1px #22d3ee55 inset;background:#0e2741}
+    .tab-panel{display:none;margin-top:16px}.tab-panel.active{display:block}
+    ul{margin:10px 0 0;padding-left:20px} li{line-height:1.55;margin:0 0 8px;color:#dce8ff}
+    .topline{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;flex-wrap:wrap}
+    .pos{color:var(--green)} .neg{color:var(--red)}
+    .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px;margin-top:12px}
+    table{width:100%;border-collapse:collapse;min-width:760px;background:#0c1730}
+    th,td{padding:10px 12px;border-bottom:1px solid #ffffff14;text-align:left;font-size:13px;vertical-align:top}
+    th{color:#dce8ff;background:#0a1428}
+    .bar{height:10px;border-radius:999px;background:#ffffff12;overflow:hidden;margin-top:8px}.bar > span{display:block;height:100%;border-radius:999px}
+    canvas{width:100%!important;height:310px!important}
+    a{color:#8fe8ff}
+    .footer-note{margin-top:12px;font-size:12px;color:var(--muted);line-height:1.5}
+    @media (max-width:980px){
+      .metric-grid,.summary-grid,.split,.chart-grid,.segment-grid,.app-grid{grid-template-columns:1fr!important}
+      canvas{height:250px!important}
+    }
+  </style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div class="eyebrow">Telegram mini app · Murata Manufacturing ADR (MRAAY) · verified from official IR materials</div>
+    <h1 class="headline">Murata earnings: AI/data-center demand is overpowering smartphone weakness — for now.</h1>
+    <p class="subhead">This mini app gives you both views: a compact 3-point bull/bear investor summary and a deeper operating breakdown by segment, application, guidance, and market reaction from Murata’s Apr 30, 2026 FY2025 earnings release.</p>
+    <div class="metric-grid" id="metricGrid"></div>
+    <div class="summary-grid">
+      <div class="callout">
+        <div class="topline"><strong>Quick take</strong><span class="pill green">Bullish release</span></div>
+        <p style="margin-top:10px;line-height:1.55;color:#dce8ff">Murata beat its own February guide, posted record revenue, and guided to a major profit step-up in FY2026 on server / capacitor demand. The market appears to be re-rating it as an AI infrastructure beneficiary rather than a slow smartphone-parts name.</p>
+      </div>
+      <div class="callout">
+        <div class="topline"><strong>Why not a clean all-clear?</strong><span class="pill amber">Mixed underneath</span></div>
+        <p style="margin-top:10px;line-height:1.55;color:#dce8ff">High-frequency modules and resin substrates tied to smartphones remain weak, FY2025 operating profit barely grew despite revenue growth, and management disclosed both a cyber incident and a firmware-related lost hyperscaler module order.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="topline">
+      <div>
+        <h2>Investor view</h2>
+        <p class="small" style="margin-top:6px">Tap between the 3-point bull case, 3-point bear case, and the deeper breakdown.</p>
+      </div>
+      <div class="tabs" id="tabs">
+        <button class="tab active" data-tab="bull">3-point bull</button>
+        <button class="tab" data-tab="bear">3-point bear</button>
+        <button class="tab" data-tab="deep">Deep breakdown</button>
+      </div>
+    </div>
+
+    <div class="tab-panel active" data-panel="bull">
+      <div class="split">
+        <div class="list-card">
+          <h3>3-point bull case</h3>
+          <ul>
+            <li><strong>AI infrastructure is now the earnings engine.</strong> Capacitors for servers/data centers were the core offset to smartphone weakness, and management guided FY2026 revenue to <strong>¥1.96T (+7.1%)</strong> with operating profit at <strong>¥380B (+34.8%)</strong>.</li>
+            <li><strong>The beat was real, not just spin.</strong> FY2025 revenue beat February guidance by <strong>¥30.9B</strong>, operating profit by <strong>¥11.8B</strong>, pretax by <strong>¥14.6B</strong>, and net profit by <strong>¥13.9B</strong>.</li>
+            <li><strong>Capital allocation turned friendlier.</strong> Murata raised the FY2025 dividend to <strong>¥65/share</strong>, guided FY2026 to <strong>¥70/share</strong>, and announced a <strong>¥150B buyback</strong>, its largest ever.</li>
+          </ul>
+        </div>
+        <div class="list-card">
+          <h3>What bulls are underwriting</h3>
+          <ul>
+            <li>Server-related capacitor sales in FY2026 up <strong>85%–90%</strong>.</li>
+            <li>Additional data-center production investment of about <strong>¥80B</strong> across FY2026–FY2027.</li>
+            <li>Computers/application bucket becoming increasingly data-center-driven rather than PC-driven.</li>
+            <li>Operating leverage finally showing up as utilization rises.</li>
+          </ul>
+          <div class="footer-note">Most important unusual signal: Murata is no longer narrating itself mainly through handsets; the earnings deck is centered on data-center demand, capacitor mix, and power products.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-panel="bear">
+      <div class="split">
+        <div class="list-card">
+          <h3>3-point bear case</h3>
+          <ul>
+            <li><strong>The “good” is concentrated.</strong> Smartphone-linked businesses are still weak: high-frequency modules and multilayer resin substrates declined, and FY2026 communication revenue is still guided <strong>down 2.2%</strong>.</li>
+            <li><strong>FY2025 quality was less impressive than headline revenue.</strong> Revenue rose <strong>5.0%</strong>, but operating profit only rose <strong>0.8%</strong>; one-time charges included <strong>¥43.8B</strong> of SAW-filter goodwill impairment.</li>
+            <li><strong>Execution risk is still present.</strong> Murata disclosed a cyber incident and said secured hyperscaler-related secondary module orders were later dropped because of a <strong>firmware defect</strong>.</li>
+          </ul>
+        </div>
+        <div class="list-card">
+          <h3>What bears are watching</h3>
+          <ul>
+            <li>Whether AI/data-center strength broadens beyond capacitors into durable multi-product growth.</li>
+            <li>Whether price declines and higher fixed costs again absorb much of the revenue upside.</li>
+            <li>Whether inventory build is healthy pre-positioning or a future digestion risk.</li>
+            <li>Whether smartphone recovery remains too weak to support the non-AI parts of the portfolio.</li>
+          </ul>
+          <div class="footer-note">Most important caution flag: the market may be paying up for AI-exposure before proof that the broader portfolio has structurally improved.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-panel="deep">
+      <div class="grid" style="gap:18px">
+        <div class="chart-grid">
+          <div class="chart-box"><canvas id="segmentChart"></canvas></div>
+          <div class="chart-box"><canvas id="applicationChart"></canvas></div>
+        </div>
+
+        <div class="split">
+          <div class="list-card">
+            <h3>What actually drove FY2025</h3>
+            <ul>
+              <li><strong>Capacitors:</strong> <span class="pos">¥936.4B, +12.6%</span> — the centerpiece of the story.</li>
+              <li><strong>Inductors & EMI filters:</strong> <span class="pos">¥223.3B, +11.0%</span> — helped by smartphones, mobility, and servers.</li>
+              <li><strong>High-frequency device & communications modules:</strong> <span class="neg">¥394.8B, -11.0%</span> — smartphone/PC drag.</li>
+              <li><strong>Battery & power supply:</strong> <span class="neg">¥154.1B, -1.1%</span> — mixed, with server power up but batteries down.</li>
+              <li><strong>Functional devices:</strong> <span class="pos">¥107.1B, +9.5%</span>.</li>
+            </ul>
+          </div>
+          <div class="list-card">
+            <h3>Application mix read-through</h3>
+            <ul>
+              <li><strong>Communication:</strong> <span class="neg">¥653.0B, -3.1%</span> — still pressured by smartphone-linked substrate demand.</li>
+              <li><strong>Mobility:</strong> <span class="pos">¥474.5B, +4.8%</span> — steady support from AD/ADAS and xEVs.</li>
+              <li><strong>Computers:</strong> <span class="pos">¥310.4B, +28.4%</span> — strongest visible AI/data-center beneficiary.</li>
+              <li><strong>Industry & others:</strong> <span class="pos">¥250.3B, +7.8%</span>.</li>
+              <li><strong>Home electronics:</strong> flat to modest.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Item</th><th>FY2025 actual</th><th>YoY</th><th>Vs. Feb guide</th><th>FY2026 guide</th></tr>
+            </thead>
+            <tbody id="metricsTable"></tbody>
+          </table>
+        </div>
+
+        <div class="split">
+          <div class="list-card">
+            <h3>Price reaction</h3>
+            <ul>
+              <li><strong>MRAAY</strong> closed <span class="pos">+12.2%</span> on release day and was about <span class="pos">+71.8%</span> above the pre-release close by May 26.</li>
+              <li><strong>6981.T</strong> closed <span class="pos">+6.5%</span> on release day and about <span class="pos">+63.8%</span> above the pre-release close by May 25.</li>
+              <li>The market reaction says investors focused much more on FY2026 AI-capex / demand acceleration than on FY2025 profit quality.</li>
+            </ul>
+          </div>
+          <div class="list-card">
+            <h3>Decision lens</h3>
+            <ul>
+              <li><strong>If you are bullish:</strong> the right thesis is “Murata is becoming a picks-and-shovels AI infra beneficiary.”</li>
+              <li><strong>If you are cautious:</strong> ask how much of today’s valuation already prices in multi-year data-center upside.</li>
+              <li><strong>Most important next check:</strong> whether the next report confirms that AI/server strength is broadening while smartphone drag stops worsening.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Sources</h2>
+    <div class="list-card" style="margin-top:12px">
+      <ul>
+        <li><a href="https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0430/25q4-e-fls.ashx?la=en&cvid=20260430013812000000" target="_blank" rel="noopener">Murata FY2025 consolidated financial results</a></li>
+        <li><a href="https://corporate.murata.com/-/media/corporate/about/newsroom/news/irnews/irnews/2026/0430b/25q4-e-speach.ashx?la=en&cvid=20260430024820000000" target="_blank" rel="noopener">Murata FY2025 earnings release conference materials</a></li>
+        <li class="small">Market reaction context checked with Yahoo Finance data for MRAAY and 6981.T.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+<script>
+  let tg = null;
+  try {
+    tg = window.Telegram && window.Telegram.WebApp ? window.Telegram.WebApp : null;
+  } catch (e) {
+    tg = null;
+    console.warn('Telegram bridge detection failed in browser preview', e);
+  }
+  if (tg) {
+    try {
+      tg.ready();
+      tg.expand();
+      document.body.dataset.telegram = 'true';
+    } catch (e) {
+      console.warn('Telegram bridge unavailable in browser preview', e);
+    }
+  }
+
+  const DATA = {
+    generatedAt: '2026-05-26 09:57 PDT',
+    metrics: [
+      {label:'Revenue', value:'¥1.831T', note:'+5.0% YoY', tone:'green'},
+      {label:'Op profit', value:'¥281.8B', note:'+0.8% YoY', tone:'green'},
+      {label:'Net profit', value:'¥233.9B', note:'flat YoY', tone:'purple'},
+      {label:'FY26 guide', value:'¥380B', note:'op profit +34.8%', tone:'green'},
+      {label:'Dividend', value:'¥65', note:'FY26 guide ¥70', tone:'green'},
+      {label:'Buyback', value:'¥150B', note:'largest ever', tone:'amber'}
+    ],
+    tableRows: [
+      ['Revenue','¥1,830.9B','+5.0%','+¥30.9B','¥1,960.0B (+7.1%)'],
+      ['Operating profit','¥281.8B','+0.8%','+¥11.8B','¥380.0B (+34.8%)'],
+      ['Pretax profit','¥308.6B','+1.4%','+¥14.6B','¥390.0B (+26.4%)'],
+      ['Net profit','¥233.9B','+0.0%','+¥13.9B','¥293.0B (+25.3%)'],
+      ['Dividend / share','¥65','+14.0% vs FY24','raised','¥70 forecast'],
+    ],
+    segments: [
+      {name:'Capacitors', revenue:936.4, yoy:12.6},
+      {name:'Inductors/EMI', revenue:223.3, yoy:11.0},
+      {name:'HF/Comm modules', revenue:394.8, yoy:-11.0},
+      {name:'Battery/Power', revenue:154.1, yoy:-1.1},
+      {name:'Functional', revenue:107.1, yoy:9.5},
+    ],
+    applications: [
+      {name:'Communication', revenue:653.0, yoy:-3.1},
+      {name:'Mobility', revenue:474.5, yoy:4.8},
+      {name:'Computers', revenue:310.4, yoy:28.4},
+      {name:'Home electronics', revenue:142.7, yoy:0.1},
+      {name:'Industry/Other', revenue:250.3, yoy:7.8},
+    ]
+  };
+
+  document.getElementById('metricGrid').innerHTML = DATA.metrics.map(m => `
+    <div class="metric">
+      <div class="label">${m.label}</div>
+      <div class="value">${m.value}</div>
+      <div class="chip ${m.tone}" style="margin-top:8px">${m.note}</div>
+    </div>`).join('');
+
+  document.getElementById('metricsTable').innerHTML = DATA.tableRows.map(r => `<tr>${r.map(x => `<td>${x}</td>`).join('')}</tr>`).join('');
+
+  const tabs = Array.from(document.querySelectorAll('.tab'));
+  const panels = Array.from(document.querySelectorAll('.tab-panel'));
+  tabs.forEach(tab => tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.toggle('active', t === tab));
+    panels.forEach(p => p.classList.toggle('active', p.dataset.panel === tab.dataset.tab));
+  }));
+
+  const segmentChart = new Chart(document.getElementById('segmentChart'), {
+    type:'bar',
+    data:{
+      labels: DATA.segments.map(s => s.name),
+      datasets:[
+        {label:'FY2025 revenue (¥B)', data: DATA.segments.map(s => s.revenue), backgroundColor:'rgba(34,211,238,0.72)', borderRadius:10},
+        {label:'YoY %', data: DATA.segments.map(s => s.yoy), type:'line', borderColor:'rgba(167,139,250,1)', backgroundColor:'rgba(167,139,250,0.25)', yAxisID:'y1', tension:0.25}
+      ]
+    },
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      plugins:{legend:{labels:{color:'#ebf2ff'}}},
+      scales:{
+        y:{ticks:{color:'#d3e0fa'}, grid:{color:'rgba(255,255,255,0.08)'}},
+        y1:{position:'right', ticks:{color:'#d3e0fa'}, grid:{display:false}},
+        x:{ticks:{color:'#d3e0fa', maxRotation:0, minRotation:0}, grid:{display:false}}
+      }
+    }
+  });
+
+  const applicationChart = new Chart(document.getElementById('applicationChart'), {
+    type:'bar',
+    data:{
+      labels: DATA.applications.map(a => a.name),
+      datasets:[
+        {label:'FY2025 revenue (¥B)', data: DATA.applications.map(a => a.revenue), backgroundColor:'rgba(74,222,128,0.72)', borderRadius:10},
+        {label:'YoY %', data: DATA.applications.map(a => a.yoy), type:'line', borderColor:'rgba(251,191,36,1)', backgroundColor:'rgba(251,191,36,0.25)', yAxisID:'y1', tension:0.25}
+      ]
+    },
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      plugins:{legend:{labels:{color:'#ebf2ff'}}},
+      scales:{
+        y:{ticks:{color:'#d3e0fa'}, grid:{color:'rgba(255,255,255,0.08)'}},
+        y1:{position:'right', ticks:{color:'#d3e0fa'}, grid:{display:false}},
+        x:{ticks:{color:'#d3e0fa', maxRotation:0, minRotation:0}, grid:{display:false}}
+      }
+    }
+  });
+
+  window.__miniappChartsOk = !!(window.Chart && Chart.getChart(document.getElementById('segmentChart')) && Chart.getChart(document.getElementById('applicationChart')));
+</script>
+</body>
+</html>
