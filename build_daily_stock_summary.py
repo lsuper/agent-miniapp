@@ -309,6 +309,37 @@ def extract_first_falsifier(obj: dict[str, Any] | None) -> str | None:
     return None
 
 
+def pick_semantic_risk(*candidates: str | None) -> str | None:
+    risk_words = (
+        'risk', 'overhang', 'overbought', 'fade', 'weakness', 'softness', 'underperformance',
+        'digestion', 'crowded', 'insider', 'supply', 'pressure', 'geopolit', 'delay', 'blocked',
+        'negative', 'cooling', 'lagging', 'valuation', 'reversal', 'volatility', 'challeng', 'wobble'
+    )
+    for text in candidates:
+        cleaned = clean_text(text)
+        if not cleaned:
+            continue
+        lower = cleaned.lower()
+        if any(word in lower for word in risk_words):
+            return cleaned
+    # second pass: if a candidate has a strong concessive "but", keep the cautionary tail
+    for text in candidates:
+        cleaned = clean_text(text)
+        if not cleaned:
+            continue
+        lower = cleaned.lower()
+        for sep in (' but ', ' however ', ' though '):
+            if sep in lower:
+                tail = cleaned[lower.index(sep) + len(sep):].strip(' .;:-')
+                if tail:
+                    return tail[:1].upper() + tail[1:]
+    for text in candidates:
+        cleaned = clean_text(text)
+        if cleaned:
+            return cleaned
+    return None
+
+
 def build_card(ticker: str, today: str) -> dict[str, Any]:
     status, note_path = pick_note(ticker, today)
     note_text = note_path.read_text() if note_path and note_path.exists() else ""
@@ -367,13 +398,16 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
     pct = ((current - ref) / ref * 100.0) if (ref is not None and current is not None and ref != 0) else None
 
     unusual = first_meaningful_line(sections["Unusual signals"])
-    catalyst = first_meaningful_line(sections["Deep dive on earnings / major catalysts"])
-    risk = (
-        extract_first_falsifier(horizons["today"])
-        or extract_first_falsifier(next((item for item in ledger.get("predictions", []) if isinstance(item, dict) and str(item.get("horizon", "")).lower().strip() in {"today", "1 day", "1d"}), None) if isinstance(ledger.get("predictions"), list) else None)
-        or first_meaningful_line(sections["Unusual signals"])
-        or first_meaningful_line(sections["Deep dive on earnings / major catalysts"])
-        or first_meaningful_line(sections["Balance sheet and capital allocation"])
+    catalyst = first_meaningful_line(sections["Deep dive on earnings / major catalysts"]) or first_meaningful_line(sections["What's new since last run"])
+    today_thesis = horizons["today"].get("thesis") if isinstance(horizons.get("today"), dict) else None
+    risk = pick_semantic_risk(
+        unusual,
+        today_thesis,
+        first_meaningful_line(sections["Balance sheet and capital allocation"]),
+        first_meaningful_line(sections["What's new since last run"]),
+        extract_first_falsifier(horizons["today"]),
+        extract_first_falsifier(next((item for item in ledger.get("predictions", []) if isinstance(item, dict) and str(item.get("horizon", "")).lower().strip() in {"today", "1 day", "1d"}), None) if isinstance(ledger.get("predictions"), list) else None),
+        first_meaningful_line(sections["Deep dive on earnings / major catalysts"]),
     )
     social = first_meaningful_line(sections["Social-media / public-discussion signals"])
     calibration = first_meaningful_line(sections["Historical calibration review"])
