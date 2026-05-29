@@ -1,0 +1,1117 @@
+{
+  "date": "2026-05-29",
+  "generated_at": "2026-05-29 07:11:02 PDT",
+  "headline": "The book still leans constructive on AI infrastructure, but many leaders are overbought enough that same-day conviction is capped and risk management matters more than fresh chasing.",
+  "coverage": {
+    "generated": [
+      "NVDA",
+      "MU",
+      "LRCX",
+      "ARM",
+      "ASML",
+      "FSLY",
+      "TSM",
+      "SIMO",
+      "NET",
+      "AMD"
+    ],
+    "stale": [],
+    "missing": []
+  },
+  "cards": [
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "status": "generated",
+      "note_date": "2026-05-29",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/NVDA/2026-05-29.md",
+      "reference_price": 214.25,
+      "current_price": 215.02,
+      "current_label": "premarket",
+      "current_time": "2026-05-29 08:06 ET",
+      "pct_vs_ref": 0.35939323220537234,
+      "mytutopia": {
+        "rsi": 52.6,
+        "vel5": -9.3,
+        "delta1": 1.6,
+        "momentum_gate": null,
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/NVDA"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 55,
+        "low": 213.0,
+        "high": 219.0,
+        "thesis": "Dell's AI-server quarter is a strong current demand confirmation, Google Finance / yfinance both showed a slightly positive premarket, and Mytutopia RSI 52.6 / Δ1 +1.6 is better than yesterday. But VEL5 -9.3 says NVDA still has not fully repaired short-horizon momentum, so the higher-probability path is modest upside / constructive chop rather than a full breakout.",
+        "range_basis": null
+      },
+      "30d": {
+        "direction": "up",
+        "confidence": 61,
+        "low": 205.0,
+        "high": 248.0,
+        "thesis": "The official setup remains strong — $81.6B Q1 revenue, $91B Q2 guide with no China compute assumed, huge buybacks, and strong live downstream confirmation from Dell. Mytutopia RSI 52.6 / VEL5 -9.3 lowers conviction because the stock itself is still digesting, but it does not overturn the medium-term bull case.",
+        "range_basis": null
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 65,
+        "low": 200.0,
+        "high": 290.0,
+        "thesis": "Over a quarter, the dominant variables are still Blackwell execution, ACIE / enterprise broadening, Rubin / Vera proof points, and whether customer demand keeps showing up in primary-source results. The weak current VEL5 mostly affects timing, not the 90-day thesis.",
+        "range_basis": null
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 69,
+        "low": 190.0,
+        "high": 395.0,
+        "thesis": "NVIDIA still appears to control the highest-value layer of AI infrastructure across compute, networking, software, and annual roadmap cadence. Current Mytutopia readings matter only as timing constraints, not as long-horizon thesis breakers.",
+        "range_basis": null
+      },
+      "unusual_signal": "The most unusual signal is the mismatch between green price action and still-negative VEL5. NVDA's RSI improved to 52.6 and the last close was green, but VEL5 stayed at -9.3. That suggests the bounce is real, but not yet a strong momentum regime change.",
+      "top_catalyst": "The earnings package still carries the note. NVIDIA's Q1 FY2027 release reported $81.6B revenue (+85% YoY), $75.2B Data Center revenue (+92% YoY), and $14.8B networking revenue (+199% YoY), with Q2 guided to $91.0B +/- 2% while assuming no China Data Center compute revenue.",
+      "top_risk": "The most unusual signal is the mismatch between green price action and still-negative VEL5. NVDA's RSI improved to 52.6 and the last close was green, but VEL5 stayed at -9.3. That suggests the bounce is real, but not yet a strong momentum regime change.",
+      "social_note": "Supplementary evidence only. This section is kept explicitly separate from official earnings materials and SEC / company sources.",
+      "calibration_note": "Latest matured Today call: the 2026-05-28 note predicted flat_to_down, confidence 56, expected $207.0-$215.0 from the 2026-05-27 reference close of $212.60. Actual 2026-05-28 close was $214.25, so verdict = Partly Correct: the close landed inside the range, but the directional lean was too cautious.",
+      "adjustment_note": "Keep treating Today calls as a blend of tape + positioning + live demand evidence, not as a pure translation of earnings materials.",
+      "google_finance_method": "browser-harness succeeded first via BU_CDP_URL=http://127.0.0.1:9333 BU_NAME=relvid on the visible shared Chrome path; port 9222 was unavailable; Google Finance beta quote shell loaded and showed about $215.02 premarket at 08:06 ET",
+      "_opp_score": 85.27,
+      "_risk_score": 13.02
+    },
+    {
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "status": "generated",
+      "note_date": "2026-05-29",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/MU/2026-05-29.md",
+      "reference_price": 923.52,
+      "current_price": 945.9988,
+      "current_label": "premarket",
+      "current_time": "2026-05-29 08:28:44 EDT",
+      "pct_vs_ref": 2.434034996534994,
+      "mytutopia": {
+        "rsi": 75.7,
+        "vel5": 11.3,
+        "delta1": -0.8,
+        "momentum_gate": null,
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/MU"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 58,
+        "low": 910.0,
+        "high": 965.0,
+        "thesis": "Green premarket and positive VEL5 support resilience, but RSI 75.7 and crowded sentiment keep the same-day setup stretched rather than cleanly chaseable.",
+        "range_basis": "regular-session close on 2026-05-28; live premarket context ~$946 at 08:28-08:29 ET used as opening context"
+      },
+      "30d": {
+        "direction": "up",
+        "confidence": 63,
+        "low": 840.0,
+        "high": 1080.0,
+        "thesis": "Record earnings, strong Q3 guide, HBM/Rubin visibility, and broader product breadth still support upside despite tactical overbought conditions.",
+        "range_basis": null
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 66,
+        "low": 780.0,
+        "high": 1225.0,
+        "thesis": "Micron remains one of the cleanest AI-memory beneficiaries if HBM execution and capacity monetization hold.",
+        "range_basis": null
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 64,
+        "low": 650.0,
+        "high": 1500.0,
+        "thesis": "The long-term bull case still depends on converting AI-memory scarcity into durable earnings power before supply expansion compresses returns.",
+        "range_basis": null
+      },
+      "unusual_signal": "The most unusual current signal is that the stock is trading around a $1T market cap while the official-company news stack has not materially changed since the May product releases and the March earnings package. That means the market multiple / narrative layer is doing more work than a new filing layer.",
+      "top_catalyst": "The dominant fundamental anchor is still the Q2 FY2026 package summarized in the NotebookLM official-doc briefing:",
+      "top_risk": "Green premarket and positive VEL5 support resilience, but RSI 75.7 and crowded sentiment keep the same-day setup stretched rather than cleanly chaseable.",
+      "social_note": "This section is supplementary evidence only. It is explicitly lower weight than Micron IR materials, SEC disclosures, and the earnings / roadmap documents.",
+      "calibration_note": "I re-read the MU entity page, schema, NotebookLM briefings, the current structured prediction ledger, and the most recent prior MU run notes before writing today’s note.",
+      "adjustment_note": "Keep respecting green premarket + improving / positive VEL5; prior calls have too often underweighted that combination during squeezes.",
+      "google_finance_method": "browser-harness succeeded first on visible Chrome via BU_CDP_URL=http://127.0.0.1:9333 BU_NAME=relvid; no fallback needed for the live quote refresh.",
+      "_opp_score": 104.03,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "LRCX",
+      "company": "Lam Research Corporation",
+      "status": "generated",
+      "note_date": "2026-05-29",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/LRCX/2026-05-29.md",
+      "reference_price": 318.0,
+      "current_price": 318.4,
+      "current_label": "premarket",
+      "current_time": "2026-05-29 08:29 ET",
+      "pct_vs_ref": 0.12578616352200545,
+      "mytutopia": {
+        "rsi": 66.0,
+        "vel5": 6.9,
+        "delta1": -0.6,
+        "momentum_gate": "24hr delayed; reflects 2026-05-28 close",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/LRCX"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 55,
+        "low": 314.0,
+        "high": 323.0,
+        "thesis": "Positive peer breadth plus Mytutopia RSI 66.0 / VEL5 +6.9 argue against a bearish breakdown, but the sharp velocity deceleration from the prior bar makes contained consolidation / slight upside more likely than another immediate breakout.",
+        "range_basis": "regular-session close, with 2026-05-29 premarket around $318.33-$318.40 used as live context"
+      },
+      "30d": {
+        "direction": "up",
+        "confidence": 64,
+        "low": 305.0,
+        "high": 352.0,
+        "thesis": "The $6.60B June-quarter guide, advanced-packaging expansion, memory intensity, and 2H-heavy install weighting still support a higher month-out path. Past misses say not to cap the upside too tightly once Lam is already being rerated.",
+        "range_basis": "regular-session close"
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 66,
+        "low": 300.0,
+        "high": 380.0,
+        "thesis": "Over a quarter, Lam still looks like a beneficiary of advanced packaging, HBM-driven complexity, installed-base leverage, and sub-1nm / backside-power processing intensity. The path may be choppy, but the structural setup remains constructive.",
+        "range_basis": "regular-session close"
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 69,
+        "low": 285.0,
+        "high": 470.0,
+        "thesis": "Lam remains tied to durable semiconductor bottlenecks: etch / deposition complexity, advanced packaging, memory scaling, in-tool metrology / automation, and a larger installed base. The longer trend remains favorable unless AI capex or China mix deteriorates materially.",
+        "range_basis": "regular-session close"
+      },
+      "unusual_signal": "Positive momentum is still intact, but velocity cooled sharply. Mytutopia went from VEL5 +15.3 on the prior completed bar to +6.9 now, while RSI only eased from 66.6 to 66.0. That is a classic \"trend still up, chase less aggressively\" signal.",
+      "top_catalyst": "The March-quarter earnings package still anchors the thesis. Lam reported $5.84B revenue, 49.8% GAAP gross margin, 35.0% GAAP operating margin, and $1.47 non-GAAP EPS, while guiding the June quarter to roughly $6.60B revenue ± $400M, 50.5% gross margin ± 1 point, and 36.5% operating margin ± 1 point. This is still a high-quality margin expansion story, not just cyclical top-line recovery.",
+      "top_risk": "LRCX finished the last regular session (2026-05-28) at $318.00, down 0.29% from $318.93, after trading $317.45 / $322.64 / $308.74 / $318.00 (open / high / low / close) on about 8.38M shares. That is a cooling session, not a structural breakdown; the stock is still holding well above the mid-May $300-$305 breakout zone.",
+      "social_note": "Keep this section separate from the official earnings work. The social pass is useful for narrative mapping and sentiment, but it is not equal evidence to company filings, conference remarks, or earnings materials.",
+      "calibration_note": "Reference anchor for this run: the latest completed regular-session close is $318.00 on 2026-05-28. Browser-harness / Google Finance on the healthy CDP :9333 / relvid path showed $318.33 premarket (+0.10%) at 08:18 ET, and yfinance later sampled $318.40 at 08:29 ET. All forecast ranges below are anchored to the regular-session close, with premarket used only as context.",
+      "adjustment_note": "Treat sub-1% same-day moves as flat. The newest matured Today call is a good example: forcing a strict sign-only rule would create artificial error where the more honest conclusion is \"contained / flat session.\"",
+      "google_finance_method": "browser-harness succeeded via BU_CDP_URL=http://127.0.0.1:9333 BU_NAME=relvid",
+      "_opp_score": 103.09,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "ARM",
+      "company": "ARM",
+      "status": "generated",
+      "note_date": "2026-05-29",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/ARM/2026-05-29.md",
+      "reference_price": 335.27,
+      "current_price": 344.5,
+      "current_label": "premarket",
+      "current_time": "2026-05-29 08:46 ET",
+      "pct_vs_ref": 2.7530050407134605,
+      "mytutopia": {
+        "rsi": 76.8,
+        "vel5": 16.6,
+        "delta1": 9.4,
+        "momentum_gate": "checked during the 2026-05-29 premarket run; page states 24hr delay, and the visible RECENT 10 BARS table included the 05-28 bar",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/ARM"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 58,
+        "low": 332.0,
+        "high": 352.0,
+        "thesis": "ARM re-accelerated immediately after the one-day pullback: Google Finance showed about $344.50 premarket and Mytutopia flipped back to RSI 76.8 / VEL5 +16.6 / Δ1 +9.4, which says the momentum regime is still live even if it is overbought enough to argue for a flat_to_up call instead of a pure chase-up call.",
+        "range_basis": "2026-05-28 regular close with 2026-05-29 premarket context"
+      },
+      "30d": {
+        "direction": "up",
+        "confidence": 60,
+        "low": 320.0,
+        "high": 395.0,
+        "thesis": "The medium-term setup remains constructive because the official evidence now includes record FY2026 results, more than $2B of AGI CPU demand across FY27-FY28, a deepening Meta partnership, and Performix as a software-adjacent ecosystem hook; Mytutopia still supports that stance with strongly positive VEL5.",
+        "range_basis": "2026-05-28 regular close"
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 62,
+        "low": 305.0,
+        "high": 440.0,
+        "thesis": "Over a quarter, I still favor higher prices because ARM is showing both operating acceleration and strategic deepening: direct silicon, open ecosystem support, software/workflow tooling, and continued hyperscaler CPU share gains. Mytutopia remains supportive on this horizon because VEL5 is strongly positive even after a huge run.",
+        "range_basis": "2026-05-28 regular close"
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 57,
+        "low": 260.0,
+        "high": 520.0,
+        "thesis": "The one-year call stays positive because ARM sits at a strategically advantaged layer of the AI compute stack and is now trying to capture more value per workload through silicon and software-adjacent tooling. But confidence remains capped because the stock is already pricing in a heroic future and can still swing violently on conversion, valuation, or SoftBank overhang issues.",
+        "range_basis": "2026-05-28 regular close"
+      },
+      "unusual_signal": "Several signals remain unusual enough to matter:",
+      "top_catalyst": "The core catalyst remains the May 6 Q4 FYE26 results package plus the operating narrative Arm attached to it. The most important thing is not merely that the quarter was strong; it is where the incremental strength is coming from and what management is trying to make investors believe about the next two years.",
+      "top_risk": "ARM re-accelerated immediately after the one-day pullback: Google Finance showed about $344.50 premarket and Mytutopia flipped back to RSI 76.8 / VEL5 +16.6 / Δ1 +9.4, which says the momentum regime is still live even if it is overbought enough to argue for a flat_to_up call instead of a pure chase-up call.",
+      "social_note": "This section is supplementary and not weighted equally with official filings / earnings materials.",
+      "calibration_note": "Structured ARM prediction-ledger review before today's open:",
+      "adjustment_note": "I need to stop auto-fading ARM after a single red day when official execution and Mytutopia both still support the broader uptrend. Yesterday's wrong 1d call is the most recent proof.",
+      "google_finance_method": "browser-harness attempted first on the shared visible-Chrome CDP path BU_CDP_URL=http://127.0.0.1:9333 BU_NAME=relvid; quote extraction succeeded without needing fallback",
+      "_opp_score": 109.86,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "ASML",
+      "company": "ASML Holding N.V.",
+      "status": "generated",
+      "note_date": "2026-05-29",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/ASML/2026-05-29.md",
+      "reference_price": 1605.77,
+      "current_price": 1635.01,
+      "current_label": "premarket",
+      "current_time": "2026-05-29 08:40 EDT",
+      "pct_vs_ref": 1.8209332594331697,
+      "mytutopia": {
+        "rsi": 58.9,
+        "vel5": 2.5,
+        "delta1": 0.6,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/ASML"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 57,
+        "low": 1600.0,
+        "high": 1655.0,
+        "thesis": "ASML enters the session with stronger relative leadership than yesterday and with Mytutopia RSI 58.9 / VEL5 +2.5 still supportive, but the sharp deceleration from the prior +9.7 VEL5 reading plus proximity to the 52-week high argue for a constructive but measured session rather than a breakout chase.",
+        "range_basis": "regular-session close 1605.77 on 2026-05-28; premarket context 1635.01 at 2026-05-29 08:40 EDT"
+      },
+      "30d": {
+        "direction": "up",
+        "confidence": 62,
+        "low": 1550.0,
+        "high": 1760.0,
+        "thesis": "The one-month view remains constructive because ASML still combines monopoly lithography positioning with strong installed-base resilience, a raised €36B-€40B 2026 guide, and management commentary that customer demand expectations are increasing. Mytutopia still supports the thesis, but the much lower VEL5 versus yesterday argues for a wider band than a pure momentum extrapolation would imply.",
+        "range_basis": "regular-session close 1605.77 on 2026-05-28"
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 65,
+        "low": 1525.0,
+        "high": 1885.0,
+        "thesis": "Over a quarter, ASML should still benefit from EUV and DUV scarcity, installed-base monetization, and customer advanced-node buildouts. The current technicals support that medium-horizon view, and today's relative-strength improvement is a better setup than the recent laggard pattern, even if the decelerating VEL5 says not to over-tighten the upside band.",
+        "range_basis": "regular-session close 1605.77 on 2026-05-28"
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 68,
+        "low": 1450.0,
+        "high": 2250.0,
+        "thesis": "The long thesis remains that ASML is the strategic bottleneck in advanced lithography and can monetize both greater wafer complexity and a growing installed base across EUV, High-NA, DUV, and upgrades. Mytutopia does not drive this horizon, but the current positive RSI and VEL5 backdrop reduce the odds that the stock is entering the year-long horizon from a broken intermediate trend.",
+        "range_basis": "regular-session close 1605.77 on 2026-05-28"
+      },
+      "unusual_signal": "ASML is finally participating like a leader again. On prior runs, the main complaint was that memory, packaging, or faster-torque WFE names were doing more of the work. Today ASML is closer to MU / INTC-style strength than to LRCX / AMAT drift.",
+      "top_catalyst": "The core thesis still belongs to the official Q1 package, not to headline churn.",
+      "top_risk": "The sharp deceleration from the prior +9.7 VEL5 reading plus proximity to the 52-week high argue for a constructive but measured session rather than a breakout chase",
+      "social_note": "This section is supplementary and explicitly not equal to official earnings materials.",
+      "calibration_note": "1-day structured ledger cohort: now 3 correct / 4 partly correct / 4 wrong after the newly matured 2026-05-28 Today call scored Correct. That call leaned flat_to_up with a $1,590-$1,635 band off a $1,597.87 reference close, and ASML actually closed $1,605.77 on 2026-05-28, inside range and above the reference close.",
+      "adjustment_note": "Keep same-day confidence capped below 60 unless ASML is clearly leading the tape. Today it is leading more than usual, which justifies a modest upgrade, but not a full breakout-chase call.",
+      "google_finance_method": "browser-harness attempted first after daemon / port checks; :9222 was unavailable, :9333 was healthy, and Google Finance succeeded via BU_CDP_URL=http://127.0.0.1:9333 BU_NAME=relvid with no fallback required",
+      "_opp_score": 99.65,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "FSLY",
+      "company": "Fastly",
+      "status": "generated",
+      "note_date": "2026-05-29",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/FSLY/2026-05-29.md",
+      "reference_price": 16.94,
+      "current_price": 16.8,
+      "current_label": "premarket",
+      "current_time": "2026-05-29 08:46:22 EDT",
+      "pct_vs_ref": -0.8264462809917389,
+      "mytutopia": {
+        "rsi": 39.5,
+        "vel5": 1.5,
+        "delta1": null,
+        "momentum_gate": "SELLING",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/FSLY"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 54,
+        "low": 16.5,
+        "high": 17.3,
+        "thesis": "RSI 39.5 remains below neutral while VEL5 is positive at +1.5, arguing downside velocity has improved. But softer premarket pricing, lower positive velocity versus yesterday, and persistent insider-supply optics argue for stabilization rather than breakout.",
+        "range_basis": "anchored to the regular-session close of $16.94 on 2026-05-28, with live premarket context around $16.80-$16.90."
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": 56,
+        "low": 15.5,
+        "high": 20.5,
+        "thesis": "Q1 still showed 20% revenue growth, 47% security growth, 63% RPO growth, and 113% NRR, and Mytutopia no longer signals urgent downside acceleration. But failed mature 30-day calls show that better mix and AI narrative do not automatically prevent multiple compression.",
+        "range_basis": "anchored to the regular-session close of $16.94 on 2026-05-28."
+      },
+      "90d": {
+        "direction": "flat",
+        "confidence": 54,
+        "low": 14.0,
+        "high": 22.0,
+        "thesis": "Fastly has a credible rerating path if it proves that the Q1 mix shift, margin progress, and agentic-web positioning are durable. But peers like Cloudflare, Akamai, and Datadog are winning more obvious AI-infrastructure narratives today.",
+        "range_basis": "anchored to the regular-session close of $16.94 on 2026-05-28."
+      },
+      "1y": {
+        "direction": "flat_to_up",
+        "confidence": 55,
+        "low": 12.0,
+        "high": 27.0,
+        "thesis": "The stock has already been heavily reset and the business has real security, edge, and AI-adjacent franchise value. But Fastly still must prove the platform story can translate into durable profitable growth and a higher-trust multiple.",
+        "range_basis": "anchored to the regular-session close of $16.94 on 2026-05-28."
+      },
+      "unusual_signal": "1. Mytutopia remains constructive, but the improvement decelerated. The delayed RSI 39.5 / VEL5 +1.5 setup still supports stabilization, yet it is less forceful than yesterday's VEL5 +3.1. That tempers the same-day upside call.",
+      "top_catalyst": "The central FSLY contradiction is still intact: the business mix is improving, but the market still does not fully trust the durability of the story.",
+      "top_risk": "1. Mytutopia remains constructive, but the improvement decelerated. The delayed RSI 39.5 / VEL5 +1.5 setup still supports stabilization, yet it is less forceful than yesterday's VEL5 +3.1. That tempers the same-day upside call.",
+      "social_note": "This section is supplementary and not equal in weight to the official earnings / filing evidence.",
+      "calibration_note": "The structured Today / 1-day cohort now stands at 9 correct / 6 partly correct / 3 wrong across 18 usable premarket predictions in the current ledger.",
+      "adjustment_note": "I should keep same-day upside calls modest when VEL5 is positive but fading and premarket tape is not confirming a breakout.",
+      "google_finance_method": "browser-harness attempted first on isolated :9333/xmu path and succeeded; no Hermes-browser fallback required",
+      "_opp_score": 65.45,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "TSM",
+      "company": "TSMC",
+      "status": "generated",
+      "note_date": "2026-05-29",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/TSM/2026-05-29.md",
+      "reference_price": 424.86,
+      "current_price": 428.4696,
+      "current_label": "premarket",
+      "current_time": "2026-05-29 08:59 ET",
+      "pct_vs_ref": 0.8495975144753566,
+      "mytutopia": {
+        "rsi": 63.6,
+        "vel5": 9.0,
+        "delta1": 0.8,
+        "momentum_gate": "page states 24h delayed; latest visible completed session already showed 2026-05-28 during this run",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/TSM"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 58,
+        "low": 423.0,
+        "high": 434.0,
+        "thesis": "Green premarket, RSI 63.6 / VEL5 +9.0, and a firm AI-semi peer tape support a constructive same-day bias, but quiet primary news and a slightly cooler VEL5 versus yesterday argue for constructive digestion rather than a high-conviction breakout chase.",
+        "range_basis": "regular-session close anchored to $424.86 on 2026-05-28, premarket-informed by $427.60 at 08:39 ET on Google Finance and $428.47 at 08:59 ET on yfinance"
+      },
+      "30d": {
+        "direction": "up",
+        "confidence": 68,
+        "low": 415.0,
+        "high": 460.0,
+        "thesis": "The Q1 base, AI-capacity scarcity, pricing-power expectations, and still-positive Mytutopia momentum support a higher 30-day range even if the path includes consolidation.",
+        "range_basis": "regular-session close"
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 74,
+        "low": 425.0,
+        "high": 495.0,
+        "thesis": "TSM remains the cleanest foundry beneficiary of the AI infrastructure cycle because the moat spans leading-edge wafers and advanced packaging / systems integration.",
+        "range_basis": "regular-session close"
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 77,
+        "low": 460.0,
+        "high": 620.0,
+        "thesis": "The long-duration bull case still rests on node leadership, advanced packaging leverage, customer captivity, and the ability to monetize system-level efficiency as power becomes the core AI constraint.",
+        "range_basis": "regular-session close"
+      },
+      "unusual_signal": "Energy efficiency is now the highest-signal roadmap phrase. Kevin Zhang's framing suggests that the next leg of value capture may come less from pure shrink bragging rights and more from packaging / photonics / stacked-system efficiency.",
+      "top_catalyst": "The Q1 / FY2026 earnings base still dominates the thesis. The most important verified frame remains the previously established package: record Q1 revenue, strong margin structure, advanced-node mix concentration, and a still-bullish 2026 growth backdrop. No new official release this morning displaced that base.",
+      "top_risk": "Green premarket, RSI 63.6 / VEL5 +9.0, and a firm AI-semi peer tape support a constructive same-day bias, but quiet primary news and a slightly cooler VEL5 versus yesterday argue for constructive digestion rather than a high-conviction breakout chase.",
+      "social_note": "(Supplementary only; separate from official analysis.)",
+      "calibration_note": "Latest fully matured 1-day / next-session Today call: Partly correct. The 2026-05-26 Today prediction was flat_to_up $408-$418 off the 2026-05-22 $404.52 reference close. TSM then closed $422.73 on 2026-05-27 — the constructive direction held, but the upside exceeded the upper bound by $4.73.",
+      "adjustment_note": "Keep treating same-day TSM calls as a range-width problem more than a direction problem; the series still misses more often by underestimating upside extension than by flipping the whole sign wrong.",
+      "google_finance_method": "browser-harness attempted first and succeeded on healthy visible-Chrome :9333 with BU_NAME=tsm0529; :9222 unavailable and no Hermes-browser fallback needed",
+      "_opp_score": 107.5,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "SIMO",
+      "company": "Silicon Motion Technology Corp.",
+      "status": "generated",
+      "note_date": "2026-05-29",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/SIMO/2026-05-29.md",
+      "reference_price": 282.44,
+      "current_price": 286.0,
+      "current_label": "premarket",
+      "current_time": "2026-05-29 09:02 ET (yfinance); Google Finance/browser-harness showed 285.00 at 08:55 ET",
+      "pct_vs_ref": 1.2604446962186666,
+      "mytutopia": {
+        "rsi": 72.2,
+        "vel5": 2.3,
+        "delta1": -1.6,
+        "momentum_gate": "SELLING",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/SIMO"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 57,
+        "low": 282.0,
+        "high": 292.0,
+        "thesis": "SIMO is more likely to finish roughly flat to modestly higher because the live premarket tape recovered, peer storage/memory names are mostly green, and Mytutopia still shows positive VEL5 (+2.3). Confidence stays moderate because RSI 72.2 is still overbought, delta1 remains negative (-1.6), the strategy still shows 100% cash, and recent Form 144 activity caps chase risk.",
+        "range_basis": "regular-session close $282.44 on 2026-05-28; live premarket context about $285.00-$286.00"
+      },
+      "30d": {
+        "direction": "up",
+        "confidence": 64,
+        "low": 278.0,
+        "high": 345.0,
+        "thesis": "Over 30 days SIMO still has positive skew because the Q1 beat and Q2 guide remain strong, the COMPUTEX release broadened the AI-storage roadmap, and Mytutopia still shows RSI above 70 with positive VEL5. The upside band is intentionally wider because mature 30-day calls have repeatedly gotten direction right but capped upside too tightly.",
+        "range_basis": "regular-session close $282.44 on 2026-05-28"
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 66,
+        "low": 265.0,
+        "high": 390.0,
+        "thesis": "Over 90 days SIMO still looks more likely to be higher if enterprise boot-drive, MonTitan, and broader controller ramps become visible in financial mix. Positive VEL5 still helps confidence, while the overbought RSI mainly argues for a wide band rather than a bearish reversal thesis.",
+        "range_basis": "regular-session close $282.44 on 2026-05-28"
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 67,
+        "low": 240.0,
+        "high": 460.0,
+        "thesis": "Over one year SIMO is still more likely to be materially higher if it converts the current AI-storage, enterprise-controller, and automotive roadmap into durable revenue mix, operating leverage, and cleaner cash generation. The wide band reflects execution, cash-conversion, and geopolitical risk rather than a broken trend.",
+        "range_basis": "regular-session close $282.44 on 2026-05-28"
+      },
+      "unusual_signal": "1. Positive VEL5, but clearly cooling. Mytutopia still shows VEL5 +2.3, so the medium-horizon trend remains constructive, but the drop from +5.3 yesterday matters. This is not fresh breakout acceleration.",
+      "top_catalyst": "The core investment case still rests on the April 29 Q1 2026 package, because that is still the latest operating filing with real financial weight:",
+      "top_risk": "1. Positive VEL5, but clearly cooling. Mytutopia still shows VEL5 +2.3, so the medium-horizon trend remains constructive, but the drop from +5.3 yesterday matters. This is not fresh breakout acceleration.",
+      "social_note": "This section is supplementary evidence only. It is not equivalent to the official earnings release, 20-F, SEC filings, or company press releases.",
+      "calibration_note": "Freshly matured 1d call: the 2026-05-28 Today prediction scores CORRECT. The prior note leaned flat_to_down with a $279-$289 range off the $284.98 2026-05-27 close, and SIMO closed $282.44 on 2026-05-28, inside that stored band and below the old reference close.",
+      "adjustment_note": "Keep widening medium-horizon upside bands when the official story remains intact. The mature 30-day cohort is now 7 straight partly-correct explicit-range calls because direction was right but upside caps were too conservative.",
+      "google_finance_method": "browser-harness attempted first and succeeded on the shared visible-Chrome path (BU_CDP_URL=http://127.0.0.1:9333 BU_NAME=relvid); no fallback was needed during this run",
+      "_opp_score": 99.43,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "NET",
+      "company": "NET",
+      "status": "generated",
+      "note_date": "2026-05-29",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/NET/2026-05-29.md",
+      "reference_price": 228.11,
+      "current_price": 230.6,
+      "current_label": "premarket",
+      "current_time": "2026-05-29 09:20 ET (yfinance prepost); Google Finance showed about $230.00 at 09:11 ET",
+      "pct_vs_ref": 1.0915786243478938,
+      "mytutopia": {
+        "rsi": 58.6,
+        "vel5": 7.2,
+        "delta1": 8.4,
+        "momentum_gate": "Delayed technical data on page; RECENT 10 BARS extracted during the premarket run",
+        "page": null
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 56,
+        "low": 226.0,
+        "high": 234.0,
+        "thesis": "The stock already reclaimed most of the 2026-05-27 selloff and Mytutopia RSI 58.6 / VEL5 +7.2 confirms momentum re-acceleration, but the layoff / insider-flow narrative still argues for a controlled grind rather than a clean breakout chase after a +9.0% regular-session move.",
+        "range_basis": "2026-05-28 regular close with 2026-05-29 premarket context around $230.00-$230.60"
+      },
+      "30d": {
+        "direction": "up",
+        "confidence": 61,
+        "low": 220.0,
+        "high": 250.0,
+        "thesis": "Over the next month, NET still has an upside skew because the May 8 earnings package proved demand is real, the June 9 Investor Day can sharpen the monetization-and-margin bridge, and recent product shipping continues to support the thesis that Cloudflare is becoming agent-runtime infrastructure rather than just a CDN/security bundle.",
+        "range_basis": "2026-05-28 regular close"
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 63,
+        "low": 215.0,
+        "high": 270.0,
+        "thesis": "The 90-day window still favors upside if Cloudflare can show that the AI-first reset improves execution and monetization rather than simply shrinking headcount. The platform roadmap is unusually coherent across agent runtime, browser automation, security, identity, and data, which can keep the premium multiple alive if management tightens the economic narrative.",
+        "range_basis": "2026-05-28 regular close"
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 60,
+        "low": 205.0,
+        "high": 320.0,
+        "thesis": "One year out, NET can still be higher if Cloudflare proves it is a durable AI-infrastructure platform with cleaner margins and better revenue attachment. But this remains a premium-multiple story with no mature long-horizon scorecard yet, so upside conviction must stay capped until the post-layoff operating model and monetization actually show through reported numbers.",
+        "range_basis": "2026-05-28 regular close"
+      },
+      "unusual_signal": "Three primary-source items stood out as more than normal product-marketing noise:",
+      "top_catalyst": "The May 8 Q1 2026 package is still the central economic anchor because no newer operating filing displaced it. The key facts carried forward from the official-doc briefing, prior run materials, and the live Google Finance shell remain:",
+      "top_risk": "The stock already reclaimed most of the 2026-05-27 selloff and Mytutopia RSI 58.6 / VEL5 +7.2 confirms momentum re-acceleration, but the layoff / insider-flow narrative still argues for a controlled grind rather than a clean breakout chase after a +9.0% regular-session move.",
+      "social_note": "This section is supplementary evidence only, not equal to the official earnings / product materials.",
+      "calibration_note": "Newly matured 1-day call: the 2026-05-26 Today call is Wrong. The prior stance was flat_to_up with a $213-$221 range off the $216.17 reference close, but the next trading-session close on 2026-05-27 was $209.22, below both the direction and the lower bound.",
+      "adjustment_note": "Keep same-day confidence capped in the mid-50s unless both the live tape and a near-term catalyst point the same way.",
+      "google_finance_method": "browser-harness attempted first after port/CDP reuse checks and succeeded on BU_CDP_URL=http://127.0.0.1:9333 BU_NAME=xmu; no Hermes-browser fallback was needed",
+      "_opp_score": 104.12,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "status": "generated",
+      "note_date": "2026-05-29",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/AMD/2026-05-29.md",
+      "reference_price": 518.09,
+      "current_price": 519.84,
+      "current_label": "premarket",
+      "current_time": "2026-05-29 09:18:05 AM ET",
+      "pct_vs_ref": 0.33777915034067435,
+      "mytutopia": {
+        "rsi": 76.7,
+        "vel5": 7.1,
+        "delta1": 2.6,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/AMD"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 56,
+        "low": 508.0,
+        "high": 533.0,
+        "thesis": "AMD is still in a live AI-infrastructure re-rating, but after the surge into fresh highs the most likely near-term outcome is choppy continuation rather than a clean melt-up. Positive VEL5 and strong official execution signals support the stock; overbought RSI and fresh dilution / insider optics keep conviction moderate.",
+        "range_basis": "Anchored to the 2026-05-28 regular close of $518.09, yfinance premarket about $519.84 at 09:18 ET, Google Finance about $519.60 at 09:16 ET, the fresh $527.20 52-week-high zone overhead, and Mytutopia RSI 76.7 / VEL5 +7.1 / Δ1 +2.6. Positive VEL5 justifies a constructive bias, but the overbought location and premium valuation cap same-day confidence."
+      },
+      "30d": {
+        "direction": "up",
+        "confidence": 62,
+        "low": 480.0,
+        "high": 610.0,
+        "thesis": "Over the next month AMD still has more upside than downside because the company is stacking Q1 earnings validation, stronger-than-expected customer engagement around MI450 / Helios, 2nm CPU production proof, and packaging-scale ecosystem investment into one integrated AI-infrastructure story.",
+        "range_basis": "Anchored to $518.09 with room for a post-breakout consolidation on the downside and another leg of AI-platform re-rating on the upside if Q2 confidence and deployment evidence continue to strengthen."
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 64,
+        "low": 455.0,
+        "high": 700.0,
+        "thesis": "On a quarter horizon AMD can still re-rate higher if management converts current rhetoric around customer demand, Helios deployments, and 2nm / advanced-packaging readiness into visible revenue, margin, and deployment proof points.",
+        "range_basis": "Anchored to $518.09 with wide bands for AMD's high beta, summer semiconductor volatility, and the possibility of another valuation reset if Q2 execution confirms the AI-platform thesis."
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 66,
+        "low": 400.0,
+        "high": 900.0,
+        "thesis": "The one-year thesis stays bullish if AMD keeps compounding Data Center share, turns the CPU+GPU+packaging roadmap into shipped systems, and proves that today's unusually aggressive ecosystem investments translate into durable revenue and margin gains.",
+        "range_basis": "Anchored to $518.09 with room for both a major AI-infrastructure expansion and a meaningful de-rating if expectations outrun realized earnings power."
+      },
+      "unusual_signal": "The most unusual positive official signal remains AMD's explicit claim that \"Venice\" is the first HPC product in the industry to enter production on TSMC advanced 2nm. That is a competitive and credibility marker, not ordinary PR filler.",
+      "top_catalyst": "Reference close: $518.09 on 2026-05-28.",
+      "top_risk": "AMD is still in a live AI-infrastructure re-rating, but after the surge into fresh highs the most likely near-term outcome is choppy continuation rather than a clean melt-up. Positive VEL5 and strong official execution signals support the stock; overbought RSI and fresh dilution / insider optics keep conviction moderate.",
+      "social_note": "n/a",
+      "calibration_note": "I re-read SCHEMA.md, the AMD entity page, the prediction ledger, the last 10 AMD run notes, and the AMD session_search context before writing today's run.",
+      "adjustment_note": "n/a",
+      "google_finance_method": "16 ET, yfinance 1-minute pre/post data sampled about $519.84 at 09:18 ET, and Stocktwits showed about $519.60 at 09:15 EDT. That is modestly green rather than a true breakout gap.",
+      "_opp_score": 98.01,
+      "_risk_score": 0.0
+    }
+  ],
+  "market_bullets": [
+    "Coverage is 10/10 same-day notes; 10 names lean up or flat-to-up, while 0 lean flat-to-down or down.",
+    "Momentum remains crowded in parts of AI semis: high-RSI names include MU, ARM, AMD, which caps 1-day confidence even when longer-horizon calls stay constructive.",
+    "Several setups still show damaged or cooling 5-bar momentum (NVDA), so the regime is selective rather than a clean all-clear risk-on tape.",
+    "Semiconductor / infrastructure names still dominate the medium-term upside stack: ARM, TSM, MU, LRCX carry the strongest multi-horizon constructive bias.",
+    "Software-edge names remain more idiosyncratic than the semis: NET and FSLY are still trading as special situations driven by credibility, ownership, and reset dynamics rather than simple sector beta.",
+    "The most common pattern is constructive 30D/90D/1Y framing paired with lower-conviction same-day calls, meaning tape damage is tactical while the business thesis often stays intact.",
+    "Calibration lessons continue to point to range-width discipline: recent misses skew more toward undershooting move magnitude than getting the broad direction wrong."
+  ],
+  "top_opportunities": [
+    {
+      "ticker": "ARM",
+      "company": "ARM",
+      "status": "generated",
+      "note_date": "2026-05-29",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/ARM/2026-05-29.md",
+      "reference_price": 335.27,
+      "current_price": 344.5,
+      "current_label": "premarket",
+      "current_time": "2026-05-29 08:46 ET",
+      "pct_vs_ref": 2.7530050407134605,
+      "mytutopia": {
+        "rsi": 76.8,
+        "vel5": 16.6,
+        "delta1": 9.4,
+        "momentum_gate": "checked during the 2026-05-29 premarket run; page states 24hr delay, and the visible RECENT 10 BARS table included the 05-28 bar",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/ARM"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 58,
+        "low": 332.0,
+        "high": 352.0,
+        "thesis": "ARM re-accelerated immediately after the one-day pullback: Google Finance showed about $344.50 premarket and Mytutopia flipped back to RSI 76.8 / VEL5 +16.6 / Δ1 +9.4, which says the momentum regime is still live even if it is overbought enough to argue for a flat_to_up call instead of a pure chase-up call.",
+        "range_basis": "2026-05-28 regular close with 2026-05-29 premarket context"
+      },
+      "30d": {
+        "direction": "up",
+        "confidence": 60,
+        "low": 320.0,
+        "high": 395.0,
+        "thesis": "The medium-term setup remains constructive because the official evidence now includes record FY2026 results, more than $2B of AGI CPU demand across FY27-FY28, a deepening Meta partnership, and Performix as a software-adjacent ecosystem hook; Mytutopia still supports that stance with strongly positive VEL5.",
+        "range_basis": "2026-05-28 regular close"
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 62,
+        "low": 305.0,
+        "high": 440.0,
+        "thesis": "Over a quarter, I still favor higher prices because ARM is showing both operating acceleration and strategic deepening: direct silicon, open ecosystem support, software/workflow tooling, and continued hyperscaler CPU share gains. Mytutopia remains supportive on this horizon because VEL5 is strongly positive even after a huge run.",
+        "range_basis": "2026-05-28 regular close"
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 57,
+        "low": 260.0,
+        "high": 520.0,
+        "thesis": "The one-year call stays positive because ARM sits at a strategically advantaged layer of the AI compute stack and is now trying to capture more value per workload through silicon and software-adjacent tooling. But confidence remains capped because the stock is already pricing in a heroic future and can still swing violently on conversion, valuation, or SoftBank overhang issues.",
+        "range_basis": "2026-05-28 regular close"
+      },
+      "unusual_signal": "Several signals remain unusual enough to matter:",
+      "top_catalyst": "The core catalyst remains the May 6 Q4 FYE26 results package plus the operating narrative Arm attached to it. The most important thing is not merely that the quarter was strong; it is where the incremental strength is coming from and what management is trying to make investors believe about the next two years.",
+      "top_risk": "ARM re-accelerated immediately after the one-day pullback: Google Finance showed about $344.50 premarket and Mytutopia flipped back to RSI 76.8 / VEL5 +16.6 / Δ1 +9.4, which says the momentum regime is still live even if it is overbought enough to argue for a flat_to_up call instead of a pure chase-up call.",
+      "social_note": "This section is supplementary and not weighted equally with official filings / earnings materials.",
+      "calibration_note": "Structured ARM prediction-ledger review before today's open:",
+      "adjustment_note": "I need to stop auto-fading ARM after a single red day when official execution and Mytutopia both still support the broader uptrend. Yesterday's wrong 1d call is the most recent proof.",
+      "google_finance_method": "browser-harness attempted first on the shared visible-Chrome CDP path BU_CDP_URL=http://127.0.0.1:9333 BU_NAME=relvid; quote extraction succeeded without needing fallback",
+      "_opp_score": 109.86,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "TSM",
+      "company": "TSMC",
+      "status": "generated",
+      "note_date": "2026-05-29",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/TSM/2026-05-29.md",
+      "reference_price": 424.86,
+      "current_price": 428.4696,
+      "current_label": "premarket",
+      "current_time": "2026-05-29 08:59 ET",
+      "pct_vs_ref": 0.8495975144753566,
+      "mytutopia": {
+        "rsi": 63.6,
+        "vel5": 9.0,
+        "delta1": 0.8,
+        "momentum_gate": "page states 24h delayed; latest visible completed session already showed 2026-05-28 during this run",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/TSM"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 58,
+        "low": 423.0,
+        "high": 434.0,
+        "thesis": "Green premarket, RSI 63.6 / VEL5 +9.0, and a firm AI-semi peer tape support a constructive same-day bias, but quiet primary news and a slightly cooler VEL5 versus yesterday argue for constructive digestion rather than a high-conviction breakout chase.",
+        "range_basis": "regular-session close anchored to $424.86 on 2026-05-28, premarket-informed by $427.60 at 08:39 ET on Google Finance and $428.47 at 08:59 ET on yfinance"
+      },
+      "30d": {
+        "direction": "up",
+        "confidence": 68,
+        "low": 415.0,
+        "high": 460.0,
+        "thesis": "The Q1 base, AI-capacity scarcity, pricing-power expectations, and still-positive Mytutopia momentum support a higher 30-day range even if the path includes consolidation.",
+        "range_basis": "regular-session close"
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 74,
+        "low": 425.0,
+        "high": 495.0,
+        "thesis": "TSM remains the cleanest foundry beneficiary of the AI infrastructure cycle because the moat spans leading-edge wafers and advanced packaging / systems integration.",
+        "range_basis": "regular-session close"
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 77,
+        "low": 460.0,
+        "high": 620.0,
+        "thesis": "The long-duration bull case still rests on node leadership, advanced packaging leverage, customer captivity, and the ability to monetize system-level efficiency as power becomes the core AI constraint.",
+        "range_basis": "regular-session close"
+      },
+      "unusual_signal": "Energy efficiency is now the highest-signal roadmap phrase. Kevin Zhang's framing suggests that the next leg of value capture may come less from pure shrink bragging rights and more from packaging / photonics / stacked-system efficiency.",
+      "top_catalyst": "The Q1 / FY2026 earnings base still dominates the thesis. The most important verified frame remains the previously established package: record Q1 revenue, strong margin structure, advanced-node mix concentration, and a still-bullish 2026 growth backdrop. No new official release this morning displaced that base.",
+      "top_risk": "Green premarket, RSI 63.6 / VEL5 +9.0, and a firm AI-semi peer tape support a constructive same-day bias, but quiet primary news and a slightly cooler VEL5 versus yesterday argue for constructive digestion rather than a high-conviction breakout chase.",
+      "social_note": "(Supplementary only; separate from official analysis.)",
+      "calibration_note": "Latest fully matured 1-day / next-session Today call: Partly correct. The 2026-05-26 Today prediction was flat_to_up $408-$418 off the 2026-05-22 $404.52 reference close. TSM then closed $422.73 on 2026-05-27 — the constructive direction held, but the upside exceeded the upper bound by $4.73.",
+      "adjustment_note": "Keep treating same-day TSM calls as a range-width problem more than a direction problem; the series still misses more often by underestimating upside extension than by flipping the whole sign wrong.",
+      "google_finance_method": "browser-harness attempted first and succeeded on healthy visible-Chrome :9333 with BU_NAME=tsm0529; :9222 unavailable and no Hermes-browser fallback needed",
+      "_opp_score": 107.5,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "NET",
+      "company": "NET",
+      "status": "generated",
+      "note_date": "2026-05-29",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/NET/2026-05-29.md",
+      "reference_price": 228.11,
+      "current_price": 230.6,
+      "current_label": "premarket",
+      "current_time": "2026-05-29 09:20 ET (yfinance prepost); Google Finance showed about $230.00 at 09:11 ET",
+      "pct_vs_ref": 1.0915786243478938,
+      "mytutopia": {
+        "rsi": 58.6,
+        "vel5": 7.2,
+        "delta1": 8.4,
+        "momentum_gate": "Delayed technical data on page; RECENT 10 BARS extracted during the premarket run",
+        "page": null
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 56,
+        "low": 226.0,
+        "high": 234.0,
+        "thesis": "The stock already reclaimed most of the 2026-05-27 selloff and Mytutopia RSI 58.6 / VEL5 +7.2 confirms momentum re-acceleration, but the layoff / insider-flow narrative still argues for a controlled grind rather than a clean breakout chase after a +9.0% regular-session move.",
+        "range_basis": "2026-05-28 regular close with 2026-05-29 premarket context around $230.00-$230.60"
+      },
+      "30d": {
+        "direction": "up",
+        "confidence": 61,
+        "low": 220.0,
+        "high": 250.0,
+        "thesis": "Over the next month, NET still has an upside skew because the May 8 earnings package proved demand is real, the June 9 Investor Day can sharpen the monetization-and-margin bridge, and recent product shipping continues to support the thesis that Cloudflare is becoming agent-runtime infrastructure rather than just a CDN/security bundle.",
+        "range_basis": "2026-05-28 regular close"
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 63,
+        "low": 215.0,
+        "high": 270.0,
+        "thesis": "The 90-day window still favors upside if Cloudflare can show that the AI-first reset improves execution and monetization rather than simply shrinking headcount. The platform roadmap is unusually coherent across agent runtime, browser automation, security, identity, and data, which can keep the premium multiple alive if management tightens the economic narrative.",
+        "range_basis": "2026-05-28 regular close"
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 60,
+        "low": 205.0,
+        "high": 320.0,
+        "thesis": "One year out, NET can still be higher if Cloudflare proves it is a durable AI-infrastructure platform with cleaner margins and better revenue attachment. But this remains a premium-multiple story with no mature long-horizon scorecard yet, so upside conviction must stay capped until the post-layoff operating model and monetization actually show through reported numbers.",
+        "range_basis": "2026-05-28 regular close"
+      },
+      "unusual_signal": "Three primary-source items stood out as more than normal product-marketing noise:",
+      "top_catalyst": "The May 8 Q1 2026 package is still the central economic anchor because no newer operating filing displaced it. The key facts carried forward from the official-doc briefing, prior run materials, and the live Google Finance shell remain:",
+      "top_risk": "The stock already reclaimed most of the 2026-05-27 selloff and Mytutopia RSI 58.6 / VEL5 +7.2 confirms momentum re-acceleration, but the layoff / insider-flow narrative still argues for a controlled grind rather than a clean breakout chase after a +9.0% regular-session move.",
+      "social_note": "This section is supplementary evidence only, not equal to the official earnings / product materials.",
+      "calibration_note": "Newly matured 1-day call: the 2026-05-26 Today call is Wrong. The prior stance was flat_to_up with a $213-$221 range off the $216.17 reference close, but the next trading-session close on 2026-05-27 was $209.22, below both the direction and the lower bound.",
+      "adjustment_note": "Keep same-day confidence capped in the mid-50s unless both the live tape and a near-term catalyst point the same way.",
+      "google_finance_method": "browser-harness attempted first after port/CDP reuse checks and succeeded on BU_CDP_URL=http://127.0.0.1:9333 BU_NAME=xmu; no Hermes-browser fallback was needed",
+      "_opp_score": 104.12,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "status": "generated",
+      "note_date": "2026-05-29",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/MU/2026-05-29.md",
+      "reference_price": 923.52,
+      "current_price": 945.9988,
+      "current_label": "premarket",
+      "current_time": "2026-05-29 08:28:44 EDT",
+      "pct_vs_ref": 2.434034996534994,
+      "mytutopia": {
+        "rsi": 75.7,
+        "vel5": 11.3,
+        "delta1": -0.8,
+        "momentum_gate": null,
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/MU"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 58,
+        "low": 910.0,
+        "high": 965.0,
+        "thesis": "Green premarket and positive VEL5 support resilience, but RSI 75.7 and crowded sentiment keep the same-day setup stretched rather than cleanly chaseable.",
+        "range_basis": "regular-session close on 2026-05-28; live premarket context ~$946 at 08:28-08:29 ET used as opening context"
+      },
+      "30d": {
+        "direction": "up",
+        "confidence": 63,
+        "low": 840.0,
+        "high": 1080.0,
+        "thesis": "Record earnings, strong Q3 guide, HBM/Rubin visibility, and broader product breadth still support upside despite tactical overbought conditions.",
+        "range_basis": null
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 66,
+        "low": 780.0,
+        "high": 1225.0,
+        "thesis": "Micron remains one of the cleanest AI-memory beneficiaries if HBM execution and capacity monetization hold.",
+        "range_basis": null
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 64,
+        "low": 650.0,
+        "high": 1500.0,
+        "thesis": "The long-term bull case still depends on converting AI-memory scarcity into durable earnings power before supply expansion compresses returns.",
+        "range_basis": null
+      },
+      "unusual_signal": "The most unusual current signal is that the stock is trading around a $1T market cap while the official-company news stack has not materially changed since the May product releases and the March earnings package. That means the market multiple / narrative layer is doing more work than a new filing layer.",
+      "top_catalyst": "The dominant fundamental anchor is still the Q2 FY2026 package summarized in the NotebookLM official-doc briefing:",
+      "top_risk": "Green premarket and positive VEL5 support resilience, but RSI 75.7 and crowded sentiment keep the same-day setup stretched rather than cleanly chaseable.",
+      "social_note": "This section is supplementary evidence only. It is explicitly lower weight than Micron IR materials, SEC disclosures, and the earnings / roadmap documents.",
+      "calibration_note": "I re-read the MU entity page, schema, NotebookLM briefings, the current structured prediction ledger, and the most recent prior MU run notes before writing today’s note.",
+      "adjustment_note": "Keep respecting green premarket + improving / positive VEL5; prior calls have too often underweighted that combination during squeezes.",
+      "google_finance_method": "browser-harness succeeded first on visible Chrome via BU_CDP_URL=http://127.0.0.1:9333 BU_NAME=relvid; no fallback needed for the live quote refresh.",
+      "_opp_score": 104.03,
+      "_risk_score": 0.0
+    }
+  ],
+  "top_risks": [
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "status": "generated",
+      "note_date": "2026-05-29",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/NVDA/2026-05-29.md",
+      "reference_price": 214.25,
+      "current_price": 215.02,
+      "current_label": "premarket",
+      "current_time": "2026-05-29 08:06 ET",
+      "pct_vs_ref": 0.35939323220537234,
+      "mytutopia": {
+        "rsi": 52.6,
+        "vel5": -9.3,
+        "delta1": 1.6,
+        "momentum_gate": null,
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/NVDA"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 55,
+        "low": 213.0,
+        "high": 219.0,
+        "thesis": "Dell's AI-server quarter is a strong current demand confirmation, Google Finance / yfinance both showed a slightly positive premarket, and Mytutopia RSI 52.6 / Δ1 +1.6 is better than yesterday. But VEL5 -9.3 says NVDA still has not fully repaired short-horizon momentum, so the higher-probability path is modest upside / constructive chop rather than a full breakout.",
+        "range_basis": null
+      },
+      "30d": {
+        "direction": "up",
+        "confidence": 61,
+        "low": 205.0,
+        "high": 248.0,
+        "thesis": "The official setup remains strong — $81.6B Q1 revenue, $91B Q2 guide with no China compute assumed, huge buybacks, and strong live downstream confirmation from Dell. Mytutopia RSI 52.6 / VEL5 -9.3 lowers conviction because the stock itself is still digesting, but it does not overturn the medium-term bull case.",
+        "range_basis": null
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 65,
+        "low": 200.0,
+        "high": 290.0,
+        "thesis": "Over a quarter, the dominant variables are still Blackwell execution, ACIE / enterprise broadening, Rubin / Vera proof points, and whether customer demand keeps showing up in primary-source results. The weak current VEL5 mostly affects timing, not the 90-day thesis.",
+        "range_basis": null
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 69,
+        "low": 190.0,
+        "high": 395.0,
+        "thesis": "NVIDIA still appears to control the highest-value layer of AI infrastructure across compute, networking, software, and annual roadmap cadence. Current Mytutopia readings matter only as timing constraints, not as long-horizon thesis breakers.",
+        "range_basis": null
+      },
+      "unusual_signal": "The most unusual signal is the mismatch between green price action and still-negative VEL5. NVDA's RSI improved to 52.6 and the last close was green, but VEL5 stayed at -9.3. That suggests the bounce is real, but not yet a strong momentum regime change.",
+      "top_catalyst": "The earnings package still carries the note. NVIDIA's Q1 FY2027 release reported $81.6B revenue (+85% YoY), $75.2B Data Center revenue (+92% YoY), and $14.8B networking revenue (+199% YoY), with Q2 guided to $91.0B +/- 2% while assuming no China Data Center compute revenue.",
+      "top_risk": "The most unusual signal is the mismatch between green price action and still-negative VEL5. NVDA's RSI improved to 52.6 and the last close was green, but VEL5 stayed at -9.3. That suggests the bounce is real, but not yet a strong momentum regime change.",
+      "social_note": "Supplementary evidence only. This section is kept explicitly separate from official earnings materials and SEC / company sources.",
+      "calibration_note": "Latest matured Today call: the 2026-05-28 note predicted flat_to_down, confidence 56, expected $207.0-$215.0 from the 2026-05-27 reference close of $212.60. Actual 2026-05-28 close was $214.25, so verdict = Partly Correct: the close landed inside the range, but the directional lean was too cautious.",
+      "adjustment_note": "Keep treating Today calls as a blend of tape + positioning + live demand evidence, not as a pure translation of earnings materials.",
+      "google_finance_method": "browser-harness succeeded first via BU_CDP_URL=http://127.0.0.1:9333 BU_NAME=relvid on the visible shared Chrome path; port 9222 was unavailable; Google Finance beta quote shell loaded and showed about $215.02 premarket at 08:06 ET",
+      "_opp_score": 85.27,
+      "_risk_score": 13.02
+    },
+    {
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "status": "generated",
+      "note_date": "2026-05-29",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/AMD/2026-05-29.md",
+      "reference_price": 518.09,
+      "current_price": 519.84,
+      "current_label": "premarket",
+      "current_time": "2026-05-29 09:18:05 AM ET",
+      "pct_vs_ref": 0.33777915034067435,
+      "mytutopia": {
+        "rsi": 76.7,
+        "vel5": 7.1,
+        "delta1": 2.6,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/AMD"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 56,
+        "low": 508.0,
+        "high": 533.0,
+        "thesis": "AMD is still in a live AI-infrastructure re-rating, but after the surge into fresh highs the most likely near-term outcome is choppy continuation rather than a clean melt-up. Positive VEL5 and strong official execution signals support the stock; overbought RSI and fresh dilution / insider optics keep conviction moderate.",
+        "range_basis": "Anchored to the 2026-05-28 regular close of $518.09, yfinance premarket about $519.84 at 09:18 ET, Google Finance about $519.60 at 09:16 ET, the fresh $527.20 52-week-high zone overhead, and Mytutopia RSI 76.7 / VEL5 +7.1 / Δ1 +2.6. Positive VEL5 justifies a constructive bias, but the overbought location and premium valuation cap same-day confidence."
+      },
+      "30d": {
+        "direction": "up",
+        "confidence": 62,
+        "low": 480.0,
+        "high": 610.0,
+        "thesis": "Over the next month AMD still has more upside than downside because the company is stacking Q1 earnings validation, stronger-than-expected customer engagement around MI450 / Helios, 2nm CPU production proof, and packaging-scale ecosystem investment into one integrated AI-infrastructure story.",
+        "range_basis": "Anchored to $518.09 with room for a post-breakout consolidation on the downside and another leg of AI-platform re-rating on the upside if Q2 confidence and deployment evidence continue to strengthen."
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 64,
+        "low": 455.0,
+        "high": 700.0,
+        "thesis": "On a quarter horizon AMD can still re-rate higher if management converts current rhetoric around customer demand, Helios deployments, and 2nm / advanced-packaging readiness into visible revenue, margin, and deployment proof points.",
+        "range_basis": "Anchored to $518.09 with wide bands for AMD's high beta, summer semiconductor volatility, and the possibility of another valuation reset if Q2 execution confirms the AI-platform thesis."
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 66,
+        "low": 400.0,
+        "high": 900.0,
+        "thesis": "The one-year thesis stays bullish if AMD keeps compounding Data Center share, turns the CPU+GPU+packaging roadmap into shipped systems, and proves that today's unusually aggressive ecosystem investments translate into durable revenue and margin gains.",
+        "range_basis": "Anchored to $518.09 with room for both a major AI-infrastructure expansion and a meaningful de-rating if expectations outrun realized earnings power."
+      },
+      "unusual_signal": "The most unusual positive official signal remains AMD's explicit claim that \"Venice\" is the first HPC product in the industry to enter production on TSMC advanced 2nm. That is a competitive and credibility marker, not ordinary PR filler.",
+      "top_catalyst": "Reference close: $518.09 on 2026-05-28.",
+      "top_risk": "AMD is still in a live AI-infrastructure re-rating, but after the surge into fresh highs the most likely near-term outcome is choppy continuation rather than a clean melt-up. Positive VEL5 and strong official execution signals support the stock; overbought RSI and fresh dilution / insider optics keep conviction moderate.",
+      "social_note": "n/a",
+      "calibration_note": "I re-read SCHEMA.md, the AMD entity page, the prediction ledger, the last 10 AMD run notes, and the AMD session_search context before writing today's run.",
+      "adjustment_note": "n/a",
+      "google_finance_method": "16 ET, yfinance 1-minute pre/post data sampled about $519.84 at 09:18 ET, and Stocktwits showed about $519.60 at 09:15 EDT. That is modestly green rather than a true breakout gap.",
+      "_opp_score": 98.01,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "ARM",
+      "company": "ARM",
+      "status": "generated",
+      "note_date": "2026-05-29",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/ARM/2026-05-29.md",
+      "reference_price": 335.27,
+      "current_price": 344.5,
+      "current_label": "premarket",
+      "current_time": "2026-05-29 08:46 ET",
+      "pct_vs_ref": 2.7530050407134605,
+      "mytutopia": {
+        "rsi": 76.8,
+        "vel5": 16.6,
+        "delta1": 9.4,
+        "momentum_gate": "checked during the 2026-05-29 premarket run; page states 24hr delay, and the visible RECENT 10 BARS table included the 05-28 bar",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/ARM"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 58,
+        "low": 332.0,
+        "high": 352.0,
+        "thesis": "ARM re-accelerated immediately after the one-day pullback: Google Finance showed about $344.50 premarket and Mytutopia flipped back to RSI 76.8 / VEL5 +16.6 / Δ1 +9.4, which says the momentum regime is still live even if it is overbought enough to argue for a flat_to_up call instead of a pure chase-up call.",
+        "range_basis": "2026-05-28 regular close with 2026-05-29 premarket context"
+      },
+      "30d": {
+        "direction": "up",
+        "confidence": 60,
+        "low": 320.0,
+        "high": 395.0,
+        "thesis": "The medium-term setup remains constructive because the official evidence now includes record FY2026 results, more than $2B of AGI CPU demand across FY27-FY28, a deepening Meta partnership, and Performix as a software-adjacent ecosystem hook; Mytutopia still supports that stance with strongly positive VEL5.",
+        "range_basis": "2026-05-28 regular close"
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 62,
+        "low": 305.0,
+        "high": 440.0,
+        "thesis": "Over a quarter, I still favor higher prices because ARM is showing both operating acceleration and strategic deepening: direct silicon, open ecosystem support, software/workflow tooling, and continued hyperscaler CPU share gains. Mytutopia remains supportive on this horizon because VEL5 is strongly positive even after a huge run.",
+        "range_basis": "2026-05-28 regular close"
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 57,
+        "low": 260.0,
+        "high": 520.0,
+        "thesis": "The one-year call stays positive because ARM sits at a strategically advantaged layer of the AI compute stack and is now trying to capture more value per workload through silicon and software-adjacent tooling. But confidence remains capped because the stock is already pricing in a heroic future and can still swing violently on conversion, valuation, or SoftBank overhang issues.",
+        "range_basis": "2026-05-28 regular close"
+      },
+      "unusual_signal": "Several signals remain unusual enough to matter:",
+      "top_catalyst": "The core catalyst remains the May 6 Q4 FYE26 results package plus the operating narrative Arm attached to it. The most important thing is not merely that the quarter was strong; it is where the incremental strength is coming from and what management is trying to make investors believe about the next two years.",
+      "top_risk": "ARM re-accelerated immediately after the one-day pullback: Google Finance showed about $344.50 premarket and Mytutopia flipped back to RSI 76.8 / VEL5 +16.6 / Δ1 +9.4, which says the momentum regime is still live even if it is overbought enough to argue for a flat_to_up call instead of a pure chase-up call.",
+      "social_note": "This section is supplementary and not weighted equally with official filings / earnings materials.",
+      "calibration_note": "Structured ARM prediction-ledger review before today's open:",
+      "adjustment_note": "I need to stop auto-fading ARM after a single red day when official execution and Mytutopia both still support the broader uptrend. Yesterday's wrong 1d call is the most recent proof.",
+      "google_finance_method": "browser-harness attempted first on the shared visible-Chrome CDP path BU_CDP_URL=http://127.0.0.1:9333 BU_NAME=relvid; quote extraction succeeded without needing fallback",
+      "_opp_score": 109.86,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "ASML",
+      "company": "ASML Holding N.V.",
+      "status": "generated",
+      "note_date": "2026-05-29",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/ASML/2026-05-29.md",
+      "reference_price": 1605.77,
+      "current_price": 1635.01,
+      "current_label": "premarket",
+      "current_time": "2026-05-29 08:40 EDT",
+      "pct_vs_ref": 1.8209332594331697,
+      "mytutopia": {
+        "rsi": 58.9,
+        "vel5": 2.5,
+        "delta1": 0.6,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/ASML"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 57,
+        "low": 1600.0,
+        "high": 1655.0,
+        "thesis": "ASML enters the session with stronger relative leadership than yesterday and with Mytutopia RSI 58.9 / VEL5 +2.5 still supportive, but the sharp deceleration from the prior +9.7 VEL5 reading plus proximity to the 52-week high argue for a constructive but measured session rather than a breakout chase.",
+        "range_basis": "regular-session close 1605.77 on 2026-05-28; premarket context 1635.01 at 2026-05-29 08:40 EDT"
+      },
+      "30d": {
+        "direction": "up",
+        "confidence": 62,
+        "low": 1550.0,
+        "high": 1760.0,
+        "thesis": "The one-month view remains constructive because ASML still combines monopoly lithography positioning with strong installed-base resilience, a raised €36B-€40B 2026 guide, and management commentary that customer demand expectations are increasing. Mytutopia still supports the thesis, but the much lower VEL5 versus yesterday argues for a wider band than a pure momentum extrapolation would imply.",
+        "range_basis": "regular-session close 1605.77 on 2026-05-28"
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 65,
+        "low": 1525.0,
+        "high": 1885.0,
+        "thesis": "Over a quarter, ASML should still benefit from EUV and DUV scarcity, installed-base monetization, and customer advanced-node buildouts. The current technicals support that medium-horizon view, and today's relative-strength improvement is a better setup than the recent laggard pattern, even if the decelerating VEL5 says not to over-tighten the upside band.",
+        "range_basis": "regular-session close 1605.77 on 2026-05-28"
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 68,
+        "low": 1450.0,
+        "high": 2250.0,
+        "thesis": "The long thesis remains that ASML is the strategic bottleneck in advanced lithography and can monetize both greater wafer complexity and a growing installed base across EUV, High-NA, DUV, and upgrades. Mytutopia does not drive this horizon, but the current positive RSI and VEL5 backdrop reduce the odds that the stock is entering the year-long horizon from a broken intermediate trend.",
+        "range_basis": "regular-session close 1605.77 on 2026-05-28"
+      },
+      "unusual_signal": "ASML is finally participating like a leader again. On prior runs, the main complaint was that memory, packaging, or faster-torque WFE names were doing more of the work. Today ASML is closer to MU / INTC-style strength than to LRCX / AMAT drift.",
+      "top_catalyst": "The core thesis still belongs to the official Q1 package, not to headline churn.",
+      "top_risk": "The sharp deceleration from the prior +9.7 VEL5 reading plus proximity to the 52-week high argue for a constructive but measured session rather than a breakout chase",
+      "social_note": "This section is supplementary and explicitly not equal to official earnings materials.",
+      "calibration_note": "1-day structured ledger cohort: now 3 correct / 4 partly correct / 4 wrong after the newly matured 2026-05-28 Today call scored Correct. That call leaned flat_to_up with a $1,590-$1,635 band off a $1,597.87 reference close, and ASML actually closed $1,605.77 on 2026-05-28, inside range and above the reference close.",
+      "adjustment_note": "Keep same-day confidence capped below 60 unless ASML is clearly leading the tape. Today it is leading more than usual, which justifies a modest upgrade, but not a full breakout-chase call.",
+      "google_finance_method": "browser-harness attempted first after daemon / port checks; :9222 was unavailable, :9333 was healthy, and Google Finance succeeded via BU_CDP_URL=http://127.0.0.1:9333 BU_NAME=relvid with no fallback required",
+      "_opp_score": 99.65,
+      "_risk_score": 0.0
+    }
+  ],
+  "telegram_summary": "The book still leans constructive on AI infrastructure, but many leaders are overbought enough that same-day conviction is capped and risk management matters more than fresh chasing. Coverage 10/10. Top opportunities: ARM, TSM. Top risks: NVDA, AMD."
+}
