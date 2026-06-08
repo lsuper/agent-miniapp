@@ -8,6 +8,18 @@ from pathlib import Path
 from typing import Any
 
 TICKERS = ["NVDA", "MU", "LRCX", "ARM", "ASML", "FSLY", "TSM", "SIMO", "NET", "AMD"]
+COMPANY_MAP = {
+    "NVDA": "NVIDIA",
+    "MU": "Micron Technology",
+    "LRCX": "Lam Research Corporation",
+    "ARM": "Arm Holdings",
+    "ASML": "ASML Holding N.V.",
+    "FSLY": "Fastly",
+    "TSM": "Taiwan Semiconductor Manufacturing",
+    "SIMO": "Silicon Motion Technology Corp.",
+    "NET": "Cloudflare",
+    "AMD": "Advanced Micro Devices",
+}
 VAULT = Path.home() / "Documents/obsidian-vault/hermes-wiki/investment"
 RUNS = VAULT / "research/daily-stock-runs"
 REPO = Path("/Users/sluan/Projects/agent-miniapp")
@@ -345,6 +357,8 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
     note_text = note_path.read_text() if note_path and note_path.exists() else ""
     frontmatter, body = extract_frontmatter(note_text)
     company = frontmatter.get("company") or ticker
+    if not company or company == ticker:
+        company = COMPANY_MAP.get(ticker, ticker)
 
     sections = {name: get_section(body, name) for name in [
         "What's new since last run",
