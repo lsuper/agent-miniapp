@@ -325,7 +325,8 @@ def pick_semantic_risk(*candidates: str | None) -> str | None:
     risk_words = (
         'risk', 'overhang', 'overbought', 'fade', 'weakness', 'softness', 'underperformance',
         'digestion', 'crowded', 'insider', 'supply', 'pressure', 'geopolit', 'delay', 'blocked',
-        'negative', 'cooling', 'lagging', 'valuation', 'reversal', 'volatility', 'challeng', 'wobble'
+        'negative', 'cooling', 'lagging', 'valuation', 'reversal', 'volatility', 'challeng', 'wobble',
+        'caution', 'cautionary', 'damaged', 'fragile', 'compression', 'bearish', 'deteriorat', 'reject'
     )
     for text in candidates:
         cleaned = clean_text(text)
@@ -334,7 +335,7 @@ def pick_semantic_risk(*candidates: str | None) -> str | None:
         lower = cleaned.lower()
         if any(word in lower for word in risk_words):
             return cleaned
-    # second pass: if a candidate has a strong concessive "but", keep the cautionary tail
+    # second pass: if a candidate has a strong concessive pivot, keep the cautionary tail only when it stays risk-like
     for text in candidates:
         cleaned = clean_text(text)
         if not cleaned:
@@ -343,11 +344,11 @@ def pick_semantic_risk(*candidates: str | None) -> str | None:
         for sep in (' but ', ' however ', ' though '):
             if sep in lower:
                 tail = cleaned[lower.index(sep) + len(sep):].strip(' .;:-')
-                if tail:
+                if tail and any(word in tail.lower() for word in risk_words):
                     return tail[:1].upper() + tail[1:]
     for text in candidates:
         cleaned = clean_text(text)
-        if cleaned:
+        if cleaned and any(word in cleaned.lower() for word in ('falsifier', 'resistance', 'selloff', 'drawdown')):
             return cleaned
     return None
 
@@ -415,11 +416,11 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
     catalyst = first_meaningful_line(sections["Deep dive on earnings / major catalysts"]) or first_meaningful_line(sections["What's new since last run"])
     today_thesis = horizons["today"].get("thesis") if isinstance(horizons.get("today"), dict) else None
     risk = pick_semantic_risk(
-        unusual,
-        today_thesis,
-        first_meaningful_line(sections["Balance sheet and capital allocation"]),
-        first_meaningful_line(sections["What's new since last run"]),
         extract_first_falsifier(horizons["today"]),
+        today_thesis,
+        unusual,
+        first_meaningful_line(sections["What's new since last run"]),
+        first_meaningful_line(sections["Balance sheet and capital allocation"]),
         extract_first_falsifier(next((item for item in ledger.get("predictions", []) if isinstance(item, dict) and str(item.get("horizon", "")).lower().strip() in {"today", "1 day", "1d"}), None) if isinstance(ledger.get("predictions"), list) else None),
         first_meaningful_line(sections["Deep dive on earnings / major catalysts"]),
     )
