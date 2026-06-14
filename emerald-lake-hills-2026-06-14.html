@@ -17,7 +17,7 @@
     color: #f8fafc;
     line-height: 1.4;
   }
-  main { max-width: 1100px; margin: 0 auto; }
+  main { max-width: 1200px; margin: 0 auto; }
   h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: -0.01em; }
   h2 { font-size: 16px; margin: 24px 0 12px; color: #cbd5e1; font-weight: 600; }
   .sub { color: #94a3b8; font-size: 13px; margin-bottom: 18px; }
@@ -51,9 +51,11 @@
   tr.missing td { background: rgba(120, 53, 15, 0.1); }
   tr:hover { background: rgba(255,255,255,0.02); }
   .addr { font-weight: 500; color: #f1f5f9; }
-  .owner { font-weight: 600; color: #f1f5f9; margin-bottom: 2px; word-break: break-word; }
+  .owner { font-weight: 600; color: #f1f5f9; margin-bottom: 1px; word-break: break-word; }
   .owner.empty { color: #94a3b8; font-style: italic; font-weight: 400; }
   .owner-period { font-size: 10px; color: #94a3b8; }
+  .position { font-size: 11px; color: #93c5fd; line-height: 1.5; word-break: break-word; }
+  .position.empty { color: #64748b; font-style: italic; }
   .small { font-size: 11px; color: #94a3b8; }
   .filter-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
   .filter-bar button {
@@ -79,7 +81,7 @@
 <body>
 <main>
   <h1>Emerald Lake Hills / 94062 — Property Owners</h1>
-  <div class="sub">Source: homes.com logged-in session · 2026-06-14 · 17 properties &gt; $4M</div>
+  <div class="sub">Source: homes.com + Google/LinkedIn searches via residential Chrome · 2026-06-14 · 17 properties &gt; $4M</div>
 
   <div class="grid">
     <div class="card">
@@ -117,7 +119,7 @@
   <div class="filter-bar" id="filters">
     <button class="active" data-filter="all">All (17)</button>
     <button data-filter="owned">With owner (15)</button>
-    <button data-filter="missing">Missing owner (2)</button>
+    <button data-filter="missing">Missing (2)</button>
     <button data-filter="company">Company (1)</button>
     <button data-filter="individual">Individual (14)</button>
     <button data-filter="trust">Trust (0)</button>
@@ -133,6 +135,7 @@
           <th>Listed Value</th>
           <th>Status</th>
           <th>Current Owner</th>
+          <th>Professional Position</th>
           <th class="num">Chain</th>
           <th class="num">Deeds</th>
         </tr>
@@ -142,15 +145,15 @@
   </div>
 
   <footer>
-    <strong>Source:</strong> homes.com Ownership History card (logged-in session, residential IP). Data captured June 14, 2026.
+    <strong>Sources:</strong> homes.com Ownership History card (logged-in session, residential IP). Professional positions from Google/LinkedIn searches via residential Chrome, June 14, 2026. Names may not be exact matches — positions reflect best available public information.
     <br><br>
-    <strong>Coverage gaps:</strong> 519 Lakemead Way and 720 Temescal Way had no Ownership History card on homes.com (page loaded, ATTOM feed returned no data). Backfill path: ParcelQuest / Regrid bulk extract or NARR-licensed researcher.
+    <strong>Coverage gaps:</strong> 519 Lakemead Way and 720 Temescal Way had no Ownership History card on homes.com. Sim Family Trust, Pal & Lapasia Family Trust, and Meridian Foothill LLC are legal entities with no individual professional data surfaced.
     <br><br>
-    <strong>Privacy:</strong> full grantor/grantee chains, sale prices, and title companies are in local CSV files at <code>~/Documents/real-estate-research/emerald-lake-hills/</code> for the public-welfare program caseworker.
+    <strong>Full records</strong> (grantor/grantee chains, sale prices, title companies) in local CSVs at <code>~/Documents/real-estate-research/emerald-lake-hills/</code>.
   </footer>
 </main>
 
-<script id="parcel-data" type="application/json">[{"idx": 1, "address": "519 Lakemead Way, Emerald Hills, CA 94062", "value": 4080000, "status": "PENDING", "owner_name": "", "owner_type": "\u2014", "owner_period": "", "ownership_entries": 0, "deed_entries": 0}, {"idx": 2, "address": "624 Lakemead Way, Redwood City, CA 94062", "value": 4602700, "status": "SOLD", "owner_name": "Cohen Mitchell B and Cohen Morissa Jean", "owner_type": "Private Individual", "owner_period": "Jun 2025 - Present", "ownership_entries": 7, "deed_entries": 5}, {"idx": 3, "address": "636 Lakemead Way, Redwood City, CA 94062", "value": 4187700, "status": "\u2014", "owner_name": "Mishra Kinshuk and Chaudhry Nidhi", "owner_type": "Private Individual", "owner_period": "Oct 2019 - Present", "ownership_entries": 7, "deed_entries": 5}, {"idx": 4, "address": "720 Temescal Way, Redwood City, CA 94062", "value": 4190000, "status": "\u2014", "owner_name": "", "owner_type": "\u2014", "owner_period": "", "ownership_entries": 0, "deed_entries": 0}, {"idx": 5, "address": "723 Temescal Way, Redwood City, CA 94062", "value": 4188192, "status": "\u2014", "owner_name": "Christine M Abato Revocable Trust and Abato", "owner_type": "Private Individual", "owner_period": "Aug 2024 - Present", "ownership_entries": 5, "deed_entries": 5}, {"idx": 6, "address": "782 Temescal Way, Emerald Hills, CA 94062", "value": 4112402, "status": "\u2014", "owner_name": "Porter Clifford and Porter Jonathan Kevin", "owner_type": "Private Individual", "owner_period": "Sep 2021 - Present", "ownership_entries": 8, "deed_entries": 5}, {"idx": 7, "address": "733 Glenmere Way, Emerald Hills, CA 94062", "value": 4342523, "status": "\u2014", "owner_name": "Wilson Mark F", "owner_type": "Private Individual", "owner_period": "Apr 2011 - Present", "ownership_entries": 3, "deed_entries": 3}, {"idx": 8, "address": "765 Glenmere Way, Redwood City, CA 94062", "value": 4274785, "status": "\u2014", "owner_name": "Sim Family Trust and Sim", "owner_type": "Private Individual", "owner_period": "Oct 2023 - Present", "ownership_entries": 3, "deed_entries": 3}, {"idx": 9, "address": "623 Lombardy Way, Redwood City, CA 94062", "value": 4471000, "status": "\u2014", "owner_name": "Cherenshchikov Maxim and Ghinjul Svetlana", "owner_type": "Private Individual", "owner_period": "Feb 2017 - Present", "ownership_entries": 8, "deed_entries": 5}, {"idx": 10, "address": "626 Lombardy Way, Redwood City, CA 94062", "value": 4734576, "status": "\u2014", "owner_name": "Kim Amy H and Williams David A", "owner_type": "Private Individual", "owner_period": "Mar 2021 - Present", "ownership_entries": 8, "deed_entries": 5}, {"idx": 11, "address": "629 Lombardy Way, Redwood City, CA 94062", "value": 4589900, "status": "SOLD", "owner_name": "Kumar Monica and Chaudhuri Amritesh", "owner_type": "Private Individual", "owner_period": "Oct 2025 - Present", "ownership_entries": 4, "deed_entries": 5}, {"idx": 12, "address": "641 Lombardy Way, Emerald Hills, CA 94062", "value": 4794000, "status": "\u2014", "owner_name": "Lam Kevin V and Lam Jennifer", "owner_type": "Private Individual", "owner_period": "Jul 2019 - Present", "ownership_entries": 2, "deed_entries": 2}, {"idx": 13, "address": "657 Oak Park Way, Redwood City, CA 94062", "value": 5027000, "status": "\u2014", "owner_name": "Ganji Gregory and Firoozabadi Rezvan", "owner_type": "Private Individual", "owner_period": "Jun 2024 - Present", "ownership_entries": 9, "deed_entries": 5}, {"idx": 14, "address": "669 Oak Park Way, Emerald Hills, CA 94062", "value": 4322761, "status": "\u2014", "owner_name": "Kwo Paul Yien and Chung Mimi Merrillyn", "owner_type": "Private Individual", "owner_period": "Aug 2016 - Present", "ownership_entries": 3, "deed_entries": 3}, {"idx": 15, "address": "673 Oak Park Way, Redwood City, CA 94062", "value": 4382900, "status": "\u2014", "owner_name": "Pal And Lapasia Family Trust and Pal", "owner_type": "Private Individual", "owner_period": "Aug 2023 - Present", "ownership_entries": 6, "deed_entries": 5}, {"idx": 16, "address": "656 Hillcrest Way, Redwood City, CA 94062", "value": 5081000, "status": "\u2014", "owner_name": "King Paul A", "owner_type": "Private Individual", "owner_period": "Jan 2019 - Present", "ownership_entries": 4, "deed_entries": 4}, {"idx": 17, "address": "3964 Jefferson Ave, Redwood City, CA 94062", "value": 6287500, "status": "SOLD", "owner_name": "Meridian Foothill Llc", "owner_type": "Company", "owner_period": "Jan 2026 - Present", "ownership_entries": 4, "deed_entries": 4}]</script>
+<script id="parcel-data" type="application/json">[{"idx": 1, "address": "519 Lakemead Way, Emerald Hills, CA 94062", "value": 4080000, "status": "PENDING", "owner_name": "", "owner_type": "\u2014", "owner_period": "", "position": "", "ownership_entries": 0, "deed_entries": 0}, {"idx": 2, "address": "624 Lakemead Way, Redwood City, CA 94062", "value": 4602700, "status": "SOLD", "owner_name": "Cohen Mitchell B and Cohen Morissa Jean", "owner_type": "Private Individual", "owner_period": "Jun 2025 - Present", "position": "Mitchell: no clear local match | Morissa: Freelance (NYC area)", "ownership_entries": 7, "deed_entries": 5}, {"idx": 3, "address": "636 Lakemead Way, Redwood City, CA 94062", "value": 4187700, "status": "\u2014", "owner_name": "Mishra Kinshuk and Chaudhry Nidhi", "owner_type": "Private Individual", "owner_period": "Oct 2019 - Present", "position": "Kinshuk Mishra: VP Engineering @ Salesforce | Nidhi Chaudhary: SW Engineer 2 @ Oracle", "ownership_entries": 7, "deed_entries": 5}, {"idx": 4, "address": "720 Temescal Way, Redwood City, CA 94062", "value": 4190000, "status": "\u2014", "owner_name": "", "owner_type": "\u2014", "owner_period": "", "position": "", "ownership_entries": 0, "deed_entries": 0}, {"idx": 5, "address": "723 Temescal Way, Redwood City, CA 94062", "value": 4188192, "status": "\u2014", "owner_name": "Christine M Abato Revocable Trust and Abato", "owner_type": "Private Individual", "owner_period": "Aug 2024 - Present", "position": "Chris Abato: investment banker (UK/US, 13.5K LinkedIn) \u2014 possibly related", "ownership_entries": 5, "deed_entries": 5}, {"idx": 6, "address": "782 Temescal Way, Emerald Hills, CA 94062", "value": 4112402, "status": "\u2014", "owner_name": "Porter Clifford and Porter Jonathan Kevin", "owner_type": "Private Individual", "owner_period": "Sep 2021 - Present", "position": "Clifford: Redwood City (profile exists) | Jonathan: VP/Sr. SW Engineer @ First Citizens Bank", "ownership_entries": 8, "deed_entries": 5}, {"idx": 7, "address": "733 Glenmere Way, Emerald Hills, CA 94062", "value": 4342523, "status": "\u2014", "owner_name": "Wilson Mark F", "owner_type": "Private Individual", "owner_period": "Apr 2011 - Present", "position": "Managing Director @ RVP (Redwood City), Vegas Games Inc", "ownership_entries": 3, "deed_entries": 3}, {"idx": 8, "address": "765 Glenmere Way, Redwood City, CA 94062", "value": 4274785, "status": "\u2014", "owner_name": "Sim Family Trust and Sim", "owner_type": "Private Individual", "owner_period": "Oct 2023 - Present", "position": "(trust entity \u2014 no individual data)", "ownership_entries": 3, "deed_entries": 3}, {"idx": 9, "address": "623 Lombardy Way, Redwood City, CA 94062", "value": 4471000, "status": "\u2014", "owner_name": "Cherenshchikov Maxim and Ghinjul Svetlana", "owner_type": "Private Individual", "owner_period": "Feb 2017 - Present", "position": "Maxim: FlyBusinessCheap | Svetlana (Lana): Expedia Group (San Bruno)", "ownership_entries": 8, "deed_entries": 5}, {"idx": 10, "address": "626 Lombardy Way, Redwood City, CA 94062", "value": 4734576, "status": "\u2014", "owner_name": "Kim Amy H and Williams David A", "owner_type": "Private Individual", "owner_period": "Mar 2021 - Present", "position": "Amy: Redwood City profiles | David: Preconstruction Director @ WEBCOR Builders", "ownership_entries": 8, "deed_entries": 5}, {"idx": 11, "address": "629 Lombardy Way, Redwood City, CA 94062", "value": 4589900, "status": "SOLD", "owner_name": "Kumar Monica and Chaudhuri Amritesh", "owner_type": "Private Individual", "owner_period": "Oct 2025 - Present", "position": "Monica: CMO/Board Member/Investor (ex-Oracle/Nutanix) | Amritesh: EVP & CMO @ Calix", "ownership_entries": 4, "deed_entries": 5}, {"idx": 12, "address": "641 Lombardy Way, Emerald Hills, CA 94062", "value": 4794000, "status": "\u2014", "owner_name": "Lam Kevin V and Lam Jennifer", "owner_type": "Private Individual", "owner_period": "Jul 2019 - Present", "position": "Kevin: Owner @ KEVIN LAM CPA (San Mateo) | Jennifer: Project Manager @ City of San Mateo", "ownership_entries": 2, "deed_entries": 2}, {"idx": 13, "address": "657 Oak Park Way, Redwood City, CA 94062", "value": 5027000, "status": "\u2014", "owner_name": "Ganji Gregory and Firoozabadi Rezvan", "owner_type": "Private Individual", "owner_period": "Jun 2024 - Present", "position": "Gregory: Dentist \u2014 Greg Ganji DDS (SF) | Rezvan: medical field (JBJS journal)", "ownership_entries": 9, "deed_entries": 5}, {"idx": 14, "address": "669 Oak Park Way, Emerald Hills, CA 94062", "value": 4322761, "status": "\u2014", "owner_name": "Kwo Paul Yien and Chung Mimi Merrillyn", "owner_type": "Private Individual", "owner_period": "Aug 2016 - Present", "position": "Paul: Professor @ Stanford Medicine, Director of Hepatology | Mimi: profiles exist, role unclear", "ownership_entries": 3, "deed_entries": 3}, {"idx": 15, "address": "673 Oak Park Way, Redwood City, CA 94062", "value": 4382900, "status": "\u2014", "owner_name": "Pal And Lapasia Family Trust and Pal", "owner_type": "Private Individual", "owner_period": "Aug 2023 - Present", "position": "(trust entity \u2014 no individual data)", "ownership_entries": 6, "deed_entries": 5}, {"idx": 16, "address": "656 Hillcrest Way, Redwood City, CA 94062", "value": 5081000, "status": "\u2014", "owner_name": "King Paul A", "owner_type": "Private Individual", "owner_period": "Jan 2019 - Present", "position": "Agentic AI @ Apple Siri/AIML (SF, 3.2K followers) OR CEO @ Symphony Development Group", "ownership_entries": 4, "deed_entries": 4}, {"idx": 17, "address": "3964 Jefferson Ave, Redwood City, CA 94062", "value": 6287500, "status": "SOLD", "owner_name": "Meridian Foothill Llc", "owner_type": "Company", "owner_period": "Jan 2026 - Present", "position": "(LLC \u2014 real estate holding company; no operating business found)", "ownership_entries": 4, "deed_entries": 4}]</script>
 <script>
 let tg = null;
 try {
@@ -193,8 +196,14 @@ function ownerCell(r) {
     return '<div class="owner empty">No data on homes.com</div>';
   }
   const name = escapeHtml(r.owner_name);
-  const period = escapeHtml(r.owner_period);
-  return `<div class="owner">${name}</div><div class="owner-period">${r.owner_type} · ${period}</div>`;
+  return `<div class="owner">${name}</div><div class="owner-period">${r.owner_type} · ${escapeHtml(r.owner_period)}</div>`;
+}
+
+function positionCell(r) {
+  if (!r.position) {
+    return '<div class="position empty">—</div>';
+  }
+  return `<div class="position">${escapeHtml(r.position)}</div>`;
 }
 
 function render(filter) {
@@ -216,6 +225,7 @@ function render(filter) {
       <td class="num">${fmtMoney(r.value)}</td>
       <td>${r.status === '\u2014' ? '\u2014' : `<span class="${statusClass(r.status)}">${r.status}</span>`}</td>
       <td>${ownerCell(r)}</td>
+      <td>${positionCell(r)}</td>
       <td class="num">${r.ownership_entries}</td>
       <td class="num">${r.deed_entries}</td>
     </tr>
