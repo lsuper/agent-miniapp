@@ -17,7 +17,7 @@
     color: #f8fafc;
     line-height: 1.4;
   }
-  main { max-width: 980px; margin: 0 auto; }
+  main { max-width: 1100px; margin: 0 auto; }
   h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: -0.01em; }
   h2 { font-size: 16px; margin: 24px 0 12px; color: #cbd5e1; font-weight: 600; }
   .sub { color: #94a3b8; font-size: 13px; margin-bottom: 18px; }
@@ -35,6 +35,7 @@
   .pill { background: #1e293b; padding: 4px 10px; border-radius: 999px; font-size: 11px; color: #cbd5e1; border: 1px solid #334155; }
   .pill.warn { background: #422006; border-color: #92400e; color: #fbbf24; }
   .pill.ok { background: #052e16; border-color: #166534; color: #86efac; }
+  .pill.info { background: #1e3a8a; border-color: #1d4ed8; color: #93c5fd; }
   table {
     width: 100%;
     border-collapse: collapse;
@@ -43,13 +44,16 @@
     overflow: hidden;
     font-size: 12px;
   }
-  th, td { padding: 10px 8px; text-align: left; border-bottom: 1px solid #1e293b; }
+  th, td { padding: 10px 8px; text-align: left; border-bottom: 1px solid #1e293b; vertical-align: top; }
   th { background: #1e293b; color: #cbd5e1; font-weight: 600; text-transform: uppercase; font-size: 10px; letter-spacing: 0.05em; position: sticky; top: 0; }
   td.num { text-align: right; font-variant-numeric: tabular-nums; }
   tr:last-child td { border-bottom: none; }
   tr.missing td { background: rgba(120, 53, 15, 0.1); }
   tr:hover { background: rgba(255,255,255,0.02); }
   .addr { font-weight: 500; color: #f1f5f9; }
+  .owner { font-weight: 600; color: #f1f5f9; margin-bottom: 2px; word-break: break-word; }
+  .owner.empty { color: #94a3b8; font-style: italic; font-weight: 400; }
+  .owner-period { font-size: 10px; color: #94a3b8; }
   .small { font-size: 11px; color: #94a3b8; }
   .filter-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
   .filter-bar button {
@@ -69,8 +73,7 @@
   }
   .scroll-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid #1e293b; }
   footer { margin-top: 24px; padding: 16px; background: #1e293b; border-radius: 12px; font-size: 12px; color: #94a3b8; }
-  footer a { color: #60a5fa; }
-  code { background: #1e293b; padding: 2px 6px; border-radius: 4px; font-size: 11px; }
+  code { background: #0f172a; padding: 2px 6px; border-radius: 4px; font-size: 11px; }
 </style>
 </head>
 <body>
@@ -105,7 +108,7 @@
     <span class="pill">Status: 1 PENDING</span>
     <span class="pill">Status: 3 SOLD</span>
     <span class="pill ok">Private Individual: 14</span>
-    <span class="pill ok">Company: 1</span>
+    <span class="pill info">Company: 1</span>
     <span class="pill">Trust: 0</span>
     <span class="pill warn">Missing: 2</span>
   </div>
@@ -116,6 +119,8 @@
     <button data-filter="owned">With owner (15)</button>
     <button data-filter="missing">Missing owner (2)</button>
     <button data-filter="company">Company (1)</button>
+    <button data-filter="individual">Individual (14)</button>
+    <button data-filter="trust">Trust (0)</button>
     <button data-filter="sold">Sold (3)</button>
   </div>
 
@@ -127,7 +132,7 @@
           <th>Address</th>
           <th>Listed Value</th>
           <th>Status</th>
-          <th>Owner Type</th>
+          <th>Current Owner</th>
           <th class="num">Chain</th>
           <th class="num">Deeds</th>
         </tr>
@@ -137,17 +142,15 @@
   </div>
 
   <footer>
-    <strong>Privacy</strong>: This mini app shows property + value + owner type only. No full names are embedded.
-    Full records (current owner names, grantor/grantee chains, title companies) are in local CSV files at
-    <code>~/Documents/real-estate-research/emerald-lake-hills/</code> for the public-welfare program caseworker.
+    <strong>Source:</strong> homes.com Ownership History card (logged-in session, residential IP). Data captured June 14, 2026.
     <br><br>
-    <strong>Coverage gaps</strong>: 519 Lakemead Way and 720 Temescal Way had no Ownership History card on
-    homes.com (page loaded, ATTOM feed returned no data). Backfill path: ParcelQuest / Regrid bulk extract
-    or NARR-licensed researcher. <strong>Professional positions</strong> were not enriched — by agreement.
+    <strong>Coverage gaps:</strong> 519 Lakemead Way and 720 Temescal Way had no Ownership History card on homes.com (page loaded, ATTOM feed returned no data). Backfill path: ParcelQuest / Regrid bulk extract or NARR-licensed researcher.
+    <br><br>
+    <strong>Privacy:</strong> full grantor/grantee chains, sale prices, and title companies are in local CSV files at <code>~/Documents/real-estate-research/emerald-lake-hills/</code> for the public-welfare program caseworker.
   </footer>
 </main>
 
-<script id="parcel-data" type="application/json">[{"idx": 1, "address": "519 Lakemead Way, Emerald Hills, CA 94062", "value": 4080000, "status": "PENDING", "owner_type": "\u2014", "ownership_entries": 0, "deed_entries": 0}, {"idx": 2, "address": "624 Lakemead Way, Redwood City, CA 94062", "value": 4602700, "status": "SOLD", "owner_type": "Private Individual", "ownership_entries": 7, "deed_entries": 5}, {"idx": 3, "address": "636 Lakemead Way, Redwood City, CA 94062", "value": 4187700, "status": "\u2014", "owner_type": "Private Individual", "ownership_entries": 7, "deed_entries": 5}, {"idx": 4, "address": "720 Temescal Way, Redwood City, CA 94062", "value": 4190000, "status": "\u2014", "owner_type": "\u2014", "ownership_entries": 0, "deed_entries": 0}, {"idx": 5, "address": "723 Temescal Way, Redwood City, CA 94062", "value": 4188192, "status": "\u2014", "owner_type": "Private Individual", "ownership_entries": 5, "deed_entries": 5}, {"idx": 6, "address": "782 Temescal Way, Emerald Hills, CA 94062", "value": 4112402, "status": "\u2014", "owner_type": "Private Individual", "ownership_entries": 8, "deed_entries": 5}, {"idx": 7, "address": "733 Glenmere Way, Emerald Hills, CA 94062", "value": 4342523, "status": "\u2014", "owner_type": "Private Individual", "ownership_entries": 3, "deed_entries": 3}, {"idx": 8, "address": "765 Glenmere Way, Redwood City, CA 94062", "value": 4274785, "status": "\u2014", "owner_type": "Private Individual", "ownership_entries": 3, "deed_entries": 3}, {"idx": 9, "address": "623 Lombardy Way, Redwood City, CA 94062", "value": 4471000, "status": "\u2014", "owner_type": "Private Individual", "ownership_entries": 8, "deed_entries": 5}, {"idx": 10, "address": "626 Lombardy Way, Redwood City, CA 94062", "value": 4734576, "status": "\u2014", "owner_type": "Private Individual", "ownership_entries": 8, "deed_entries": 5}, {"idx": 11, "address": "629 Lombardy Way, Redwood City, CA 94062", "value": 4589900, "status": "SOLD", "owner_type": "Private Individual", "ownership_entries": 4, "deed_entries": 5}, {"idx": 12, "address": "641 Lombardy Way, Emerald Hills, CA 94062", "value": 4794000, "status": "\u2014", "owner_type": "Private Individual", "ownership_entries": 2, "deed_entries": 2}, {"idx": 13, "address": "657 Oak Park Way, Redwood City, CA 94062", "value": 5027000, "status": "\u2014", "owner_type": "Private Individual", "ownership_entries": 9, "deed_entries": 5}, {"idx": 14, "address": "669 Oak Park Way, Emerald Hills, CA 94062", "value": 4322761, "status": "\u2014", "owner_type": "Private Individual", "ownership_entries": 3, "deed_entries": 3}, {"idx": 15, "address": "673 Oak Park Way, Redwood City, CA 94062", "value": 4382900, "status": "\u2014", "owner_type": "Private Individual", "ownership_entries": 6, "deed_entries": 5}, {"idx": 16, "address": "656 Hillcrest Way, Redwood City, CA 94062", "value": 5081000, "status": "\u2014", "owner_type": "Private Individual", "ownership_entries": 4, "deed_entries": 4}, {"idx": 17, "address": "3964 Jefferson Ave, Redwood City, CA 94062", "value": 6287500, "status": "SOLD", "owner_type": "Company", "ownership_entries": 4, "deed_entries": 4}]</script>
+<script id="parcel-data" type="application/json">[{"idx": 1, "address": "519 Lakemead Way, Emerald Hills, CA 94062", "value": 4080000, "status": "PENDING", "owner_name": "", "owner_type": "\u2014", "owner_period": "", "ownership_entries": 0, "deed_entries": 0}, {"idx": 2, "address": "624 Lakemead Way, Redwood City, CA 94062", "value": 4602700, "status": "SOLD", "owner_name": "Cohen Mitchell B and Cohen Morissa Jean", "owner_type": "Private Individual", "owner_period": "Jun 2025 - Present", "ownership_entries": 7, "deed_entries": 5}, {"idx": 3, "address": "636 Lakemead Way, Redwood City, CA 94062", "value": 4187700, "status": "\u2014", "owner_name": "Mishra Kinshuk and Chaudhry Nidhi", "owner_type": "Private Individual", "owner_period": "Oct 2019 - Present", "ownership_entries": 7, "deed_entries": 5}, {"idx": 4, "address": "720 Temescal Way, Redwood City, CA 94062", "value": 4190000, "status": "\u2014", "owner_name": "", "owner_type": "\u2014", "owner_period": "", "ownership_entries": 0, "deed_entries": 0}, {"idx": 5, "address": "723 Temescal Way, Redwood City, CA 94062", "value": 4188192, "status": "\u2014", "owner_name": "Christine M Abato Revocable Trust and Abato", "owner_type": "Private Individual", "owner_period": "Aug 2024 - Present", "ownership_entries": 5, "deed_entries": 5}, {"idx": 6, "address": "782 Temescal Way, Emerald Hills, CA 94062", "value": 4112402, "status": "\u2014", "owner_name": "Porter Clifford and Porter Jonathan Kevin", "owner_type": "Private Individual", "owner_period": "Sep 2021 - Present", "ownership_entries": 8, "deed_entries": 5}, {"idx": 7, "address": "733 Glenmere Way, Emerald Hills, CA 94062", "value": 4342523, "status": "\u2014", "owner_name": "Wilson Mark F", "owner_type": "Private Individual", "owner_period": "Apr 2011 - Present", "ownership_entries": 3, "deed_entries": 3}, {"idx": 8, "address": "765 Glenmere Way, Redwood City, CA 94062", "value": 4274785, "status": "\u2014", "owner_name": "Sim Family Trust and Sim", "owner_type": "Private Individual", "owner_period": "Oct 2023 - Present", "ownership_entries": 3, "deed_entries": 3}, {"idx": 9, "address": "623 Lombardy Way, Redwood City, CA 94062", "value": 4471000, "status": "\u2014", "owner_name": "Cherenshchikov Maxim and Ghinjul Svetlana", "owner_type": "Private Individual", "owner_period": "Feb 2017 - Present", "ownership_entries": 8, "deed_entries": 5}, {"idx": 10, "address": "626 Lombardy Way, Redwood City, CA 94062", "value": 4734576, "status": "\u2014", "owner_name": "Kim Amy H and Williams David A", "owner_type": "Private Individual", "owner_period": "Mar 2021 - Present", "ownership_entries": 8, "deed_entries": 5}, {"idx": 11, "address": "629 Lombardy Way, Redwood City, CA 94062", "value": 4589900, "status": "SOLD", "owner_name": "Kumar Monica and Chaudhuri Amritesh", "owner_type": "Private Individual", "owner_period": "Oct 2025 - Present", "ownership_entries": 4, "deed_entries": 5}, {"idx": 12, "address": "641 Lombardy Way, Emerald Hills, CA 94062", "value": 4794000, "status": "\u2014", "owner_name": "Lam Kevin V and Lam Jennifer", "owner_type": "Private Individual", "owner_period": "Jul 2019 - Present", "ownership_entries": 2, "deed_entries": 2}, {"idx": 13, "address": "657 Oak Park Way, Redwood City, CA 94062", "value": 5027000, "status": "\u2014", "owner_name": "Ganji Gregory and Firoozabadi Rezvan", "owner_type": "Private Individual", "owner_period": "Jun 2024 - Present", "ownership_entries": 9, "deed_entries": 5}, {"idx": 14, "address": "669 Oak Park Way, Emerald Hills, CA 94062", "value": 4322761, "status": "\u2014", "owner_name": "Kwo Paul Yien and Chung Mimi Merrillyn", "owner_type": "Private Individual", "owner_period": "Aug 2016 - Present", "ownership_entries": 3, "deed_entries": 3}, {"idx": 15, "address": "673 Oak Park Way, Redwood City, CA 94062", "value": 4382900, "status": "\u2014", "owner_name": "Pal And Lapasia Family Trust and Pal", "owner_type": "Private Individual", "owner_period": "Aug 2023 - Present", "ownership_entries": 6, "deed_entries": 5}, {"idx": 16, "address": "656 Hillcrest Way, Redwood City, CA 94062", "value": 5081000, "status": "\u2014", "owner_name": "King Paul A", "owner_type": "Private Individual", "owner_period": "Jan 2019 - Present", "ownership_entries": 4, "deed_entries": 4}, {"idx": 17, "address": "3964 Jefferson Ave, Redwood City, CA 94062", "value": 6287500, "status": "SOLD", "owner_name": "Meridian Foothill Llc", "owner_type": "Company", "owner_period": "Jan 2026 - Present", "ownership_entries": 4, "deed_entries": 4}]</script>
 <script>
 let tg = null;
 try {
@@ -172,10 +175,26 @@ function fmtMoney(n) {
   return '$' + n.toLocaleString('en-US');
 }
 
+function escapeHtml(s) {
+  if (!s) return '';
+  return String(s).replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  })[c]);
+}
+
 function statusClass(s) {
   if (s === 'SOLD') return 'pill';
   if (s === 'PENDING') return 'pill warn';
   return 'pill';
+}
+
+function ownerCell(r) {
+  if (!r.owner_name) {
+    return '<div class="owner empty">No data on homes.com</div>';
+  }
+  const name = escapeHtml(r.owner_name);
+  const period = escapeHtml(r.owner_period);
+  return `<div class="owner">${name}</div><div class="owner-period">${r.owner_type} · ${period}</div>`;
 }
 
 function render(filter) {
@@ -185,16 +204,18 @@ function render(filter) {
     if (filter === 'owned') return r.ownership_entries > 0;
     if (filter === 'missing') return r.ownership_entries === 0;
     if (filter === 'company') return r.owner_type === 'Company';
+    if (filter === 'individual') return r.owner_type === 'Private Individual';
+    if (filter === 'trust') return r.owner_type === 'Trust';
     if (filter === 'sold') return r.status === 'SOLD';
     return true;
   });
   tbody.innerHTML = filtered.map(r => `
     <tr class="${r.ownership_entries === 0 ? 'missing' : ''}">
       <td>${r.idx}</td>
-      <td><div class="addr">${r.address}</div></td>
+      <td><div class="addr">${escapeHtml(r.address)}</div></td>
       <td class="num">${fmtMoney(r.value)}</td>
-      <td>${r.status === '—' ? '—' : `<span class="${statusClass(r.status)}">${r.status}</span>`}</td>
-      <td>${r.owner_type}</td>
+      <td>${r.status === '\u2014' ? '\u2014' : `<span class="${statusClass(r.status)}">${r.status}</span>`}</td>
+      <td>${ownerCell(r)}</td>
       <td class="num">${r.ownership_entries}</td>
       <td class="num">${r.deed_entries}</td>
     </tr>
