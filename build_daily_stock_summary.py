@@ -7,14 +7,13 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-TICKERS = ["NVDA", "MU", "LRCX", "ARM", "ASML", "FSLY", "TSM", "SIMO", "NET", "AMD"]
+TICKERS = ["NVDA", "MU", "LRCX", "ARM", "ASML", "TSM", "SIMO", "NET", "AMD"]
 COMPANY_MAP = {
     "NVDA": "NVIDIA",
     "MU": "Micron Technology",
     "LRCX": "Lam Research Corporation",
     "ARM": "Arm Holdings",
     "ASML": "ASML Holding N.V.",
-    "FSLY": "Fastly",
     "TSM": "Taiwan Semiconductor Manufacturing",
     "SIMO": "Silicon Motion Technology Corp.",
     "NET": "Cloudflare",
@@ -137,6 +136,21 @@ def normalize_horizon_obj(obj: dict[str, Any]) -> dict[str, Any]:
         plow, phigh = parse_price_range_from_text(str(thesis))
         low = low if low is not None else plow
         high = high if high is not None else phigh
+
+    falsifiers_raw = obj.get("falsifiers")
+    if isinstance(falsifiers_raw, list):
+        falsifiers = [clean_text(str(x)) for x in falsifiers_raw if clean_text(str(x))]
+    else:
+        cleaned_falsifier = clean_text(str(falsifiers_raw)) if falsifiers_raw is not None else None
+        falsifiers = [cleaned_falsifier] if cleaned_falsifier else []
+
+    drivers_raw = obj.get("drivers")
+    if isinstance(drivers_raw, list):
+        drivers = [clean_text(str(x)) for x in drivers_raw if clean_text(str(x))]
+    else:
+        cleaned_driver = clean_text(str(drivers_raw)) if drivers_raw is not None else None
+        drivers = [cleaned_driver] if cleaned_driver else []
+
     return {
         "direction": parse_direction(obj.get("direction")),
         "confidence": parse_intish(obj.get("confidence")),
@@ -144,6 +158,8 @@ def normalize_horizon_obj(obj: dict[str, Any]) -> dict[str, Any]:
         "high": parse_floatish(high),
         "thesis": clean_text(str(thesis)) if thesis is not None else None,
         "range_basis": clean_text(str(obj.get("range_basis") or obj.get("range_context"))) if (obj.get("range_basis") or obj.get("range_context")) else None,
+        "drivers": drivers,
+        "falsifiers": falsifiers,
     }
 
 
@@ -312,10 +328,18 @@ def extract_first_falsifier(obj: dict[str, Any] | None) -> str | None:
         return None
     falsifiers = obj.get("falsifiers")
     if isinstance(falsifiers, list):
+        cleaned_items: list[str] = []
         for item in falsifiers:
             cleaned = clean_text(str(item))
             if cleaned:
-                return cleaned
+                cleaned_items.append(cleaned)
+        downside_words = ('fail', 'fails', 'failed', 'lose', 'loses', 'below', 'reversal', 'reverse', 'red', 'down', 'risk-off', 'shock', 'break')
+        positive_bias = ('reclaim', 'reclaims', 'hold', 'holds', 'outperform', 'buyers higher', 'strength')
+        for item in cleaned_items:
+            lower = item.lower()
+            if any(word in lower for word in downside_words) and not any(word in lower for word in positive_bias):
+                return item
+        return cleaned_items[0] if cleaned_items else None
     elif falsifiers is not None:
         return clean_text(str(falsifiers))
     return None
@@ -326,15 +350,33 @@ def pick_semantic_risk(*candidates: str | None) -> str | None:
         'risk', 'overhang', 'overbought', 'fade', 'weakness', 'softness', 'underperformance',
         'digestion', 'crowded', 'insider', 'supply', 'pressure', 'geopolit', 'delay', 'blocked',
         'negative', 'cooling', 'lagging', 'valuation', 'reversal', 'volatility', 'challeng', 'wobble',
-        'caution', 'cautionary', 'damaged', 'fragile', 'compression', 'bearish', 'deteriorat', 'reject'
+        'caution', 'cautionary', 'damaged', 'fragile', 'compression', 'bearish', 'deteriorat', 'reject',
+        'fail', 'fails', 'failed', 'lose', 'loses', 'losing', 'below', 'downside', 'drawdown', 'selloff'
     )
+    positive_risk_false_flags = (
+        'reclaim', 'reclaims', 'reclaimed', 'holds', 'hold above', 'outperform', 'strong software participation',
+        'strong semi strength', 'strong semicap breadth', 'buyers higher', 'reignite squeeze', 'gap higher'
+    )
+
+    def score(text: str) -> tuple[int, int]:
+        lower = text.lower()
+        positives = sum(1 for word in positive_risk_false_flags if word in lower)
+        negatives = sum(1 for word in risk_words if word in lower)
+        return negatives, positives
+
+    scored: list[tuple[int, int, str]] = []
     for text in candidates:
         cleaned = clean_text(text)
         if not cleaned:
             continue
-        lower = cleaned.lower()
-        if any(word in lower for word in risk_words):
-            return cleaned
+        negatives, positives = score(cleaned)
+        if negatives > 0:
+            scored.append((negatives, -positives, cleaned))
+
+    if scored:
+        scored.sort(reverse=True)
+        return scored[0][2]
+
     # second pass: if a candidate has a strong concessive pivot, keep the cautionary tail only when it stays risk-like
     for text in candidates:
         cleaned = clean_text(text)
@@ -344,8 +386,11 @@ def pick_semantic_risk(*candidates: str | None) -> str | None:
         for sep in (' but ', ' however ', ' though '):
             if sep in lower:
                 tail = cleaned[lower.index(sep) + len(sep):].strip(' .;:-')
-                if tail and any(word in tail.lower() for word in risk_words):
-                    return tail[:1].upper() + tail[1:]
+                if tail:
+                    negatives, positives = score(tail)
+                    if negatives > 0 and positives <= negatives:
+                        return tail[:1].upper() + tail[1:]
+
     for text in candidates:
         cleaned = clean_text(text)
         if cleaned and any(word in cleaned.lower() for word in ('falsifier', 'resistance', 'selloff', 'drawdown')):
@@ -521,7 +566,7 @@ def market_bullets(cards: list[dict[str, Any]]) -> list[str]:
     if semi:
         bullets.append(f"Semiconductor / infrastructure names still dominate the medium-term upside stack: {', '.join(c['ticker'] for c in sorted(semi, key=lambda x: x['_opp_score'], reverse=True)[:4])} carry the strongest multi-horizon constructive bias.")
     if software:
-        bullets.append("Software-edge names remain more idiosyncratic than the semis: NET and FSLY are still trading as special situations driven by credibility, ownership, and reset dynamics rather than simple sector beta.")
+        bullets.append("Software-edge names remain more idiosyncratic than the semis: NET is still trading as a special situation driven by credibility, ownership, and reset dynamics rather than simple sector beta.")
     bullets.append("The most common pattern is constructive 30D/90D/1Y framing paired with lower-conviction same-day calls, meaning tape damage is tactical while the business thesis often stays intact.")
     bullets.append("Calibration lessons continue to point to range-width discipline: recent misses skew more toward undershooting move magnitude than getting the broad direction wrong.")
     return bullets[:8]
@@ -696,8 +741,18 @@ def main() -> None:
         "cards": cards,
     }
     data["market_bullets"] = market_bullets(cards)
-    data["top_opportunities"] = sorted(cards, key=lambda c: (c["status"] != "generated", -c["_opp_score"], c["ticker"]))[:4]
-    data["top_risks"] = sorted(cards, key=lambda c: (c["status"] != "generated", -c["_risk_score"], c["ticker"]))[:4]
+    generated_cards = [c for c in cards if c["status"] == "generated"]
+    positive_bias = sorted(
+        [c for c in generated_cards if c["today"]["direction"] in {"up", "flat_to_up"}],
+        key=lambda c: (-c["_opp_score"], c["ticker"]),
+    )
+    remaining_opp = sorted(
+        [c for c in (generated_cards or cards) if c not in positive_bias],
+        key=lambda c: (-c["_opp_score"], c["ticker"]),
+    )
+    risk_pool = [c for c in generated_cards if c["_risk_score"] > 0] or (generated_cards or cards)
+    data["top_opportunities"] = (positive_bias + remaining_opp)[:4]
+    data["top_risks"] = sorted(risk_pool, key=lambda c: (-c["_risk_score"], c["ticker"]))[:4]
     data["telegram_summary"] = telegram_summary(data)
 
     html_path = REPO / f"daily-stock-summary-{DATE}.html"
