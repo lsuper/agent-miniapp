@@ -452,8 +452,8 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
         current = parse_floatish(extract_note_value(wn, r"premarket[^\n$]*\$([0-9][0-9,]*\.?[0-9]*)", r"current[^\n$]*\$([0-9][0-9,]*\.?[0-9]*)"))
     if mytutopia["rsi"] is None:
         my_sec = sections["Mytutopia technical check"] or ""
-        mytutopia["rsi"] = parse_floatish(extract_note_value(my_sec, r"RSI[^\n:]*[:\-]\s*([0-9]+\.?[0-9]*)"))
-        mytutopia["vel5"] = parse_floatish(extract_note_value(my_sec, r"VEL5[^\n:]*[:\-]\s*([+-]?[0-9]+\.?[0-9]*)", r"VEL 5[^\n:]*[:\-]\s*([+-]?[0-9]+\.?[0-9]*)"))
+        mytutopia["rsi"] = parse_floatish(extract_note_value(my_sec, r"RSI[^\n:]*[:\-]\s*\*{0,2}\s*([0-9]+\.?[0-9]*)", r"RSI[^\n:]*[:\-]\s*[^0-9\n]*([0-9]+\.?[0-9]*)"))
+        mytutopia["vel5"] = parse_floatish(extract_note_value(my_sec, r"VEL5[^\n:]*[:\-]\s*\*{0,2}\s*([+-]?[0-9]+\.?[0-9]*)", r"VEL 5[^\n:]*[:\-]\s*\*{0,2}\s*([+-]?[0-9]+\.?[0-9]*)", r"VEL ?5[^\n:]*[:\-]\s*[^0-9+\-\n]*([+-]?[0-9]+\.?[0-9]*)"))
 
     pct = ((current - ref) / ref * 100.0) if (ref is not None and current is not None and ref != 0) else None
 
