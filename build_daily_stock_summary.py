@@ -422,14 +422,33 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
     horizons = normalize_horizons(ledger, sections["Predictions"])
 
     ref = parse_floatish(ledger.get("reference_price"))
-    current = parse_floatish(ledger.get("premarket_price") or ledger.get("current_price") or ledger.get("intraday_price"))
-    current_label = "premarket" if ledger.get("premarket_price") is not None else ("current" if current is not None else "live")
+    premarket_candidates = [
+        ledger.get("premarket_price"),
+        ledger.get("premarket_price_yfinance"),
+        ledger.get("premarket_price_google_finance"),
+    ]
+    current_candidates = [
+        ledger.get("current_price"),
+        ledger.get("current_price_yfinance"),
+        ledger.get("current_price_google_finance"),
+        ledger.get("intraday_price"),
+    ]
+    current = next((parse_floatish(v) for v in premarket_candidates if parse_floatish(v) is not None), None)
+    current_label = "premarket"
+    if current is None:
+        current = next((parse_floatish(v) for v in current_candidates if parse_floatish(v) is not None), None)
+        current_label = "current" if current is not None else "live"
     current_time = (
         ledger.get("premarket_time_et")
         or ledger.get("premarket_time")
         or ledger.get("premarket_timestamp")
+        or ledger.get("premarket_time_google_finance_et")
+        or ledger.get("premarket_time_yfinance_et")
         or ledger.get("google_finance_premarket_timestamp")
         or ledger.get("current_time_et")
+        or ledger.get("current_time")
+        or ledger.get("current_time_yfinance")
+        or ledger.get("current_time_google_finance")
         or ledger.get("intraday_time_et")
         or ledger.get("intraday_timestamp")
     )
@@ -719,7 +738,7 @@ function renderCharts(){{ const generated = cards.filter(c => c.status === 'gene
   new Chart(document.getElementById('rsiVelChart'), {{ type:'scatter', data:{{ datasets:[{{ label:'RSI vs VEL5', data:generated.filter(c => typeof c.mytutopia.rsi === 'number' && typeof c.mytutopia.vel5 === 'number').map(c => ({{x:c.mytutopia.rsi,y:c.mytutopia.vel5,ticker:c.ticker}})), backgroundColor:'rgba(34,211,238,.85)', pointRadius:7, pointHoverRadius:8 }}] }}, options:{{ responsive:true, maintainAspectRatio:false, plugins:{{ legend:{{labels:{{color:'#e5eefb'}}}}, tooltip:{{callbacks:{{label:(ctx)=>`${{ctx.raw.ticker}} · RSI ${{ctx.raw.x}} · VEL5 ${{ctx.raw.y}}`}}}} }}, scales:{{ x:{{ title:{{display:true,text:'RSI',color:'#c8d6f0'}}, ticks:{{color:'#c8d6f0'}}, grid:{{color:'rgba(255,255,255,.08)'}} }}, y:{{ title:{{display:true,text:'VEL5',color:'#c8d6f0'}}, ticks:{{color:'#c8d6f0'}}, grid:{{color:'rgba(255,255,255,.08)'}} }} }} }} }});
   if(window.Chart && typeof window.Chart.getChart === 'function') {{ window.__miniappChartsOk = !!Chart.getChart(document.getElementById('confidenceChart')) && !!Chart.getChart(document.getElementById('rsiVelChart')); }}
 }}
-filterButtons.forEach(btn => btn.addEventListener('click', () => {{ activeFilter = btn.dataset.filter; filterButtons.forEach(b => b.classList.toggle('active', b === btn)); renderCardsAndTable(); }}));
+filterButtons.forEach(btn => btn.addEventListener('click', () => {{ activeFilter = btn.dataset.filter; if (activeFilter === 'risk') {{ sortSelect.value = 'risk'; }} else if (activeFilter === 'bullish') {{ sortSelect.value = 'opp'; }} else if (activeFilter === 'downish') {{ sortSelect.value = 'pct'; }} filterButtons.forEach(b => b.classList.toggle('active', b === btn)); renderCardsAndTable(); }}));
 sortSelect.addEventListener('change', renderCardsAndTable); searchBox.addEventListener('input', renderCardsAndTable); document.querySelectorAll('th button[data-sort]').forEach(btn => btn.addEventListener('click', () => {{ sortSelect.value = btn.dataset.sort; renderCardsAndTable(); }}));
 renderHeader(); renderTopSections(); renderCardsAndTable(); renderCharts();
 </script>
