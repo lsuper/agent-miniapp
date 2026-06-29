@@ -479,15 +479,29 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
     unusual = first_meaningful_line(sections["Unusual signals"])
     catalyst = first_meaningful_line(sections["Deep dive on earnings / major catalysts"]) or first_meaningful_line(sections["What's new since last run"])
     today_thesis = horizons["today"].get("thesis") if isinstance(horizons.get("today"), dict) else None
+    today_falsifier = extract_first_falsifier(horizons["today"])
+    ledger_today_falsifier = extract_first_falsifier(
+        next(
+            (
+                item
+                for item in ledger.get("predictions", [])
+                if isinstance(item, dict) and str(item.get("horizon", "")).lower().strip() in {"today", "1 day", "1d"}
+            ),
+            None,
+        )
+        if isinstance(ledger.get("predictions"), list)
+        else None
+    )
     risk = pick_semantic_risk(
-        extract_first_falsifier(horizons["today"]),
-        today_thesis,
+        today_falsifier,
+        ledger_today_falsifier,
         unusual,
         first_meaningful_line(sections["What's new since last run"]),
         first_meaningful_line(sections["Balance sheet and capital allocation"]),
-        extract_first_falsifier(next((item for item in ledger.get("predictions", []) if isinstance(item, dict) and str(item.get("horizon", "")).lower().strip() in {"today", "1 day", "1d"}), None) if isinstance(ledger.get("predictions"), list) else None),
         first_meaningful_line(sections["Deep dive on earnings / major catalysts"]),
     )
+    if not risk:
+        risk = pick_semantic_risk(today_thesis)
     social = first_meaningful_line(sections["Social-media / public-discussion signals"])
     calibration = first_meaningful_line(sections["Historical calibration review"])
     adjustments = first_meaningful_line(sections["Research adjustments based on past accuracy"])
