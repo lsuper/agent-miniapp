@@ -500,8 +500,18 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
         first_meaningful_line(sections["Balance sheet and capital allocation"]),
         first_meaningful_line(sections["Deep dive on earnings / major catalysts"]),
     )
+    misleading_positive_risk_phrases = (
+        'nudges the read-through toward',
+        'support stabilization / mild upside',
+        'support stabilization or mild upside',
+        'more than renewed breakdown',
+        'not toward an urgent de-risking signal',
+        'management-family comfort',
+    )
+    if risk and any(phrase in risk.lower() for phrase in misleading_positive_risk_phrases):
+        risk = None
     if not risk:
-        risk = pick_semantic_risk(today_thesis)
+        risk = pick_semantic_risk(today_falsifier, ledger_today_falsifier)
     social = first_meaningful_line(sections["Social-media / public-discussion signals"])
     calibration = first_meaningful_line(sections["Historical calibration review"])
     adjustments = first_meaningful_line(sections["Research adjustments based on past accuracy"])
@@ -732,7 +742,7 @@ function miniCard(card, mode){{
   return `<div class="mini-card"><div class="topline"><strong>${{esc(card.ticker)}}</strong><span class="badge neutral">Risk ${{card._risk_score}}</span></div><div class="company" style="margin-top:6px">${{esc(card.company)}}</div><p>${{esc(card.top_risk || 'n/a')}}</p><div class="mini-meta"><span>Today ${{esc(card.today.direction)}}</span><span>${{fmtPct(card.pct_vs_ref)}}</span></div></div>`;
 }}
 function renderTopSections(){{ document.getElementById('oppGrid').innerHTML = APP_DATA.top_opportunities.map(c => miniCard(c, 'opp')).join(''); document.getElementById('riskGrid').innerHTML = APP_DATA.top_risks.map(c => miniCard(c, 'risk')).join(''); }}
-function passesFilter(card){{ if(activeFilter === 'all') return true; if(activeFilter === 'generated') return card.status === 'generated'; if(activeFilter === 'stale') return card.status === 'stale'; if(activeFilter === 'missing') return card.status === 'missing'; if(activeFilter === 'bullish') return ['up','flat_to_up'].includes(card.today.direction); if(activeFilter === 'downish') return ['flat_to_down','down','flat'].includes(card.today.direction); if(activeFilter === 'risk') return num(card.mytutopia.rsi,-1) >= 75 || num(card.mytutopia.vel5,1) < 0 || ['flat_to_down','down'].includes(card.today.direction); return true; }}
+function passesFilter(card){{ if(activeFilter === 'all') return true; if(activeFilter === 'generated') return card.status === 'generated'; if(activeFilter === 'stale') return card.status === 'stale'; if(activeFilter === 'missing') return card.status === 'missing'; if(activeFilter === 'bullish') return ['up','flat_to_up'].includes(card.today.direction); if(activeFilter === 'downish') return ['flat_to_down','down','flat'].includes(card.today.direction); if(activeFilter === 'risk') return num(card._risk_score,0) > 0 && String(card.top_risk || 'n/a').toLowerCase() !== 'n/a'; return true; }}
 function passesSearch(card){{ const q = searchBox.value.trim().toLowerCase(); if(!q) return true; return [card.ticker,card.company,card.unusual_signal,card.top_catalyst,card.top_risk,card.calibration_note].join(' ').toLowerCase().includes(q); }}
 function sortCards(a,b){{ const key = sortSelect.value; if(key === 'ticker') return a.ticker.localeCompare(b.ticker); if(key === 'company') return a.company.localeCompare(b.company); if(key === 'confidence') return num(b.today.confidence) - num(a.today.confidence); if(key === 'rsi') return num(b.mytutopia.rsi) - num(a.mytutopia.rsi); if(key === 'vel5') return num(b.mytutopia.vel5) - num(a.mytutopia.vel5); if(key === 'pct') return num(b.pct_vs_ref) - num(a.pct_vs_ref); if(key === 'opp') return num(b._opp_score) - num(a._opp_score); if(key === 'risk') return num(b._risk_score) - num(a._risk_score); return 0; }}
 function tickerCard(card){{
@@ -783,7 +793,10 @@ def main() -> None:
         [c for c in (generated_cards or cards) if c not in positive_bias],
         key=lambda c: (-c["_opp_score"], c["ticker"]),
     )
-    risk_pool = [c for c in generated_cards if c["_risk_score"] > 0] or (generated_cards or cards)
+    risk_pool = [
+        c for c in generated_cards
+        if c["_risk_score"] > 0 and clean_text(str(c.get("top_risk"))) not in {None, 'n/a'}
+    ] or [c for c in generated_cards if c["_risk_score"] > 0] or (generated_cards or cards)
     data["top_opportunities"] = (positive_bias + remaining_opp)[:4]
     data["top_risks"] = sorted(risk_pool, key=lambda c: (-c["_risk_score"], c["ticker"]))[:4]
     data["telegram_summary"] = telegram_summary(data)
