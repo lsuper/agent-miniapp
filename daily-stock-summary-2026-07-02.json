@@ -1,6 +1,6 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02 07:11:25 PDT",
+  "generated_at": "2026-07-02 07:13:15 PDT",
   "headline": "The cross-ticker read stays constructive overall, but today still looks selective rather than a broad clean risk-on continuation.",
   "coverage": {
     "generated": [
@@ -110,7 +110,7 @@
       },
       "unusual_signal": "Commercial model shift: this is the clearest recent sign that NVIDIA sees the next leg of AI demand as a financing-and-utilization problem, not just a chip-availability problem.",
       "top_catalyst": "NotebookLM's official-doc briefing and market-outlook notes still anchor the core earnings view: NVIDIA remains the main beneficiary of the AI infrastructure buildout, but the debate has shifted from whether demand exists to how fast it turns into durable, efficiently financed, usage-linked revenue.",
-      "top_risk": "Reference close: $197.58 on 2026-07-01. yfinance premarket cross-check: $197.75 at 2026-07-02T08:13:28-04:00.",
+      "top_risk": "n/a",
       "social_note": "This section is supplementary and not equivalent to primary-source earnings materials.",
       "calibration_note": "Freshly matured Today call: Correct — Realized close $197.58 on 2026-07-01 landed inside $196.00-$202.50, and the realized move -1.25% matched the predicted direction flat_to_down.",
       "adjustment_note": "Keep respecting the distinction between excellent narrative and immediate stock capture. The 30-day cohort continues to punish optimistic translation from ecosystem wins to share-price performance.",
@@ -1414,106 +1414,6 @@
       "_risk_score": 18.61
     },
     {
-      "ticker": "NVDA",
-      "company": "NVIDIA",
-      "status": "generated",
-      "note_date": "2026-07-02",
-      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/NVDA/2026-07-02.md",
-      "reference_price": 197.58,
-      "current_price": 197.75,
-      "current_label": "premarket",
-      "current_time": "2026-07-02T08:13:28-04:00",
-      "pct_vs_ref": 0.08604109727704601,
-      "mytutopia": {
-        "rsi": 43.3,
-        "vel5": 1.5,
-        "delta1": null,
-        "momentum_gate": null,
-        "page": null
-      },
-      "today": {
-        "direction": "flat_to_down",
-        "confidence": 58,
-        "low": 194.42,
-        "high": 198.96,
-        "thesis": "Fresh strategic news is real, but the live tape and still-sub-50 RSI argue for continued digestion rather than an immediate clean breakout. Positive VEL5 keeps the downside from turning into a high-conviction bearish call.",
-        "range_basis": null,
-        "drivers": [
-          "new revenue-sharing / credit-support AI-cloud model expands long-duration demand",
-          "premarket tape remains slightly below the prior close rather than confirming immediate momentum",
-          "Mytutopia RSI 43.3 and VEL5 1.5 suggest repair more than breakout"
-        ],
-        "falsifiers": [
-          "premarket loss is fully reversed and the stock reclaims clear upside momentum after the open",
-          "semi peers flip strongly green and NVDA outperforms on volume",
-          "headline reaction to the new AI-cloud model is materially more bullish than today's tape implies"
-        ]
-      },
-      "30d": {
-        "direction": "flat_to_up",
-        "confidence": 56,
-        "low": 183.95,
-        "high": 217.93,
-        "thesis": "The strategic direction remains bullish, but the 30-day cohort has repeatedly punished overconfident upside translation. Expect a wide, choppy path unless investors quickly embrace the usage-linked AI-factory model.",
-        "range_basis": null,
-        "drivers": [
-          "AI-infrastructure demand remains real and NVIDIA is widening monetization paths",
-          "supplier / semi tape is soft enough to keep multiple expansion capped in the near term",
-          "delayed technicals are supportive but not decisive"
-        ],
-        "falsifiers": [
-          "another semi-wide derating or capex scare hits the group",
-          "investors reframe the new model as financing risk rather than recurring upside",
-          "RSI / VEL5 roll over harder and live price loses the mid-190s quickly"
-        ]
-      },
-      "90d": {
-        "direction": "up",
-        "confidence": 61,
-        "low": 190.07,
-        "high": 238.08,
-        "thesis": "Over a quarter, NVIDIA still has the strongest odds of translating the AI-factory buildout into visible revenue durability. The new revenue-sharing construct, domestic manufacturing narrative, and full-stack moat support an eventual higher range once the market sees utilization and customer follow-through.",
-        "range_basis": null,
-        "drivers": [
-          "Blackwell / GB300 / DSX deployment momentum",
-          "possible re-rating if usage-linked recurring economics begin to look credible",
-          "supply-chain depth across networking, packaging, and optics continues to favor NVIDIA"
-        ],
-        "falsifiers": [
-          "clear evidence that neocloud / startup demand is weaker than expected",
-          "pricing pressure in AI cloud compute undermines the economics of the new model",
-          "major competitor or hyperscaler shifts wallet share away from NVIDIA faster than expected"
-        ]
-      },
-      "1y": {
-        "direction": "up",
-        "confidence": 66,
-        "low": 184.93,
-        "high": 292.02,
-        "thesis": "The one-year case is still anchored in NVIDIA's integrated moat — chips, networking, software, supply access, and now more creative demand-enablement economics. The path will be volatile, but the long-duration buildout still favors higher prices unless the AI capex cycle breaks structurally.",
-        "range_basis": null,
-        "drivers": [
-          "durable AI-factory capex and inference growth",
-          "continued software / networking lock-in and roadmap execution",
-          "expansion of recurring or usage-linked revenue streams beyond one-off product sales"
-        ],
-        "falsifiers": [
-          "AI infrastructure ROI disappoints enough to compress the entire demand stack",
-          "regulatory / geopolitical / supply shocks materially impair shipments or pricing",
-          "the new financing / revenue-share structures create losses or credit concerns instead of leverage"
-        ]
-      },
-      "unusual_signal": "Commercial model shift: this is the clearest recent sign that NVIDIA sees the next leg of AI demand as a financing-and-utilization problem, not just a chip-availability problem.",
-      "top_catalyst": "NotebookLM's official-doc briefing and market-outlook notes still anchor the core earnings view: NVIDIA remains the main beneficiary of the AI infrastructure buildout, but the debate has shifted from whether demand exists to how fast it turns into durable, efficiently financed, usage-linked revenue.",
-      "top_risk": "Reference close: $197.58 on 2026-07-01. yfinance premarket cross-check: $197.75 at 2026-07-02T08:13:28-04:00.",
-      "social_note": "This section is supplementary and not equivalent to primary-source earnings materials.",
-      "calibration_note": "Freshly matured Today call: Correct — Realized close $197.58 on 2026-07-01 landed inside $196.00-$202.50, and the realized move -1.25% matched the predicted direction flat_to_down.",
-      "adjustment_note": "Keep respecting the distinction between excellent narrative and immediate stock capture. The 30-day cohort continues to punish optimistic translation from ecosystem wins to share-price performance.",
-      "google_finance_method": "n/a",
-      "_opp_score": 63.25,
-      "_risk_score": 12.8
-    },
-    {
       "ticker": "SIMO",
       "company": "Silicon Motion Technology Corporation",
       "status": "generated",
@@ -1721,7 +1621,110 @@
       "google_finance_method": "browser-harness-first on BU_CDP_URL=http://127.0.0.1:9333 BU_NAME=relvid; succeeded on the visible shared Chrome path without Hermes-browser fallback.",
       "_opp_score": 89.3,
       "_risk_score": 7.0
+    },
+    {
+      "ticker": "LRCX",
+      "company": "Lam Research Corporation",
+      "status": "generated",
+      "note_date": "2026-07-02",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/LRCX/2026-07-02.md",
+      "reference_price": 391.26,
+      "current_price": 399.52,
+      "current_label": "premarket",
+      "current_time": "2026-07-02 08:19 ET",
+      "pct_vs_ref": 2.111128150079229,
+      "mytutopia": {
+        "rsi": 56.4,
+        "vel5": -3.1,
+        "delta1": -10.8,
+        "momentum_gate": "24hr delayed; reflects the completed 2026-07-01 close",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/LRCX"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 58,
+        "low": 390.0,
+        "high": 406.0,
+        "thesis": "Repair / stabilization with an upside lean is more likely than either a fresh breakout or another immediate air pocket. Peer breadth is green again and there is still no fresh Lam-specific negative disclosure, but Mytutopia RSI 56.4 / VEL5 -3.1 says yesterday's shock has not fully reset into a clean momentum-long regime.",
+        "range_basis": null,
+        "drivers": [
+          "Broad semicap peer breadth is positive again in the premarket",
+          "Lam is rebounding from a washed-out $391.26 close rather than chasing from a high",
+          "Micron HBM / AI-memory read-through still supports the medium-term operating backdrop",
+          "RSI above 50 helps the repair case while negative VEL5 caps conviction"
+        ],
+        "falsifiers": [
+          "Lam quickly loses the $390 area and peer breadth flips red",
+          "Fresh AI-capex skepticism or export-control headlines hit the semicap group",
+          "The stock fails to hold any of the premarket rebound and trades like yesterdays de-grossing is still cascading"
+        ]
+      },
+      "30d": {
+        "direction": "up",
+        "confidence": 64,
+        "low": 390.0,
+        "high": 475.0,
+        "thesis": "The medium-horizon setup remains bullish because the best primary-source evidence still points toward AI-memory / HBM / advanced-packaging intensity, while Lams own late-June roadmap posts strengthen the backside-power and panel-level-packaging story. The mature 30D cohort continues to say the models recurring error is too little upside room, not repeatedly getting the direction wrong.",
+        "range_basis": null,
+        "drivers": [
+          "Microns HBM4 / HBM4E / $50B Q4 commentary still improves demand visibility",
+          "Lams June 25 and June 29 first-party posts reinforce technology vectors that should raise process complexity and tool value",
+          "The selloff reset some near-term froth without obviously damaging the operating thesis",
+          "Mytutopias cooled-but-still-above-50 RSI argues for stabilization rather than full breakdown"
+        ],
+        "falsifiers": [
+          "Lam loses the high-$370s / low-$380s zone on a sustained basis",
+          "The next wave of peer or customer commentary shifts from timing noise to real WFE demand cuts",
+          "Export-control or China pressure returns with true operating specificity"
+        ]
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 66,
+        "low": 400.0,
+        "high": 520.0,
+        "thesis": "Over a quarter, Lam still looks like a strong way to express rising semiconductor process complexity across HBM, advanced packaging, backside power, and next-node logic. Mytutopias negative VEL5 reduces short-term trend confidence, but it is too tactical and too delayed to outweigh the quarter-scale roadmap and customer-demand evidence.",
+        "range_basis": null,
+        "drivers": [
+          "HBM and larger AI packages should keep process intensity elevated",
+          "Lams fresh first-party roadmap material improves confidence that management is investing into the right bottlenecks",
+          "A 2H-weighted install backdrop still fits the broader thesis better than a collapse narrative"
+        ],
+        "falsifiers": [
+          "Peer commentary shifts from timing noise toward real WFE digestion",
+          "Lams roadmap breadth fails to convert into share or margin follow-through",
+          "Macro or geopolitical shocks trigger a sustained semicap derating"
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 69,
+        "low": 430.0,
+        "high": 650.0,
+        "thesis": "Lam still appears to be a structural semicap winner because more advanced nodes, higher package complexity, and installed-base intensity should keep monetization opportunities broad across etch, deposition, advanced packaging, and services. The current RSI / VEL5 reset mostly affects timing confidence, not the long-horizon thesis.",
+        "range_basis": null,
+        "drivers": [
+          "Structural AI-infrastructure spending and memory-scaling requirements",
+          "Durable relevance in backside power, advanced packaging, and increasingly difficult process windows",
+          "Strong cash generation plus continued capital return",
+          "Ability to monetize process complexity rather than relying only on unit growth"
+        ],
+        "falsifiers": [
+          "AI capex or memory spending rolls over materially",
+          "Export-control escalation meaningfully impairs China-linked demand or mix",
+          "Lam fails to convert roadmap breadth into durable share, margins, and returns on capital"
+        ]
+      },
+      "unusual_signal": "The completed-bar technical posture cooled much faster than the medium-horizon narrative. Mytutopia moved from RSI 67.1 / VEL5 +8.4 / Δ1 +3.4 on the completed 2026-06-30 bar to RSI 56.4 / VEL5 -3.1 / Δ1 -10.8 on the completed 2026-07-01 bar. That is not outright technical damage, but it is a sharp downgrade from breakout conditions to repair / stabilization conditions.",
+      "top_catalyst": "Micron's 2026-06-24 official earnings release is still the highest-value customer-demand catalyst for Lam. Micron reported $41.46B fiscal Q3 revenue, guided fiscal Q4 revenue to about $50.0B ± $1.0B, and explicitly highlighted HBM4 high-volume shipments, HBM4E progression toward calendar 2027, plus server / SSD / LPDDR ramps. That remains the cleanest current primary-source proof that AI-memory intensity is real, not just a sell-side narrative.",
+      "top_risk": "Lam quickly loses the $390 area and peer breadth flips red",
+      "social_note": "This section is supplementary and not equal to official filings, company presentations, or primary-source earnings materials.",
+      "calibration_note": "Reference anchor for this run: the latest completed regular-session close is $391.26 on 2026-07-01. Browser-harness-first succeeded again on the reusable visible Chrome path (:9333 / relvid) by reusing existing tabs rather than opening new ones. Google Finance showed about $399.91 premarket at 08:21 ET on 2026-07-02, and yfinance cross-checked about $399.52 at 2026-07-02 08:19 ET. All forecast ranges below are anchored to the 2026-07-01 regular-session close, with premarket used only as live context.",
+      "adjustment_note": "Keep widening 30D upside bands when official customer and first-party process-complexity evidence are both improving. The mature 30D ledger still says the bigger recurring miss is too little upside room.",
+      "google_finance_method": "browser-harness-first succeeded on the reusable visible Chrome BU_CDP_URL=http://127.0.0.1:9333 BU_NAME=relvid path by reusing existing tabs; no new browser tabs were opened for this run.",
+      "_opp_score": 94.19,
+      "_risk_score": 4.34
     }
   ],
-  "telegram_summary": "The cross-ticker read stays constructive overall, but today still looks selective rather than a broad clean risk-on continuation. Coverage 9/9. Top opportunities: ASML, TSM. Top risks: ARM, NVDA."
+  "telegram_summary": "The cross-ticker read stays constructive overall, but today still looks selective rather than a broad clean risk-on continuation. Coverage 9/9. Top opportunities: ASML, TSM. Top risks: ARM, SIMO."
 }

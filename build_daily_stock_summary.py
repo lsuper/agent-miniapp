@@ -339,7 +339,7 @@ def extract_first_falsifier(obj: dict[str, Any] | None) -> str | None:
             lower = item.lower()
             if any(word in lower for word in downside_words) and not any(word in lower for word in positive_bias):
                 return item
-        return cleaned_items[0] if cleaned_items else None
+        return None
     elif falsifiers is not None:
         return clean_text(str(falsifiers))
     return None
@@ -368,6 +368,9 @@ def pick_semantic_risk(*candidates: str | None) -> str | None:
     for text in candidates:
         cleaned = clean_text(text)
         if not cleaned:
+            continue
+        lower = cleaned.lower()
+        if lower.startswith('reference close:') or lower.startswith('browser-harness') or lower.startswith('page used:'):
             continue
         negatives, positives = score(cleaned)
         if negatives > 0:
