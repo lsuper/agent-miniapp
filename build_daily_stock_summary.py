@@ -167,11 +167,14 @@ def parse_note_prediction_block(block: str | None) -> dict[str, Any]:
     if not block:
         return {"direction": "n/a", "confidence": None, "low": None, "high": None, "thesis": None, "range_basis": None}
     data: dict[str, Any] = {}
-    for key in ["direction", "confidence", "price_range_low", "price_range_high", "range_basis", "thesis"]:
-        m = re.search(rf"[-*]\s*\*\*{re.escape(key)}\*\*:\s*(.+)", block, re.I)
+    # Notes use both bolded and plain Markdown field labels. Keep the risk-bearing
+    # falsifier explicit: it is the cleanest dashboard risk source and avoids
+    # mislabeling benign catalyst/balance-sheet prose as a risk.
+    for key in ["direction", "confidence", "price_range_low", "price_range_high", "range_basis", "thesis", "falsifiers", "drivers"]:
+        m = re.search(rf"[-*]\s*\*\*{re.escape(key)}:?\*\*:\s*(.+)", block, re.I)
         if m:
             data[key] = clean_text(m.group(1))
-    for key in ["direction", "confidence", "range_basis", "thesis"]:
+    for key in ["direction", "confidence", "range_basis", "thesis", "falsifiers", "drivers"]:
         if key not in data:
             m = re.search(rf"[-*]\s*{re.escape(key)}:\s*(.+)", block, re.I)
             if m:
@@ -333,7 +336,7 @@ def extract_first_falsifier(obj: dict[str, Any] | None) -> str | None:
             cleaned = clean_text(str(item))
             if cleaned:
                 cleaned_items.append(cleaned)
-        downside_words = ('fail', 'fails', 'failed', 'lose', 'loses', 'below', 'reversal', 'reverse', 'red', 'down', 'risk-off', 'shock', 'break')
+        downside_words = ('fail', 'fails', 'failed', 'lose', 'loses', 'loss', 'below', 'reversal', 'reverse', 'red', 'down', 'risk-off', 'shock', 'break')
         positive_bias = ('reclaim', 'reclaims', 'hold', 'holds', 'outperform', 'buyers higher', 'strength')
         for item in cleaned_items:
             lower = item.lower()
@@ -495,9 +498,10 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
         if isinstance(ledger.get("predictions"), list)
         else None
     )
-    risk = pick_semantic_risk(
-        today_falsifier,
-        ledger_today_falsifier,
+    # The current horizon's explicit falsifier is a better risk source than a
+    # generic narrative sentence. Fall back to risk-language selection only
+    # when the forecast contains no genuinely downside-oriented falsifier.
+    risk = today_falsifier or ledger_today_falsifier or pick_semantic_risk(
         unusual,
         first_meaningful_line(sections["What's new since last run"]),
         first_meaningful_line(sections["Balance sheet and capital allocation"]),
