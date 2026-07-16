@@ -461,7 +461,7 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
 
     raw_my = ledger.get("mytutopia")
     my: dict[str, Any] = raw_my if isinstance(raw_my, dict) else {}
-    gate = my.get("momentum_gate_status") or my.get("momentum_gate") or my.get("gate") or my.get("data_context")
+    gate = my.get("momentum_gate_status") or my.get("momentum_gate") or my.get("gate")
     mytutopia = {
         "rsi": parse_floatish(my.get("rsi")),
         "vel5": parse_floatish(my.get("vel5")),
@@ -479,6 +479,12 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
         my_sec = sections["Mytutopia technical check"] or ""
         mytutopia["rsi"] = parse_floatish(extract_note_value(my_sec, r"RSI[^\n:]*[:\-]\s*\*{0,2}\s*([0-9]+\.?[0-9]*)", r"RSI[^\n:]*[:\-]\s*[^0-9\n]*([0-9]+\.?[0-9]*)"))
         mytutopia["vel5"] = parse_floatish(extract_note_value(my_sec, r"VEL5[^\n:]*[:\-]\s*\*{0,2}\s*([+-]?[0-9]+\.?[0-9]*)", r"VEL 5[^\n:]*[:\-]\s*\*{0,2}\s*([+-]?[0-9]+\.?[0-9]*)", r"VEL ?5[^\n:]*[:\-]\s*[^0-9+\-\n]*([+-]?[0-9]+\.?[0-9]*)"))
+    # Ledger gate fields are not uniform. Fall back to the note wording rather
+    # than treating the 24-hour-delay context as a momentum-gate label.
+    if not mytutopia["momentum_gate"]:
+        my_sec = sections["Mytutopia technical check"] or ""
+        gate_match = re.search(r"MOMENTUM(?:-|\s)GATE\s+([A-Z]+)", my_sec, re.I)
+        mytutopia["momentum_gate"] = f"MOMENTUM-GATE {gate_match.group(1).upper()}" if gate_match else None
 
     pct = ((current - ref) / ref * 100.0) if (ref is not None and current is not None and ref != 0) else None
 
@@ -612,7 +618,11 @@ def market_bullets(cards: list[dict[str, Any]]) -> list[str]:
     if neg_vel:
         bullets.append(f"Several setups still show damaged or cooling 5-bar momentum ({', '.join(c['ticker'] for c in neg_vel[:5])}), so the regime is selective rather than a clean all-clear risk-on tape.")
     if big_red:
-        bullets.append(f"Premarket weakness is concentrated in {', '.join(c['ticker'] for c in big_red[:4])}, which looks more like stock-specific digestion and overhangs than a universal breakdown in the AI/semi complex.")
+        names = ', '.join(c['ticker'] for c in big_red[:5])
+        if len(big_red) >= max(3, len(semi) // 2):
+            bullets.append(f"Premarket weakness is broad across the tracked semiconductor sleeve ({names}), consistent with a sector-wide risk-off move rather than isolated ticker digestion.")
+        else:
+            bullets.append(f"Premarket weakness is concentrated in {names}, which looks more like stock-specific digestion and overhangs than a universal breakdown in the AI/semi complex.")
     if semi:
         bullets.append(f"Semiconductor / infrastructure names still dominate the medium-term upside stack: {', '.join(c['ticker'] for c in sorted(semi, key=lambda x: x['_opp_score'], reverse=True)[:4])} carry the strongest multi-horizon constructive bias.")
     if software:
@@ -644,7 +654,7 @@ def telegram_summary(data: dict[str, Any]) -> str:
     total = sum(len(v) for v in data["coverage"].values())
     if covered == 0:
         return f"No same-day ticker notes were available. Showing latest stale fallback notes for {total}/{total} tracked names. Top stale opportunities: {opps}. Top stale risks: {risks}."
-    return f"{data['headline']} Coverage {covered}/{total}. Top opportunities: {opps}. Top risks: {risks}."
+    return f"{data['headline']} Coverage {covered}/{total}. {data['opportunity_label']}: {opps}. Top risks: {risks}."
 
 
 def build_html(data: dict[str, Any]) -> str:
@@ -704,7 +714,7 @@ def build_html(data: dict[str, Any]) -> str:
   </section>
 
   <section class="panel"><h2>Market read</h2><ul id="marketBullets2" style="padding-left:20px;margin:10px 0 0"></ul></section>
-  <section class="panel"><h2>Top opportunities</h2><div class="mini-grid" id="oppGrid"></div></section>
+  <section class="panel"><h2>{data['opportunity_label']}</h2><div class="mini-grid" id="oppGrid"></div></section>
   <section class="panel"><h2>Top risks</h2><div class="mini-grid" id="riskGrid"></div></section>
   <section class="panel"><h2>Charts</h2><div class="chart-grid"><div class="chart-box"><canvas id="confidenceChart"></canvas></div><div class="chart-box"><canvas id="rsiVelChart"></canvas></div></div></section>
   <section class="panel"><h2>Scan controls</h2><div class="controls"><input id="searchBox" type="search" placeholder="Filter tickers or company"><select id="sortSelect"><option value="ticker">Sort: ticker</option><option value="confidence">Sort: today confidence</option><option value="rsi">Sort: RSI</option><option value="vel5">Sort: VEL5</option><option value="pct">Sort: % vs ref</option><option value="opp">Sort: opportunity score</option><option value="risk">Sort: risk score</option></select><button class="btn active" data-filter="all">All</button><button class="btn" data-filter="generated">Same-day</button><button class="btn" data-filter="bullish">Bullish bias</button><button class="btn" data-filter="downish">Flat-to-down/down</button><button class="btn" data-filter="risk">High risk</button><button class="btn" data-filter="stale">Stale</button><button class="btn" data-filter="missing">Missing</button></div><div class="card-grid" id="cardGrid"></div></section>
@@ -800,6 +810,8 @@ def main() -> None:
         [c for c in (generated_cards or cards) if c not in positive_bias],
         key=lambda c: (-c["_opp_score"], c["ticker"]),
     )
+    # Do not present a tactically downish slate as buy-now opportunities.
+    data["opportunity_label"] = "Top opportunities" if positive_bias else "Best long-horizon setups (not tactical buys)"
     risk_pool = [
         c for c in generated_cards
         if c["_risk_score"] > 0 and clean_text(str(c.get("top_risk"))) not in {None, 'n/a'}
