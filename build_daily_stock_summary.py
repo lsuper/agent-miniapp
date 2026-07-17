@@ -337,7 +337,7 @@ def extract_first_falsifier(obj: dict[str, Any] | None) -> str | None:
             if cleaned:
                 cleaned_items.append(cleaned)
         downside_words = ('fail', 'fails', 'failed', 'lose', 'loses', 'loss', 'below', 'reversal', 'reverse', 'red', 'down', 'risk-off', 'shock', 'break')
-        positive_bias = ('reclaim', 'reclaims', 'hold', 'holds', 'outperform', 'buyers higher', 'strength')
+        positive_bias = ('reclaim', 'reclaims', 'hold', 'holds', 'outperform', 'buyers higher', 'strength', 'peer reversal', 'peer-led intraday reversal', 'open-to-close absorption')
         for item in cleaned_items:
             lower = item.lower()
             if any(word in lower for word in downside_words) and not any(word in lower for word in positive_bias):
@@ -358,7 +358,8 @@ def pick_semantic_risk(*candidates: str | None) -> str | None:
     )
     positive_risk_false_flags = (
         'reclaim', 'reclaims', 'reclaimed', 'holds', 'hold above', 'outperform', 'strong software participation',
-        'strong semi strength', 'strong semicap breadth', 'buyers higher', 'reignite squeeze', 'gap higher'
+        'strong semi strength', 'strong semicap breadth', 'buyers higher', 'reignite squeeze', 'gap higher',
+        'peer reversal', 'peer-led intraday reversal', 'open-to-close absorption'
     )
 
     def score(text: str) -> tuple[int, int]:
