@@ -337,7 +337,7 @@ def extract_first_falsifier(obj: dict[str, Any] | None) -> str | None:
             if cleaned:
                 cleaned_items.append(cleaned)
         downside_words = ('fail', 'fails', 'failed', 'lose', 'loses', 'loss', 'below', 'reversal', 'reverse', 'red', 'down', 'risk-off', 'shock', 'break')
-        positive_bias = ('reclaim', 'reclaims', 'hold', 'holds', 'outperform', 'buyers higher', 'strength', 'peer reversal', 'peer-led intraday reversal', 'open-to-close absorption')
+        positive_bias = ('reclaim', 'reclaims', 'hold', 'holds', 'outperform', 'buyers higher', 'strength', 'peer reversal', 'peer-led intraday reversal', 'open-to-close absorption', 'risk-on reversal', 'sector-wide risk-on reversal', 'broad semiconductor reversal')
         for item in cleaned_items:
             lower = item.lower()
             if any(word in lower for word in downside_words) and not any(word in lower for word in positive_bias):
@@ -811,13 +811,15 @@ def main() -> None:
         [c for c in (generated_cards or cards) if c not in positive_bias],
         key=lambda c: (-c["_opp_score"], c["ticker"]),
     )
-    # Do not present a tactically downish slate as buy-now opportunities.
+    # A tactically downish name is not a top opportunity merely because its long-horizon score is high.
     data["opportunity_label"] = "Top opportunities" if positive_bias else "Best long-horizon setups (not tactical buys)"
     risk_pool = [
         c for c in generated_cards
         if c["_risk_score"] > 0 and clean_text(str(c.get("top_risk"))) not in {None, 'n/a'}
     ] or [c for c in generated_cards if c["_risk_score"] > 0] or (generated_cards or cards)
-    data["top_opportunities"] = (positive_bias + remaining_opp)[:4]
+    # Only tactical up / flat-to-up calls belong under the Top opportunities label.
+    # If none exist, use the best long-horizon names but label them accordingly.
+    data["top_opportunities"] = (positive_bias if positive_bias else remaining_opp)[:4]
     data["top_risks"] = sorted(risk_pool, key=lambda c: (-c["_risk_score"], c["ticker"]))[:4]
     data["telegram_summary"] = telegram_summary(data)
 
