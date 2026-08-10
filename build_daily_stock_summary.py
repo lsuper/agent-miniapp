@@ -476,8 +476,16 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
         ref = parse_floatish(extract_note_value(wn, r"reference close[^\n$]*\$([0-9][0-9,]*\.?[0-9]*)", r"prior close[^\n$]*\$([0-9][0-9,]*\.?[0-9]*)"))
     if current is None:
         current = parse_floatish(extract_note_value(wn, r"premarket[^\n$]*\$([0-9][0-9,]*\.?[0-9]*)", r"current[^\n$]*\$([0-9][0-9,]*\.?[0-9]*)"))
-    if mytutopia["rsi"] is None:
-        my_sec = sections["Mytutopia technical check"] or ""
+    my_sec = sections["Mytutopia technical check"] or ""
+    # Notes can explicitly state that the current technical reading was unavailable
+    # while mentioning a prior historical value. Do not turn the date in that
+    # historical sentence (e.g. "August 6") into an RSI value.
+    current_reading_unavailable = bool(re.search(
+        r"(?:RSI\s*/\s*VEL5|current(?:\s+completed-bar)?\s+reading).*?(?:unavailable|could not be retrieved)",
+        my_sec,
+        re.I | re.S,
+    ))
+    if mytutopia["rsi"] is None and not current_reading_unavailable:
         mytutopia["rsi"] = parse_floatish(extract_note_value(my_sec, r"RSI[^\n:]*[:\-]\s*\*{0,2}\s*([0-9]+\.?[0-9]*)", r"RSI[^\n:]*[:\-]\s*[^0-9\n]*([0-9]+\.?[0-9]*)"))
         mytutopia["vel5"] = parse_floatish(extract_note_value(my_sec, r"VEL5[^\n:]*[:\-]\s*\*{0,2}\s*([+-]?[0-9]+\.?[0-9]*)", r"VEL 5[^\n:]*[:\-]\s*\*{0,2}\s*([+-]?[0-9]+\.?[0-9]*)", r"VEL ?5[^\n:]*[:\-]\s*[^0-9+\-\n]*([+-]?[0-9]+\.?[0-9]*)"))
     # Ledger gate fields are not uniform. Fall back to the note wording rather
