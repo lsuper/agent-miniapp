@@ -1,0 +1,1848 @@
+{
+  "date": "2026-08-17",
+  "generated_at": "2026-08-17 07:14:03 PDT",
+  "headline": "The cross-ticker read stays constructive overall, but today still looks selective rather than a broad clean risk-on continuation.",
+  "coverage": {
+    "generated": [
+      "NVDA",
+      "MU",
+      "LRCX",
+      "ARM",
+      "ASML",
+      "TSM",
+      "SIMO",
+      "NET"
+    ],
+    "stale": [
+      "AMD"
+    ],
+    "missing": []
+  },
+  "cards": [
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corporation",
+      "status": "generated",
+      "note_date": "2026-08-17",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/NVDA/2026-08-17.md",
+      "reference_price": 225.16,
+      "current_price": 226.66,
+      "current_label": "live",
+      "current_time": null,
+      "pct_vs_ref": 0.6661929294723752,
+      "mytutopia": {
+        "rsi": 63.0,
+        "vel5": -1.4,
+        "delta1": -0.2,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/NVDA"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 52,
+        "low": 221.0,
+        "high": 231.0,
+        "thesis": "Indicative green tape and RSI 63 support resilient consolidation, but VEL5 has turned negative near the 52-week high.",
+        "range_basis": null,
+        "drivers": [
+          "$225 hold",
+          "semi breadth",
+          "QQQ/rates",
+          "cash volume"
+        ],
+        "falsifiers": [
+          "sustained loss of $221",
+          "volume-backed leadership above $231"
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": 51,
+        "low": 198.0,
+        "high": 265.0,
+        "thesis": "Q1 scale, $91B Q2 guide and financing optionality preserve positive skew; cooling VEL5 and conversion risk require a wide band.",
+        "range_basis": null,
+        "drivers": [
+          "Q2 revenue/guide/margin",
+          "Hyperscale/ACIE mix",
+          "working capital",
+          "financing terms",
+          "powered deployment"
+        ],
+        "falsifiers": [
+          "loss of $198",
+          "margin/cash deterioration",
+          "funding without utilization",
+          "AI ROI/export/custom-silicon reset"
+        ]
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 55,
+        "low": 185.0,
+        "high": 295.0,
+        "thesis": "Blackwell/networking scale and Vera/Rubin optionality can support higher value if financing turns into powered utilized installs.",
+        "range_basis": null,
+        "drivers": [
+          "Q2 execution",
+          "systems/networking/software attachment",
+          "Vera/Rubin",
+          "sovereign demand",
+          "power efficiency"
+        ],
+        "falsifiers": [
+          "AI capex digestion",
+          "grid delays",
+          "counterparty stress",
+          "margin/working-capital pressure",
+          "export restrictions"
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 59,
+        "low": 160.0,
+        "high": 370.0,
+        "thesis": "Integrated platform and FCF/capital-return capacity support upside, offset by China, valuation, grid, customer economics and alternative silicon.",
+        "range_basis": null,
+        "drivers": [
+          "cloud/sovereign/vertical spend",
+          "Vera/Rubin",
+          "systems/software capture",
+          "FCF discipline",
+          "finance-to-utilization conversion"
+        ],
+        "falsifiers": [
+          "AI service ROI/financing disappointment",
+          "poor enablement returns/guarantees",
+          "export damage",
+          "custom-silicon displacement",
+          "multiple compression"
+        ]
+      },
+      "unusual_signal": "Finance and power now move together. The >$500B third-party financing-platform initiative is significant demand-enablement evidence, but no revenue, NVIDIA commitment, guarantee, margin or return metric was disclosed. The accompanying 800V/power emphasis makes grid-ready deployment the practical conversion test.",
+      "top_catalyst": "Q1 FY2027 remains the primary financial anchor: $81.615B revenue (+85% y/y), $75.2B Data Center (+92%), $14.8B networking (+199%), and 74.9% GAAP gross margin. Q2 is guided to $91B ±2% revenue and 74.9% ±50bp GAAP gross margin, with no China Data Center compute revenue assumed.",
+      "top_risk": "sustained loss of $221",
+      "social_note": "Supplementary only; separate from company materials, SEC filings and customer financial disclosures.",
+      "calibration_note": "1 day: August 14 flat_to_up, $221–$231, anchored to $225.30, resolved correct at the August 14 $225.16 close: it stayed inside the range and flat component. This is containment, not a strong directional win.",
+      "adjustment_note": "1. The Aug. 14 contained Today result should not increase short-horizon confidence: it was flat rather than a strong bullish move.",
+      "google_finance_method": "browser-harness-first discovery approval-blocked; fallback browser Google Finance",
+      "_opp_score": 79.86,
+      "_risk_score": 1.96
+    },
+    {
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "status": "generated",
+      "note_date": "2026-08-17",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/MU/2026-08-17.md",
+      "reference_price": 971.66,
+      "current_price": 995.25,
+      "current_label": "premarket",
+      "current_time": "2026-08-17 08:06 ET Google Finance; yfinance $997.10 at 08:07:54 ET, zero-volume indicative",
+      "pct_vs_ref": 2.427803964349673,
+      "mytutopia": {
+        "rsi": 56.3,
+        "vel5": 8.7,
+        "delta1": 1.8,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/MU"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 54,
+        "low": 960.0,
+        "high": 1015.0,
+        "thesis": "Constructive premarket breadth and delayed RSI 56.3/VEL5 +8.7 support $1,000 test or resilient consolidation; policy claim is unverified and high volatility permits a fade.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "$995-$1,000 hold",
+          "memory/supplier breadth",
+          "SOXX/QQQ/rates",
+          "cash volume",
+          "verified policy/company disclosure"
+        ],
+        "falsifiers": [
+          "sustained loss of $960",
+          "volume-backed acceptance above $1,015",
+          "verified policy/order/margin revision"
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": 45,
+        "low": 760.0,
+        "high": 1200.0,
+        "thesis": "Q3/Q4 earnings, SCA volume visibility and positive VEL5 support a base; weak 30d calibration and capex/margin/FCF-duration risk require a wide low-confidence band.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "Q4 revenue/gross margin/FCF",
+          "receivable/deposit conversion",
+          "SCA pricing/mix",
+          "HBM share/yields",
+          "AI capex",
+          "competitive supply"
+        ],
+        "falsifiers": [
+          "durable loss below $760",
+          "margin/cash/working-capital miss",
+          "pricing/share loss",
+          "capacity oversupply",
+          "verified strength above $1,200"
+        ]
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 49,
+        "low": 650.0,
+        "high": 1350.0,
+        "thesis": "HBM4/1gamma/Gen6 execution and committed volumes preserve constructive cycle economics; positive technicals help base odds but do not solve supply and capital-intensity risks.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "HBM mix/share/yields",
+          "Q4 realization",
+          "HBM4E/1gamma milestones",
+          "AI spend",
+          "contract durability",
+          "end-market demand",
+          "supply discipline"
+        ],
+        "falsifiers": [
+          "gross-margin compression",
+          "HBM yield/share miss",
+          "AI-capex reset",
+          "weak SCA/cash conversion",
+          "competitive supply ramp"
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 48,
+        "low": 450.0,
+        "high": 1750.0,
+        "thesis": "AI memory intensity, roadmap and customer relationships can sustain higher normalized earnings, conditional on supply discipline, utilization and FCF returns from the buildout.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "AI memory content",
+          "HBM4E/1delta",
+          "contract economics",
+          "FCF conversion",
+          "capex discipline/capital returns",
+          "geopolitical resilience"
+        ],
+        "falsifiers": [
+          "2027-28 oversupply",
+          "persistent FCF compression",
+          "AI-capex slowdown",
+          "roadmap/share failure",
+          "export/legal/geopolitical/policy reversal"
+        ]
+      },
+      "unusual_signal": "Headline-to-disclosure gap: tape and policy headlines are positive while the primary operating file set is unchanged. Do not capitalize a secondary policy report into earnings until its terms, scope, timing, and affected products are verified.",
+      "top_catalyst": "The June fiscal-Q3 package remains the factual operating anchor: $41.456B revenue, $25.11 non-GAAP EPS, and 84.9% non-GAAP gross margin, with fiscal-Q4 guidance near $50B revenue, 86% gross margin, and $31 non-GAAP EPS. The NotebookLM official-doc briefing remains useful for the roadmap and capital-allocation detail; the market-outlook report supplies the appropriate counterweight on capacity, demand elasticity, and FCF duration.",
+      "top_risk": "sustained loss of $960",
+      "social_note": "Supplementary only: this section is deliberately separate from earnings materials, SEC filings, company releases and customer disclosures.",
+      "calibration_note": "1 day — Correct: August 14's flat_to_up, $940–$1,000, 56/100 call from the August 13 $949.83 anchor resolved at the August 14 $971.66 close. It was both in range and above the reference. It is a containment result, not evidence that same-day precision is high.",
+      "adjustment_note": "1. The August 14 Today call was correct, but only as a contained, modest-up outcome. Keep same-day confidence moderate despite green premarket context.",
+      "google_finance_method": "browser-harness first; shared visible Chrome :9333 / relvid",
+      "_opp_score": 92.37,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "LRCX",
+      "company": "Lam Research Corporation",
+      "status": "generated",
+      "note_date": "2026-08-17",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/LRCX/2026-08-17.md",
+      "reference_price": 332.36,
+      "current_price": 337.82,
+      "current_label": "premarket",
+      "current_time": "2026-08-17 08:12 ET Google Finance; yfinance $337.95 at 08:15:13 ET, zero-volume indicative",
+      "pct_vs_ref": 1.6427969671440543,
+      "mytutopia": {
+        "rsi": 54.6,
+        "vel5": 5.9,
+        "delta1": -1.6,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/LRCX"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 54,
+        "low": 327.0,
+        "high": 342.0,
+        "thesis": "Positive peer breadth and delayed RSI 54.6/VEL5 +5.9 support churn-to-upside; deceleration and high volatility cap conviction.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "$337-$338 post-open hold",
+          "SOXX/AMAT/KLAC/ASML breadth",
+          "rates/Nasdaq",
+          "verified company/AI-WFE commentary"
+        ],
+        "falsifiers": [
+          "sustained loss below $327",
+          "volume-backed acceptance above $342",
+          "verified Lam/customer demand revision"
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": 45,
+        "low": 260.0,
+        "high": 410.0,
+        "thesis": "June execution, September guide, systems/support growth and positive VEL5 support a constructive base; valuation, China, recognition and cash-conversion risk require a wide low-confidence band.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "September revenue/margin",
+          "operating cash/DSO/inventory",
+          "Japan acceptance",
+          "AI-memory/NAND/packaging",
+          "WFE framework/process-share evidence"
+        ],
+        "falsifiers": [
+          "capex cuts",
+          "guide/margin/cash weakness",
+          "durable loss below $260",
+          "verified sustained rerating above $410"
+        ]
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 53,
+        "low": 240.0,
+        "high": 460.0,
+        "thesis": "Process complexity, advanced packaging/HBM, systems plus service and a faster R&D engine preserve an up skew; technicals support base odds but do not solve China, valuation or conversion risk.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "September execution",
+          "foundry/memory WFE",
+          "process-content share",
+          "roadmap qualifications",
+          "support/control attachment",
+          "FCF/capital returns"
+        ],
+        "falsifiers": [
+          "customer capex cancellations",
+          "China/export-control impairment",
+          "margin/share deterioration",
+          "no roadmap commercial adoption"
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 55,
+        "low": 170.0,
+        "high": 580.0,
+        "thesis": "Etch/deposition moat, installed-base economics, capital returns and long-cycle R&D/process-control investment support earnings power, with broad AI-capex, China, competition and valuation tails.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "AI infrastructure",
+          "harder wafer/package process content",
+          "lab conversion/customer adoption",
+          "service/control revenue",
+          "capital returns"
+        ],
+        "falsifiers": [
+          "AI-capex correction",
+          "China/local-substitution disruption",
+          "share loss",
+          "R&D returns fail"
+        ]
+      },
+      "unusual_signal": "R&D is accelerating faster than the evidence of monetization. The $3B-plus lab-network plan, the audited $2.376B FY R&D base, and the existing global R&D-network strategy strengthen future process-development capacity. They do not yet quantify incremental bookings, tool share, software/service attachment, margin, capex, or returns. The market needs a bridge from lab throughput to customer qualification and commercial share.",
+      "top_catalyst": "The June-quarter evidence remains strong and quality-sensitive: $6.722B revenue, 52.0% non-GAAP gross margin, 38.4% operating margin, and $1.82 EPS. Systems revenue reached $4.250B and customer-support-related revenue/other $2.472B, so the improvement was not solely a systems-recognition spike. The September guide—$8.10B ±$0.40B, 52.0% ±1 point GM, 39.5% ±1 point operating margin, $2.15 ±$0.15 EPS—is now the central conversion test.",
+      "top_risk": "sustained loss below $327",
+      "social_note": "Supplementary only: this section is deliberately separate from SEC filings, earnings releases, company technology materials and peer primary sources.",
+      "calibration_note": "1 day — Partly correct: Aug. 14's flat_to_up, $330–$345, 54/100 call from the Aug. 13 $337.01 anchor resolved at the Aug. 14 $332.36 close. The close was inside range, but the directional tilt was wrong (−1.38%, outside a ±1% flat tolerance).",
+      "adjustment_note": "1. The Aug. 14 Today outcome was range-right but directionally wrong; a contained range must not be reported as directional skill. Keep Today confidence moderate and respect a red completed session even when premarket is green.",
+      "google_finance_method": "browser-harness first; shared visible Chrome :9333 / relvid",
+      "_opp_score": 89.29,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "ARM",
+      "company": "Arm Holdings",
+      "status": "generated",
+      "note_date": "2026-08-17",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/ARM/2026-08-17.md",
+      "reference_price": 279.44,
+      "current_price": 284.16,
+      "current_label": "premarket",
+      "current_time": "2026-08-17 08:16 ET",
+      "pct_vs_ref": 1.6890924706556065,
+      "mytutopia": {
+        "rsi": 50.1,
+        "vel5": -0.2,
+        "delta1": 0.3,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "page": null
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 54,
+        "low": 278.0,
+        "high": 289.0,
+        "thesis": "Indicative bid, mostly positive peers and RSI 50.1/VEL5 -0.2 favor bounded stabilization/upside, not breakout.",
+        "range_basis": null,
+        "drivers": [
+          "opening-volume validation",
+          "peer breadth",
+          "RSI 50.1 / VEL5 -0.2",
+          "operating/contract-conversion disclosures"
+        ],
+        "falsifiers": [
+          "Sustained volume-backed loss of $278",
+          "broad AI-semi reversal",
+          "weaker royalty/guide/contracted-conversion disclosure"
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_down",
+        "confidence": 44,
+        "low": 215.0,
+        "high": 345.0,
+        "thesis": "Royalty mix and near-neutral technicals preserve rebound capacity, but lumpy licensing, high valuation, GAAP-margin gap and uncontracted capacity economics keep the distribution cautious.",
+        "range_basis": null,
+        "drivers": [
+          "Q2 execution versus guide",
+          "royalty/license/ACV mix",
+          "AGI-CPU conversion and gross economics",
+          "GAAP margin/SBC/normalized FCF",
+          "sector multiple"
+        ],
+        "falsifiers": [
+          "Material beat/raise with high-return conversion",
+          "durable hold above $345",
+          "sustained positive VEL5 with peer confirmation"
+        ]
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": 46,
+        "low": 180.0,
+        "high": 410.0,
+        "thesis": "A reporting cycle can validate CSS/data-center royalty durability and disciplined direct-silicon economics; near-neutral technicals improve the start but valuation requires a two-sided band.",
+        "range_basis": null,
+        "drivers": [
+          "royalty durability",
+          "Armv9/CSS conversion",
+          "AGI-CPU contracts/capacity/gross margin",
+          "DreamBig integration",
+          "AI capex/GAAP leverage"
+        ],
+        "falsifiers": [
+          "Below-guide royalty quality",
+          "capacity/cash/concentration stress",
+          "architecture substitution",
+          "multiple compression"
+        ]
+      },
+      "1y": {
+        "direction": "flat_to_up",
+        "confidence": 47,
+        "low": 135.0,
+        "high": 520.0,
+        "thesis": "Moat can compound if CSS and AGI CPU become durable GAAP cash earnings without uneconomic capacity or dilution.",
+        "range_basis": null,
+        "drivers": [
+          "Armv9/CSS economics",
+          "data-center/edge/physical-AI adoption",
+          "disciplined capital execution",
+          "cash generation",
+          "developer moat"
+        ],
+        "falsifiers": [
+          "Structural dilution or poor GAAP/FCF conversion",
+          "uneconomic capacity",
+          "regulation/litigation deterioration",
+          "architecture substitution",
+          "persistent de-rating"
+        ]
+      },
+      "unusual_signal": "New Form 4, benign interpretation: a 9,572-ADS charitable gift is materially different from an open-market disposal. It removes an ambiguity from the prior run but does not alter earnings, roadmap or capital-allocation evidence.",
+      "top_catalyst": "1. Royalty growth is still the cleanest operating evidence. Q1 FYE27 revenue was $1.289B (+22%), including $715M royalties (+22%) and $574M license/other (+23%). Data-center royalties more than doubled, providing reported support for higher-value Armv9/CSS/Neoverse mix.",
+      "top_risk": "Sustained volume-backed loss of $278",
+      "social_note": "Supplementary only; explicitly separate from official earnings analysis.",
+      "calibration_note": "Scoring uses the structured ledger and the first completed regular-session close on/after each calendar horizon. flat_to_up / flat_to_down have a ±1% directional tolerance; correct requires both direction and range, partly correct requires one.",
+      "adjustment_note": "The Aug. 14 Today and Jul. 15 30-day calls scored correctly, but both were wide/flat-tolerant. Treat them as evidence for moderate confidence and broad bands, not proof of precision.",
+      "google_finance_method": "16 ET premarket (+1.69%) on August 17; yfinance cross-checked $284.76 at 08:24 ET (+1.90%, zero reported volume). The August 14 close is the formal anchor.",
+      "_opp_score": 69.58,
+      "_risk_score": 0.28
+    },
+    {
+      "ticker": "ASML",
+      "company": "ASML Holding N.V.",
+      "status": "generated",
+      "note_date": "2026-08-17",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/ASML/2026-08-17.md",
+      "reference_price": 1844.08,
+      "current_price": 1870.71,
+      "current_label": "premarket",
+      "current_time": "2026-08-17 08:27 ET Google Finance; yfinance $1870.59 at 08:28:57 ET, zero-volume indicative",
+      "pct_vs_ref": 1.444080517114231,
+      "mytutopia": {
+        "rsi": 59.6,
+        "vel5": 7.6,
+        "delta1": -0.4,
+        "momentum_gate": "SELLING",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/ASML"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 55,
+        "low": 1815.0,
+        "high": 1900.0,
+        "thesis": "Premarket +1.44% and RSI 59.6/VEL5 +7.6 favor test or hold above the anchor, but decelerating velocity and high-volatility SELLING gate keep the outcome contained.",
+        "range_basis": "regular-session close; premarket-informed",
+        "drivers": [
+          "$1870-$1875 opening hold",
+          "SOXX/memory/WFE breadth",
+          "rates/Nasdaq",
+          "China/export headlines",
+          "cash-session volume"
+        ],
+        "falsifiers": [
+          "sustained loss below $1815",
+          "verified ASML/customer/policy impairment",
+          "volume-backed acceptance above $1900"
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": 46,
+        "low": 1450.0,
+        "high": 2200.0,
+        "thesis": "Q3/FY guide, commitments, upgrades/IBM economics and positive VEL5 preserve upside skew, but valuation, China risk and decelerating technical impulse require a wide low-confidence range.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "Q3 revenue/GM",
+          "systems versus IBM/upgrade mix",
+          "bookings/delivery acceptance",
+          "cash conversion",
+          "AI memory/logic capex",
+          "China/export outcome"
+        ],
+        "falsifiers": [
+          "H2 pushouts",
+          "guide/margin/cash deterioration",
+          "non-reallocable China loss",
+          "sustained below $1450",
+          "verified strength persistently above $2200"
+        ]
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 52,
+        "low": 1400.0,
+        "high": 2375.0,
+        "thesis": "Q3 conversion, capacity commitments and AI-memory/logic lithography intensity retain an upward quarterly skew; technicals support only the path, not the fundamental proof.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "Q3 result/outlook",
+          "order conversion",
+          "memory/logic capex",
+          "High-NA production economics",
+          "capacity/supplier execution",
+          "China policy"
+        ],
+        "falsifiers": [
+          "backlog conversion stress",
+          "supplier/working-capital bottleneck",
+          "gross-margin miss",
+          "capex deferrals",
+          "China impairment or WFE multiple reset"
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 55,
+        "low": 1150.0,
+        "high": 2800.0,
+        "thesis": "EUV/High-NA chokepoint economics, throughput, upgrades and AI lithography intensity support positive annual expected value; technicals are minor and risks justify a wide band.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "AI infrastructure capex",
+          "lithography intensity",
+          "High-NA ROI/adoption",
+          "EUV/DUV upgrades",
+          "capacity execution",
+          "capital-return discipline"
+        ],
+        "falsifiers": [
+          "AI-capex reset",
+          "High-NA commercial disappointment",
+          "non-reallocable China/local-substitution loss",
+          "geopolitical disruption",
+          "valuation compression"
+        ]
+      },
+      "unusual_signal": "1. IBM is both strength and a comparability caveat. Its Q2 contribution validates recurring field-option economics, but the $11B–$12B Q3 bridge needs new-system/upgrade conversion and cash evidence before the stock should be rewarded as though all incremental revenue carries identical durability.",
+      "top_catalyst": "The July Q2 package remains the underwriting anchor: €9.326B sales, 54.0% gross margin, €2.918B net income, €7.59 basic EPS, 86 new systems and €2.762B IBM sales. The management wording matters: sales and margin beat guidance primarily because higher-than-expected IBM sales—service and field options—helped. IBM demonstrates installed-base monetization and an earnings-quality buffer, but it is not identical to accelerating system shipments.",
+      "top_risk": "sustained loss below $1815",
+      "social_note": "Supplementary only: this is deliberately separate from earnings releases, SEC filings, management commentary and customer/peer primary sources.",
+      "calibration_note": "1 day — August 14: correct. The August 14 flat_to_up, $1,815–$1,885, 54/100 forecast from $1,847.90 resolved at $1,844.08 on August 14: inside the range and essentially flat (−0.21%). It correctly restrained a post-rally breakout claim.",
+      "adjustment_note": "1. The correct August 14 Today call was a containment result after a rally, not breakout evidence. Keep Today confidence near the mid-50s even with green premarket and positive VEL5.",
+      "google_finance_method": "browser-harness first; reused shared visible Chrome :9333 / relvid",
+      "_opp_score": 91.86,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "TSM",
+      "company": "Taiwan Semiconductor Manufacturing Co. Ltd.",
+      "status": "generated",
+      "note_date": "2026-08-17",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/TSM/2026-08-17.md",
+      "reference_price": 426.35,
+      "current_price": 429.167,
+      "current_label": "premarket",
+      "current_time": "2026-08-17 08:43:24 ET (yfinance zero-volume indicative)",
+      "pct_vs_ref": 0.6607247566553185,
+      "mytutopia": {
+        "rsi": 54.3,
+        "vel5": 2.1,
+        "delta1": -2.3,
+        "momentum_gate": null,
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/TSM"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 54,
+        "low": 422.0,
+        "high": 435.0,
+        "thesis": "Positive but mixed peer/local breadth plus delayed RSI 54.3 and VEL5 +2.1 favor a controlled hold/up session; cooling velocity and SELLING gate cap conviction.",
+        "range_basis": "2026-08-14 regular-session close",
+        "drivers": [
+          "$429 premarket retention",
+          "SOXX/ASML/WFE breadth",
+          "AMD customer demand read-through",
+          "rates and Taiwan/export-control news"
+        ],
+        "falsifiers": [
+          "peer reversal and break below $422",
+          "credible demand/margin impairment",
+          "sustained peer-led trade above $435"
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": 42,
+        "low": 350.0,
+        "high": 505.0,
+        "thesis": "Q3 guide, capacity authorization and still-positive technicals support base-building, but mixed 30d calibration and capital/margin uncertainty require a wide low-confidence band.",
+        "range_basis": "2026-08-14 regular-session close",
+        "drivers": [
+          "Q3 delivery",
+          "N2 yield/pricing",
+          "packaging economics",
+          "customer capex",
+          "global-fab margin bridge"
+        ],
+        "falsifiers": [
+          "margin below guide",
+          "demand pushouts",
+          "durable below $350",
+          "durable above $505 with demonstrated returns"
+        ]
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 52,
+        "low": 330.0,
+        "high": 555.0,
+        "thesis": "Leading-edge scale, Q3 growth and N2/packaging investment retain quarterly upside skew; cooling technicals and a small score sample keep the distribution wide.",
+        "range_basis": "2026-08-14 regular-session close",
+        "drivers": [
+          "Q3 result/guidance",
+          "N2 economics",
+          "packaging conversion",
+          "AI/custom-ASIC demand",
+          "overseas execution"
+        ],
+        "falsifiers": [
+          "N2 yield/margin slippage",
+          "AI-capex cuts",
+          "export escalation",
+          "Taiwan disruption",
+          "oversupply"
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 56,
+        "low": 270.0,
+        "high": 675.0,
+        "thesis": "Process/yield leadership, N2/A14 and packaging scale retain structural upside; technicals are minor and geopolitics/capital-return risk require a broad range.",
+        "range_basis": "2026-08-14 regular-session close",
+        "drivers": [
+          "AI infrastructure",
+          "advanced-node pricing",
+          "N2/A14 execution",
+          "packaging",
+          "global-fab productivity",
+          "capital discipline"
+        ],
+        "falsifiers": [
+          "Taiwan disruption",
+          "durable hyperscaler reset",
+          "technology/yield loss",
+          "sustained margin/FCF deterioration",
+          "punitive export controls"
+        ]
+      },
+      "unusual_signal": "1. Capital confidence is broad, not a pure AI wafer signal. The appropriation explicitly covers advanced, packaging, mature/specialty capacity, construction and facilities; it cannot be translated one-for-one into near-term accelerator revenue.",
+      "top_catalyst": "The operating anchor remains Q2: US$40.20B / NT$1.270T revenue (+36% Y/Y NT$), NT$706.56B net income (+77.4%), 67.7% gross margin and 60.3% operating margin. Q3 guidance is US$44.6B–$45.8B revenue, 65%–67% gross margin and 56%–58% operating margin; FY26 USD revenue growth was raised to slightly above 40%.",
+      "top_risk": "credible demand/margin impairment",
+      "social_note": "This section is supplementary and separate from official earnings analysis.",
+      "calibration_note": "Today / 1 day — Aug. 14: correct. flat_to_up, $424–$440 from $430.49 resolved at $426.35 (−0.96%). It remained inside range and within the ±1% flat-to-up tolerance; the controlled-hold call worked.",
+      "adjustment_note": "The Aug. 14 Today call’s correct controlled-hold outcome supports close-anchored ranges but not a higher confidence: the positive technical overlay has cooled to RSI 54.3 / VEL5 +2.1 while the gate remains SELLING. The five newly resolved 30d calls were 3 correct / 2 partly correct, but the full 30d cohort remains only 18 / 12 / 16; preserve low confidence and large downside room. Six early 90d successes maintain an upside skew, but the small sample and current capital intensity keep quarterly bands wide.",
+      "google_finance_method": "browser-harness first via shared :9333/relvid; temporary quote/social/technical tabs closed and verified gone",
+      "_opp_score": 85.11,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "SIMO",
+      "company": "Silicon Motion Technology Corporation",
+      "status": "generated",
+      "note_date": "2026-08-17",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/SIMO/2026-08-17.md",
+      "reference_price": 268.9,
+      "current_price": 278.66,
+      "current_label": "premarket",
+      "current_time": "2026-08-17 08:36 ET",
+      "pct_vs_ref": 3.6296020825585904,
+      "mytutopia": {
+        "rsi": 52.0,
+        "vel5": 5.0,
+        "delta1": 4.8,
+        "momentum_gate": null,
+        "page": null
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 53,
+        "low": 264.0,
+        "high": 286.0,
+        "thesis": "RSI 52.0 and VEL5 +5.0 plus constructive storage breadth support continuation/choppy upside, but financing digestion and volatility require a broad band.",
+        "range_basis": "2026-08-14 regular-session close; premarket context only",
+        "drivers": [
+          "$274–$279 hold after open",
+          "storage-peer breadth",
+          "convertible-note interpretation",
+          "semicap risk appetite"
+        ],
+        "falsifiers": [
+          "sustained break below $264",
+          "broad storage reversal",
+          "financing/working-capital negative",
+          "squeeze above $286"
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": 44,
+        "low": 220.0,
+        "high": 335.0,
+        "thesis": "Q3 guide, solution mix and financing preserve optionality, but cash conversion and convertible-overhang uncertainty demand a low-confidence wide range.",
+        "range_basis": "2026-08-14 regular-session close",
+        "drivers": [
+          "Q3 revenue/margin",
+          "use of proceeds",
+          "inventory/receivables turns",
+          "Ferri recurrence",
+          "NAND multiples"
+        ],
+        "falsifiers": [
+          "guide/margin reset",
+          "operating-cash deterioration",
+          "sustained break below $220",
+          "cash proof plus durable acceptance above $335"
+        ]
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 49,
+        "low": 195.0,
+        "high": 410.0,
+        "thesis": "Solution ramps and AI-storage roadmap can support upside if financing becomes recurring high-margin cash earnings.",
+        "range_basis": "2026-08-14 regular-session close",
+        "drivers": [
+          "Q3/OCF",
+          "solution/customer breadth",
+          "component availability",
+          "AI commercialization",
+          "margin durability"
+        ],
+        "falsifiers": [
+          "persistent negative OCF",
+          "ramp slippage",
+          "margin compression",
+          "capital misallocation",
+          "storage de-rating"
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 52,
+        "low": 140.0,
+        "high": 500.0,
+        "thesis": "Enterprise, automotive and physical-AI mix can compound if capital earns durable cash returns; potential conversion/dilution requires a broad range.",
+        "range_basis": "2026-08-14 regular-session close",
+        "drivers": [
+          "solution durability",
+          "FCF normalization",
+          "capital deployment",
+          "enterprise share",
+          "PCIe6",
+          "NAND cycle"
+        ],
+        "falsifiers": [
+          "ongoing FCF deficit",
+          "poor capital allocation",
+          "ASP competition",
+          "concentration",
+          "unfavorable dilution",
+          "Taiwan/trade disruption"
+        ]
+      },
+      "unusual_signal": "1. Financing has changed the hurdle. The $1.15B zero-coupon convertible adds runway for component supply and multiple ramps, but a capital-rich balance sheet does not equal operating cash generation. It also introduces eventual dilution/hedging and allocation risk.",
+      "top_catalyst": "Q2 remains the operating anchor: $451.0M revenue (+32% Q/Q, +127% Y/Y), 50.2% GAAP gross margin, 22.4% GAAP operating margin, and $2.43 non-GAAP EPS/ADS. Q3 guidance is $519M–$541M revenue (+15%–20% Q/Q, +114%–124% Y/Y), 49.9%–50.9% GAAP GM and 24.4%–25.7% GAAP operating margin.",
+      "top_risk": "sustained break below $264",
+      "social_note": "Supplementary evidence only; separate from SEC filings, management commentary and earnings materials.",
+      "calibration_note": "Today / 1 day — Partly correct (newly mature): August 14's flat_to_up, $244–$264, 52/100 call was anchored to $249.12. SIMO closed $268.90 (+7.94%): direction held but the range capped a high-beta extension.",
+      "adjustment_note": "1. August 14 was directionally right but range-wrong; Friday’s $268.90 close confirms that recent high-beta moves demand wider Today upper tails and restrained confidence.",
+      "google_finance_method": "n/a",
+      "_opp_score": 87.6,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "NET",
+      "company": "Cloudflare, Inc.",
+      "status": "generated",
+      "note_date": "2026-08-17",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/NET/2026-08-17.md",
+      "reference_price": 315.78,
+      "current_price": 311.02,
+      "current_label": "premarket",
+      "current_time": "2026-08-17 08:56:51 ET (yfinance 1-minute pre/post; zero-volume indicative)",
+      "pct_vs_ref": -1.5073785546899712,
+      "mytutopia": {
+        "rsi": 63.9,
+        "vel5": -1.1,
+        "delta1": -9.2,
+        "momentum_gate": null,
+        "page": null
+      },
+      "today": {
+        "direction": "flat_to_down",
+        "confidence": 57,
+        "low": 306.0,
+        "high": 320.0,
+        "thesis": "Friday reversal, weak cyber breadth and delayed RSI 63.9 / VEL5 -1.1 / Delta1 -9.2 favor consolidation-to-softness rather than a clean rebound.",
+        "range_basis": "regular-session close; $310.57-$311.02 premarket context only",
+        "drivers": [
+          "$310-$311 premarket hold",
+          "QQQ/software breadth",
+          "cyber peer recovery/failure",
+          "post-open volume",
+          "post-convert positioning"
+        ],
+        "falsifiers": [
+          "sustained reclaim above $320 with broad peer confirmation",
+          "fresh demand evidence",
+          "absence of early-session supply"
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": 46,
+        "low": 270.0,
+        "high": 385.0,
+        "thesis": "Q2 acceleration preserves a constructive base, but technical deceleration and premium valuation require a wide consolidation-aware range.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "Q3 cRPO/retention",
+          "large-customer growth",
+          "gross margin and FCF",
+          "paid AI/platform attachment",
+          "capital deployment"
+        ],
+        "falsifiers": [
+          "weaker Q3 outlook/cRPO",
+          "margin or FCF deterioration",
+          "adverse financing/M&A optics",
+          "break below $270"
+        ]
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": 48,
+        "low": 230.0,
+        "high": 455.0,
+        "thesis": "Q3 must validate paid usage and operating leverage; RSI above 60 is modestly supportive but velocity and valuation require large two-sided room.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "Q3 results",
+          "retention",
+          "paid product attach",
+          "gross margin/FCF",
+          "capital allocation"
+        ],
+        "falsifiers": [
+          "retention slowdown",
+          "investment without leverage",
+          "competitive bundling",
+          "dilution/control discount",
+          "de-rating"
+        ]
+      },
+      "1y": {
+        "direction": "flat_to_up",
+        "confidence": 45,
+        "low": 180.0,
+        "high": 565.0,
+        "thesis": "Long-run upside depends on durable growth and conversion of platform breadth into margins and FCF per share; technicals are non-decisive.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "durable growth/retention",
+          "paid conversion",
+          "operating leverage",
+          "disciplined use of proceeds",
+          "neutral-edge moat"
+        ],
+        "falsifiers": [
+          "valuation normalization",
+          "failed monetization",
+          "poor capital returns/dilution",
+          "margin erosion",
+          "hyperscaler displacement"
+        ]
+      },
+      "unusual_signal": "1. The technical regime changed sharply in one completed bar. Mytutopia’s delayed Aug. 14 row moved to RSI 63.9, Δ1 −9.2, VEL5 −1.1 from Aug. 13 RSI 73.1 / VEL5 +14.4. That is a slowdown from overbought momentum, not a new oversold opportunity.",
+      "top_catalyst": "Q2 is still the operating baseline: revenue was $696.1M (+36% YoY), cRPO grew 35%, and management guided Q3 revenue to $736M–$737M and FY2026 revenue to $2.864B–$2.870B.[2] The useful management signal is the combination of record growth in paying customers, large customers and developers with the explicit agentic-internet framing: the narrative is broadening from edge delivery/security into the control, developer and payment rails for machine-to-machine traffic.[2]",
+      "top_risk": "1. The technical regime changed sharply in one completed bar. Mytutopia’s delayed Aug. 14 row moved to RSI 63.9, Δ1 −9.2, VEL5 −1.1 from Aug. 13 RSI 73.1 / VEL5 +14.4. That is a slowdown from overbought momentum, not a new oversold opportunity.",
+      "social_note": "Supplementary only; separate from earnings, SEC filings and company product materials.",
+      "calibration_note": "Method: Today resolves on its next completed cash-session close; later horizons resolve at the first completed close on/after the calendar target. Correct requires direction and range; partly correct requires one. flat_to_up / flat_to_down use ±1% direction tolerance.",
+      "adjustment_note": "1. Score today’s Aug. 14 prediction as partly correct: the direction was defensive, but $315.78 broke the $320 floor. Same-day lower bounds must accommodate a post-gap reversal.",
+      "google_finance_method": "browser-harness-first via reusable BU_CDP_URL=http://127.0.0.1:9333 BU_NAME=relvid; beta shell was readable; run-specific tabs tracked for cleanup",
+      "_opp_score": 52.69,
+      "_risk_score": 13.99
+    },
+    {
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "status": "stale",
+      "note_date": "2026-08-14",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/AMD/2026-08-14.md",
+      "reference_price": 483.01,
+      "current_price": 486.16,
+      "current_label": "premarket",
+      "current_time": "2026-08-14 09:02 ET (Google Finance)",
+      "pct_vs_ref": 0.6521604107575484,
+      "mytutopia": {
+        "rsi": 46.6,
+        "vel5": 10.7,
+        "delta1": -5.7,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/AMD"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 54,
+        "low": 474.0,
+        "high": 495.0,
+        "thesis": "Small green premarket and a stable $483 area support resilience, but post-earnings valuation reset and stale SELLING-gate technicals limit upside conviction.",
+        "range_basis": "Aug. 13 close $483.01; Google Finance $486.16 at 09:02 ET; 81.6% 20-day realized annualized volatility; stale RSI 46.6 / VEL5 +10.7.",
+        "drivers": [
+          "$481-$483 hold",
+          "SOXX/NVDA breadth",
+          "rates/AI beta",
+          "primary confirmation of funding news"
+        ],
+        "falsifiers": [
+          "sustained loss below $474 with broad semi weakness",
+          "acceptance above $495 with volume and breadth"
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_down",
+        "confidence": 44,
+        "low": 390.0,
+        "high": 560.0,
+        "thesis": "Top-line momentum needs system-margin, inventory-turn and post-capex FCF proof before a sustained rerating.",
+        "range_basis": "Q3 $13.0B midpoint / 56% margin guide versus high beta, post-earnings reset, inventory/FCF, commitments and inference option value.",
+        "drivers": [
+          "Q3 Data Center trajectory",
+          "gross margin",
+          "Helios/ROCm evidence",
+          "inventory and FCF",
+          "AI-semi multiple"
+        ],
+        "falsifiers": [
+          "demonstrated margin/FCF improvement and sustained $560+",
+          "margin/demand deterioration or break below $390"
+        ]
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": 47,
+        "low": 330.0,
+        "high": 660.0,
+        "thesis": "Upside requires recurring systems economics and software conversion rather than roadmap breadth alone.",
+        "range_basis": "Q3 execution, H2 Data Center ramp, Helios/MI450/ROCm proof, inference integration, capital intensity and sector beta.",
+        "drivers": [
+          "EPYC/Instinct mix",
+          "Helios volumes",
+          "ROCm adoption",
+          "Taalas integration",
+          "inventory turns and FCF"
+        ],
+        "falsifiers": [
+          "deployment or margin slippage",
+          "weak cash conversion",
+          "software gap",
+          "AI multiple compression"
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 51,
+        "low": 260.0,
+        "high": 850.0,
+        "thesis": "Long-term upside requires cash-generating full-stack systems economics and disciplined capital allocation.",
+        "range_basis": "AI platform/inference scaling, roadmap execution, customer concentration, capital allocation, software competition and valuation sensitivity.",
+        "drivers": [
+          "accelerator/EPYC share",
+          "ROCm",
+          "Helios economics",
+          "Taalas productization",
+          "customer diversity",
+          "post-capex FCF"
+        ],
+        "falsifiers": [
+          "persistent margin/FCF deterioration",
+          "overcapacity or customer delays",
+          "commitment/acquisition burden",
+          "software gap or multiple compression"
+        ]
+      },
+      "unusual_signal": "1. AMD is tapping the debt market despite a $13.1B cash-and-investments position. Google Finance’s live headline shelf reported a $4.75B bond issuance for general corporate purposes. This is not yet a primary filing-derived fact in this run, so it is a monitoring signal—not a thesis input—but it reinforces the need to track funding choices alongside data-center commitments, leases and strategic acquisitions.",
+      "top_catalyst": "AMD closed $483.01 Aug. 13 (open $483.00, high $497.99, low $481.00; volume 18.70M), essentially flat from $482.93 Aug. 12 but still −7.0% from the Aug. 4 earnings-day close of $518.58.",
+      "top_risk": "sustained loss below $474 with broad semi weakness",
+      "social_note": "n/a",
+      "calibration_note": "1 day — wrong. The Aug. 7 call was flat_to_up, $482-$507 from $489.28. The next tradable close was $469.56 on Aug. 10, below the anchor and range. The call over-weighted stale positive VEL5 and the $500 premarket retest after an earnings-reset regime.",
+      "adjustment_note": "n/a",
+      "google_finance_method": "02 ET premarket quote was $486.16 (+0.65%); yfinance was $486.40 at 09:04 ET. This is a modest bid, not a confirmed reversal.",
+      "_opp_score": 73.57,
+      "_risk_score": 12.0
+    }
+  ],
+  "market_bullets": [
+    "Coverage is 8/9 same-day notes; 7 names lean up or flat-to-up, while 1 lean flat-to-down or down.",
+    "Several setups still show damaged or cooling 5-bar momentum (NVDA, ARM, NET), so the regime is selective rather than a clean all-clear risk-on tape.",
+    "Semiconductor / infrastructure names still dominate the medium-term upside stack: MU, ASML, LRCX, SIMO carry the strongest multi-horizon constructive bias.",
+    "Software-edge names remain more idiosyncratic than the semis: NET is still trading as a special situation driven by credibility, ownership, and reset dynamics rather than simple sector beta.",
+    "The most common pattern is constructive 30D/90D/1Y framing paired with lower-conviction same-day calls, meaning tape damage is tactical while the business thesis often stays intact.",
+    "Calibration lessons continue to point to range-width discipline: recent misses skew more toward undershooting move magnitude than getting the broad direction wrong."
+  ],
+  "opportunity_label": "Top opportunities",
+  "top_opportunities": [
+    {
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "status": "generated",
+      "note_date": "2026-08-17",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/MU/2026-08-17.md",
+      "reference_price": 971.66,
+      "current_price": 995.25,
+      "current_label": "premarket",
+      "current_time": "2026-08-17 08:06 ET Google Finance; yfinance $997.10 at 08:07:54 ET, zero-volume indicative",
+      "pct_vs_ref": 2.427803964349673,
+      "mytutopia": {
+        "rsi": 56.3,
+        "vel5": 8.7,
+        "delta1": 1.8,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/MU"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 54,
+        "low": 960.0,
+        "high": 1015.0,
+        "thesis": "Constructive premarket breadth and delayed RSI 56.3/VEL5 +8.7 support $1,000 test or resilient consolidation; policy claim is unverified and high volatility permits a fade.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "$995-$1,000 hold",
+          "memory/supplier breadth",
+          "SOXX/QQQ/rates",
+          "cash volume",
+          "verified policy/company disclosure"
+        ],
+        "falsifiers": [
+          "sustained loss of $960",
+          "volume-backed acceptance above $1,015",
+          "verified policy/order/margin revision"
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": 45,
+        "low": 760.0,
+        "high": 1200.0,
+        "thesis": "Q3/Q4 earnings, SCA volume visibility and positive VEL5 support a base; weak 30d calibration and capex/margin/FCF-duration risk require a wide low-confidence band.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "Q4 revenue/gross margin/FCF",
+          "receivable/deposit conversion",
+          "SCA pricing/mix",
+          "HBM share/yields",
+          "AI capex",
+          "competitive supply"
+        ],
+        "falsifiers": [
+          "durable loss below $760",
+          "margin/cash/working-capital miss",
+          "pricing/share loss",
+          "capacity oversupply",
+          "verified strength above $1,200"
+        ]
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 49,
+        "low": 650.0,
+        "high": 1350.0,
+        "thesis": "HBM4/1gamma/Gen6 execution and committed volumes preserve constructive cycle economics; positive technicals help base odds but do not solve supply and capital-intensity risks.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "HBM mix/share/yields",
+          "Q4 realization",
+          "HBM4E/1gamma milestones",
+          "AI spend",
+          "contract durability",
+          "end-market demand",
+          "supply discipline"
+        ],
+        "falsifiers": [
+          "gross-margin compression",
+          "HBM yield/share miss",
+          "AI-capex reset",
+          "weak SCA/cash conversion",
+          "competitive supply ramp"
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 48,
+        "low": 450.0,
+        "high": 1750.0,
+        "thesis": "AI memory intensity, roadmap and customer relationships can sustain higher normalized earnings, conditional on supply discipline, utilization and FCF returns from the buildout.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "AI memory content",
+          "HBM4E/1delta",
+          "contract economics",
+          "FCF conversion",
+          "capex discipline/capital returns",
+          "geopolitical resilience"
+        ],
+        "falsifiers": [
+          "2027-28 oversupply",
+          "persistent FCF compression",
+          "AI-capex slowdown",
+          "roadmap/share failure",
+          "export/legal/geopolitical/policy reversal"
+        ]
+      },
+      "unusual_signal": "Headline-to-disclosure gap: tape and policy headlines are positive while the primary operating file set is unchanged. Do not capitalize a secondary policy report into earnings until its terms, scope, timing, and affected products are verified.",
+      "top_catalyst": "The June fiscal-Q3 package remains the factual operating anchor: $41.456B revenue, $25.11 non-GAAP EPS, and 84.9% non-GAAP gross margin, with fiscal-Q4 guidance near $50B revenue, 86% gross margin, and $31 non-GAAP EPS. The NotebookLM official-doc briefing remains useful for the roadmap and capital-allocation detail; the market-outlook report supplies the appropriate counterweight on capacity, demand elasticity, and FCF duration.",
+      "top_risk": "sustained loss of $960",
+      "social_note": "Supplementary only: this section is deliberately separate from earnings materials, SEC filings, company releases and customer disclosures.",
+      "calibration_note": "1 day — Correct: August 14's flat_to_up, $940–$1,000, 56/100 call from the August 13 $949.83 anchor resolved at the August 14 $971.66 close. It was both in range and above the reference. It is a containment result, not evidence that same-day precision is high.",
+      "adjustment_note": "1. The August 14 Today call was correct, but only as a contained, modest-up outcome. Keep same-day confidence moderate despite green premarket context.",
+      "google_finance_method": "browser-harness first; shared visible Chrome :9333 / relvid",
+      "_opp_score": 92.37,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "ASML",
+      "company": "ASML Holding N.V.",
+      "status": "generated",
+      "note_date": "2026-08-17",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/ASML/2026-08-17.md",
+      "reference_price": 1844.08,
+      "current_price": 1870.71,
+      "current_label": "premarket",
+      "current_time": "2026-08-17 08:27 ET Google Finance; yfinance $1870.59 at 08:28:57 ET, zero-volume indicative",
+      "pct_vs_ref": 1.444080517114231,
+      "mytutopia": {
+        "rsi": 59.6,
+        "vel5": 7.6,
+        "delta1": -0.4,
+        "momentum_gate": "SELLING",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/ASML"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 55,
+        "low": 1815.0,
+        "high": 1900.0,
+        "thesis": "Premarket +1.44% and RSI 59.6/VEL5 +7.6 favor test or hold above the anchor, but decelerating velocity and high-volatility SELLING gate keep the outcome contained.",
+        "range_basis": "regular-session close; premarket-informed",
+        "drivers": [
+          "$1870-$1875 opening hold",
+          "SOXX/memory/WFE breadth",
+          "rates/Nasdaq",
+          "China/export headlines",
+          "cash-session volume"
+        ],
+        "falsifiers": [
+          "sustained loss below $1815",
+          "verified ASML/customer/policy impairment",
+          "volume-backed acceptance above $1900"
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": 46,
+        "low": 1450.0,
+        "high": 2200.0,
+        "thesis": "Q3/FY guide, commitments, upgrades/IBM economics and positive VEL5 preserve upside skew, but valuation, China risk and decelerating technical impulse require a wide low-confidence range.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "Q3 revenue/GM",
+          "systems versus IBM/upgrade mix",
+          "bookings/delivery acceptance",
+          "cash conversion",
+          "AI memory/logic capex",
+          "China/export outcome"
+        ],
+        "falsifiers": [
+          "H2 pushouts",
+          "guide/margin/cash deterioration",
+          "non-reallocable China loss",
+          "sustained below $1450",
+          "verified strength persistently above $2200"
+        ]
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 52,
+        "low": 1400.0,
+        "high": 2375.0,
+        "thesis": "Q3 conversion, capacity commitments and AI-memory/logic lithography intensity retain an upward quarterly skew; technicals support only the path, not the fundamental proof.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "Q3 result/outlook",
+          "order conversion",
+          "memory/logic capex",
+          "High-NA production economics",
+          "capacity/supplier execution",
+          "China policy"
+        ],
+        "falsifiers": [
+          "backlog conversion stress",
+          "supplier/working-capital bottleneck",
+          "gross-margin miss",
+          "capex deferrals",
+          "China impairment or WFE multiple reset"
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 55,
+        "low": 1150.0,
+        "high": 2800.0,
+        "thesis": "EUV/High-NA chokepoint economics, throughput, upgrades and AI lithography intensity support positive annual expected value; technicals are minor and risks justify a wide band.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "AI infrastructure capex",
+          "lithography intensity",
+          "High-NA ROI/adoption",
+          "EUV/DUV upgrades",
+          "capacity execution",
+          "capital-return discipline"
+        ],
+        "falsifiers": [
+          "AI-capex reset",
+          "High-NA commercial disappointment",
+          "non-reallocable China/local-substitution loss",
+          "geopolitical disruption",
+          "valuation compression"
+        ]
+      },
+      "unusual_signal": "1. IBM is both strength and a comparability caveat. Its Q2 contribution validates recurring field-option economics, but the $11B–$12B Q3 bridge needs new-system/upgrade conversion and cash evidence before the stock should be rewarded as though all incremental revenue carries identical durability.",
+      "top_catalyst": "The July Q2 package remains the underwriting anchor: €9.326B sales, 54.0% gross margin, €2.918B net income, €7.59 basic EPS, 86 new systems and €2.762B IBM sales. The management wording matters: sales and margin beat guidance primarily because higher-than-expected IBM sales—service and field options—helped. IBM demonstrates installed-base monetization and an earnings-quality buffer, but it is not identical to accelerating system shipments.",
+      "top_risk": "sustained loss below $1815",
+      "social_note": "Supplementary only: this is deliberately separate from earnings releases, SEC filings, management commentary and customer/peer primary sources.",
+      "calibration_note": "1 day — August 14: correct. The August 14 flat_to_up, $1,815–$1,885, 54/100 forecast from $1,847.90 resolved at $1,844.08 on August 14: inside the range and essentially flat (−0.21%). It correctly restrained a post-rally breakout claim.",
+      "adjustment_note": "1. The correct August 14 Today call was a containment result after a rally, not breakout evidence. Keep Today confidence near the mid-50s even with green premarket and positive VEL5.",
+      "google_finance_method": "browser-harness first; reused shared visible Chrome :9333 / relvid",
+      "_opp_score": 91.86,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "LRCX",
+      "company": "Lam Research Corporation",
+      "status": "generated",
+      "note_date": "2026-08-17",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/LRCX/2026-08-17.md",
+      "reference_price": 332.36,
+      "current_price": 337.82,
+      "current_label": "premarket",
+      "current_time": "2026-08-17 08:12 ET Google Finance; yfinance $337.95 at 08:15:13 ET, zero-volume indicative",
+      "pct_vs_ref": 1.6427969671440543,
+      "mytutopia": {
+        "rsi": 54.6,
+        "vel5": 5.9,
+        "delta1": -1.6,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/LRCX"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 54,
+        "low": 327.0,
+        "high": 342.0,
+        "thesis": "Positive peer breadth and delayed RSI 54.6/VEL5 +5.9 support churn-to-upside; deceleration and high volatility cap conviction.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "$337-$338 post-open hold",
+          "SOXX/AMAT/KLAC/ASML breadth",
+          "rates/Nasdaq",
+          "verified company/AI-WFE commentary"
+        ],
+        "falsifiers": [
+          "sustained loss below $327",
+          "volume-backed acceptance above $342",
+          "verified Lam/customer demand revision"
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": 45,
+        "low": 260.0,
+        "high": 410.0,
+        "thesis": "June execution, September guide, systems/support growth and positive VEL5 support a constructive base; valuation, China, recognition and cash-conversion risk require a wide low-confidence band.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "September revenue/margin",
+          "operating cash/DSO/inventory",
+          "Japan acceptance",
+          "AI-memory/NAND/packaging",
+          "WFE framework/process-share evidence"
+        ],
+        "falsifiers": [
+          "capex cuts",
+          "guide/margin/cash weakness",
+          "durable loss below $260",
+          "verified sustained rerating above $410"
+        ]
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 53,
+        "low": 240.0,
+        "high": 460.0,
+        "thesis": "Process complexity, advanced packaging/HBM, systems plus service and a faster R&D engine preserve an up skew; technicals support base odds but do not solve China, valuation or conversion risk.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "September execution",
+          "foundry/memory WFE",
+          "process-content share",
+          "roadmap qualifications",
+          "support/control attachment",
+          "FCF/capital returns"
+        ],
+        "falsifiers": [
+          "customer capex cancellations",
+          "China/export-control impairment",
+          "margin/share deterioration",
+          "no roadmap commercial adoption"
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 55,
+        "low": 170.0,
+        "high": 580.0,
+        "thesis": "Etch/deposition moat, installed-base economics, capital returns and long-cycle R&D/process-control investment support earnings power, with broad AI-capex, China, competition and valuation tails.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "AI infrastructure",
+          "harder wafer/package process content",
+          "lab conversion/customer adoption",
+          "service/control revenue",
+          "capital returns"
+        ],
+        "falsifiers": [
+          "AI-capex correction",
+          "China/local-substitution disruption",
+          "share loss",
+          "R&D returns fail"
+        ]
+      },
+      "unusual_signal": "R&D is accelerating faster than the evidence of monetization. The $3B-plus lab-network plan, the audited $2.376B FY R&D base, and the existing global R&D-network strategy strengthen future process-development capacity. They do not yet quantify incremental bookings, tool share, software/service attachment, margin, capex, or returns. The market needs a bridge from lab throughput to customer qualification and commercial share.",
+      "top_catalyst": "The June-quarter evidence remains strong and quality-sensitive: $6.722B revenue, 52.0% non-GAAP gross margin, 38.4% operating margin, and $1.82 EPS. Systems revenue reached $4.250B and customer-support-related revenue/other $2.472B, so the improvement was not solely a systems-recognition spike. The September guide—$8.10B ±$0.40B, 52.0% ±1 point GM, 39.5% ±1 point operating margin, $2.15 ±$0.15 EPS—is now the central conversion test.",
+      "top_risk": "sustained loss below $327",
+      "social_note": "Supplementary only: this section is deliberately separate from SEC filings, earnings releases, company technology materials and peer primary sources.",
+      "calibration_note": "1 day — Partly correct: Aug. 14's flat_to_up, $330–$345, 54/100 call from the Aug. 13 $337.01 anchor resolved at the Aug. 14 $332.36 close. The close was inside range, but the directional tilt was wrong (−1.38%, outside a ±1% flat tolerance).",
+      "adjustment_note": "1. The Aug. 14 Today outcome was range-right but directionally wrong; a contained range must not be reported as directional skill. Keep Today confidence moderate and respect a red completed session even when premarket is green.",
+      "google_finance_method": "browser-harness first; shared visible Chrome :9333 / relvid",
+      "_opp_score": 89.29,
+      "_risk_score": 0.0
+    },
+    {
+      "ticker": "SIMO",
+      "company": "Silicon Motion Technology Corporation",
+      "status": "generated",
+      "note_date": "2026-08-17",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/SIMO/2026-08-17.md",
+      "reference_price": 268.9,
+      "current_price": 278.66,
+      "current_label": "premarket",
+      "current_time": "2026-08-17 08:36 ET",
+      "pct_vs_ref": 3.6296020825585904,
+      "mytutopia": {
+        "rsi": 52.0,
+        "vel5": 5.0,
+        "delta1": 4.8,
+        "momentum_gate": null,
+        "page": null
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 53,
+        "low": 264.0,
+        "high": 286.0,
+        "thesis": "RSI 52.0 and VEL5 +5.0 plus constructive storage breadth support continuation/choppy upside, but financing digestion and volatility require a broad band.",
+        "range_basis": "2026-08-14 regular-session close; premarket context only",
+        "drivers": [
+          "$274–$279 hold after open",
+          "storage-peer breadth",
+          "convertible-note interpretation",
+          "semicap risk appetite"
+        ],
+        "falsifiers": [
+          "sustained break below $264",
+          "broad storage reversal",
+          "financing/working-capital negative",
+          "squeeze above $286"
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": 44,
+        "low": 220.0,
+        "high": 335.0,
+        "thesis": "Q3 guide, solution mix and financing preserve optionality, but cash conversion and convertible-overhang uncertainty demand a low-confidence wide range.",
+        "range_basis": "2026-08-14 regular-session close",
+        "drivers": [
+          "Q3 revenue/margin",
+          "use of proceeds",
+          "inventory/receivables turns",
+          "Ferri recurrence",
+          "NAND multiples"
+        ],
+        "falsifiers": [
+          "guide/margin reset",
+          "operating-cash deterioration",
+          "sustained break below $220",
+          "cash proof plus durable acceptance above $335"
+        ]
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 49,
+        "low": 195.0,
+        "high": 410.0,
+        "thesis": "Solution ramps and AI-storage roadmap can support upside if financing becomes recurring high-margin cash earnings.",
+        "range_basis": "2026-08-14 regular-session close",
+        "drivers": [
+          "Q3/OCF",
+          "solution/customer breadth",
+          "component availability",
+          "AI commercialization",
+          "margin durability"
+        ],
+        "falsifiers": [
+          "persistent negative OCF",
+          "ramp slippage",
+          "margin compression",
+          "capital misallocation",
+          "storage de-rating"
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 52,
+        "low": 140.0,
+        "high": 500.0,
+        "thesis": "Enterprise, automotive and physical-AI mix can compound if capital earns durable cash returns; potential conversion/dilution requires a broad range.",
+        "range_basis": "2026-08-14 regular-session close",
+        "drivers": [
+          "solution durability",
+          "FCF normalization",
+          "capital deployment",
+          "enterprise share",
+          "PCIe6",
+          "NAND cycle"
+        ],
+        "falsifiers": [
+          "ongoing FCF deficit",
+          "poor capital allocation",
+          "ASP competition",
+          "concentration",
+          "unfavorable dilution",
+          "Taiwan/trade disruption"
+        ]
+      },
+      "unusual_signal": "1. Financing has changed the hurdle. The $1.15B zero-coupon convertible adds runway for component supply and multiple ramps, but a capital-rich balance sheet does not equal operating cash generation. It also introduces eventual dilution/hedging and allocation risk.",
+      "top_catalyst": "Q2 remains the operating anchor: $451.0M revenue (+32% Q/Q, +127% Y/Y), 50.2% GAAP gross margin, 22.4% GAAP operating margin, and $2.43 non-GAAP EPS/ADS. Q3 guidance is $519M–$541M revenue (+15%–20% Q/Q, +114%–124% Y/Y), 49.9%–50.9% GAAP GM and 24.4%–25.7% GAAP operating margin.",
+      "top_risk": "sustained break below $264",
+      "social_note": "Supplementary evidence only; separate from SEC filings, management commentary and earnings materials.",
+      "calibration_note": "Today / 1 day — Partly correct (newly mature): August 14's flat_to_up, $244–$264, 52/100 call was anchored to $249.12. SIMO closed $268.90 (+7.94%): direction held but the range capped a high-beta extension.",
+      "adjustment_note": "1. August 14 was directionally right but range-wrong; Friday’s $268.90 close confirms that recent high-beta moves demand wider Today upper tails and restrained confidence.",
+      "google_finance_method": "n/a",
+      "_opp_score": 87.6,
+      "_risk_score": 0.0
+    }
+  ],
+  "top_risks": [
+    {
+      "ticker": "NET",
+      "company": "Cloudflare, Inc.",
+      "status": "generated",
+      "note_date": "2026-08-17",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/NET/2026-08-17.md",
+      "reference_price": 315.78,
+      "current_price": 311.02,
+      "current_label": "premarket",
+      "current_time": "2026-08-17 08:56:51 ET (yfinance 1-minute pre/post; zero-volume indicative)",
+      "pct_vs_ref": -1.5073785546899712,
+      "mytutopia": {
+        "rsi": 63.9,
+        "vel5": -1.1,
+        "delta1": -9.2,
+        "momentum_gate": null,
+        "page": null
+      },
+      "today": {
+        "direction": "flat_to_down",
+        "confidence": 57,
+        "low": 306.0,
+        "high": 320.0,
+        "thesis": "Friday reversal, weak cyber breadth and delayed RSI 63.9 / VEL5 -1.1 / Delta1 -9.2 favor consolidation-to-softness rather than a clean rebound.",
+        "range_basis": "regular-session close; $310.57-$311.02 premarket context only",
+        "drivers": [
+          "$310-$311 premarket hold",
+          "QQQ/software breadth",
+          "cyber peer recovery/failure",
+          "post-open volume",
+          "post-convert positioning"
+        ],
+        "falsifiers": [
+          "sustained reclaim above $320 with broad peer confirmation",
+          "fresh demand evidence",
+          "absence of early-session supply"
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": 46,
+        "low": 270.0,
+        "high": 385.0,
+        "thesis": "Q2 acceleration preserves a constructive base, but technical deceleration and premium valuation require a wide consolidation-aware range.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "Q3 cRPO/retention",
+          "large-customer growth",
+          "gross margin and FCF",
+          "paid AI/platform attachment",
+          "capital deployment"
+        ],
+        "falsifiers": [
+          "weaker Q3 outlook/cRPO",
+          "margin or FCF deterioration",
+          "adverse financing/M&A optics",
+          "break below $270"
+        ]
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": 48,
+        "low": 230.0,
+        "high": 455.0,
+        "thesis": "Q3 must validate paid usage and operating leverage; RSI above 60 is modestly supportive but velocity and valuation require large two-sided room.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "Q3 results",
+          "retention",
+          "paid product attach",
+          "gross margin/FCF",
+          "capital allocation"
+        ],
+        "falsifiers": [
+          "retention slowdown",
+          "investment without leverage",
+          "competitive bundling",
+          "dilution/control discount",
+          "de-rating"
+        ]
+      },
+      "1y": {
+        "direction": "flat_to_up",
+        "confidence": 45,
+        "low": 180.0,
+        "high": 565.0,
+        "thesis": "Long-run upside depends on durable growth and conversion of platform breadth into margins and FCF per share; technicals are non-decisive.",
+        "range_basis": "regular-session close",
+        "drivers": [
+          "durable growth/retention",
+          "paid conversion",
+          "operating leverage",
+          "disciplined use of proceeds",
+          "neutral-edge moat"
+        ],
+        "falsifiers": [
+          "valuation normalization",
+          "failed monetization",
+          "poor capital returns/dilution",
+          "margin erosion",
+          "hyperscaler displacement"
+        ]
+      },
+      "unusual_signal": "1. The technical regime changed sharply in one completed bar. Mytutopia’s delayed Aug. 14 row moved to RSI 63.9, Δ1 −9.2, VEL5 −1.1 from Aug. 13 RSI 73.1 / VEL5 +14.4. That is a slowdown from overbought momentum, not a new oversold opportunity.",
+      "top_catalyst": "Q2 is still the operating baseline: revenue was $696.1M (+36% YoY), cRPO grew 35%, and management guided Q3 revenue to $736M–$737M and FY2026 revenue to $2.864B–$2.870B.[2] The useful management signal is the combination of record growth in paying customers, large customers and developers with the explicit agentic-internet framing: the narrative is broadening from edge delivery/security into the control, developer and payment rails for machine-to-machine traffic.[2]",
+      "top_risk": "1. The technical regime changed sharply in one completed bar. Mytutopia’s delayed Aug. 14 row moved to RSI 63.9, Δ1 −9.2, VEL5 −1.1 from Aug. 13 RSI 73.1 / VEL5 +14.4. That is a slowdown from overbought momentum, not a new oversold opportunity.",
+      "social_note": "Supplementary only; separate from earnings, SEC filings and company product materials.",
+      "calibration_note": "Method: Today resolves on its next completed cash-session close; later horizons resolve at the first completed close on/after the calendar target. Correct requires direction and range; partly correct requires one. flat_to_up / flat_to_down use ±1% direction tolerance.",
+      "adjustment_note": "1. Score today’s Aug. 14 prediction as partly correct: the direction was defensive, but $315.78 broke the $320 floor. Same-day lower bounds must accommodate a post-gap reversal.",
+      "google_finance_method": "browser-harness-first via reusable BU_CDP_URL=http://127.0.0.1:9333 BU_NAME=relvid; beta shell was readable; run-specific tabs tracked for cleanup",
+      "_opp_score": 52.69,
+      "_risk_score": 13.99
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corporation",
+      "status": "generated",
+      "note_date": "2026-08-17",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/NVDA/2026-08-17.md",
+      "reference_price": 225.16,
+      "current_price": 226.66,
+      "current_label": "live",
+      "current_time": null,
+      "pct_vs_ref": 0.6661929294723752,
+      "mytutopia": {
+        "rsi": 63.0,
+        "vel5": -1.4,
+        "delta1": -0.2,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "page": "https://rsi-optimizer.vercel.app/rsi_optimizer/NVDA"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 52,
+        "low": 221.0,
+        "high": 231.0,
+        "thesis": "Indicative green tape and RSI 63 support resilient consolidation, but VEL5 has turned negative near the 52-week high.",
+        "range_basis": null,
+        "drivers": [
+          "$225 hold",
+          "semi breadth",
+          "QQQ/rates",
+          "cash volume"
+        ],
+        "falsifiers": [
+          "sustained loss of $221",
+          "volume-backed leadership above $231"
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": 51,
+        "low": 198.0,
+        "high": 265.0,
+        "thesis": "Q1 scale, $91B Q2 guide and financing optionality preserve positive skew; cooling VEL5 and conversion risk require a wide band.",
+        "range_basis": null,
+        "drivers": [
+          "Q2 revenue/guide/margin",
+          "Hyperscale/ACIE mix",
+          "working capital",
+          "financing terms",
+          "powered deployment"
+        ],
+        "falsifiers": [
+          "loss of $198",
+          "margin/cash deterioration",
+          "funding without utilization",
+          "AI ROI/export/custom-silicon reset"
+        ]
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 55,
+        "low": 185.0,
+        "high": 295.0,
+        "thesis": "Blackwell/networking scale and Vera/Rubin optionality can support higher value if financing turns into powered utilized installs.",
+        "range_basis": null,
+        "drivers": [
+          "Q2 execution",
+          "systems/networking/software attachment",
+          "Vera/Rubin",
+          "sovereign demand",
+          "power efficiency"
+        ],
+        "falsifiers": [
+          "AI capex digestion",
+          "grid delays",
+          "counterparty stress",
+          "margin/working-capital pressure",
+          "export restrictions"
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 59,
+        "low": 160.0,
+        "high": 370.0,
+        "thesis": "Integrated platform and FCF/capital-return capacity support upside, offset by China, valuation, grid, customer economics and alternative silicon.",
+        "range_basis": null,
+        "drivers": [
+          "cloud/sovereign/vertical spend",
+          "Vera/Rubin",
+          "systems/software capture",
+          "FCF discipline",
+          "finance-to-utilization conversion"
+        ],
+        "falsifiers": [
+          "AI service ROI/financing disappointment",
+          "poor enablement returns/guarantees",
+          "export damage",
+          "custom-silicon displacement",
+          "multiple compression"
+        ]
+      },
+      "unusual_signal": "Finance and power now move together. The >$500B third-party financing-platform initiative is significant demand-enablement evidence, but no revenue, NVIDIA commitment, guarantee, margin or return metric was disclosed. The accompanying 800V/power emphasis makes grid-ready deployment the practical conversion test.",
+      "top_catalyst": "Q1 FY2027 remains the primary financial anchor: $81.615B revenue (+85% y/y), $75.2B Data Center (+92%), $14.8B networking (+199%), and 74.9% GAAP gross margin. Q2 is guided to $91B ±2% revenue and 74.9% ±50bp GAAP gross margin, with no China Data Center compute revenue assumed.",
+      "top_risk": "sustained loss of $221",
+      "social_note": "Supplementary only; separate from company materials, SEC filings and customer financial disclosures.",
+      "calibration_note": "1 day: August 14 flat_to_up, $221–$231, anchored to $225.30, resolved correct at the August 14 $225.16 close: it stayed inside the range and flat component. This is containment, not a strong directional win.",
+      "adjustment_note": "1. The Aug. 14 contained Today result should not increase short-horizon confidence: it was flat rather than a strong bullish move.",
+      "google_finance_method": "browser-harness-first discovery approval-blocked; fallback browser Google Finance",
+      "_opp_score": 79.86,
+      "_risk_score": 1.96
+    },
+    {
+      "ticker": "ARM",
+      "company": "Arm Holdings",
+      "status": "generated",
+      "note_date": "2026-08-17",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/ARM/2026-08-17.md",
+      "reference_price": 279.44,
+      "current_price": 284.16,
+      "current_label": "premarket",
+      "current_time": "2026-08-17 08:16 ET",
+      "pct_vs_ref": 1.6890924706556065,
+      "mytutopia": {
+        "rsi": 50.1,
+        "vel5": -0.2,
+        "delta1": 0.3,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "page": null
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 54,
+        "low": 278.0,
+        "high": 289.0,
+        "thesis": "Indicative bid, mostly positive peers and RSI 50.1/VEL5 -0.2 favor bounded stabilization/upside, not breakout.",
+        "range_basis": null,
+        "drivers": [
+          "opening-volume validation",
+          "peer breadth",
+          "RSI 50.1 / VEL5 -0.2",
+          "operating/contract-conversion disclosures"
+        ],
+        "falsifiers": [
+          "Sustained volume-backed loss of $278",
+          "broad AI-semi reversal",
+          "weaker royalty/guide/contracted-conversion disclosure"
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_down",
+        "confidence": 44,
+        "low": 215.0,
+        "high": 345.0,
+        "thesis": "Royalty mix and near-neutral technicals preserve rebound capacity, but lumpy licensing, high valuation, GAAP-margin gap and uncontracted capacity economics keep the distribution cautious.",
+        "range_basis": null,
+        "drivers": [
+          "Q2 execution versus guide",
+          "royalty/license/ACV mix",
+          "AGI-CPU conversion and gross economics",
+          "GAAP margin/SBC/normalized FCF",
+          "sector multiple"
+        ],
+        "falsifiers": [
+          "Material beat/raise with high-return conversion",
+          "durable hold above $345",
+          "sustained positive VEL5 with peer confirmation"
+        ]
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": 46,
+        "low": 180.0,
+        "high": 410.0,
+        "thesis": "A reporting cycle can validate CSS/data-center royalty durability and disciplined direct-silicon economics; near-neutral technicals improve the start but valuation requires a two-sided band.",
+        "range_basis": null,
+        "drivers": [
+          "royalty durability",
+          "Armv9/CSS conversion",
+          "AGI-CPU contracts/capacity/gross margin",
+          "DreamBig integration",
+          "AI capex/GAAP leverage"
+        ],
+        "falsifiers": [
+          "Below-guide royalty quality",
+          "capacity/cash/concentration stress",
+          "architecture substitution",
+          "multiple compression"
+        ]
+      },
+      "1y": {
+        "direction": "flat_to_up",
+        "confidence": 47,
+        "low": 135.0,
+        "high": 520.0,
+        "thesis": "Moat can compound if CSS and AGI CPU become durable GAAP cash earnings without uneconomic capacity or dilution.",
+        "range_basis": null,
+        "drivers": [
+          "Armv9/CSS economics",
+          "data-center/edge/physical-AI adoption",
+          "disciplined capital execution",
+          "cash generation",
+          "developer moat"
+        ],
+        "falsifiers": [
+          "Structural dilution or poor GAAP/FCF conversion",
+          "uneconomic capacity",
+          "regulation/litigation deterioration",
+          "architecture substitution",
+          "persistent de-rating"
+        ]
+      },
+      "unusual_signal": "New Form 4, benign interpretation: a 9,572-ADS charitable gift is materially different from an open-market disposal. It removes an ambiguity from the prior run but does not alter earnings, roadmap or capital-allocation evidence.",
+      "top_catalyst": "1. Royalty growth is still the cleanest operating evidence. Q1 FYE27 revenue was $1.289B (+22%), including $715M royalties (+22%) and $574M license/other (+23%). Data-center royalties more than doubled, providing reported support for higher-value Armv9/CSS/Neoverse mix.",
+      "top_risk": "Sustained volume-backed loss of $278",
+      "social_note": "Supplementary only; explicitly separate from official earnings analysis.",
+      "calibration_note": "Scoring uses the structured ledger and the first completed regular-session close on/after each calendar horizon. flat_to_up / flat_to_down have a ±1% directional tolerance; correct requires both direction and range, partly correct requires one.",
+      "adjustment_note": "The Aug. 14 Today and Jul. 15 30-day calls scored correctly, but both were wide/flat-tolerant. Treat them as evidence for moderate confidence and broad bands, not proof of precision.",
+      "google_finance_method": "16 ET premarket (+1.69%) on August 17; yfinance cross-checked $284.76 at 08:24 ET (+1.90%, zero reported volume). The August 14 close is the formal anchor.",
+      "_opp_score": 69.58,
+      "_risk_score": 0.28
+    }
+  ],
+  "telegram_summary": "The cross-ticker read stays constructive overall, but today still looks selective rather than a broad clean risk-on continuation. Coverage 8/9. Top opportunities: MU, ASML. Top risks: NET, NVDA."
+}

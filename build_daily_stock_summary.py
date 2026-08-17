@@ -116,7 +116,13 @@ def parse_direction(val: Any) -> str:
     s = s.strip("* ")
     s = s.replace(" ", "_")
     allowed = {"up", "down", "flat", "flat_to_up", "flat_to_down"}
-    return s if s in allowed else s
+    if s in allowed:
+        return s
+    if s.startswith("flat_to_up"):
+        return "flat_to_up"
+    if s.startswith("flat_to_down"):
+        return "flat_to_down"
+    return s
 
 
 def parse_price_range_from_text(text: str | None) -> tuple[float | None, float | None]:
@@ -414,6 +420,7 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
         company = COMPANY_MAP.get(ticker, ticker)
 
     sections = {name: get_section(body, name) for name in [
+        "Reference context",
         "What's new since last run",
         "Deep dive on earnings / major catalysts",
         "Unusual signals",
@@ -471,11 +478,14 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
         "page": my.get("page"),
     }
 
-    wn = sections["What's new since last run"]
+    wn = sections["What's new since last run"] or sections["Reference context"] or ""
     if ref is None:
         ref = parse_floatish(extract_note_value(wn, r"reference close[^\n$]*\$([0-9][0-9,]*\.?[0-9]*)", r"prior close[^\n$]*\$([0-9][0-9,]*\.?[0-9]*)"))
     if current is None:
         current = parse_floatish(extract_note_value(wn, r"premarket[^\n$]*\$([0-9][0-9,]*\.?[0-9]*)", r"current[^\n$]*\$([0-9][0-9,]*\.?[0-9]*)"))
+    # Reference-context notes may include the only live/premarket print.
+    if current is None:
+        current = parse_floatish(extract_note_value(sections["Reference context"] or "", r"premarket[^\n$]*\$([0-9][0-9,]*\.?[0-9]*)", r"live context[^\n$]*\$([0-9][0-9,]*\.?[0-9]*)"))
     my_sec = sections["Mytutopia technical check"] or ""
     # Notes can explicitly state that the current technical reading was unavailable
     # while mentioning a prior historical value. Do not turn the date in that
@@ -486,8 +496,21 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
         re.I | re.S,
     ))
     if mytutopia["rsi"] is None and not current_reading_unavailable:
-        mytutopia["rsi"] = parse_floatish(extract_note_value(my_sec, r"RSI[^\n:]*[:\-]\s*\*{0,2}\s*([0-9]+\.?[0-9]*)", r"RSI[^\n:]*[:\-]\s*[^0-9\n]*([0-9]+\.?[0-9]*)"))
-        mytutopia["vel5"] = parse_floatish(extract_note_value(my_sec, r"VEL5[^\n:]*[:\-]\s*\*{0,2}\s*([+-]?[0-9]+\.?[0-9]*)", r"VEL 5[^\n:]*[:\-]\s*\*{0,2}\s*([+-]?[0-9]+\.?[0-9]*)", r"VEL ?5[^\n:]*[:\-]\s*[^0-9+\-\n]*([+-]?[0-9]+\.?[0-9]*)"))
+        # Prefer the compact canonical triple ("RSI / VEL5 / Δ1: 52.0 / +5.0 / +4.8").
+        # Generic label regexes otherwise misread the delayed-data "24-hour" text
+        # or assign the RSI value to VEL5.
+        triple = re.search(
+            r"RSI\s*/\s*VEL\s*5\s*/\s*(?:Delta\s*1|Δ1)\s*\*{0,2}:\*{0,2}\s*\*{0,2}\s*([+-]?\d+(?:\.\d+)?)\s*\*{0,2}\s*/\s*\*{0,2}\s*([+-]?\d+(?:\.\d+)?)\s*\*{0,2}\s*/\s*\*{0,2}\s*([+-]?\d+(?:\.\d+)?)",
+            my_sec,
+            re.I,
+        )
+        if triple:
+            mytutopia["rsi"] = parse_floatish(triple.group(1))
+            mytutopia["vel5"] = parse_floatish(triple.group(2))
+            mytutopia["delta1"] = parse_floatish(triple.group(3))
+        else:
+            mytutopia["rsi"] = parse_floatish(extract_note_value(my_sec, r"RSI[^\n:]*[:\-]\s*\*{0,2}\s*([0-9]+\.?[0-9]*)", r"RSI[^\n:]*[:\-]\s*[^0-9\n]*([0-9]+\.?[0-9]*)"))
+            mytutopia["vel5"] = parse_floatish(extract_note_value(my_sec, r"VEL5[^\n:]*[:\-]\s*\*{0,2}\s*([+-]?[0-9]+\.?[0-9]*)", r"VEL 5[^\n:]*[:\-]\s*\*{0,2}\s*([+-]?[0-9]+\.?[0-9]*)", r"VEL ?5[^\n:]*[:\-]\s*[^0-9+\-\n]*([+-]?[0-9]+\.?[0-9]*)"))
     # Ledger gate fields are not uniform. Fall back to the note wording rather
     # than treating the 24-hour-delay context as a momentum-gate label.
     if not mytutopia["momentum_gate"]:
@@ -770,7 +793,7 @@ function miniCard(card, mode){{
   return `<div class="mini-card"><div class="topline"><strong>${{esc(card.ticker)}}</strong><span class="badge neutral">Risk ${{card._risk_score}}</span></div><div class="company" style="margin-top:6px">${{esc(card.company)}}</div><p>${{esc(card.top_risk || 'n/a')}}</p><div class="mini-meta"><span>Today ${{esc(card.today.direction)}}</span><span>${{fmtPct(card.pct_vs_ref)}}</span></div></div>`;
 }}
 function renderTopSections(){{ document.getElementById('oppGrid').innerHTML = APP_DATA.top_opportunities.map(c => miniCard(c, 'opp')).join(''); document.getElementById('riskGrid').innerHTML = APP_DATA.top_risks.map(c => miniCard(c, 'risk')).join(''); }}
-function passesFilter(card){{ if(activeFilter === 'all') return true; if(activeFilter === 'generated') return card.status === 'generated'; if(activeFilter === 'stale') return card.status === 'stale'; if(activeFilter === 'missing') return card.status === 'missing'; if(activeFilter === 'bullish') return ['up','flat_to_up'].includes(card.today.direction); if(activeFilter === 'downish') return ['flat_to_down','down','flat'].includes(card.today.direction); if(activeFilter === 'risk') return num(card._risk_score,0) > 0 && String(card.top_risk || 'n/a').toLowerCase() !== 'n/a'; return true; }}
+function passesFilter(card){{ if(activeFilter === 'all') return true; if(activeFilter === 'generated') return card.status === 'generated'; if(activeFilter === 'stale') return card.status === 'stale'; if(activeFilter === 'missing') return card.status === 'missing'; if(activeFilter === 'bullish') return ['up','flat_to_up'].includes(card.today.direction); if(activeFilter === 'downish') return ['flat_to_down','down','flat'].includes(card.today.direction); if(activeFilter === 'risk') return card.status === 'generated' && num(card._risk_score,0) > 0 && String(card.top_risk || 'n/a').toLowerCase() !== 'n/a'; return true; }}
 function passesSearch(card){{ const q = searchBox.value.trim().toLowerCase(); if(!q) return true; return [card.ticker,card.company,card.unusual_signal,card.top_catalyst,card.top_risk,card.calibration_note].join(' ').toLowerCase().includes(q); }}
 function sortCards(a,b){{ const key = sortSelect.value; if(key === 'ticker') return a.ticker.localeCompare(b.ticker); if(key === 'company') return a.company.localeCompare(b.company); if(key === 'confidence') return num(b.today.confidence) - num(a.today.confidence); if(key === 'rsi') return num(b.mytutopia.rsi) - num(a.mytutopia.rsi); if(key === 'vel5') return num(b.mytutopia.vel5) - num(a.mytutopia.vel5); if(key === 'pct') return num(b.pct_vs_ref) - num(a.pct_vs_ref); if(key === 'opp') return num(b._opp_score) - num(a._opp_score); if(key === 'risk') return num(b._risk_score) - num(a._risk_score); return 0; }}
 function tickerCard(card){{
