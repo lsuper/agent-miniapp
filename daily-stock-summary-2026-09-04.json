@@ -1,0 +1,619 @@
+{
+  "date": "2026-09-04",
+  "generated_at": "2026-09-04T07:14:19-07:00",
+  "coverage": {
+    "generated": [
+      "NVDA",
+      "MU",
+      "LRCX",
+      "ARM",
+      "ASML",
+      "TSM",
+      "SIMO",
+      "NET",
+      "AMD"
+    ],
+    "stale": [],
+    "missing": []
+  },
+  "market_read": [
+    "Coverage is 9/9 same-day notes; 0 stale and 0 missing.",
+    "Today calls: 8 constructive, 0 flat, 1 cautious/bearish; this is a synthesis of the stock jobs, not new research.",
+    "Constructive setups: MU (flat_to_up, 57/100), TSM (flat_to_up, 58/100).",
+    "Primary watch items: ASML (flat_to_up, n/a), AMD (flat_to_up, 56/100).",
+    "Momentum snapshot: 2 positive VEL5 readings, 3 negative; unavailable readings are excluded.",
+    "NVDA signal: 1. Open-model reach versus exclusivity: preserving other-vendor support is strategically rational for a developer platform, but it means the acquisition should be evaluated on workflow influence and monetization—not presumed GPU lock-in. 2. Capital…",
+    "MU signal: Green tape versus weak issuer freshness: the current gap is broad sector beta without a fresh Micron earnings/roadmap revision. It improves Today odds but should not be extrapolated into a fundamental rerating. - Small positive VEL5 is a confidence…"
+  ],
+  "top_opportunities": [
+    {
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "status": "generated",
+      "note_date": "2026-09-04",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/MU/2026-09-04.md",
+      "reference": "n/a",
+      "current": "n/a",
+      "pct": "n/a",
+      "rsi": "53.5",
+      "vel5": "+2.5",
+      "gate": "n/a",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": "57/100",
+        "range": "$955–$990",
+        "thesis": "Green broad semi/memory indications plus RSI 53.5 / VEL5 +2.5 favor a constructive session, but both signals are insufficient for a high-conviction breakout.",
+        "falsifiers": "Sustained loss <$955; broad peer reversal; verified MU operating setback."
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": "40/100",
+        "range": "$700–$1,150",
+        "thesis": "Positive delayed VEL5 and extraordinary earnings retain upside optionality, while poor directional calibration, peak-margin/FCF risk and capacity uncertainty demand a wide low-confidence band.",
+        "falsifiers": "Cash-margin-backed strength >$1,150; sustained <$700; verified pricing/share/working-capital deterioration."
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": "44/100",
+        "range": "$600–$1,400",
+        "thesis": "HBM4/1γ/Gen6 and AI-memory demand preserve constructive asymmetry; modest RSI/VEL5 contributes only a supplemental base signal.",
+        "falsifiers": "Margin reset; HBM qualification/share miss; AI-capex/cash-conversion deterioration; capacity-led excess supply."
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": "45/100",
+        "range": "$375–$1,750",
+        "thesis": "AI-memory content, HBM4E/1δ and packaging can support a higher earnings base if capital discipline holds; technicals only modestly affect confidence at this horizon.",
+        "falsifiers": "2027–28 oversupply/margin compression; persistent FCF compression; AI-capex reset; HBM share loss; export-control disruption."
+      },
+      "catalyst": "The controlling operating base is still Q3's $41.456B revenue, $25.11 non-GAAP EPS and 84.9% non-GAAP gross margin, with Q4 guided around $50B revenue, 86% margin and $31 ±$1 EPS. The investment question is duration and cash quality, not whether…",
+      "unusual": "Green tape versus weak issuer freshness: the current gap is broad sector beta without a fresh Micron earnings/roadmap revision. It improves Today odds but should not be extrapolated into a fundamental rerating. - Small positive VEL5 is a confidence…",
+      "risk": "Green tape versus weak issuer freshness: the current gap is broad sector beta without a fresh Micron earnings/roadmap revision. It improves Today odds but should not be extrapolated into a fundamental rerating.",
+      "calibration": "Method: Correct requires both the directional frame and explicit price range; partly correct requires one. flat_to_up allows at least −1% versus anchor; flat_to_down allows no…"
+    },
+    {
+      "ticker": "TSM",
+      "company": "Taiwan Semiconductor Manufacturing Co. Ltd.",
+      "status": "generated",
+      "note_date": "2026-09-04",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/TSM/2026-09-04.md",
+      "reference": "n/a",
+      "current": "$421.60",
+      "pct": "+0.36%",
+      "rsi": "49.6",
+      "vel5": "-0.8",
+      "gate": "n/a",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": "58/100",
+        "range": "$414–$427",
+        "thesis": "The +1.1% indicative ADR bid, firmer Taiwan close, and broad peer recovery favor controlled upside/hold. Unavailable current RSI/VEL5 prevent calling a confirmed momentum reset, so confidence remains capped.",
+        "falsifiers": "broad peer reversal and sustained trade below $414; credible company-specific demand/margin impairment; sustained peer-led trade above $427."
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": "41/100",
+        "range": "$345–$490",
+        "thesis": "Q3 guidance and profitable N3/N5 provide a fundamental floor; current risk-on breadth helps tactically, but unrefreshed RSI/VEL5, mixed 30-day calibration, N2 economics and overseas-fab return risk require broad tails.",
+        "falsifiers": "sustained margin/FCF conversion and trade above $490; demand pushouts, margin below guide, or durable trade below $345."
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": "47/100",
+        "range": "$305–$545",
+        "thesis": "Leading-edge scale, Q3 demand and N2/packaging investment retain upside skew, but the new range-only 90-day result shows that fundamentals do not eliminate multiple risk. Missing current RSI/VEL5 widens the lower tail.",
+        "falsifiers": "N2 yield/margin slippage; material AI-capex cuts; export escalation; Taiwan disruption; sustained oversupply."
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": "52/100",
+        "range": "$245–$650",
+        "thesis": "Process/yield leadership, N2/A16 roadmap depth and packaging scale retain structural upside. RSI/VEL5 are unavailable and tactical at this horizon; geopolitical concentration and capital-return execution justify broad tails.",
+        "falsifiers": "Taiwan disruption; durable hyperscaler reset; leading-edge yield/share loss; sustained margin/FCF deterioration; punitive export controls."
+      },
+      "catalyst": "TSMC’s primary operating anchor remains the Jul. 16 Q2 release: NT$1.270T / US$40.20B revenue (+36.0% Y/Y), NT$706.56B net income (+77.4%), 67.7% gross margin, and 60.3% operating margin. Management guided Q3 to US$44.6B–$45.8B revenue, 65%–67%…",
+      "unusual": "1. Broad positive cross-market handoff: Taiwan cash and U.S. peers are firmer, but the data are zero-volume indications and have no issuer corroboration. 2. Funding is not a capacity revision: the July monthly 6-K reported NT$18.5B of bonds and no…",
+      "risk": "3. The technical dashboard is opaque: absent current RSI/VEL5 prevents treating the risk-on tape as a technical regime change.",
+      "calibration": "Today / 1 day — Sep. 3: correct. Sep. 3’s flat_to_down, $407–$419 call from $415.50 resolved at $417.01 (+0.36%). The close was inside the band and inside the ±1% flat component…"
+    }
+  ],
+  "top_risks": [
+    {
+      "ticker": "ASML",
+      "company": "ASML Holding N.V.",
+      "status": "generated",
+      "note_date": "2026-09-04",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/ASML/2026-09-04.md",
+      "reference": "n/a",
+      "current": "n/a",
+      "pct": "+2.54%",
+      "rsi": "43.4",
+      "vel5": "-7.1",
+      "gate": "n/a",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": "n/a",
+        "range": "$1,640–$1,715",
+        "thesis": "ASML’s +2.54% zero-volume indication and broad WFE rebound support stabilization/recovery after yesterday’s decline, but absent fresh RSI/VEL5 and absent issuer news, this is a tactical beta call rather than a breakout thesis.",
+        "falsifiers": "peer-led loss below $1,640; volume-backed acceptance above $1,715; verified issuer/policy change."
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": "n/a",
+        "range": "$1,225–$2,025",
+        "thesis": "Q3/FY guide, upgrades and AI capex preserve upside optionality; however, weak 30d calibration, policy/valuation, system-acceptance/cash risk and unavailable fresh RSI/VEL5 require a very wide, low-confidence distribution.",
+        "falsifiers": "durable accepted-system/margin/cash evidence above $2,025; H2 pushout or non-reallocable China loss below $1,225; outlook change."
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": "n/a",
+        "range": "$1,100–$2,325",
+        "thesis": "guided Q3 conversion, capacity, High-NA/upgrade optionality and AI-memory/logic intensity retain positive expected value. The newly partly-correct Jun. 5 call makes the downside path explicit.",
+        "falsifiers": "backlog/margin/cash miss; capex deferral/supplier bottleneck; China impairment or WFE derating."
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": "n/a",
+        "range": "$975–$2,700",
+        "thesis": "EUV/High-NA bottleneck economics, productivity upgrades and AI lithography intensity retain structural upside; execution, policy and valuation justify very wide tails.",
+        "falsifiers": "durable WFE reset; High-NA disappointment/substitution; non-reallocable China impairment; geopolitical/valuation shock."
+      },
+      "catalyst": "Q2 remains the primary underwriting record: €9.326B sales, 54.0% GM, €2.918B net income, €7.59 basic EPS, 86 new systems and €2.762B IBM sales. Management said the above-guide revenue and margin were driven primarily by IBM—services and field…",
+      "unusual": "IBM is strength and the quality-control variable: Q2’s mix uplift makes Q3 accepted systems/upgrades and operating-cash conversion more important than a headline beat. - Broad capacity plan increases execution sensitivity: the planned 2027 30%…",
+      "risk": "Broad capacity plan increases execution sensitivity: the planned 2027 30% Low-NA EUV and immersion-DUV capacity additions reduce binary dependence on High-NA timing but raise supplier, move-rate, inventory and working-capital risks.",
+      "calibration": "Rubric: correct requires both stored directional regime and stored range; partly correct requires one. flat_to_up permits >=−1%; flat_to_down permits <=+1%. Forecast issue date…"
+    },
+    {
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "status": "generated",
+      "note_date": "2026-09-04",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/AMD/2026-09-04.md",
+      "reference": "n/a",
+      "current": "n/a",
+      "pct": "n/a",
+      "rsi": "42.8",
+      "vel5": "-0.9",
+      "gate": "n/a",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": "56/100",
+        "range": "$451–$469",
+        "thesis": "Broad green semi indications plus sub-43 RSI favor a tentative hold/bounce, but negative VEL5 makes it fade-prone rather than a clean breakout.",
+        "falsifiers": "Sustained loss <$451; broad peer reversal; verified AMD operating setback."
+      },
+      "30d": {
+        "direction": "flat_to_down",
+        "confidence": "39/100",
+        "range": "$335–$530",
+        "thesis": "HUMAIN improves delivery credibility, but Q3 must prove system margin, working-capital conversion and FCF before a durable rerating.",
+        "falsifiers": "Durable >$530 with verified margin/FCF conversion; sustained <$335 or demand/margin reset."
+      },
+      "90d": {
+        "direction": "flat_to_down",
+        "confidence": "40/100",
+        "range": "$280–$635",
+        "thesis": "H2 roadmap/deployment optionality is real, but the latest 90d direction miss and still-unproven return economics require a wide, defensive distribution.",
+        "falsifiers": "Deployment-plus-margin/FCF proof with durable strength; or execution/margin/FCF slippage."
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": "48/100",
+        "range": "$220–$800",
+        "thesis": "EPYC/Instinct/Helios and inference can compound if system-level economics clear cost of capital; the broad range reflects execution and ecosystem risk.",
+        "falsifiers": "Persistent margin/FCF deterioration; overcapacity/delays; commitments without returns; durable ecosystem disadvantage."
+      },
+      "catalyst": "AMD finished Sep. 3 at $456.16 (−0.20% from Sep. 2) and indicated $461.00 premarket. The green board is a broad semiconductor-risk signal, not an issuer update. - The AMD release index has no item newer than the Aug. 31 HUMAIN/Cisco…",
+      "unusual": "1. Operational validation without economic validation: the HUMAIN stack is live, but the next 250 MW capacity begins in 2027 and the 1 GW target runs to 2030. It improves delivery credibility, not near-term revenue/margin visibility. 2. Green live…",
+      "risk": "Broad green semi indications plus sub-43 RSI favor a tentative hold/bounce, but negative VEL5 makes it fade-prone rather than a clean breakout.",
+      "calibration": "Method: strict structured-ledger recomputation through the Sep. 3 completed close. Correct requires direction and range; partly correct requires one. flat_to_up accepts ≥−1% and…"
+    }
+  ],
+  "tickers": [
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corporation",
+      "status": "generated",
+      "note_date": "2026-09-04",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/NVDA/2026-09-04.md",
+      "reference": "n/a",
+      "current": "n/a",
+      "pct": "+1.80%",
+      "rsi": "59.2",
+      "vel5": "unavailable today. The proprietary rendered reading could not be accessed after browser-harness failure and was not inferred. The last directly observed VEL5 (+10.4 on Sep. 2) is carry-forward context only.",
+      "gate": "n/a",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": "n/a",
+        "range": "$225–$236",
+        "thesis": "RSI 59.2, a +1.19% indication and green semi breadth favor positive/contained follow-through; acquisition-event volatility and unconfirmed liquidity rule out a high-conviction breakout call.",
+        "falsifiers": "sustained <$225 with broad semi failure; volume-backed acceptance >$236."
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": "n/a",
+        "range": "$205–$265",
+        "thesis": "$108B Q3 midpoint, Rubin ramp, RSI repair and possible developer-platform reach support upside skew, but 74% margin, working-capital/credit scrutiny and acquisition economics require a wide, moderate-confidence band.",
+        "falsifiers": "cash/margin/credit disappointment, delayed/blocked deal, export/AI-ROI reset, sustained <$205 or delivery-backed >$265."
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": "n/a",
+        "range": "$185–$305",
+        "thesis": "Blackwell/Rubin scale and system/software attachment retain a positive skew; Hugging Face expands optionality but adds regulatory/integration risk, while unknown powered utilization and capital quality keep tails wide.",
+        "falsifiers": "margin/working-capital deterioration; power/supply delays; acquisition friction; guarantee/counterparty stress; durable alternative-silicon capture."
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": "n/a",
+        "range": "$155–$390",
+        "thesis": "CUDA/full-stack leadership plus prospective open-model developer reach and capital returns retain upside, but AI-service ROI, power, China, custom silicon, acquisition integration and capital risk justify a very wide distribution. RSI is supplementary at this horizon.",
+        "falsifiers": "persistent AI-ROI/financing failure; deal rejection or post-close platform erosion; export impairment; structural margin/share loss; multiple compression."
+      },
+      "catalyst": "The financial decision base remains Q2 FY2027: $96.221B revenue (+18% q/q, +106% y/y), $89.0B Data Center (+18% q/q, +117% y/y), 75.0% GAAP gross margin, and $2.46 GAAP EPS. Q3 is guided to $108B ±2% revenue and 74.0% ±50bp gross margin. The…",
+      "unusual": "1. Open-model reach versus exclusivity: preserving other-vendor support is strategically rational for a developer platform, but it means the acquisition should be evaluated on workflow influence and monetization—not presumed GPU lock-in. 2. Capital…",
+      "risk": "RSI 59.2, a +1.19% indication and green semi breadth favor positive/contained follow-through; acquisition-event volatility and unconfirmed liquidity rule out a high-conviction breakout call.",
+      "calibration": "Method: structured JSONL normalized across legacy layouts; a call is correct only when direction and explicit range both hold. flat_to_up/down uses ±1% relative to the stored…"
+    },
+    {
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "status": "generated",
+      "note_date": "2026-09-04",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/MU/2026-09-04.md",
+      "reference": "n/a",
+      "current": "n/a",
+      "pct": "n/a",
+      "rsi": "53.5",
+      "vel5": "+2.5",
+      "gate": "n/a",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": "57/100",
+        "range": "$955–$990",
+        "thesis": "Green broad semi/memory indications plus RSI 53.5 / VEL5 +2.5 favor a constructive session, but both signals are insufficient for a high-conviction breakout.",
+        "falsifiers": "Sustained loss <$955; broad peer reversal; verified MU operating setback."
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": "40/100",
+        "range": "$700–$1,150",
+        "thesis": "Positive delayed VEL5 and extraordinary earnings retain upside optionality, while poor directional calibration, peak-margin/FCF risk and capacity uncertainty demand a wide low-confidence band.",
+        "falsifiers": "Cash-margin-backed strength >$1,150; sustained <$700; verified pricing/share/working-capital deterioration."
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": "44/100",
+        "range": "$600–$1,400",
+        "thesis": "HBM4/1γ/Gen6 and AI-memory demand preserve constructive asymmetry; modest RSI/VEL5 contributes only a supplemental base signal.",
+        "falsifiers": "Margin reset; HBM qualification/share miss; AI-capex/cash-conversion deterioration; capacity-led excess supply."
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": "45/100",
+        "range": "$375–$1,750",
+        "thesis": "AI-memory content, HBM4E/1δ and packaging can support a higher earnings base if capital discipline holds; technicals only modestly affect confidence at this horizon.",
+        "falsifiers": "2027–28 oversupply/margin compression; persistent FCF compression; AI-capex reset; HBM share loss; export-control disruption."
+      },
+      "catalyst": "The controlling operating base is still Q3's $41.456B revenue, $25.11 non-GAAP EPS and 84.9% non-GAAP gross margin, with Q4 guided around $50B revenue, 86% margin and $31 ±$1 EPS. The investment question is duration and cash quality, not whether…",
+      "unusual": "Green tape versus weak issuer freshness: the current gap is broad sector beta without a fresh Micron earnings/roadmap revision. It improves Today odds but should not be extrapolated into a fundamental rerating. - Small positive VEL5 is a confidence…",
+      "risk": "Green tape versus weak issuer freshness: the current gap is broad sector beta without a fresh Micron earnings/roadmap revision. It improves Today odds but should not be extrapolated into a fundamental rerating.",
+      "calibration": "Method: Correct requires both the directional frame and explicit price range; partly correct requires one. flat_to_up allows at least −1% versus anchor; flat_to_down allows no…"
+    },
+    {
+      "ticker": "LRCX",
+      "company": "Lam Research Corporation",
+      "status": "generated",
+      "note_date": "2026-09-04",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/LRCX/2026-09-04.md",
+      "reference": "n/a",
+      "current": "n/a",
+      "pct": "+2.9%",
+      "rsi": "n/a",
+      "vel5": "n/a",
+      "gate": "n/a",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": "n/a",
+        "range": "$292–$307",
+        "thesis": "broad positive peer tape and a +2.9% indication support a repair/churn setup; RSI 42.1 / VEL5 −8.3 makes it a capped-confidence reflex, not a confirmed trend reversal.",
+        "falsifiers": "cash loss below $292 with sector rollover; volume-backed acceptance above $307; verified Lam-specific guide/demand/policy change."
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": "n/a",
+        "range": "$215–$370",
+        "thesis": "September guide, process-content leverage and support scale permit upside, while VEL5 −8.3, acceptance/working-capital, China and mixed calibration require a low-confidence, wide range.",
+        "falsifiers": "guide/margin/cash proof sustains above $370; customer-capex or China impairment drives below $215; verified process-share/service-economics deterioration."
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": "n/a",
+        "range": "$185–$425",
+        "thesis": "difficult-wafer/package exposure retains positive asymmetry if September execution converts, but range-only new 90d calibration plus negative VEL5 argue for broad tails and moderate confidence.",
+        "falsifiers": "fab-capex cancellations; durable China/local-substitution damage; margin/share deterioration; roadmap spend without adoption."
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": "n/a",
+        "range": "$140–$500",
+        "thesis": "Lam’s etch/deposition moat, installed-base support, capital-return capacity and process-complexity optionality can increase earnings power; RSI/VEL5 chiefly widens the path at this horizon.",
+        "falsifiers": "AI-capex/WFE downturn; export-control/local-substitution impairment; sustained process-share loss; R&D/lab spend fails to yield commercial returns."
+      },
+      "catalyst": "The governing packet remains July 29: $6.722B revenue, 52.0% non-GAAP gross margin, 38.4% operating margin and $1.82 EPS, with September guidance for $8.10B ±$0.40B, 52.0% ±1 point GM, 39.5% ±1 point OM and $2.15 ±$0.15 EPS. CEO Archer framed…",
+      "unusual": "Positive premarket versus negative VEL5: the +2.9% zero-volume indication and +2.2 RSI delta permit a rebound scenario, but VEL5 −8.3 rejects a high-confidence continuation call. - Sector confirmation is stronger than company proof: ASML’s raised…",
+      "risk": "setup risk: see ticker card",
+      "calibration": "Rubric: correct requires stored directional regime and price range; partly correct requires one. flat_to_up permits returns >=−1%; flat_to_down <=+1%. Today resolves at its cash…"
+    },
+    {
+      "ticker": "ARM",
+      "company": "Arm Holdings",
+      "status": "generated",
+      "note_date": "2026-09-04",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/ARM/2026-09-04.md",
+      "reference": "n/a",
+      "current": "n/a",
+      "pct": "+3.29%",
+      "rsi": "n/a",
+      "vel5": "n/a",
+      "gate": "n/a",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": "52/100",
+        "range": "$239–$250",
+        "thesis": "The green, zero-volume ARM indication and broad peer bid allow a bounded upside/stabilization view, but the latest Today miss and unavailable RSI/VEL5 prevent a high-conviction chase.",
+        "falsifiers": "sustained volume-backed loss of $239; broad peer reversal; fresh ARM disclosure that weakens royalties, guidance or cash conversion."
+      },
+      "30d": {
+        "direction": "flat_to_down",
+        "confidence": "40/100",
+        "range": "$175–$285",
+        "thesis": "Royalty/CSS/data-center optionality remains, but the new range-only 30-day result, license-timing risk, weak GAAP conversion and no technical confirmation retain a cautious modal tilt.",
+        "falsifiers": "royalty-led beat-and-raise with clear GAAP leverage and sustained real-volume recovery above $285; disclosed system-product cash economics."
+      },
+      "90d": {
+        "direction": "flat_to_down",
+        "confidence": "36/100",
+        "range": "$135–$305",
+        "thesis": "The fresh Jun. 5 90-day failure shows roadmap optionality has not protected against valuation compression. Upside needs disclosed recurring royalty acceleration and contract-to-cash evidence, not partner/roadmap repetition.",
+        "falsifiers": "recurring royalty acceleration with credible GAAP leverage; disclosed capacity economics and durable broad AI-semi rerating."
+      },
+      "1y": {
+        "direction": "flat_to_up",
+        "confidence": "40/100",
+        "range": "$90–$410",
+        "thesis": "Arm’s ecosystem and higher-value mix retain long-run upside, but cash conversion, dilution, capital intensity and competitive durability dominate; unavailable RSI/VEL5 has little direct weight here.",
+        "falsifiers": "persistent weak GAAP/FCF conversion or dilution; uneconomic capacity; RISC-V/custom-silicon displacement; legal/regulatory deterioration."
+      },
+      "catalyst": "The Jul. 29 Q1 FYE27 release remains the controlling financial baseline: $1.289B revenue (+22%), $715M royalties (+22%), $574M license/other (+23%), and more-than-doubled data-center royalties. Q2 guidance remains $1.38B ±$50M revenue and $0.47…",
+      "unusual": "Price changed; operating record did not. The 3.29% Sep. 3 move and pre-open peer strength are not evidence of a new contract, margin or cash-flow inflection. - AGM-only 6-K is a useful negative check. Its freshness does not convert it into a…",
+      "risk": "sustained volume-backed loss of $239; broad peer reversal; fresh ARM disclosure that weakens royalties, guidance or cash conversion.",
+      "calibration": "Scoring normalizes legacy predictions and current horizons layouts. A result is correct only if direction and explicit band both hold; partly correct means one holds. flat_to_up…"
+    },
+    {
+      "ticker": "ASML",
+      "company": "ASML Holding N.V.",
+      "status": "generated",
+      "note_date": "2026-09-04",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/ASML/2026-09-04.md",
+      "reference": "n/a",
+      "current": "n/a",
+      "pct": "+2.54%",
+      "rsi": "43.4",
+      "vel5": "-7.1",
+      "gate": "n/a",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": "n/a",
+        "range": "$1,640–$1,715",
+        "thesis": "ASML’s +2.54% zero-volume indication and broad WFE rebound support stabilization/recovery after yesterday’s decline, but absent fresh RSI/VEL5 and absent issuer news, this is a tactical beta call rather than a breakout thesis.",
+        "falsifiers": "peer-led loss below $1,640; volume-backed acceptance above $1,715; verified issuer/policy change."
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": "n/a",
+        "range": "$1,225–$2,025",
+        "thesis": "Q3/FY guide, upgrades and AI capex preserve upside optionality; however, weak 30d calibration, policy/valuation, system-acceptance/cash risk and unavailable fresh RSI/VEL5 require a very wide, low-confidence distribution.",
+        "falsifiers": "durable accepted-system/margin/cash evidence above $2,025; H2 pushout or non-reallocable China loss below $1,225; outlook change."
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": "n/a",
+        "range": "$1,100–$2,325",
+        "thesis": "guided Q3 conversion, capacity, High-NA/upgrade optionality and AI-memory/logic intensity retain positive expected value. The newly partly-correct Jun. 5 call makes the downside path explicit.",
+        "falsifiers": "backlog/margin/cash miss; capex deferral/supplier bottleneck; China impairment or WFE derating."
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": "n/a",
+        "range": "$975–$2,700",
+        "thesis": "EUV/High-NA bottleneck economics, productivity upgrades and AI lithography intensity retain structural upside; execution, policy and valuation justify very wide tails.",
+        "falsifiers": "durable WFE reset; High-NA disappointment/substitution; non-reallocable China impairment; geopolitical/valuation shock."
+      },
+      "catalyst": "Q2 remains the primary underwriting record: €9.326B sales, 54.0% GM, €2.918B net income, €7.59 basic EPS, 86 new systems and €2.762B IBM sales. Management said the above-guide revenue and margin were driven primarily by IBM—services and field…",
+      "unusual": "IBM is strength and the quality-control variable: Q2’s mix uplift makes Q3 accepted systems/upgrades and operating-cash conversion more important than a headline beat. - Broad capacity plan increases execution sensitivity: the planned 2027 30%…",
+      "risk": "Broad capacity plan increases execution sensitivity: the planned 2027 30% Low-NA EUV and immersion-DUV capacity additions reduce binary dependence on High-NA timing but raise supplier, move-rate, inventory and working-capital risks.",
+      "calibration": "Rubric: correct requires both stored directional regime and stored range; partly correct requires one. flat_to_up permits >=−1%; flat_to_down permits <=+1%. Forecast issue date…"
+    },
+    {
+      "ticker": "TSM",
+      "company": "Taiwan Semiconductor Manufacturing Co. Ltd.",
+      "status": "generated",
+      "note_date": "2026-09-04",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/TSM/2026-09-04.md",
+      "reference": "n/a",
+      "current": "$421.60",
+      "pct": "+0.36%",
+      "rsi": "49.6",
+      "vel5": "-0.8",
+      "gate": "n/a",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": "58/100",
+        "range": "$414–$427",
+        "thesis": "The +1.1% indicative ADR bid, firmer Taiwan close, and broad peer recovery favor controlled upside/hold. Unavailable current RSI/VEL5 prevent calling a confirmed momentum reset, so confidence remains capped.",
+        "falsifiers": "broad peer reversal and sustained trade below $414; credible company-specific demand/margin impairment; sustained peer-led trade above $427."
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": "41/100",
+        "range": "$345–$490",
+        "thesis": "Q3 guidance and profitable N3/N5 provide a fundamental floor; current risk-on breadth helps tactically, but unrefreshed RSI/VEL5, mixed 30-day calibration, N2 economics and overseas-fab return risk require broad tails.",
+        "falsifiers": "sustained margin/FCF conversion and trade above $490; demand pushouts, margin below guide, or durable trade below $345."
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": "47/100",
+        "range": "$305–$545",
+        "thesis": "Leading-edge scale, Q3 demand and N2/packaging investment retain upside skew, but the new range-only 90-day result shows that fundamentals do not eliminate multiple risk. Missing current RSI/VEL5 widens the lower tail.",
+        "falsifiers": "N2 yield/margin slippage; material AI-capex cuts; export escalation; Taiwan disruption; sustained oversupply."
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": "52/100",
+        "range": "$245–$650",
+        "thesis": "Process/yield leadership, N2/A16 roadmap depth and packaging scale retain structural upside. RSI/VEL5 are unavailable and tactical at this horizon; geopolitical concentration and capital-return execution justify broad tails.",
+        "falsifiers": "Taiwan disruption; durable hyperscaler reset; leading-edge yield/share loss; sustained margin/FCF deterioration; punitive export controls."
+      },
+      "catalyst": "TSMC’s primary operating anchor remains the Jul. 16 Q2 release: NT$1.270T / US$40.20B revenue (+36.0% Y/Y), NT$706.56B net income (+77.4%), 67.7% gross margin, and 60.3% operating margin. Management guided Q3 to US$44.6B–$45.8B revenue, 65%–67%…",
+      "unusual": "1. Broad positive cross-market handoff: Taiwan cash and U.S. peers are firmer, but the data are zero-volume indications and have no issuer corroboration. 2. Funding is not a capacity revision: the July monthly 6-K reported NT$18.5B of bonds and no…",
+      "risk": "3. The technical dashboard is opaque: absent current RSI/VEL5 prevents treating the risk-on tape as a technical regime change.",
+      "calibration": "Today / 1 day — Sep. 3: correct. Sep. 3’s flat_to_down, $407–$419 call from $415.50 resolved at $417.01 (+0.36%). The close was inside the band and inside the ±1% flat component…"
+    },
+    {
+      "ticker": "SIMO",
+      "company": "Silicon Motion Technology",
+      "status": "generated",
+      "note_date": "2026-09-04",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/SIMO/2026-09-04.md",
+      "reference": "n/a",
+      "current": "n/a",
+      "pct": "n/a",
+      "rsi": "44.2, Δ1 −2.0 (supplementary approximation, not a dashboard readout).",
+      "vel5": "unavailable; it is proprietary dashboard output and was neither exposed nor inferred.",
+      "gate": "n/a",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": "49/100",
+        "range": "$229–$243",
+        "thesis": "Green peers and a modest thin indication allow stabilization, but RSI 44.2 / Δ1 −2.0 caps confidence and makes a breakout call inappropriate.",
+        "falsifiers": "Sustained <$229; or volume-backed acceptance >$243."
+      },
+      "30d": {
+        "direction": "flat_to_down",
+        "confidence": "40/100",
+        "range": "$180–$295",
+        "thesis": "Q3 guide and solutions mix retain upside optionality, but the fresh 30d direction miss, sub-45 RSI and unresolved OCF/turn proof support low-confidence caution.",
+        "falsifiers": "Durable >$295 with verified cash/turn improvement; guide/margin reset or <$180."
+      },
+      "90d": {
+        "direction": "flat_to_down",
+        "confidence": "40/100",
+        "range": "$150–$350",
+        "thesis": "Two latest resolved 90d up calls were wrong; roadmap needs commercial and cash validation before re-earning a directional premium.",
+        "falsifiers": "Durable >$350 with cash/turn proof; ramp slip/negative OCF/<$150."
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": "45/100",
+        "range": "$90–$440",
+        "thesis": "Per-ADS upside remains plausible if high-value solutions and the capital base produce durable FCF; current RSI has near-zero direct weight here.",
+        "falsifiers": "Non-accretive deployment/dilution, competition, geopolitics."
+      },
+      "catalyst": "The controlling operating record remains Q2 2026: $451.0M revenue (+127% Y/Y), 50.2% GAAP gross margin, 22.4% GAAP operating margin and non-GAAP EPS/ADS of $2.43. Management guided Q3 to $519M–$541M revenue, 49.9%–50.9% GAAP gross margin and…",
+      "unusual": "The tape is moving without a new issuer fact. The Sep. 3 decline and this morning's modest recovery occur with no fresh operating disclosure. - Peer divergence is more positive than the stock's own momentum. The peer sleeve is green, while SIMO's…",
+      "risk": "Peer divergence is more positive than the stock's own momentum. The peer sleeve is green, while SIMO's RSI remains sub-45 and falling. That makes a stabilization hypothesis reasonable but fragile.",
+      "calibration": "1 day: no new maturity—Sep. 3's flat_to_up, $236–$250 prediction resolves only after today's cash close. The most recent resolved Sep. 2 call was correct after the Sep. 3 close:…"
+    },
+    {
+      "ticker": "NET",
+      "company": "Cloudflare, Inc.",
+      "status": "generated",
+      "note_date": "2026-09-04",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/NET/2026-09-04.md",
+      "reference": "n/a",
+      "current": "$281.05",
+      "pct": "+1.41%",
+      "rsi": "48.6",
+      "vel5": "n/a",
+      "gate": "n/a",
+      "today": {
+        "direction": "flat_to_down",
+        "confidence": "55/100",
+        "range": "$274–$290",
+        "thesis": "A −1.22% indicative bid and mixed-to-soft cyber board favor containment/slight softness. RSI 48.6 and Δ1 +4.5 permit stabilization, but the −9.3 five-session RSI proxy and unavailable VEL5 prevent a bullish continuation call.",
+        "falsifiers": "sustained trade above $290 with broad peers; loss below $274; material issuer-specific operating/capital update."
+      },
+      "30d": {
+        "direction": "flat_to_down",
+        "confidence": "44/100",
+        "range": "$235–$335",
+        "thesis": "Q2 growth/cRPO and VDR/Managed Defense optionality establish a floor, but premium valuation, incomplete technical repair and unproven paid attachment / gross-margin / FCF conversion favor low-confidence digestion.",
+        "falsifiers": "durable $335+ move with verified conversion; guidance/retention reset; persistent margin pressure or trade below $235."
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": "47/100",
+        "range": "$205–$390",
+        "thesis": "Q3 can validate whether 36% growth plus the agent/security control plane becomes paid demand and leverage. The new Jun. 5 90d hit supports upside optionality, but the cohort's many partials and current technical uncertainty require broad tails.",
+        "falsifiers": "guide/retention slowdown, investment without leverage, bundle competition, valuation de-rating, durable trade below $205."
+      },
+      "1y": {
+        "direction": "flat_to_up",
+        "confidence": "43/100",
+        "range": "$145–$520",
+        "thesis": "Long-run upside requires enterprise growth and a neutral edge/security/developer platform to produce gross-margin and FCF-per-share leverage; current technicals are non-decisive.",
+        "falsifiers": "valuation normalization, failed monetization, poor deployment/dilution, margin erosion, competitive displacement."
+      },
+      "catalyst": "The operative earnings record remains Q2: $696.1M revenue (+36% Y/Y), cRPO +35%, $117.6M operating cash flow, $56.4M FCF (8% of revenue), and Q3 revenue guidance of $736–737M. The Q4-2025 NotebookLM briefing still supplies the structural…",
+      "unusual": "Security workflow integration, not just an AI feature: VDR proposes code patches and edge mitigations while retaining explicit customer review. That integration could differentiate Cloudflare against point security tools, but it also requires…",
+      "risk": "setup risk: see ticker card",
+      "calibration": "Rubric: a result is correct only if its stored band and directional regime both hold; partly correct if one holds. flat_to_up permits a return ≥−1%; flat_to_down permits ≤+1%.…"
+    },
+    {
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "status": "generated",
+      "note_date": "2026-09-04",
+      "note_path": "/Users/sluan/Documents/obsidian-vault/hermes-wiki/investment/research/daily-stock-runs/AMD/2026-09-04.md",
+      "reference": "n/a",
+      "current": "n/a",
+      "pct": "n/a",
+      "rsi": "42.8",
+      "vel5": "-0.9",
+      "gate": "n/a",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": "56/100",
+        "range": "$451–$469",
+        "thesis": "Broad green semi indications plus sub-43 RSI favor a tentative hold/bounce, but negative VEL5 makes it fade-prone rather than a clean breakout.",
+        "falsifiers": "Sustained loss <$451; broad peer reversal; verified AMD operating setback."
+      },
+      "30d": {
+        "direction": "flat_to_down",
+        "confidence": "39/100",
+        "range": "$335–$530",
+        "thesis": "HUMAIN improves delivery credibility, but Q3 must prove system margin, working-capital conversion and FCF before a durable rerating.",
+        "falsifiers": "Durable >$530 with verified margin/FCF conversion; sustained <$335 or demand/margin reset."
+      },
+      "90d": {
+        "direction": "flat_to_down",
+        "confidence": "40/100",
+        "range": "$280–$635",
+        "thesis": "H2 roadmap/deployment optionality is real, but the latest 90d direction miss and still-unproven return economics require a wide, defensive distribution.",
+        "falsifiers": "Deployment-plus-margin/FCF proof with durable strength; or execution/margin/FCF slippage."
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": "48/100",
+        "range": "$220–$800",
+        "thesis": "EPYC/Instinct/Helios and inference can compound if system-level economics clear cost of capital; the broad range reflects execution and ecosystem risk.",
+        "falsifiers": "Persistent margin/FCF deterioration; overcapacity/delays; commitments without returns; durable ecosystem disadvantage."
+      },
+      "catalyst": "AMD finished Sep. 3 at $456.16 (−0.20% from Sep. 2) and indicated $461.00 premarket. The green board is a broad semiconductor-risk signal, not an issuer update. - The AMD release index has no item newer than the Aug. 31 HUMAIN/Cisco…",
+      "unusual": "1. Operational validation without economic validation: the HUMAIN stack is live, but the next 250 MW capacity begins in 2027 and the 1 GW target runs to 2030. It improves delivery credibility, not near-term revenue/margin visibility. 2. Green live…",
+      "risk": "Broad green semi indications plus sub-43 RSI favor a tentative hold/bounce, but negative VEL5 makes it fade-prone rather than a clean breakout.",
+      "calibration": "Method: strict structured-ledger recomputation through the Sep. 3 completed close. Correct requires direction and range; partly correct requires one. flat_to_up accepts ≥−1% and…"
+    }
+  ]
+}
