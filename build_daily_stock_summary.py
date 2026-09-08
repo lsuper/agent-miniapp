@@ -471,11 +471,14 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
     my: dict[str, Any] = raw_my if isinstance(raw_my, dict) else {}
     gate = my.get("momentum_gate_status") or my.get("momentum_gate") or my.get("gate")
     mytutopia = {
-        "rsi": parse_floatish(my.get("rsi")),
+        # Ledger writers use several equivalent RSI field names; prefer explicit
+        # numeric fields before falling back to Markdown, which can confuse RSI(14)
+        # with a table date or another indicator.
+        "rsi": parse_floatish(my.get("rsi") if my.get("rsi") is not None else my.get("rsi_14") if my.get("rsi_14") is not None else my.get("rsi14")),
         "vel5": parse_floatish(my.get("vel5")),
-        "delta1": parse_floatish(my.get("delta1")),
+        "delta1": parse_floatish(my.get("delta1") if my.get("delta1") is not None else my.get("rsi_change")),
         "momentum_gate": clean_text(str(gate)) if gate is not None else None,
-        "page": my.get("page"),
+        "page": my.get("page") or my.get("page_used"),
     }
 
     wn = sections["What's new since last run"] or sections["Reference context"] or ""
@@ -515,7 +518,7 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
     # than treating the 24-hour-delay context as a momentum-gate label.
     if not mytutopia["momentum_gate"]:
         my_sec = sections["Mytutopia technical check"] or ""
-        gate_match = re.search(r"MOMENTUM(?:-|\s)GATE\s+([A-Z]+)", my_sec, re.I)
+        gate_match = re.search(r"MOMENTUM(?:-|\s)GATE\s+(BUYING|SELLING)\b", my_sec, re.I)
         mytutopia["momentum_gate"] = f"MOMENTUM-GATE {gate_match.group(1).upper()}" if gate_match else None
 
     pct = ((current - ref) / ref * 100.0) if (ref is not None and current is not None and ref != 0) else None
