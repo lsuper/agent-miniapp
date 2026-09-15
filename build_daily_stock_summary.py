@@ -470,6 +470,8 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
     raw_my = ledger.get("mytutopia")
     my: dict[str, Any] = raw_my if isinstance(raw_my, dict) else {}
     gate = my.get("momentum_gate_status") or my.get("momentum_gate") or my.get("gate")
+    if gate is not None and str(gate).strip().upper() in {"BUYING", "SELLING"}:
+        gate = f"MOMENTUM-GATE {str(gate).strip().upper()}"
     mytutopia = {
         # Ledger writers use several equivalent RSI field names; prefer explicit
         # numeric fields before falling back to Markdown, which can confuse RSI(14)
@@ -518,7 +520,9 @@ def build_card(ticker: str, today: str) -> dict[str, Any]:
     # than treating the 24-hour-delay context as a momentum-gate label.
     if not mytutopia["momentum_gate"]:
         my_sec = sections["Mytutopia technical check"] or ""
-        gate_match = re.search(r"MOMENTUM(?:-|\s)GATE\s+(BUYING|SELLING)\b", my_sec, re.I)
+        gate_match = re.search(r"MOMENTUM(?:-|\s)GATE(?:\s|\*|`|/|:)+(BUYING|SELLING)\b", my_sec, re.I)
+        if not gate_match:
+            gate_match = re.search(r"MOMENTUM(?:-|\s)GATE(?:\s|\*|`|/|:)+(BUYING|SELLING)\b", body, re.I)
         mytutopia["momentum_gate"] = f"MOMENTUM-GATE {gate_match.group(1).upper()}" if gate_match else None
 
     pct = ((current - ref) / ref * 100.0) if (ref is not None and current is not None and ref != 0) else None
@@ -647,7 +651,8 @@ def market_bullets(cards: list[dict[str, Any]]) -> list[str]:
         bullets.append(f"No same-day ticker notes were found for this cycle, so the dashboard falls back to the latest available notes/ledgers, which currently top out at {latest_note_date}.")
         bullets.append(f"On that fallback set, {len(upish)} names leaned up or flat-to-up and {len(downish)} leaned flat-to-down or down across the most recent available calls.")
     else:
-        bullets.append(f"Coverage is {len(generated)}/{len(cards)} same-day notes; {len(upish)} names lean up or flat-to-up, while {len(downish)} lean flat-to-down or down.")
+        downish_verb = "leans" if len(downish) == 1 else "lean"
+        bullets.append(f"Coverage is {len(generated)}/{len(cards)} same-day notes; {len(upish)} names lean up or flat-to-up, while {len(downish)} {downish_verb} flat-to-down or down.")
     if hot:
         bullets.append(f"Momentum remains crowded in parts of AI semis: high-RSI names include {', '.join(c['ticker'] for c in hot[:5])}, which caps 1-day confidence even when longer-horizon calls stay constructive.")
     if neg_vel:
@@ -661,7 +666,7 @@ def market_bullets(cards: list[dict[str, Any]]) -> list[str]:
     if semi:
         bullets.append(f"Semiconductor / infrastructure names still dominate the medium-term upside stack: {', '.join(c['ticker'] for c in sorted(semi, key=lambda x: x['_opp_score'], reverse=True)[:4])} carry the strongest multi-horizon constructive bias.")
     if software:
-        bullets.append("Software-edge names remain more idiosyncratic than the semis: NET is still trading as a special situation driven by credibility, ownership, and reset dynamics rather than simple sector beta.")
+        bullets.append("Software-edge exposure is idiosyncratic: NET is digesting a sector-driven cybersecurity surge while its crawler, CASB, DLP, and agent-control roadmap still needs paid-attachment and FCF proof.")
     bullets.append("The most common pattern is constructive 30D/90D/1Y framing paired with lower-conviction same-day calls, meaning tape damage is tactical while the business thesis often stays intact.")
     bullets.append("Calibration lessons continue to point to range-width discipline: recent misses skew more toward undershooting move magnitude than getting the broad direction wrong.")
     return bullets[:8]
@@ -819,6 +824,8 @@ function renderCharts(){{ const analysisCards = cards.filter(c => c.status === '
 filterButtons.forEach(btn => btn.addEventListener('click', () => {{ activeFilter = btn.dataset.filter; if (activeFilter === 'risk') {{ sortSelect.value = 'risk'; }} else if (activeFilter === 'bullish') {{ sortSelect.value = 'opp'; }} else if (activeFilter === 'downish') {{ sortSelect.value = 'pct'; }} filterButtons.forEach(b => b.classList.toggle('active', b === btn)); renderCardsAndTable(); }}));
 sortSelect.addEventListener('change', renderCardsAndTable); searchBox.addEventListener('input', renderCardsAndTable); document.querySelectorAll('th button[data-sort]').forEach(btn => btn.addEventListener('click', () => {{ sortSelect.value = btn.dataset.sort; renderCardsAndTable(); }}));
 renderHeader(); renderTopSections(); renderCardsAndTable(); renderCharts();
+window.__miniappCardCount = document.querySelectorAll('#cardGrid .ticker-card').length;
+window.__miniappSummaryLoaded = window.__miniappCardCount === cards.length;
 </script>
 </body>
 </html>'''
