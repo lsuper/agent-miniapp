@@ -7,17 +7,18 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-TICKERS = ["NVDA", "MU", "LRCX", "ARM", "ASML", "TSM", "SIMO", "NET", "AMD"]
+TICKERS = ["NVDA", "MU", "INTC", "ARM", "ASML", "TSM", "SIMO", "NET", "AMD", "QCOM"]
 COMPANY_MAP = {
     "NVDA": "NVIDIA",
     "MU": "Micron Technology",
-    "LRCX": "Lam Research Corporation",
+    "INTC": "Intel Corporation",
     "ARM": "Arm Holdings",
     "ASML": "ASML Holding N.V.",
     "TSM": "Taiwan Semiconductor Manufacturing",
     "SIMO": "Silicon Motion Technology Corp.",
     "NET": "Cloudflare",
     "AMD": "Advanced Micro Devices",
+    "QCOM": "Qualcomm Incorporated",
 }
 VAULT = Path.home() / "Documents/obsidian-vault/hermes-wiki/investment"
 RUNS = VAULT / "research/daily-stock-runs"
@@ -641,7 +642,7 @@ def market_bullets(cards: list[dict[str, Any]]) -> list[str]:
     hot = [c for c in basis if isinstance(c["mytutopia"]["rsi"], (int, float)) and c["mytutopia"]["rsi"] >= 75]
     neg_vel = [c for c in basis if isinstance(c["mytutopia"]["vel5"], (int, float)) and c["mytutopia"]["vel5"] < 0]
     big_red = [c for c in basis if isinstance(c["pct_vs_ref"], (int, float)) and c["pct_vs_ref"] <= -2.0]
-    semi = [c for c in basis if c["ticker"] in {"NVDA", "MU", "LRCX", "ARM", "ASML", "TSM", "SIMO", "AMD"}]
+    semi = [c for c in basis if c["ticker"] in {"NVDA", "MU", "INTC", "ARM", "ASML", "TSM", "SIMO", "AMD", "QCOM"}]
     software = [c for c in basis if c["ticker"] in {"FSLY", "NET"}]
 
     bullets = []
