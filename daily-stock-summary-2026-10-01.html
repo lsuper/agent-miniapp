@@ -96,19 +96,22 @@
   const sort = document.getElementById('sort');
   let activeFilter = 'all';
   const riskRank = Object.fromEntries((APP.top_risks || []).map((x,i) => [x.ticker,i]));
+  const oppRank = Object.fromEntries((APP.top_opportunities || []).map((x,i) => [x.ticker,i]));
   function isVisible(el) {
     const q = (search.value || '').toLowerCase();
     const t = el.dataset.ticker.toLowerCase();
     const text = el.textContent.toLowerCase();
     if (q && !t.includes(q) && !text.includes(q)) return false;
-    if (activeFilter === 'constructive') return Number(el.dataset.oppScore) > 0 && !['down','flat_to_down'].includes(el.dataset.direction);
-    if (activeFilter === 'risk') return Number(el.dataset.riskScore) > 0;
+    if (activeFilter === 'constructive') return Object.prototype.hasOwnProperty.call(oppRank,el.dataset.ticker);
+    if (activeFilter === 'risk') return Object.prototype.hasOwnProperty.call(riskRank,el.dataset.ticker);
     if (activeFilter === 'stale') return el.dataset.status !== 'generated';
     return true;
   }
   function sortValue(el) {
     const key = sort.value;
     if (key === 'ticker') return el.dataset.ticker;
+    if (activeFilter === 'risk' && Object.prototype.hasOwnProperty.call(riskRank,el.dataset.ticker)) return riskRank[el.dataset.ticker];
+    if (activeFilter === 'constructive' && Object.prototype.hasOwnProperty.call(oppRank,el.dataset.ticker)) return oppRank[el.dataset.ticker];
     if (key === 'risk') return Object.prototype.hasOwnProperty.call(riskRank,el.dataset.ticker) ? riskRank[el.dataset.ticker] : 999;
     if (key === 'confidence') return -(Number(el.dataset.confidence) || -1);
     if (key === 'premarket') return -(Number(el.dataset.premarket) || -999);
