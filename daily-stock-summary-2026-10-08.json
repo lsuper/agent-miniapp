@@ -1,6 +1,6 @@
 {
   "date": "2026-10-08",
-  "generated_at": "2026-10-08 07:13:55 PDT",
+  "generated_at": "2026-10-08 07:16:20 PDT",
   "headline": "Broad defensive premarket: all 10 Today calls lean down or flat-to-down; medium-term upside remains conditional on margins and cash conversion.",
   "coverage": {
     "generated": [
@@ -776,7 +776,7 @@
       "reference_price": 177.12,
       "current_price": 175.4,
       "current_label": "premarket snapshot",
-      "current_time": null,
+      "current_time": "2026-10-08 09:09:34 ET",
       "pct_vs_ref": -0.9710930442637711,
       "mytutopia": {
         "rsi": 45.9,
