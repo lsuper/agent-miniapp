@@ -1,0 +1,1229 @@
+{
+  "date": "2026-11-03",
+  "generated_at": "2026-11-03 07:13:15 PST",
+  "coverage": {
+    "generated": [
+      "NVDA",
+      "MU",
+      "INTC",
+      "ARM",
+      "ASML",
+      "TSM",
+      "SIMO",
+      "NET",
+      "AMD",
+      "QCOM"
+    ],
+    "stale": [],
+    "missing": []
+  },
+  "cards": [
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "status": "generated",
+      "note_date": "2026-11-03",
+      "note_path": "research/daily-stock-runs/NVDA/2026-11-03.md",
+      "source_sha256": "9ad5dfae302507864533baf14a02c8b061d8af39054359fb4b9729622b34ad92",
+      "reference_price": 202.06,
+      "reference_date": "2026-11-02",
+      "current_price": 205.8,
+      "current_time": "2026-11-03T08:02:53-05:00",
+      "current_label": "Recorded premarket snapshot · 2026-11-03T08:02:53-05:00 · not live",
+      "pct_vs_ref": 1.850935365732953,
+      "mytutopia": {
+        "rsi": 33.3,
+        "vel5": -10.8,
+        "delta1": -1.8,
+        "momentum_gate": "MOMENTUM-GATE SELLING"
+      },
+      "unusual_signal": "RSI 33.3 and VEL5 -10.8 deteriorate despite green indications; Monday relief failed.",
+      "top_catalyst": "Cities/edge-AI deployment broadens adoption; November 17 earnings must validate accepted Rubin systems and collections.",
+      "top_risk": "Customer financing costs, extended collections and memory-cost pressure threaten cash conversion.",
+      "calibration_note": "Correct / partly correct / wrong: Today 76/18/15; 30 days 43/32/15; 90 days 42/15/0; 1 year 0/0/0. Monthly direction hits 45/90 (50%), versus range hits73/90: wide bands must not masquerade as directional success. Both newly matured quarterly calls missed direction despite range containment. April note-only history remains outside this canonical structured cohort. No annual forecast has matured. [audit]",
+      "social_note": "Supplementary discussion only; see dated source note.",
+      "adjustment_note": "Bands are terminal-close scenarios, not intraday envelopes or measured coverage probabilities.",
+      "google_finance_method": "As recorded in the source note; not refreshed by summary.",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 50,
+        "low": 181.0,
+        "high": 231.0,
+        "thesis": "Green semiconductor indications permit another stabilization attempt, but RSI 33.3, VEL5 -10.8 and Monday’s failed gap keep conviction low.",
+        "range_basis": null,
+        "drivers": [
+          "Retention of the $205.80 indicative gap with real volume; Defense of $201.66/$200 and recovery of $207.53–209.98; Semiconductor breadth and positioning ahead of AMD results."
+        ],
+        "falsifiers": [
+          "Terminal close below $200.0394 rejects the -1% flat-to-up allowance; Loss of $200 with fading sector breadth undermines relief; Terminal close outside $181–231 invalidates the band."
+        ]
+      },
+      "30d": {
+        "direction": "flat",
+        "confidence": 37,
+        "low": 115.0,
+        "high": 300.0,
+        "thesis": "November 17 earnings offer upside but two fresh outright monthly misses, weak RSI/negative VEL5 and cash-conversion uncertainty leave no reliable directional edge.",
+        "range_basis": null,
+        "drivers": [
+          "Q3 revenue versus $108B +/-2% and Q4 margin bridge; Collections on extended terms and actual customer funding settlement; Rubin acceptance and memory-price pass-through."
+        ],
+        "falsifiers": [
+          "Terminal close beyond +/-1% of $202.06 fails the strict neutral direction test; Guide cut, cash impairment or a verified demand/competitive reset; Terminal close outside $115–300."
+        ]
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 48,
+        "low": 105.0,
+        "high": 355.0,
+        "thesis": "Rubin and inference deployment can lift earnings if pricing and collections follow; two quarterly direction misses and negative VEL5 reduce starting-path confidence below a confident bullish call.",
+        "range_basis": null,
+        "drivers": [
+          "Paid accepted Rubin systems and hyperscale reacceleration; Q4 margin trough versus 71–72% historical expectation; Customer utilization, credit support and supply costs."
+        ],
+        "falsifiers": [
+          "Terminal close at or below $202.06 rejects strict up; Material shipment deferrals, margin below the standing trough or weak collections; Terminal close outside $105–355."
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 52,
+        "low": 75.0,
+        "high": 470.0,
+        "thesis": "Full-stack distribution supports conditional per-share cash growth, but customer capital costs, custom silicon and vendor support widen risk. Current RSI/VEL5 have negligible direct annual weight; no annual outcomes are mature.",
+        "range_basis": null,
+        "drivers": [
+          "Recurring FCF per diluted share after strategic uses and capital returns; Vera Rubin/software monetization and retained platform share; Competitive delivered economics versus merchant/captive custom silicon."
+        ],
+        "falsifiers": [
+          "Terminal close at or below $202.06 rejects strict up; Durable platform displacement or support commitments crystallizing into material losses; Dilution/capital destruction or terminal close outside $75–470."
+        ]
+      },
+      "_opp_score": 48.92,
+      "_risk_score": 10.8
+    },
+    {
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "status": "generated",
+      "note_date": "2026-11-03",
+      "note_path": "research/daily-stock-runs/MU/2026-11-03.md",
+      "source_sha256": "b992c8383a586a2c4c1d59d65b07b323478f9a85eb796f9db24102109be98d1b",
+      "reference_price": 833.59,
+      "reference_date": "2026-11-02",
+      "current_price": 864.69,
+      "current_time": "2026-11-03T08:16:51-05:00",
+      "current_label": "Recorded premarket snapshot · 2026-11-03T08:16:51-05:00 · not live",
+      "pct_vs_ref": 3.7308508979234434,
+      "mytutopia": {
+        "rsi": 37.4,
+        "vel5": -4.9,
+        "delta1": -4.6,
+        "momentum_gate": "MOMENTUM-GATE SELLING"
+      },
+      "unusual_signal": "Indicative rebound follows a 5.78% decline; VEL5 turned negative at -4.9.",
+      "top_catalyst": "GlobalWafers proposes up to $500M of Micron-subscribed convertibles; approval and final terms remain outstanding.",
+      "top_risk": "Memory scarcity supports pricing but rising customer costs can impair demand; supplier financing commits capital.",
+      "calibration_note": "- Direction-only pass: Today 91/113 = 80.53%; month 37/95 = 38.95%; quarter 42/63 = 66.67%. Strict direction-and-band success: 53.10%, 20.00%, 52.38%. Broad containment is not evidence of a correct bullish direction. No annual forecast has matured.",
+      "social_note": "Supplementary discussion only; see dated source note.",
+      "adjustment_note": "Bands are terminal-close scenarios, not intraday envelopes or measured coverage probabilities.",
+      "google_finance_method": "As recorded in the source note; not refreshed by summary.",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 51,
+        "low": 800.0,
+        "high": 905.0,
+        "thesis": "A 3.73% indicative rebound and broadly green peers favor fragile stabilization, not a trend reversal. RSI 37.4 and newly negative VEL5 -4.9 contradict breakout conviction; yesterday's failed green gap cuts confidence and widens downside room.",
+        "range_basis": "$833.59 on2026-11-02 regular close; premarket supplementary only.",
+        "drivers": [
+          "Broad semiconductor bounce survives cash open; Reclaim $856-865 then $884.74 without losing $829-827; No new MU guidance cut; supplier financing remains a proposal."
+        ],
+        "falsifiers": [
+          "Cash session loses $833.59/$829 with renewed red peer breadth; Verified production disruption or earnings downgrade; Terminal close outside $800-905."
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_down",
+        "confidence": 39,
+        "low": 600.0,
+        "high": 1100.0,
+        "thesis": "Customer memory-cost pressure supports pricing but also threatens end-demand affordability. RSI below 40 and VEL5 turning negative reject a confirmed base; two fresh bullish monthly misses lower conviction further, preserving wide two-sided tails.",
+        "range_basis": "$833.59 on2026-11-02 regular close; premarket supplementary only.",
+        "drivers": [
+          "Realized contract pricing and estimate revisions; Customer procurement obligations versus actual orders and collections; Taiwan labor terms and incremental cost; sustained RSI/velocity recovery."
+        ],
+        "falsifiers": [
+          "Durable recovery above $934-983 with RSI above 50 and positive VEL5; Official pricing/cash upgrades remove peak-earnings concern; Terminal close outside $600-1100."
+        ]
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": 45,
+        "low": 500.0,
+        "high": 1300.0,
+        "thesis": "Q1 delivery and CY2027 HBM repricing retain a conditional upside skew. Apple's primary memory-shortage disclosure supports demand/pricing, but negative RSI velocity and a fresh quarterly directional miss cap confidence and leave substantial downside.",
+        "range_basis": "$833.59 on2026-11-02 regular close; premarket supplementary only.",
+        "drivers": [
+          "Q1 $61.5B +/-$1.5B revenue guide and margin-floor delivery; HBM repricing and packaging qualification/output; Supplier financing approval and actual net capital returns after December 9."
+        ],
+        "falsifiers": [
+          "Sequential revenue/margin commitments fail; Persistent pricing erosion, customer stress or HBM displacement; Terminal close outside $500-1300."
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 44,
+        "low": 350.0,
+        "high": 1800.0,
+        "thesis": "Advanced-memory intensity and 2027 node execution support conditional appreciation; upstream financing helps supply resilience but commits capital. RSI/VEL5 have neutral direct annual weight and cannot validate a year-ahead call; no annual predictions have matured.",
+        "range_basis": "$833.59 on2026-11-02 regular close; premarket supplementary only.",
+        "drivers": [
+          "Profitable HBM4E/1-delta/G11 ramps and yields; SCA cash realization through the cycle versus rival capacity; Net share reduction after construction, supplier funding and deposit obligations."
+        ],
+        "falsifiers": [
+          "AI-spending retrenchment or oversupply crushes normalized margins; Roadmap/yield delays or persistent negative recurring FCF; Terminal close outside $350-1800."
+        ]
+      },
+      "_opp_score": 50.51,
+      "_risk_score": 4.9
+    },
+    {
+      "ticker": "INTC",
+      "company": "Intel Corporation",
+      "status": "generated",
+      "note_date": "2026-11-03",
+      "note_path": "research/daily-stock-runs/INTC/2026-11-03.md",
+      "source_sha256": "0e123505f66d79175618c3e52b6aaf77a9a388c45ab1d7d3ef6aa43f51c8be30",
+      "reference_price": 59.97,
+      "reference_date": "2026-11-02",
+      "current_price": 62.2,
+      "current_time": "2026-11-03T08:23:37-05:00",
+      "current_label": "Recorded premarket snapshot · 2026-11-03T08:23:37-05:00 · not live",
+      "pct_vs_ref": 3.7185259296314888,
+      "mytutopia": {
+        "rsi": 23.0,
+        "vel5": -15.2,
+        "delta1": -2.1,
+        "momentum_gate": "MOMENTUM-GATE SELLING"
+      },
+      "unusual_signal": "RSI 23.0 and VEL5 -15.2: deeply damaged tape, not a confirmed bottom.",
+      "top_catalyst": "Server/process recovery remains optionality; weak Q4 client and margin economics still need repair.",
+      "top_risk": "Funding obligations, weak client demand and unproductive capacity can outlast short-covering.",
+      "calibration_note": "Correct/partly/wrong: Today24/5/1;30d0/5/6;90d0/0/0;1y0/0/0. Tolerant direction25/30 and band28/30 for Today; month direction0/11 and band5/11. Correct requires BOTH direction and inclusive terminal range, partial one, wrong neither. Flat-to-up permits-1%,flat-to-down+1%; strict up/down require sign. Wide coverage is not evidence of directional edge. Monthly confidence45→43 after two further outright failures; no quarterly/annual track record exists. [audit]",
+      "social_note": "Supplementary discussion only; see dated source note.",
+      "adjustment_note": "Bands are terminal-close scenarios, not intraday envelopes or measured coverage probabilities.",
+      "google_finance_method": "As recorded in the source note; not refreshed by summary.",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 50,
+        "low": 51.0,
+        "high": 74.0,
+        "thesis": "Broad semiconductor relief and a >3% premarket indication support a tentative rebound from the new $59.97 anchor, but negative velocity and weak Q4 economics prevent a pure up call.",
+        "range_basis": "Fresh max(2.5×app annual vol×reference/sqrt252,1.5×20-session sigma×reference) ×1.0 mandatory ×1.5 post-shock ×1.15 deceleration; center indicative $62.20, outward integer rounding.",
+        "drivers": [
+          "Premarket gap retention and sector breadth; Monday low $59.40; reclaim $63.20/$65.76; Fab28 recovery and verified external economics."
+        ],
+        "falsifiers": [
+          "Terminal return below -1% fails tolerant direction; Premarket gap failure and weaker peer breadth defeat relief premise; Terminal close outside the stated band fails range containment.."
+        ]
+      },
+      "30d": {
+        "direction": "down",
+        "confidence": 43,
+        "low": 38.0,
+        "high": 85.0,
+        "thesis": "Weak Q4 client/margin outlook and funding obligations can outlast a short-covering bounce; zero monthly direction hits prohibit high conviction.",
+        "range_basis": "Judgmental terminal downside/base/upside scenarios spanning persistent client/cash weakness versus server/process recovery; not calibrated statistical coverage or an intraday band.",
+        "drivers": [
+          "Client destocking versus server shipment conversion; Substrate funding and minimum-output obligations; Recurring external Foundry economics."
+        ],
+        "falsifiers": [
+          "Terminal close at or above reference fails strict down; Material guidance upgrade or verified high-margin customer volume defeats weak-outlook premise; Terminal close outside the stated band fails range containment.."
+        ]
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": 46,
+        "low": 35.0,
+        "high": 105.0,
+        "thesis": "Server growth and process-cost learning may repair earnings by the next results cycle, conditional on supply recovery and capital discipline.",
+        "range_basis": "Judgmental terminal downside/base/upside scenarios spanning persistent client/cash weakness versus server/process recovery; not calibrated statistical coverage or an intraday band.",
+        "drivers": [
+          "Q4 actuals/2027 outlook; 18A and Intel3 yield, cost and usable output; 2027 capex, NCI and diluted cash flow."
+        ],
+        "falsifiers": [
+          "Terminal return below -1% fails direction; Extended disruption, cost slippage or escalating dilution defeats repair premise; Terminal close outside the stated band fails range containment.."
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 50,
+        "low": 28.0,
+        "high": 140.0,
+        "thesis": "Strategic US manufacturing and server demand retain recovery optionality, but shareholders need productive external commitments and cash returns, not PDK headlines.",
+        "range_basis": "Judgmental terminal downside/base/upside scenarios spanning persistent client/cash weakness versus server/process recovery; not calibrated statistical coverage or an intraday band.",
+        "drivers": [
+          "14A risk-production execution and customer contracts; Recurring packaging/wafer gross profit; Owner cash per diluted share after partner obligations."
+        ],
+        "falsifiers": [
+          "Terminal close at or below reference fails strict up; Unproductive capacity, node slips or repeated financing without returns defeats long-run thesis; Terminal close outside the stated band fails range containment.."
+        ]
+      },
+      "_opp_score": 48.48,
+      "_risk_score": 25.2
+    },
+    {
+      "ticker": "ARM",
+      "company": "Arm Holdings",
+      "status": "generated",
+      "note_date": "2026-11-03",
+      "note_path": "research/daily-stock-runs/ARM/2026-11-03.md",
+      "source_sha256": "a9ce0600054cdf723bcce9f36cf427cefe837350877a64ad733c4563e7e36126",
+      "reference_price": 196.79,
+      "reference_date": "2026-11-02",
+      "current_price": 203.15,
+      "current_time": "2026-11-03T08:23:36-05:00",
+      "current_label": "Recorded premarket snapshot · 2026-11-03T08:23:36-05:00 · not live",
+      "pct_vs_ref": 3.2318715381879137,
+      "mytutopia": {
+        "rsi": 32.6,
+        "vel5": -5.7,
+        "delta1": -2.3,
+        "momentum_gate": "MOMENTUM-GATE SELLING"
+      },
+      "unusual_signal": "RSI 32.6 and a fresh VEL5 cross to -5.7 invalidate the prior momentum repair.",
+      "top_catalyst": "November 4 results must prove external royalty growth and normalized cash collection.",
+      "top_risk": "Affiliate collections, merchant-silicon economics and funding/dilution remain unresolved.",
+      "calibration_note": "- today: 57 / 42 / 21.",
+      "social_note": "Supplementary discussion only; see dated source note.",
+      "adjustment_note": "Bands are terminal-close scenarios, not intraday envelopes or measured coverage probabilities.",
+      "google_finance_method": "As recorded in the source note; not refreshed by summary.",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 45,
+        "low": 164.0,
+        "high": 236.0,
+        "thesis": "Broad green sector indications and depressed RSI32.6 permit a bounce, but VEL5-5.7 crossed negative and Monday relief failed. This is a weak stabilization lean, not confirmed bottoming.",
+        "range_basis": null,
+        "drivers": [
+          "Cash hold of $196.115/$196.79 and reclaim of $205.97/$207.23; SOXX-relative strength and real-volume confirmation; Pre-earnings positioning and customer-funding headlines."
+        ],
+        "falsifiers": [
+          "Close below 99% of reference rejects constructive direction; Another green opening fails and $196.115 breaks on volume; Close outside $164–236 rejects terminal band."
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_down",
+        "confidence": 31,
+        "low": 100.0,
+        "high": 310.0,
+        "thesis": "November4 must prove external royalty growth and normalized cash. RSI32.6/negative VEL5 contradict confirmed repair; repeated monthly direction misses keep this defensive lean very low conviction.",
+        "range_basis": null,
+        "drivers": [
+          "Q2 results and guide versus $1.38B±$50M/$0.47±$0.04 EPS; Affiliate collections and payroll/withholding cash unwind; Secured supply, accepted silicon economics and customer capital costs."
+        ],
+        "falsifiers": [
+          "Close above101% of reference rejects defensive direction; Clean externally driven beat-and-raise with recurring cash and sustained positive velocity; Close outside $100–310 rejects terminal band."
+        ]
+      },
+      "90d": {
+        "direction": "flat",
+        "confidence": 20,
+        "low": 80.0,
+        "high": 360.0,
+        "thesis": "Quarterly edge is unproven: negative VEL5 widens path risk but cannot price the product ramp. Stay neutral/no reliable directional edge pending supply, margin and per-share cash proof.",
+        "range_basis": null,
+        "drivers": [
+          "Q2/Q3 operating evidence and promised silicon detail; Accepted shipments, gross profit and cloud spending; Licensee neutrality and recurring FCF/share."
+        ],
+        "falsifiers": [
+          "Terminal return outside±1% rejects neutral direction; Repeated profitable beats or durable licensing impairment establish direction; Close outside $80–360 rejects terminal band."
+        ]
+      },
+      "1y": {
+        "direction": "flat_to_up",
+        "confidence": 31,
+        "low": 55.0,
+        "high": 490.0,
+        "thesis": "Architecture/CSS and planned OCI fall2027 retain conditional compounding potential, but merchant economics, funding and dilution dominate. Current RSI/VEL5 have negligible direct annual weight; damaged entry path retains a wide downside tail.",
+        "range_basis": null,
+        "drivers": [
+          "Independent cloud and physical-AI royalty adoption; OCI deployment and profitable merchant scale; Normalized per-share cash after dilution, integration and cloud spend."
+        ],
+        "falsifiers": [
+          "Close below99% of reference rejects constructive lean; OCI slips or merchant growth destroys cash/licensee trust; Close outside $55–490 rejects terminal band."
+        ]
+      },
+      "_opp_score": 44.43,
+      "_risk_score": 10.7
+    },
+    {
+      "ticker": "ASML",
+      "company": "ASML Holding N.V.",
+      "status": "generated",
+      "note_date": "2026-11-03",
+      "note_path": "research/daily-stock-runs/ASML/2026-11-03.md",
+      "source_sha256": "500c52e74c4486e2d64231390b7dfe3042fef3505c7c52fee63f3ab01be4040c",
+      "reference_price": 1526.14,
+      "reference_date": "2026-11-02",
+      "current_price": 1572.76,
+      "current_time": "2026-11-03 08:38:33 EST",
+      "current_label": "Recorded premarket snapshot · 2026-11-03 08:38:33 EST · not live",
+      "pct_vs_ref": 3.0547656178332216,
+      "mytutopia": {
+        "rsi": 35.7,
+        "vel5": -2.3,
+        "delta1": -3.0,
+        "momentum_gate": "MOMENTUM-GATE SELLING"
+      },
+      "unusual_signal": "VEL5 flipped to -2.3; the reported license-revocation video is recycled, not a new policy catalyst.",
+      "top_catalyst": "Q4 systems acceptance, collections and the released 2027 outlook are the next operating tests.",
+      "top_risk": "Acceptance shortfalls, market-access risk and receivable growth can undermine cash conversion.",
+      "calibration_note": "Primary correct/partly/wrong: Today 77/20/8; 30d 29/41/17; 90d 20/28/7; annual0/0/0. 247 resolved +173 pending =420 prior contracts. Comparator Today77/20/8, 30d31/38/17, 90d17/30/7; 245 resolved/175 pending. Its newly matured August3/4 quarterly calls are partly correct, October1/2 monthly calls wrong, November2 Today partly correct. Alternative scoring dates are not additional independent observations. [audit]",
+      "social_note": "Supplementary discussion only; see dated source note.",
+      "adjustment_note": "Bands are terminal-close scenarios, not intraday envelopes or measured coverage probabilities.",
+      "google_finance_method": "As recorded in the source note; not refreshed by summary.",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 48,
+        "low": 1370.0,
+        "high": 1750.0,
+        "thesis": "Broad green sector indications permit a tentative rebound, but RSI35.7/VEL5-2.3 and yesterday's failed relief lower confidence and widen the band.",
+        "range_basis": null,
+        "drivers": [
+          "Actual US volume and equipment breadth; Reclaim1566/1601 versus1518 low; Absence of fresh verified guide or policy shocks."
+        ],
+        "falsifiers": [
+          "Close below reference minus1% defeats flat_to_up; Another high-volume opening-gap fade; Terminal close outside stated band."
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_down",
+        "confidence": 38,
+        "low": 1125.0,
+        "high": 2150.0,
+        "thesis": "Repeated monthly bullish misses, RSI35.7 and newly negative VEL5-2.3 favor a low-conviction defensive tilt despite customer spending support.",
+        "range_basis": null,
+        "drivers": [
+          "Q4 systems acceptance and collections; Customer spending composition and valuation; RSI50 recovery and persistent positive VEL5 would challenge defensiveness."
+        ],
+        "falsifiers": [
+          "Close above reference plus1% defeats flat_to_down; Sustained technical repair plus quantified operating acceleration; Terminal close outside stated band."
+        ]
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": 42,
+        "low": 1000.0,
+        "high": 2450.0,
+        "thesis": "Q4 conversion and2027 capacity/pricing support conditional upside, but two fresh quarterly direction misses and RSI35.7/VEL5-2.3 reduce early-path conviction.",
+        "range_basis": null,
+        "drivers": [
+          "Q4 execution and released2027 outlook; Receivables and normalized cash; NXE3800F introduction and customer tool intensity."
+        ],
+        "falsifiers": [
+          "Close below reference minus1% defeats flat_to_up; Acceptance shortfall or capex rollback; Roadmap slippage or close outside band."
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 51,
+        "low": 950.0,
+        "high": 2850.0,
+        "thesis": "Lithography intensity, capacity and phased pricing support upside; RSI35.7/VEL5-2.3 have minimal annual predictive weight and no annual forecast has matured.",
+        "range_basis": null,
+        "drivers": [
+          "2027 capacity and partial pricing benefits; Sustainable customer investment economics; Cash conversion after shareholder returns."
+        ],
+        "falsifiers": [
+          "Close at or below reference defeats up; Structural market-access or demand impairment; Costs/adoption delays absorb pricing or close outside band."
+        ]
+      },
+      "_opp_score": 47.77,
+      "_risk_score": 2.3
+    },
+    {
+      "ticker": "TSM",
+      "company": "Taiwan Semiconductor Manufacturing",
+      "status": "generated",
+      "note_date": "2026-11-03",
+      "note_path": "research/daily-stock-runs/TSM/2026-11-03.md",
+      "source_sha256": "2179f6805cd8cdc9dc3d21ba9f7c9afab2619e5c1831cc3133a7ee0676c983fb",
+      "reference_price": 398.63,
+      "reference_date": "2026-11-02",
+      "current_price": 405.0,
+      "current_time": "2026-11-03T08:46:28-05:00",
+      "current_label": "Recorded premarket snapshot · 2026-11-03T08:46:28-05:00 · not live",
+      "pct_vs_ref": 1.5979730577227125,
+      "mytutopia": {
+        "rsi": 36.1,
+        "vel5": -8.5,
+        "delta1": -2.3,
+        "momentum_gate": "MOMENTUM-GATE SELLING"
+      },
+      "unusual_signal": "Green indications coexist with RSI 36.1 and VEL5 -8.5 after another failed rebound.",
+      "top_catalyst": "NT$14.8B green-bond pricing implements existing authorization; Apple results add customer-demand evidence.",
+      "top_risk": "Customer cost constraints, overseas dilution and funding quality complicate strong leading-edge demand.",
+      "calibration_note": "- Today: 60 / 32 / 14 (106 resolved).",
+      "social_note": "Supplementary discussion only; see dated source note.",
+      "adjustment_note": "Bands are terminal-close scenarios, not intraday envelopes or measured coverage probabilities.",
+      "google_finance_method": "As recorded in the source note; not refreshed by summary.",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 48,
+        "low": 366.0,
+        "high": 442.0,
+        "thesis": "A tentative relief bounce is possible from the green indication, but RSI36.1/VEL5-8.5 and yesterday's failed rebound cap conviction and widen the downside.",
+        "range_basis": null,
+        "drivers": [
+          "Cash-session breadth and actual volume; Apple demand versus cost warnings; Hold/reclaim $398.63–400.45 and sustained repair."
+        ],
+        "falsifiers": [
+          "Close more than1% below reference defeats flat_to_up; Another green-opening fade; Terminal close outside band."
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_down",
+        "confidence": 38,
+        "low": 300.0,
+        "high": 500.0,
+        "thesis": "Repeated monthly upside misses and RSI36.1/VEL5-8.5 justify a defensive low-conviction tilt until funded customer demand and price momentum improve.",
+        "range_basis": null,
+        "drivers": [
+          "AMD results and customer budgets; Next TSMC operating disclosures; Reclaim RSI50 with sustained positive VEL5."
+        ],
+        "falsifiers": [
+          "Close more than1% above reference defeats flat_to_down; Verified stronger demand plus sustained technical repair; Terminal close outside band."
+        ]
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": 43,
+        "low": 285.0,
+        "high": 540.0,
+        "thesis": "Leading-edge Q4 demand and cash generation support conditional recovery, but fresh quarterly direction misses and RSI36.1/VEL5-8.5 reduce initial-path conviction.",
+        "range_basis": null,
+        "drivers": [
+          "Q4 revenue/margin and cash conversion; N2 capacity execution and customer funding; Overseas dilution and component constraints."
+        ],
+        "falsifiers": [
+          "Close more than1% below reference defeats flat_to_up; Demand/guide cut or material roadmap delay; Terminal close outside band."
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 52,
+        "low": 270.0,
+        "high": 660.0,
+        "thesis": "Structural leading-edge/packaging demand and N2 expansion favor upside; RSI36.1/VEL5-8.5 only modestly widen risk, and no annual forecast has yet matured.",
+        "range_basis": null,
+        "drivers": [
+          "Earnings/cash conversion after capital spending; N2/A14/overseas execution; Customer funding, competition and geopolitics."
+        ],
+        "falsifiers": [
+          "Close at or below reference defeats up; Persistent cash deterioration or structural customer loss; Terminal close outside band."
+        ]
+      },
+      "_opp_score": 47.15,
+      "_risk_score": 8.5
+    },
+    {
+      "ticker": "SIMO",
+      "company": "Silicon Motion Technology Corp.",
+      "status": "generated",
+      "note_date": "2026-11-03",
+      "note_path": "research/daily-stock-runs/SIMO/2026-11-03.md",
+      "source_sha256": "9aabd29db738623d2e9b2b276007575cd20b1f80cf964ef4999b296d30a8d899",
+      "reference_price": 187.9,
+      "reference_date": "2026-11-02",
+      "current_price": 196.0,
+      "current_time": "2026-11-03T08:30:00-05:00",
+      "current_label": "Recorded premarket snapshot · 2026-11-03T08:30:00-05:00 · not live",
+      "pct_vs_ref": 4.310803618946246,
+      "mytutopia": {
+        "rsi": 35.9,
+        "vel5": 6.7,
+        "delta1": -5.6,
+        "momentum_gate": null
+      },
+      "unusual_signal": "Shares fell 17.50% across two closes; positive VEL5 +6.7 is decelerating, not fresh ignition.",
+      "top_catalyst": "Q4 margin guidance remains constructive; January guidance and cash collections are the proof gates.",
+      "top_risk": "Purchased-NAND working-capital needs and cash burn undermine the headline earnings recovery.",
+      "calibration_note": "- today: 56 correct / 34 partly correct / 30 wrong; 1 legacy direction-only excluded from joint accuracy.",
+      "social_note": "Supplementary discussion only; see dated source note.",
+      "adjustment_note": "Bands are terminal-close scenarios, not intraday envelopes or measured coverage probabilities.",
+      "google_finance_method": "As recorded in the source note; not refreshed by summary.",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 51,
+        "low": 170.0,
+        "high": 215.0,
+        "thesis": "Broad storage premarket rebound permits stabilization after a failed repair; RSI 35.9 and positive but decelerating VEL5 +6.7 prevent breakout conviction. The green indication is stale/zero-volume, not an executable quote.",
+        "range_basis": null,
+        "drivers": [
+          "Defense of $185.77 and reclamation of $202.81 with actual cash-session volume; Storage/semiconductor breadth and Nasdaq risk appetite; Residual positive RSI velocity versus its two-bar deceleration."
+        ],
+        "falsifiers": [
+          "Terminal close below $186.02 rejects the -1% flat-to-up tolerance; Heavy-volume loss of $185.77 with peers fading invalidates the stabilization setup; Terminal close outside $170–215 invalidates the range."
+        ]
+      },
+      "30d": {
+        "direction": "flat",
+        "confidence": 37,
+        "low": 125.0,
+        "high": 300.0,
+        "thesis": "No reliable monthly directional edge after two further bullish monthly failures. Q4 margin guidance offsets cash burn and NAND-price/mix uncertainty; RSI 35.9 and VEL5 deceleration argue against assuming a repaired trend.",
+        "range_basis": null,
+        "drivers": [
+          "Q4 execution against $588–616M revenue and 36–37% adjusted OM; Inventory sell-through, collections and six-month pricing/cost matching; November conference disclosures and NAND supplier shipment/ASP trends."
+        ],
+        "falsifiers": [
+          "Mechanical neutral direction fails outside +/-1% of $187.90; this is a no-edge stance, not low-volatility guidance; Verified recurring FCF and sustained reclaim of earnings levels would invalidate the cautious no-edge thesis; Guide cut, unplanned funding or terminal close outside $125–300."
+        ]
+      },
+      "90d": {
+        "direction": "flat",
+        "confidence": 32,
+        "low": 75.0,
+        "high": 400.0,
+        "thesis": "No quarterly directional edge until January guidance and cash collections reconcile rapid solutions growth with purchased-NAND funding. Sub-40 RSI and fading VEL5 weaken the starting path but cannot forecast the operating result.",
+        "range_basis": null,
+        "drivers": [
+          "January quantified 2027 guide versus management expectation of at least 40% revenue growth; Gen6 sampling versus qualification and commercial production; Returns on inventory/receivables and funding sufficiency."
+        ],
+        "falsifiers": [
+          "Mechanical neutral direction fails outside +/-1% even if the broad band holds; Demonstrated cash conversion and durable repeat ramps would overturn the no-edge stance; Funding stress, competitive displacement or terminal close outside $75–400."
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 43,
+        "low": 55.0,
+        "high": 510.0,
+        "thesis": "Conditional long-term upside if enterprise/automotive ramps and H2-2027 near-CPU solutions become recurring per-ADS cash returns. RSI/VEL5 have neutral direct annual weight; damaged momentum and no mature annual sample restrain confidence.",
+        "range_basis": null,
+        "drivers": [
+          "Recurring per-ADS OCF/FCF after capex and dividends; Qualified Gen6 and near-CPU production rather than TAM/sampling narratives; NAND procurement returns, capital discipline and planning for the 2029 holder put."
+        ],
+        "falsifiers": [
+          "Terminal close at/below $187.90 rejects strict up direction; Persistent cash losses, stranded inventory or non-accretive financing; Technology/customer loss, Taiwan disruption or terminal close outside $55–510."
+        ]
+      },
+      "_opp_score": 51.67,
+      "_risk_score": 0
+    },
+    {
+      "ticker": "NET",
+      "company": "Cloudflare",
+      "status": "generated",
+      "note_date": "2026-11-03",
+      "note_path": "research/daily-stock-runs/NET/2026-11-03.md",
+      "source_sha256": "19367109847f4365ecf4a0d2482d090af11b256724e394c56b34e27adc9e057c",
+      "reference_price": 265.17,
+      "reference_date": "2026-11-02",
+      "current_price": 273.25,
+      "current_time": "2026-11-03 09:03:02 EST",
+      "current_label": "Recorded premarket snapshot · 2026-11-03 09:03:02 EST · not live",
+      "pct_vs_ref": 3.0471018591846644,
+      "mytutopia": {
+        "rsi": 32.1,
+        "vel5": -20.7,
+        "delta1": -3.6,
+        "momentum_gate": "MOMENTUM-GATE SELLING"
+      },
+      "unusual_signal": "RSI 32.1 / VEL5 -20.7: the weakest five-bar velocity in this tracked set.",
+      "top_catalyst": "AI Search billing moves to December 1; November 5 results must establish growth and all-in cash economics.",
+      "top_risk": "Billing delay defers monetization proof; premium valuation, restructuring cash and dilution add downside.",
+      "calibration_note": "Scoring: original forecast target wins; otherwise Today uses issuance session, longer horizons reference date +30/+90/+365 calendar days. First completed US close on/after target resolves; cutoff November 2. Strict up/down sign, neutral ±1%, flat-to-up allows -1%, flat-to-down allows +1%. Correct requires direction AND inclusive terminal band; partly correct only one; wrong neither. Missing-band legacy records stay separate. No today's premarket quote resolves today's contract. 291 resolved, 189 pending before new forecasts; all 286 prior outcomes reproduced without revisions. Of resolved outcomes, 288 have explicit bands and 3 are direction-only legacy. Exact counts: today: 22 wrong, 56 correct, 42 partly_correct; 30d: 1 correct_direction_only, 35 correct, 51 partly_correct, 15 wrong; 90d: 1 correct_direction_only, 48 partly_correct, 1 wrong, 19 correct; 1y: no matured outcomes. No annual maturity exists; earliest annual target remains April 20, 2027. Latest ten monthly outcomes have 0/10 direction hits: five partly correct, five wrong. Wide containment must not be portrayed as bullish accuracy. New quarterly outcomes also missed direction; reduce quarterly conviction, not just monthly confidence. [audit]",
+      "social_note": "Supplementary discussion only; see dated source note.",
+      "adjustment_note": "Bands are terminal-close scenarios, not intraday envelopes or measured coverage probabilities.",
+      "google_finance_method": "As recorded in the source note; not refreshed by summary.",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 48,
+        "low": 235.0,
+        "high": 305.0,
+        "thesis": "A roughly 3% indicative recovery and mostly green peers allow stabilization, not a bottom call. RSI 32.1 and VEL5 -20.7 contradict durable repair and cap confidence below 50 after yesterday's failed gap.",
+        "range_basis": null,
+        "drivers": [
+          "Opening participation and peer breadth; Defending $263.86 and reclaiming $280.70/$282.27; Positioning before November 5 results."
+        ],
+        "falsifiers": [
+          "Close below reference minus 1% defeats flat_to_up; Loss of $263.86 on expanding volume or fresh material operating failure; Terminal close outside $235–305."
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_down",
+        "confidence": 40,
+        "low": 180.0,
+        "high": 380.0,
+        "thesis": "Lost monthly directional edge, negative RSI velocity, premium valuation and delayed AI Search billing modestly favor downside/consolidation. The upcoming earnings event can overturn this; a wide upside tail is intentional.",
+        "range_basis": null,
+        "drivers": [
+          "November 5 actual revenue, cRPO/retention and forward guide; Gross-margin/operating-leverage bridge and all-in restructuring cash; December 1 AI Search billing rather than November revenue presumed from usage."
+        ],
+        "falsifiers": [
+          "Close above reference plus 1% defeats flat_to_down; Material guide acceleration with improving gross profit/FCF and multi-bar momentum repair; Terminal close outside $180–380."
+        ]
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": 41,
+        "low": 160.0,
+        "high": 450.0,
+        "thesis": "Enterprise expansion and platform depth retain recovery optionality, but two newly failed quarterly directions and RSI 32.1/VEL5 -20.7 lower confidence and widen the early-path tail.",
+        "range_basis": null,
+        "drivers": [
+          "Paid customer expansion, DBNR and cRPO; December AI Search billing conversion and retention; Network capex and gross-profit/FCF conversion."
+        ],
+        "falsifiers": [
+          "Close below reference minus 1% defeats flat_to_up; Persistent retention/growth deterioration or repeated isolation/reliability failures; Terminal close outside $160–450."
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 50,
+        "low": 140.0,
+        "high": 540.0,
+        "thesis": "Security/network/developer convergence supports conditional upside, not high conviction. Current RSI/VEL5 matter mostly to entry-path uncertainty, with little direct annual predictive weight; monetization, dilution and cash discipline dominate.",
+        "range_basis": null,
+        "drivers": [
+          "Enterprise cross-sell and paid developer/agent cohorts; Sustainable margins and FCF per diluted share; Capital allocation, convert settlement and dilution discipline."
+        ],
+        "falsifiers": [
+          "Close at or below reference defeats up; Structural growth erosion or uneconomic inference/network investment; Terminal close outside $140–540."
+        ]
+      },
+      "_opp_score": 46.0,
+      "_risk_score": 25.7
+    },
+    {
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "status": "generated",
+      "note_date": "2026-11-03",
+      "note_path": "research/daily-stock-runs/AMD/2026-11-03.md",
+      "source_sha256": "1c1d07095f630b52f4f4388d64bb7d7c08b0a0103dc1b7880f5677fbd9192e33",
+      "reference_price": 466.84,
+      "reference_date": "2026-11-02",
+      "current_price": 487.2,
+      "current_time": "2026-11-03 09:12 EST (Google Finance)",
+      "current_label": "Recorded premarket snapshot · 2026-11-03 09:12 EST (Google Finance) · not live",
+      "pct_vs_ref": 4.361237254733963,
+      "mytutopia": {
+        "rsi": 34.6,
+        "vel5": -8.3,
+        "delta1": -5.1,
+        "momentum_gate": "MOMENTUM-GATE SELLING"
+      },
+      "unusual_signal": "Broad indicative relief follows a 7.52% decline; VEL5 crossed from +0.7 to -8.3.",
+      "top_catalyst": "November 3 after-close earnings are the next test for Helios acceptance, margins and FCF.",
+      "top_risk": "Customer funding is not bookings; financing costs, PC weakness and dilution can overwhelm revenue growth.",
+      "calibration_note": "Cumulative correct / partly correct / wrong: Today 57/39/14 (110); 30d 28/33/31 (92); 90d 40/18/1 (59); annual 0/0/0. Total 261 resolved,179 pending,4 excluded, before today's four new contracts. Historical direction accuracy is 82.73% Today,39.13% monthly,69.49% quarterly; joint direction+band is51.82%,30.43%,67.80%. Historical tilted directions allow ±1%; supplemental strict-sign Today accuracy72.73%, strict-sign+range43.64%. Do not call43.64% a directional hit rate. Preserve original grades and target rules; old on/before conventions are not silently migrated to new first-on/after rules. Five historical embedded target discrepancies and112 negligible price-serialization differences are disclosed in the audit without grade changes. Overlapping horizons are not independent observations. [market/audit.json; market/summary.md]",
+      "social_note": "Supplementary discussion only; see dated source note.",
+      "adjustment_note": "Bands are terminal-close scenarios, not intraday envelopes or measured coverage probabilities.",
+      "google_finance_method": "As recorded in the source note; not refreshed by summary.",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 48,
+        "low": 405.0,
+        "high": 570.0,
+        "thesis": "Broad semiconductor relief and two fresh quote feeds favor a tentative rebound; falling RSI and negative velocity mean this is not a confirmed bottom.",
+        "range_basis": "Baseline halfwidth $41.6597 = $466.84 × 2 × empirical sigma20 4.4619%; mandatory1.5 × discretionary1.3 aftershock/coverage = $81.2364; center Google09:12 indication $487.20; round outward to$405–570. This1.3 allowance also retains coverage caution; do not count it twice.",
+        "drivers": [
+          "Opening breadth and verified cash-session volume; Hold $466.84 and recover $487–500; Pre-earnings positioning before after-close results."
+        ],
+        "falsifiers": [
+          "Close below -1% reference rejects tilted-up direction; Broad relief fades and November2 low breaks; Terminal close outside $405–570 rejects range."
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_down",
+        "confidence": 37,
+        "low": 260.0,
+        "high": 780.0,
+        "thesis": "Repeated monthly upside failures justify a defensive low-conviction skew into earnings; a cash-backed beat-and-raise can invalidate it.",
+        "range_basis": "Judgmental terminal scenarios for earnings, valuation, accepted systems, financing, cash conversion, competition and dilution; longer horizons expand both tails, not statistically calibrated coverage.",
+        "drivers": [
+          "Q3 actuals and Q4 guide; Helios acceptance, gross margin dollars/rate and FCF; Actual customer funding and PC baseline."
+        ],
+        "falsifiers": [
+          "Close above +1% reference rejects defensive tilt; Cash-backed beat-and-raise plus sustained momentum repair; Terminal close outside band."
+        ]
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": 46,
+        "low": 230.0,
+        "high": 950.0,
+        "thesis": "EPYC and Instinct execution permit conditional recovery, but another matured quarterly direction miss and financing risks reduce conviction.",
+        "range_basis": "Judgmental terminal scenarios for earnings, valuation, accepted systems, financing, cash conversion, competition and dilution; longer horizons expand both tails, not statistically calibrated coverage.",
+        "drivers": [
+          "Paid system ramp and supply/yield execution; 2027 CPU/accelerator adoption; Working capital and share-count bridge."
+        ],
+        "falsifiers": [
+          "Close below -1% reference rejects tilted-up direction; Ramp delays or dilution without per-share gains; Terminal close outside band."
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 50,
+        "low": 170.0,
+        "high": 1250.0,
+        "thesis": "Platform execution could compound owner earnings, but competition, capital intensity and conditional dilution prevent high confidence with no annual track record.",
+        "range_basis": "Judgmental terminal scenarios for earnings, valuation, accepted systems, financing, cash conversion, competition and dilution; longer horizons expand both tails, not statistically calibrated coverage.",
+        "drivers": [
+          "MI500/Verano and repeat ROCm production; FCF per diluted share after ecosystem investment; Customer diversity and capital productivity."
+        ],
+        "falsifiers": [
+          "Close at/below reference rejects up; Structural competitive loss or low-return investment; Terminal close outside band."
+        ]
+      },
+      "_opp_score": 47.17,
+      "_risk_score": 13.3
+    },
+    {
+      "ticker": "QCOM",
+      "company": "Qualcomm Incorporated",
+      "status": "generated",
+      "note_date": "2026-11-03",
+      "note_path": "research/daily-stock-runs/QCOM/2026-11-03.md",
+      "source_sha256": "15b5efe473c0f210cf0c936708acdc626c2c704c96430bac269d03edd91e53ec",
+      "reference_price": 162.08,
+      "reference_date": "2026-11-02",
+      "current_price": 165.15,
+      "current_time": "2026-11-03 09:14 EST (Google Finance)",
+      "current_label": "Recorded premarket snapshot · 2026-11-03 09:14 EST (Google Finance) · not live",
+      "pct_vs_ref": 1.8941263573543976,
+      "mytutopia": {
+        "rsi": 37.2,
+        "vel5": -14.7,
+        "delta1": -1.7,
+        "momentum_gate": "MOMENTUM-GATE SELLING"
+      },
+      "unusual_signal": "Six Form 4s reflect conversions/withholding, not open-market selling; VEL5 worsened to -14.7.",
+      "top_catalyst": "November 4 after-close earnings must bridge handset pressure, licensing collections and auto/IoT profitability.",
+      "top_risk": "Handset erosion, inventory/cash timing and unproven data-center monetization remain key risks.",
+      "calibration_note": "today | 19/10/0 | 20/9 | 28/1 | 0 Ten prior notes and all29 existing rows read (read-receipts.json). Today cumulative19 correct/10partial/0wrong; direction20/29, range28/29. Monthly0correct/10partial/0wrong; direction0/10. Broad containment is not directional skill. No matured90d/year outcomes. Newly scored Monday Today correct, Oct1/Oct2 monthly partial. Keep monthly confidence30, quarterly44 and annual47; no long-horizon empirical validation.",
+      "social_note": "Supplementary discussion only; see dated source note.",
+      "adjustment_note": "Bands are terminal-close scenarios, not intraday envelopes or measured coverage probabilities.",
+      "google_finance_method": "As recorded in the source note; not refreshed by summary.",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 49,
+        "low": 128.0,
+        "high": 196.0,
+        "thesis": "Broad green sector indications permit a low-conviction bounce, but deteriorating negative VEL5 rejects a confirmed bottom.",
+        "range_basis": "Baseline max(2.5×43.9%/sqrt252,1.5×3.1355%)×162.08=$11.2056; magnitude check |delta1|=1.7<5 so mandatory1.5x does NOT fire despite max two-bar deltaVEL5=21.8. Compound1.15 deceleration ×1.3 recent crash ×2 pre-earnings event =2.99; halfwidth $33.5046; outward rounded $128–$196. Conservative terminal scenario envelope, not a calibrated probability interval. Event extension is analyst judgment after sector-led shock, not a claim of company-specific no-news positioning.",
+        "drivers": [
+          "Sector repair and 166.44/169.52 reclaim; November4 earnings positioning; 162.08 anchor /161.46 recent low"
+        ],
+        "falsifiers": [
+          "Terminal return below -1% rejects flat-to-up; Failure to hold161.46 or fade below162.08 defeats stabilization"
+        ]
+      },
+      "30d": {
+        "direction": "flat",
+        "confidence": 30,
+        "low": 110.0,
+        "high": 220.0,
+        "thesis": "Ten monthly bullish direction misses force a low-conviction two-sided base case pending earnings cash/margin evidence.",
+        "range_basis": "Fundamental terminal scenario envelope incorporating handset/license downside and diversification upside; not a statistical coverage claim. Wide bands are evaluated separately from direction.",
+        "drivers": [
+          "Handset units versus pricing; QTL collections and margin; Earnings guide and dilution"
+        ],
+        "falsifiers": [
+          "Terminal return outside +/-1% rejects neutral; Guide cut or broad beat-and-raise invalidates no-edge framing"
+        ]
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 44,
+        "low": 95.0,
+        "high": 260.0,
+        "thesis": "Automotive/IoT and accepted custom-silicon revenue may outweigh handset erosion; profitability remains conditional.",
+        "range_basis": "Fundamental terminal scenario envelope incorporating handset/license downside and diversification upside; not a statistical coverage claim. Wide bands are evaluated separately from direction.",
+        "drivers": [
+          "Consolidated cost bridge; Inventory normalization; Customer-qualified shipments"
+        ],
+        "falsifiers": [
+          "Terminal close at/below162.08 rejects up; Growth with deeper portfolio losses defeats thesis"
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 47,
+        "low": 85.0,
+        "high": 315.0,
+        "thesis": "Licensing and diversified compute offer conditional per-share upside, not a promise that HBC samples monetize immediately.",
+        "range_basis": "Fundamental terminal scenario envelope incorporating handset/license downside and diversification upside; not a statistical coverage claim. Wide bands are evaluated separately from direction.",
+        "drivers": [
+          "HBC qualification and volume yields; Licensing durability; Net buyback benefit after dilution"
+        ],
+        "falsifiers": [
+          "Terminal close at/below162.08 rejects up; Roadmap delays, license impairment or lower FCF/share"
+        ]
+      },
+      "_opp_score": 47.53,
+      "_risk_score": 19.7
+    }
+  ],
+  "headline": "Fragile semiconductor relief, not a confirmed bottom: green premarket snapshots confront damaged momentum and earnings-event risk.",
+  "opportunity_label": "Top opportunities · tentative rebound setups",
+  "market_bullets": [
+    "Coverage: 10/10 same-day notes. 10/10 Today calls lean flat-to-up; none should be read as a high-conviction breakout.",
+    "Completed-bar momentum is damaged: 9/10 names have negative VEL5. SIMO alone remains positive, but its velocity is decelerating.",
+    "Premarket snapshots are broadly green after Monday declines. They are asynchronous, often zero-volume indications—not live quotes or verified executable liquidity.",
+    "Earnings sequence: AMD tonight, ARM and QCOM November 4, NET November 5. Today terminal-close bands do not include tonight’s AMD after-hours reaction.",
+    "Monthly conviction is much weaker than tactical bounce positioning: most notes are defensive or neutral after repeated direction misses. Wide range containment is not forecasting skill.",
+    "Customer financing and memory costs connect the group: priced debt is not settled cash or supplier orders, and component scarcity can hurt customer affordability.",
+    "NET defers AI Search billing to December 1; MU’s supplier financing and SIMO’s working-capital needs make cash conversion more important than adoption headlines.",
+    "All prices/ranges are USD as recorded in source notes. Forecast ranges are terminal regular-close scenarios, not intraday bounds or statistically calibrated intervals."
+  ],
+  "top_opportunities": [
+    {
+      "ticker": "SIMO",
+      "company": "Silicon Motion Technology Corp.",
+      "status": "generated",
+      "note_date": "2026-11-03",
+      "note_path": "research/daily-stock-runs/SIMO/2026-11-03.md",
+      "source_sha256": "9aabd29db738623d2e9b2b276007575cd20b1f80cf964ef4999b296d30a8d899",
+      "reference_price": 187.9,
+      "reference_date": "2026-11-02",
+      "current_price": 196.0,
+      "current_time": "2026-11-03T08:30:00-05:00",
+      "current_label": "Recorded premarket snapshot · 2026-11-03T08:30:00-05:00 · not live",
+      "pct_vs_ref": 4.310803618946246,
+      "mytutopia": {
+        "rsi": 35.9,
+        "vel5": 6.7,
+        "delta1": -5.6,
+        "momentum_gate": null
+      },
+      "unusual_signal": "Shares fell 17.50% across two closes; positive VEL5 +6.7 is decelerating, not fresh ignition.",
+      "top_catalyst": "Q4 margin guidance remains constructive; January guidance and cash collections are the proof gates.",
+      "top_risk": "Purchased-NAND working-capital needs and cash burn undermine the headline earnings recovery.",
+      "calibration_note": "- today: 56 correct / 34 partly correct / 30 wrong; 1 legacy direction-only excluded from joint accuracy.",
+      "social_note": "Supplementary discussion only; see dated source note.",
+      "adjustment_note": "Bands are terminal-close scenarios, not intraday envelopes or measured coverage probabilities.",
+      "google_finance_method": "As recorded in the source note; not refreshed by summary.",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 51,
+        "low": 170.0,
+        "high": 215.0,
+        "thesis": "Broad storage premarket rebound permits stabilization after a failed repair; RSI 35.9 and positive but decelerating VEL5 +6.7 prevent breakout conviction. The green indication is stale/zero-volume, not an executable quote.",
+        "range_basis": null,
+        "drivers": [
+          "Defense of $185.77 and reclamation of $202.81 with actual cash-session volume; Storage/semiconductor breadth and Nasdaq risk appetite; Residual positive RSI velocity versus its two-bar deceleration."
+        ],
+        "falsifiers": [
+          "Terminal close below $186.02 rejects the -1% flat-to-up tolerance; Heavy-volume loss of $185.77 with peers fading invalidates the stabilization setup; Terminal close outside $170–215 invalidates the range."
+        ]
+      },
+      "30d": {
+        "direction": "flat",
+        "confidence": 37,
+        "low": 125.0,
+        "high": 300.0,
+        "thesis": "No reliable monthly directional edge after two further bullish monthly failures. Q4 margin guidance offsets cash burn and NAND-price/mix uncertainty; RSI 35.9 and VEL5 deceleration argue against assuming a repaired trend.",
+        "range_basis": null,
+        "drivers": [
+          "Q4 execution against $588–616M revenue and 36–37% adjusted OM; Inventory sell-through, collections and six-month pricing/cost matching; November conference disclosures and NAND supplier shipment/ASP trends."
+        ],
+        "falsifiers": [
+          "Mechanical neutral direction fails outside +/-1% of $187.90; this is a no-edge stance, not low-volatility guidance; Verified recurring FCF and sustained reclaim of earnings levels would invalidate the cautious no-edge thesis; Guide cut, unplanned funding or terminal close outside $125–300."
+        ]
+      },
+      "90d": {
+        "direction": "flat",
+        "confidence": 32,
+        "low": 75.0,
+        "high": 400.0,
+        "thesis": "No quarterly directional edge until January guidance and cash collections reconcile rapid solutions growth with purchased-NAND funding. Sub-40 RSI and fading VEL5 weaken the starting path but cannot forecast the operating result.",
+        "range_basis": null,
+        "drivers": [
+          "January quantified 2027 guide versus management expectation of at least 40% revenue growth; Gen6 sampling versus qualification and commercial production; Returns on inventory/receivables and funding sufficiency."
+        ],
+        "falsifiers": [
+          "Mechanical neutral direction fails outside +/-1% even if the broad band holds; Demonstrated cash conversion and durable repeat ramps would overturn the no-edge stance; Funding stress, competitive displacement or terminal close outside $75–400."
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 43,
+        "low": 55.0,
+        "high": 510.0,
+        "thesis": "Conditional long-term upside if enterprise/automotive ramps and H2-2027 near-CPU solutions become recurring per-ADS cash returns. RSI/VEL5 have neutral direct annual weight; damaged momentum and no mature annual sample restrain confidence.",
+        "range_basis": null,
+        "drivers": [
+          "Recurring per-ADS OCF/FCF after capex and dividends; Qualified Gen6 and near-CPU production rather than TAM/sampling narratives; NAND procurement returns, capital discipline and planning for the 2029 holder put."
+        ],
+        "falsifiers": [
+          "Terminal close at/below $187.90 rejects strict up direction; Persistent cash losses, stranded inventory or non-accretive financing; Technology/customer loss, Taiwan disruption or terminal close outside $55–510."
+        ]
+      },
+      "_opp_score": 51.67,
+      "_risk_score": 0
+    },
+    {
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "status": "generated",
+      "note_date": "2026-11-03",
+      "note_path": "research/daily-stock-runs/MU/2026-11-03.md",
+      "source_sha256": "b992c8383a586a2c4c1d59d65b07b323478f9a85eb796f9db24102109be98d1b",
+      "reference_price": 833.59,
+      "reference_date": "2026-11-02",
+      "current_price": 864.69,
+      "current_time": "2026-11-03T08:16:51-05:00",
+      "current_label": "Recorded premarket snapshot · 2026-11-03T08:16:51-05:00 · not live",
+      "pct_vs_ref": 3.7308508979234434,
+      "mytutopia": {
+        "rsi": 37.4,
+        "vel5": -4.9,
+        "delta1": -4.6,
+        "momentum_gate": "MOMENTUM-GATE SELLING"
+      },
+      "unusual_signal": "Indicative rebound follows a 5.78% decline; VEL5 turned negative at -4.9.",
+      "top_catalyst": "GlobalWafers proposes up to $500M of Micron-subscribed convertibles; approval and final terms remain outstanding.",
+      "top_risk": "Memory scarcity supports pricing but rising customer costs can impair demand; supplier financing commits capital.",
+      "calibration_note": "- Direction-only pass: Today 91/113 = 80.53%; month 37/95 = 38.95%; quarter 42/63 = 66.67%. Strict direction-and-band success: 53.10%, 20.00%, 52.38%. Broad containment is not evidence of a correct bullish direction. No annual forecast has matured.",
+      "social_note": "Supplementary discussion only; see dated source note.",
+      "adjustment_note": "Bands are terminal-close scenarios, not intraday envelopes or measured coverage probabilities.",
+      "google_finance_method": "As recorded in the source note; not refreshed by summary.",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 51,
+        "low": 800.0,
+        "high": 905.0,
+        "thesis": "A 3.73% indicative rebound and broadly green peers favor fragile stabilization, not a trend reversal. RSI 37.4 and newly negative VEL5 -4.9 contradict breakout conviction; yesterday's failed green gap cuts confidence and widens downside room.",
+        "range_basis": "$833.59 on2026-11-02 regular close; premarket supplementary only.",
+        "drivers": [
+          "Broad semiconductor bounce survives cash open; Reclaim $856-865 then $884.74 without losing $829-827; No new MU guidance cut; supplier financing remains a proposal."
+        ],
+        "falsifiers": [
+          "Cash session loses $833.59/$829 with renewed red peer breadth; Verified production disruption or earnings downgrade; Terminal close outside $800-905."
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_down",
+        "confidence": 39,
+        "low": 600.0,
+        "high": 1100.0,
+        "thesis": "Customer memory-cost pressure supports pricing but also threatens end-demand affordability. RSI below 40 and VEL5 turning negative reject a confirmed base; two fresh bullish monthly misses lower conviction further, preserving wide two-sided tails.",
+        "range_basis": "$833.59 on2026-11-02 regular close; premarket supplementary only.",
+        "drivers": [
+          "Realized contract pricing and estimate revisions; Customer procurement obligations versus actual orders and collections; Taiwan labor terms and incremental cost; sustained RSI/velocity recovery."
+        ],
+        "falsifiers": [
+          "Durable recovery above $934-983 with RSI above 50 and positive VEL5; Official pricing/cash upgrades remove peak-earnings concern; Terminal close outside $600-1100."
+        ]
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": 45,
+        "low": 500.0,
+        "high": 1300.0,
+        "thesis": "Q1 delivery and CY2027 HBM repricing retain a conditional upside skew. Apple's primary memory-shortage disclosure supports demand/pricing, but negative RSI velocity and a fresh quarterly directional miss cap confidence and leave substantial downside.",
+        "range_basis": "$833.59 on2026-11-02 regular close; premarket supplementary only.",
+        "drivers": [
+          "Q1 $61.5B +/-$1.5B revenue guide and margin-floor delivery; HBM repricing and packaging qualification/output; Supplier financing approval and actual net capital returns after December 9."
+        ],
+        "falsifiers": [
+          "Sequential revenue/margin commitments fail; Persistent pricing erosion, customer stress or HBM displacement; Terminal close outside $500-1300."
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 44,
+        "low": 350.0,
+        "high": 1800.0,
+        "thesis": "Advanced-memory intensity and 2027 node execution support conditional appreciation; upstream financing helps supply resilience but commits capital. RSI/VEL5 have neutral direct annual weight and cannot validate a year-ahead call; no annual predictions have matured.",
+        "range_basis": "$833.59 on2026-11-02 regular close; premarket supplementary only.",
+        "drivers": [
+          "Profitable HBM4E/1-delta/G11 ramps and yields; SCA cash realization through the cycle versus rival capacity; Net share reduction after construction, supplier funding and deposit obligations."
+        ],
+        "falsifiers": [
+          "AI-spending retrenchment or oversupply crushes normalized margins; Roadmap/yield delays or persistent negative recurring FCF; Terminal close outside $350-1800."
+        ]
+      },
+      "_opp_score": 50.51,
+      "_risk_score": 4.9
+    }
+  ],
+  "top_risks": [
+    {
+      "ticker": "NET",
+      "company": "Cloudflare",
+      "status": "generated",
+      "note_date": "2026-11-03",
+      "note_path": "research/daily-stock-runs/NET/2026-11-03.md",
+      "source_sha256": "19367109847f4365ecf4a0d2482d090af11b256724e394c56b34e27adc9e057c",
+      "reference_price": 265.17,
+      "reference_date": "2026-11-02",
+      "current_price": 273.25,
+      "current_time": "2026-11-03 09:03:02 EST",
+      "current_label": "Recorded premarket snapshot · 2026-11-03 09:03:02 EST · not live",
+      "pct_vs_ref": 3.0471018591846644,
+      "mytutopia": {
+        "rsi": 32.1,
+        "vel5": -20.7,
+        "delta1": -3.6,
+        "momentum_gate": "MOMENTUM-GATE SELLING"
+      },
+      "unusual_signal": "RSI 32.1 / VEL5 -20.7: the weakest five-bar velocity in this tracked set.",
+      "top_catalyst": "AI Search billing moves to December 1; November 5 results must establish growth and all-in cash economics.",
+      "top_risk": "Billing delay defers monetization proof; premium valuation, restructuring cash and dilution add downside.",
+      "calibration_note": "Scoring: original forecast target wins; otherwise Today uses issuance session, longer horizons reference date +30/+90/+365 calendar days. First completed US close on/after target resolves; cutoff November 2. Strict up/down sign, neutral ±1%, flat-to-up allows -1%, flat-to-down allows +1%. Correct requires direction AND inclusive terminal band; partly correct only one; wrong neither. Missing-band legacy records stay separate. No today's premarket quote resolves today's contract. 291 resolved, 189 pending before new forecasts; all 286 prior outcomes reproduced without revisions. Of resolved outcomes, 288 have explicit bands and 3 are direction-only legacy. Exact counts: today: 22 wrong, 56 correct, 42 partly_correct; 30d: 1 correct_direction_only, 35 correct, 51 partly_correct, 15 wrong; 90d: 1 correct_direction_only, 48 partly_correct, 1 wrong, 19 correct; 1y: no matured outcomes. No annual maturity exists; earliest annual target remains April 20, 2027. Latest ten monthly outcomes have 0/10 direction hits: five partly correct, five wrong. Wide containment must not be portrayed as bullish accuracy. New quarterly outcomes also missed direction; reduce quarterly conviction, not just monthly confidence. [audit]",
+      "social_note": "Supplementary discussion only; see dated source note.",
+      "adjustment_note": "Bands are terminal-close scenarios, not intraday envelopes or measured coverage probabilities.",
+      "google_finance_method": "As recorded in the source note; not refreshed by summary.",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 48,
+        "low": 235.0,
+        "high": 305.0,
+        "thesis": "A roughly 3% indicative recovery and mostly green peers allow stabilization, not a bottom call. RSI 32.1 and VEL5 -20.7 contradict durable repair and cap confidence below 50 after yesterday's failed gap.",
+        "range_basis": null,
+        "drivers": [
+          "Opening participation and peer breadth; Defending $263.86 and reclaiming $280.70/$282.27; Positioning before November 5 results."
+        ],
+        "falsifiers": [
+          "Close below reference minus 1% defeats flat_to_up; Loss of $263.86 on expanding volume or fresh material operating failure; Terminal close outside $235–305."
+        ]
+      },
+      "30d": {
+        "direction": "flat_to_down",
+        "confidence": 40,
+        "low": 180.0,
+        "high": 380.0,
+        "thesis": "Lost monthly directional edge, negative RSI velocity, premium valuation and delayed AI Search billing modestly favor downside/consolidation. The upcoming earnings event can overturn this; a wide upside tail is intentional.",
+        "range_basis": null,
+        "drivers": [
+          "November 5 actual revenue, cRPO/retention and forward guide; Gross-margin/operating-leverage bridge and all-in restructuring cash; December 1 AI Search billing rather than November revenue presumed from usage."
+        ],
+        "falsifiers": [
+          "Close above reference plus 1% defeats flat_to_down; Material guide acceleration with improving gross profit/FCF and multi-bar momentum repair; Terminal close outside $180–380."
+        ]
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": 41,
+        "low": 160.0,
+        "high": 450.0,
+        "thesis": "Enterprise expansion and platform depth retain recovery optionality, but two newly failed quarterly directions and RSI 32.1/VEL5 -20.7 lower confidence and widen the early-path tail.",
+        "range_basis": null,
+        "drivers": [
+          "Paid customer expansion, DBNR and cRPO; December AI Search billing conversion and retention; Network capex and gross-profit/FCF conversion."
+        ],
+        "falsifiers": [
+          "Close below reference minus 1% defeats flat_to_up; Persistent retention/growth deterioration or repeated isolation/reliability failures; Terminal close outside $160–450."
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 50,
+        "low": 140.0,
+        "high": 540.0,
+        "thesis": "Security/network/developer convergence supports conditional upside, not high conviction. Current RSI/VEL5 matter mostly to entry-path uncertainty, with little direct annual predictive weight; monetization, dilution and cash discipline dominate.",
+        "range_basis": null,
+        "drivers": [
+          "Enterprise cross-sell and paid developer/agent cohorts; Sustainable margins and FCF per diluted share; Capital allocation, convert settlement and dilution discipline."
+        ],
+        "falsifiers": [
+          "Close at or below reference defeats up; Structural growth erosion or uneconomic inference/network investment; Terminal close outside $140–540."
+        ]
+      },
+      "_opp_score": 46.0,
+      "_risk_score": 25.7
+    },
+    {
+      "ticker": "INTC",
+      "company": "Intel Corporation",
+      "status": "generated",
+      "note_date": "2026-11-03",
+      "note_path": "research/daily-stock-runs/INTC/2026-11-03.md",
+      "source_sha256": "0e123505f66d79175618c3e52b6aaf77a9a388c45ab1d7d3ef6aa43f51c8be30",
+      "reference_price": 59.97,
+      "reference_date": "2026-11-02",
+      "current_price": 62.2,
+      "current_time": "2026-11-03T08:23:37-05:00",
+      "current_label": "Recorded premarket snapshot · 2026-11-03T08:23:37-05:00 · not live",
+      "pct_vs_ref": 3.7185259296314888,
+      "mytutopia": {
+        "rsi": 23.0,
+        "vel5": -15.2,
+        "delta1": -2.1,
+        "momentum_gate": "MOMENTUM-GATE SELLING"
+      },
+      "unusual_signal": "RSI 23.0 and VEL5 -15.2: deeply damaged tape, not a confirmed bottom.",
+      "top_catalyst": "Server/process recovery remains optionality; weak Q4 client and margin economics still need repair.",
+      "top_risk": "Funding obligations, weak client demand and unproductive capacity can outlast short-covering.",
+      "calibration_note": "Correct/partly/wrong: Today24/5/1;30d0/5/6;90d0/0/0;1y0/0/0. Tolerant direction25/30 and band28/30 for Today; month direction0/11 and band5/11. Correct requires BOTH direction and inclusive terminal range, partial one, wrong neither. Flat-to-up permits-1%,flat-to-down+1%; strict up/down require sign. Wide coverage is not evidence of directional edge. Monthly confidence45→43 after two further outright failures; no quarterly/annual track record exists. [audit]",
+      "social_note": "Supplementary discussion only; see dated source note.",
+      "adjustment_note": "Bands are terminal-close scenarios, not intraday envelopes or measured coverage probabilities.",
+      "google_finance_method": "As recorded in the source note; not refreshed by summary.",
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 50,
+        "low": 51.0,
+        "high": 74.0,
+        "thesis": "Broad semiconductor relief and a >3% premarket indication support a tentative rebound from the new $59.97 anchor, but negative velocity and weak Q4 economics prevent a pure up call.",
+        "range_basis": "Fresh max(2.5×app annual vol×reference/sqrt252,1.5×20-session sigma×reference) ×1.0 mandatory ×1.5 post-shock ×1.15 deceleration; center indicative $62.20, outward integer rounding.",
+        "drivers": [
+          "Premarket gap retention and sector breadth; Monday low $59.40; reclaim $63.20/$65.76; Fab28 recovery and verified external economics."
+        ],
+        "falsifiers": [
+          "Terminal return below -1% fails tolerant direction; Premarket gap failure and weaker peer breadth defeat relief premise; Terminal close outside the stated band fails range containment.."
+        ]
+      },
+      "30d": {
+        "direction": "down",
+        "confidence": 43,
+        "low": 38.0,
+        "high": 85.0,
+        "thesis": "Weak Q4 client/margin outlook and funding obligations can outlast a short-covering bounce; zero monthly direction hits prohibit high conviction.",
+        "range_basis": "Judgmental terminal downside/base/upside scenarios spanning persistent client/cash weakness versus server/process recovery; not calibrated statistical coverage or an intraday band.",
+        "drivers": [
+          "Client destocking versus server shipment conversion; Substrate funding and minimum-output obligations; Recurring external Foundry economics."
+        ],
+        "falsifiers": [
+          "Terminal close at or above reference fails strict down; Material guidance upgrade or verified high-margin customer volume defeats weak-outlook premise; Terminal close outside the stated band fails range containment.."
+        ]
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": 46,
+        "low": 35.0,
+        "high": 105.0,
+        "thesis": "Server growth and process-cost learning may repair earnings by the next results cycle, conditional on supply recovery and capital discipline.",
+        "range_basis": "Judgmental terminal downside/base/upside scenarios spanning persistent client/cash weakness versus server/process recovery; not calibrated statistical coverage or an intraday band.",
+        "drivers": [
+          "Q4 actuals/2027 outlook; 18A and Intel3 yield, cost and usable output; 2027 capex, NCI and diluted cash flow."
+        ],
+        "falsifiers": [
+          "Terminal return below -1% fails direction; Extended disruption, cost slippage or escalating dilution defeats repair premise; Terminal close outside the stated band fails range containment.."
+        ]
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 50,
+        "low": 28.0,
+        "high": 140.0,
+        "thesis": "Strategic US manufacturing and server demand retain recovery optionality, but shareholders need productive external commitments and cash returns, not PDK headlines.",
+        "range_basis": "Judgmental terminal downside/base/upside scenarios spanning persistent client/cash weakness versus server/process recovery; not calibrated statistical coverage or an intraday band.",
+        "drivers": [
+          "14A risk-production execution and customer contracts; Recurring packaging/wafer gross profit; Owner cash per diluted share after partner obligations."
+        ],
+        "falsifiers": [
+          "Terminal close at or below reference fails strict up; Unproductive capacity, node slips or repeated financing without returns defeats long-run thesis; Terminal close outside the stated band fails range containment.."
+        ]
+      },
+      "_opp_score": 48.48,
+      "_risk_score": 25.2
+    }
+  ],
+  "telegram_summary": "Fragile semiconductor relief, not a confirmed bottom: green premarket snapshots confront damaged momentum and earnings-event risk. Coverage 10/10. Top opportunities · tentative rebound setups: SIMO, MU. Top risks: NET, INTC."
+}
