@@ -1,0 +1,1665 @@
+{
+  "date": "2026-11-23",
+  "generated_at": "2026-11-23 07:13:34 PST",
+  "headline": "Broad relief, damaged momentum: all ten Today calls are up-biased, all ten completed VEL5 readings negative. Snapshot timing matters.",
+  "coverage": {
+    "generated": [
+      "NVDA",
+      "MU",
+      "INTC",
+      "ARM",
+      "ASML",
+      "TSM",
+      "SIMO",
+      "NET",
+      "AMD",
+      "QCOM"
+    ],
+    "stale": [],
+    "missing": []
+  },
+  "cards": [
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "status": "generated",
+      "note_date": "2026-11-23",
+      "note_path": "research/daily-stock-runs/NVDA/2026-11-23.md",
+      "source_sha256": "329906c33877940c2edffe2238ab8aba222642ae3252f36adf775c6a1daa74f5",
+      "reference_price": 125.53,
+      "reference_date": "2026-11-20",
+      "current_price": 135.75,
+      "current_time": "08:03:22 ET",
+      "current_label": "Frozen premarket snapshot",
+      "quote_context": "Yahoo indication; Google separately 135.40 at 08:00 ET. This early note predates later AMD-note leadership news.",
+      "pct_vs_ref": 8.14148012427307,
+      "mytutopia": {
+        "rsi": 15.0,
+        "vel5": -9.8,
+        "delta1": -4.6,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "bar_date": "2026-11-20",
+        "data_context": "Completed bar; advertised 24-hour delay; not live"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 42,
+        "low": 129.0,
+        "high": 140.0,
+        "thesis": "Relief tape and conditional political softening permit an up close from125.53, but RSI15.0/VEL5-9.8 contradict trend confirmation; the indicative8%gap is not a completed recovery.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Broad positive peer tape and short covering; Board succession and investigation headlines; Whether135area relief survives cash-session liquidity."
+        ],
+        "falsifiers": [
+          "Gap fades below129 or squeeze closes above140: endpoint forecast WRONG. Board/policy deterioration or sustained sell pressure defeats relief."
+        ],
+        "target_session": "2026-11-23",
+        "calendar_target": "2026-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.07857142857142857,
+        "max_window_width_fraction": 0.08,
+        "contract_violation": false
+      },
+      "30d": {
+        "direction": "flat",
+        "confidence": 25,
+        "low": 120.0,
+        "high": 141.0,
+        "thesis": "Oversold valuation permits stabilization, not an automatic return to old highs. NegativeVEL5, margin trough, missing full10-Q and collection/leadership uncertainty keep confidence low.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Receivables collections and Q4 shipment acceptance; PermanentCEO and regulatory clarity; Memory costs and funded customer readiness."
+        ],
+        "falsifiers": [
+          "Verified target close below120 or above141 is WRONG. Continuing working-capital deterioration or rapid fully funded demand recovery invalidates stabilization assumptions."
+        ],
+        "target_session": "2026-12-23",
+        "calendar_target": "2026-12-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.14893617021276595,
+        "max_window_width_fraction": 0.15,
+        "contract_violation": false
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": 30,
+        "low": 128.0,
+        "high": 160.0,
+        "thesis": "Conditional earnings/cash repair allows modest recovery, not an old-high forecast. RSI15.0/negativeVEL5 lowers timing conviction until a durable turn is observed.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Q4 results and FY2028 margin trajectory; Rubin delivery/acceptance/collections; Guarantees, supplier prepayments and governance resolution."
+        ],
+        "falsifiers": [
+          "Target close outside128–160 is WRONG. Further margin erosion, credit draws or unresolved leadership/export limits defeat repair."
+        ],
+        "target_session": "2027-02-22",
+        "calendar_target": "2027-02-21",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.2,
+        "max_window_width_fraction": 0.2,
+        "contract_violation": false
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 40,
+        "low": 90.0,
+        "high": 240.0,
+        "thesis": "CUDA/systems economics and Rubin-generation growth support conditional normalized cash-flow upside. DamagedRSI/VEL5 warns on timing, while financing, competition and governance keep an uncapped wide annual scenario.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "FY2028 growth and owner free cash flow per share; RubinUltra execution and software moat; Capital allocation versus contingent customer support."
+        ],
+        "falsifiers": [
+          "Target close outside90–240 is WRONG. Customer defaults, structural margin/share loss, investigation findings or heavy dilution undermine long-term value."
+        ],
+        "target_session": "2027-11-23",
+        "calendar_target": "2027-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.625,
+        "max_window_width_fraction": null,
+        "contract_violation": false
+      },
+      "top_catalyst": "Early note cites conditional political softening; later AMD note reports reinstatement. Keep issuance chronology, not a new NVIDIA forecast.",
+      "unusual_signal": "RSI 15.0 / VEL5 -9.8 deteriorated despite an early 8% indication; deeply oversold is not trend confirmation.",
+      "top_risk": "Investigation, concentrated receivables, customer financing and collection quality remain unresolved; the early note misses later leadership evidence.",
+      "calibration_note": "Two newly matured contracts, both at actual November 20 close $125.53: - November 20 Today: WRONG, close-window-v1, published $134–145, down, 52/100. Direction was right but the close was below L; absolutely no partial credit for direction or intraday touches. - October 21 30 days: WRONG, legacy, published $155–280, flat-to-up, reference $216.47. Direction and containment failed. [M] Separate scorecards, correct / partly correct / wrong: - Binary close-window-v1 Today 4 / 0 / 4; all binary longer horizons pending. No width violations in the existing cohort. - Legacy Today 80 / 18 / 15; 30 days 43 / 32 / 26; 90 days 42 / 16 / 5; 1 year 0 / 0 / 0 (none mature). - All 283 previously resolved outcomes reproduced without differences. Two new outcomes give 285 mature / 196 pending / 481 contracts, before adding today's four pending forecasts. Five older contracts explicitly target today's session and remain pending until its verified close: August 25–26 quarterly; October 22, 23 and 26 monthly. No premature scoring or earlier-close substitution. Preserve original bounds, targets and all legacy evaluations. [M] Adjustment: an 8/15/20% capped window cannot absorb every crisis tail. Friday's correct down direction was not a successful forecast. Lower containment confidence, condition the bounce on current tape, and keep published caps rather than widening retrospectively. Legacy broad-band hits and binary endpoint hits must never be pooled.",
+      "adjustment_note": "Eight binary daily outcomes give4hits/4misses, far too small/correlated for a calibrated probability. Friday's14% liquidation exceeded the published down window; calling direction correctly did not save it. Today's opposing gap is not evidence that systematic dip-buying works. Recenter around the actual relief sample but leave conviction low; monthly confidence25 reflects repeated wrong neutral/up assumptions and narrowed endpoints. Quarterly30/annual40 remain conditional on collections, margin and governance resolution, not a mechanically assumed return to old highs. Browser-harness first succeeded after -c printed Usage and immediate DOM read preceded body creation; stdin and settled reads recovered. No browser fallback was necessary. One owned target was tracked, blanked/closed and absence verified; three unrelated preexisting tabs, including another NVDA tab, were preserved. Persistent daemon left running. Primary IR403 retained separately; exact SEC/issuer asset recovery succeeded. Generic web.run discovery was unavailable in this runtime; no search success claimed. Direct fresh primary retrieval and authenticated browser evidence support this run instead. [B,P]",
+      "social_note": "Supplementary and separate from earnings evidence. Live visible browser-harness :9333 / hermes-isolated was used successfully for both platforms, not fallback scraping. Full attempted URLs, capture clocks, page text and exact post/thread links are in the companion and browser JSON. No source is labeled blocked. - X exact query: https://x.com/search?q=%24NVDA%20(Huang%20OR%20Kress%20OR%20Bessent)&src=typed_query&f=live. Four readable posts: @therotationwire repeats partnership-continuity remarks; @hi2morrow_x relays a sector/political rebound; @Digeverythings and @SilkLifeMedSpa interpret Haas' extension as succession exclusion. Mostly rapid relay/momentum, not independent procurement evidence. Parent verified the Arm original rather than promoting these accounts into primary confirmation. Exact status URLs preserved. [B] - Reddit live https://old.reddit.com/r/NVDA_Stock/new/, then actual November23 daily thread and Trump-return thread opened. Daily discussion contrasts relief optimism with gap-fade fears and repeated failed dip-buying. Users discuss missing full10-Q and cash quality; these are questions to test against the furnished supplement, not proof fraud. Assertions Friday was down20% conflict with verified14.01%; retain actual close. Claims that green premarket implies an exclusively retail crowd are unsupported. - Trump thread posts an attributed statement and debates reinstatement versus investigation conditions; political conspiracies and personal allegations are unverified and excluded from business conclusions. The primary CBS interview supports a conditional change of tone, not a completed board vote. No representative sentiment statistic or forecast-confidence bonus assigned. [B,G1]",
+      "google_finance_method": "Frozen note observation; no quote refresh",
+      "_opp_score": 42,
+      "_risk_score": 25
+    },
+    {
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "status": "generated",
+      "note_date": "2026-11-23",
+      "note_path": "research/daily-stock-runs/MU/2026-11-23.md",
+      "source_sha256": "60468780ee39a229de3a1a5b3bc6fcd32750edfbc623d0d3a5fb7bc940076852",
+      "reference_price": 594.51,
+      "reference_date": "2026-11-20",
+      "current_price": 626.79,
+      "current_time": "08:12:01 EST",
+      "current_label": "Frozen premarket snapshot",
+      "quote_context": "Yahoo indication; Google separately 626.79 at 08:17 EST",
+      "pct_vs_ref": 5.4296815865166215,
+      "mytutopia": {
+        "rsi": 29.5,
+        "vel5": -12.9,
+        "delta1": -6.3,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "bar_date": "2026-11-20",
+        "data_context": "Completed bar; advertised 24-hour delay; not live"
+      },
+      "today": {
+        "direction": "up",
+        "confidence": 48,
+        "low": 600.0,
+        "high": 650.0,
+        "thesis": "Broad green premarket favors a fragile relief bounce; RSI 29.5 / VEL5 -12.9 warn against calling a confirmed bottom.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Broad peer rebound and retention of the premarket gap; Post-liquidation positioning; Absence of a fresh MU guide cut."
+        ],
+        "falsifiers": [
+          "Gap fails and November 20 low breaks; Fresh adverse pricing/customer disclosure; Target regular-session close outside 600-650."
+        ],
+        "target_session": "2026-11-23",
+        "calendar_target": "2026-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.07692307692307693,
+        "max_window_width_fraction": 0.08,
+        "contract_violation": false
+      },
+      "30d": {
+        "direction": "up",
+        "confidence": 27,
+        "low": 600.0,
+        "high": 700.0,
+        "thesis": "December 17 earnings and contracted 2027 HBM repricing offer repair potential, but negative VEL5/RSI below30 and NAND pricing disagreement sharply cap conviction.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "December 17 Q1 results and forward pricing; December 9 repurchase authorization becomes effective, not guaranteed execution; HBM versus NAND mix."
+        ],
+        "falsifiers": [
+          "Guide cut or material customer credit stress; NAND weakness overwhelms HBM improvements; No sustained velocity/RSI repair; Target regular-session close outside 600-700."
+        ],
+        "target_session": "2026-12-23",
+        "calendar_target": "2026-12-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.14285714285714285,
+        "max_window_width_fraction": 0.15,
+        "contract_violation": false
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 30,
+        "low": 640.0,
+        "high": 790.0,
+        "thesis": "2027 HBM price agreements and limited near-term capacity support a recovery scenario; RSI29.5/VEL5-12.9 contradict an established recovery and keep the window and confidence restrained.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "HBM price realization and customer acceptance; 1delta/G11 execution and qualification; Cash conversion and supply discipline."
+        ],
+        "falsifiers": [
+          "HBM price/share loss; Capacity delay or customer default; Persistent NAND oversupply; Target regular-session close outside 640-790."
+        ],
+        "target_session": "2027-02-22",
+        "calendar_target": "2027-02-21",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.189873417721519,
+        "max_window_width_fraction": 0.2,
+        "contract_violation": false
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 38,
+        "low": 350.0,
+        "high": 1200.0,
+        "thesis": "Higher memory content and technology execution support an upside bias, not immunity from the cycle; weak RSI/VEL5 caution entry timing but are not annual valuation evidence.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "HBM4E and new-node execution; Capital efficiency and collectible contract cash; Industry supply discipline."
+        ],
+        "falsifiers": [
+          "Structural oversupply or persistent pricing collapse; Unproductive capex and credit losses; Technology or market-share loss; Target regular-session close outside 350-1200."
+        ],
+        "target_session": "2027-11-23",
+        "calendar_target": "2027-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.7083333333333334,
+        "max_window_width_fraction": null,
+        "contract_violation": false
+      },
+      "top_catalyst": "December 17 results remain the operating checkpoint; no new issuer guide authenticated in the selected note.",
+      "unusual_signal": "RSI 29.5 / VEL5 -12.9 worsen despite a 5.43% indication; ATR exceeds the entire closing window.",
+      "top_risk": "Customer-credit exposure, NAND pricing disagreement and inventory/capex conversion can undermine apparent low-multiple value.",
+      "calibration_note": "Exactly two newly matured outcomes, both at verified November 20 close $594.51000977: - November 20 Today: WRONG, close-window-v1, unchanged $625–679, reference $690.44 November 19. Down direction was diagnostically right; below 625 close is a miss despite intraday 669 touching the window. No partial credit. - October 22 30d: PARTLY CORRECT, legacy only, unchanged $635–1,250, reference $913.67 October 21; preserved November 20 endpoint. Down tilt right, range missed below635. No new 90d or 1y maturity. August 25/26 quarterly and October 23 monthly calls require November 23's actual close and remain pending now. All 126 historical annual calls remain pending; no earlier-close substitution. [A] Reproduced all 500 inherited signatures and 300 resolved outcomes before additions, including November 20 post-issuance126 rows/504 contracts/300 resolved/204 pending baseline. After two outcomes: 302 resolved/202 pending, before this run's new forecasts. Separate legacy C/P/W: Today 64/35/18;30d24/55/28;90d33/31/5;1y0/0/0. Separate binary Today 5 correct/4 wrong (55.56%, nine observations); binary longer horizons all pending. Existing 36 binary contracts have zero width violations. After today's four pending calls: 127 rows/508 contracts/302 resolved/206 pending. Legacy wide-window scores are not tight-window coverage evidence. [A]",
+      "adjustment_note": "Friday's bearish direction still failed the closing window: downside extension was underestimated. Binary accuracy is 5/9 (55.56%), too small a sample to claim calibrated coverage. With simple ATR $68.34, today's $50 closing window is deliberately low confidence. A cap-compliant window cannot cover every plausible path; preserve exact bounds rather than rescue them after the fact. [A,M] Worsening completed-bar RSI/VEL5 with broad green premarket calls for a fragile bounce, not another automatic bearish call. Prior gap fades prevent high conviction. Medium-term upside is a scenario supported by standing HBM contracts, not proof NAND concerns have disappeared. The production, SCA and HBM denominators remain distinct. Citi's reported bit-demand sensitivity is not a ceiling on price or margin damage. Old-document recovery and calendar additions are coverage refinements, not new guidance. [P,Y,S]",
+      "social_note": "Supplementary, separate from official earnings. Freshly readable visible Chrome X / old Reddit, not blocked. Small nonrepresentative sample; neither counts likes as financial evidence. [S] - X @Lucky95bella, https://x.com/Lucky95bella/status/2124843215249625424 : recirculates2027 HBM price agreements and near $10B data-center SSD, consistent with standing remarks, not new customer wins. - X @lynch_pin_quant, https://x.com/lynch_pin_quant/status/2124854473726235099 : proposes normalized 40% margin floor from35% locked HBM revenue. Useful valuation debate but unverified assumptions/denominator; issuer SCAs span memory categories and pricing bands, not disclosed permanent HBM margin floor. Only visible truncated post read; no full-model validation. - X @J2Wick, https://x.com/J2Wick/status/2124834347882877332 : quotes SK Securities: 87% of new DRAM capacity potentially going to HBM; truncated lead only, underlying report not obtained, a research lead not adopted as confirmed allocation. Generic15xperpetuals promotions/Tepperportfolio reposts excluded as low-signal. - r/SKHynix,u/AlgaeExciting5478, https://old.reddit.com/r/SKHynix/comments/1y3brn9/digging_into_memory_cycles_longterm_investors/ : full post/comments read. Higher-signal framing: generation-specific HBM qualification and wafer allocation can prolong scarcity but do not abolish older-product competition. Historical-price and supplier-claim numbers not independently audited. - r/MU_Stock,u/HistoricalSurvey8040, https://old.reddit.com/r/MU_Stock/comments/1y2lb5z/kb_securities_samsung_electronics_sk_hynix_2027/ : full thread on KB forecast: 2027 DRAM +40% / NAND +30%; original broker report not obtained. Keep YoY forecast separate from TrendForce QoQ / spot and product mix: they need not be mechanically contradictory. - r/MU_Stock,u/No-Ant-5811, https://old.reddit.com/r/MU_Stock/comments/1y2xjrg/why_are_so_many_of_you_falling_for_the_scare/ : full thread shows forced-selling / risk-management debate versus “unchanged fundamentals.” Claims ofmanipulation/no NAND weakness / guaranteed recovery not verified. Technically relevant correction: expandinglong-term memory demand does not establish current ASP or shareholder returns; dismissing planned fabs contradicts issuer construction roadmap. Distress is anecdotal, not representative positioning data.",
+      "google_finance_method": "Frozen note observation; no quote refresh",
+      "_opp_score": 48,
+      "_risk_score": 0
+    },
+    {
+      "ticker": "INTC",
+      "company": "Intel Corporation",
+      "status": "generated",
+      "note_date": "2026-11-23",
+      "note_path": "research/daily-stock-runs/INTC/2026-11-23.md",
+      "source_sha256": "423e44d4e1b6431421fb98a3b0d1c55ec38c81a4d9978d8b152e9ef538033d2e",
+      "reference_price": 51.28,
+      "reference_date": "2026-11-20",
+      "current_price": 54.39,
+      "current_time": "08:17:09 EST",
+      "current_label": "Frozen premarket snapshot",
+      "quote_context": "Yahoo indication; Google separately 54.46 at 08:20 EST",
+      "pct_vs_ref": 6.064742589703598,
+      "mytutopia": {
+        "rsi": 28.0,
+        "vel5": -4.4,
+        "delta1": -3.0,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "bar_date": "2026-11-20",
+        "data_context": "Completed bar; advertised 24-hour delay; not live"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 49,
+        "low": 52.9,
+        "high": 57.5,
+        "thesis": "Broad green chip tape supports a relief close above Friday; negative fragile VEL5 prevents a confirmed-bottom call.",
+        "range_basis": "Premarket-centered relief window with partial fade and continuation room; $4.60 total width, capped at 8%. Sigma8.08% and ATR8.42% make containment uncertain.",
+        "drivers": [
+          "Broad semiconductor relief versus zero-volume indicative premarket; 18A-P signed-customer economics separate from Microsoft EMIB and CPU capacity; Fab28 usable output, Intel3/18A supply and unit costs, PC inventories; 2027 capex, substrate commitments, subsidies, dilution, NCI and per-share returns."
+        ],
+        "falsifiers": [
+          "An explicit target-session regular close outside the inclusive published window is WRONG, regardless of direction or intraday touch. Near-term relief fails if the gap fades and Intel loses relative strength while VEL5 stays negative. Longer-term repair fails with node delays, weak shipment conversion, or capex/dilution without recurring external margins and per-share cash returns."
+        ],
+        "target_session": "2026-11-23",
+        "calendar_target": "2026-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.08000000000000003,
+        "max_window_width_fraction": 0.08,
+        "contract_violation": false
+      },
+      "30d": {
+        "direction": "flat_to_down",
+        "confidence": 22,
+        "low": 47.6,
+        "high": 56.0,
+        "thesis": "Weak client demand and rising investment can restrain repair until recurring customer economics emerge.",
+        "range_basis": "Conditional Q4 reset versus customer-validation scenario within 15% total width; low conviction reflects poor legacy monthly calibration.",
+        "drivers": [
+          "Broad semiconductor relief versus zero-volume indicative premarket; 18A-P signed-customer economics separate from Microsoft EMIB and CPU capacity; Fab28 usable output, Intel3/18A supply and unit costs, PC inventories; 2027 capex, substrate commitments, subsidies, dilution, NCI and per-share returns."
+        ],
+        "falsifiers": [
+          "An explicit target-session regular close outside the inclusive published window is WRONG, regardless of direction or intraday touch. Near-term relief fails if the gap fades and Intel loses relative strength while VEL5 stays negative. Longer-term repair fails with node delays, weak shipment conversion, or capex/dilution without recurring external margins and per-share cash returns."
+        ],
+        "target_session": "2026-12-23",
+        "calendar_target": "2026-12-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.14999999999999997,
+        "max_window_width_fraction": 0.15,
+        "contract_violation": false
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 23,
+        "low": 52.0,
+        "high": 65.0,
+        "thesis": "DCAI deliveries and 18A unit-cost gains can support recovery, conditional on shipment and margin conversion.",
+        "range_basis": "Conditional next-earnings repair scenario within 20% total width; not an intraperiod envelope.",
+        "drivers": [
+          "Broad semiconductor relief versus zero-volume indicative premarket; 18A-P signed-customer economics separate from Microsoft EMIB and CPU capacity; Fab28 usable output, Intel3/18A supply and unit costs, PC inventories; 2027 capex, substrate commitments, subsidies, dilution, NCI and per-share returns."
+        ],
+        "falsifiers": [
+          "An explicit target-session regular close outside the inclusive published window is WRONG, regardless of direction or intraday touch. Near-term relief fails if the gap fades and Intel loses relative strength while VEL5 stays negative. Longer-term repair fails with node delays, weak shipment conversion, or capex/dilution without recurring external margins and per-share cash returns."
+        ],
+        "target_session": "2027-02-22",
+        "calendar_target": "2027-02-21",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.2,
+        "max_window_width_fraction": 0.2,
+        "contract_violation": false
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 42,
+        "low": 30.0,
+        "high": 90.0,
+        "thesis": "US manufacturing and packaging retain option value if recurring outside demand produces per-share cash returns.",
+        "range_basis": "Uncapped broad turnaround/failure terminal scenario; not a precise valuation or statistically calibrated interval.",
+        "drivers": [
+          "Broad semiconductor relief versus zero-volume indicative premarket; 18A-P signed-customer economics separate from Microsoft EMIB and CPU capacity; Fab28 usable output, Intel3/18A supply and unit costs, PC inventories; 2027 capex, substrate commitments, subsidies, dilution, NCI and per-share returns."
+        ],
+        "falsifiers": [
+          "An explicit target-session regular close outside the inclusive published window is WRONG, regardless of direction or intraday touch. Near-term relief fails if the gap fades and Intel loses relative strength while VEL5 stays negative. Longer-term repair fails with node delays, weak shipment conversion, or capex/dilution without recurring external margins and per-share cash returns."
+        ],
+        "target_session": "2027-11-23",
+        "calendar_target": "2027-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.6666666666666666,
+        "max_window_width_fraction": null,
+        "contract_violation": false
+      },
+      "top_catalyst": "Prior signed unnamed 18A-P customer and Microsoft EMIB/Xeon evidence are not another fresh award.",
+      "unusual_signal": "A 6% indication still fails to reclaim Thursday; RSI 28.0 and VEL5 -4.4 deteriorated.",
+      "top_risk": "Node delays, capex and dilution without recurring outside-customer margins can frustrate a self-funded recovery.",
+      "calibration_note": "Two fresh maturities, both using November 20 actual regular close $51.28: - November 20 Today CORRECT: published inclusive $50.60–55.00. Down direction also hit, diagnostic only; realized return -7.97%. - October 21 legacy 30d CORRECT: $48–133, flat-to-down from $91.69; return -44.07%. Preserve legacy scoring; its wide range does not validate capped monthly forecasts. [A,M] Legacy correct/partial/wrong: Today 27/6/1; 30d 3/5/15. Legacy monthly direction 3/23, containment 8/23. Binary Today 9 correct / 0 wrong, direction 8/9; nine longer binary contracts pending in each horizon before issuance. No 90d or 1y target has matured. October 22/23 monthly calendar targets fell on the weekend and roll to November 23 close; both remain pending premarket, not scored using Friday. [A] Original 43 rows contain 192 payloads minus 20 mirrored duplicates = 172 unique contracts. All 64 prior outcomes reproduced; after two maturities 66 resolved / 106 pending. Four new forecasts yield 44 rows / 176 contracts / 66 resolved / 110 pending. Zero binary width violations. Nine dependent, same-regime containment hits do not justify a confidence ratchet. [A]",
+      "adjustment_note": "Today changes from Friday's down 48 to flat_to_up 49: fresh broad relief supports a positive close, but deteriorating RSI/VEL5 and zero-volume indications prohibit a confirmed-trend call. This is not an earnings upgrade or node-execution endorsement. VEL5 -4.4 indicates fragility rather than requiring down; the -10 constraint is not triggered. Keep confidence below 50. Nine binary hits are dependent and concentrated in the same regime. Thirty-day flat-to-down 22, 90-day up 23 and annual up 42 remain conditional; the lower reference partly offsets Q4/capital risk, but legacy monthly direction 3/23 precludes claiming monthly skill. Uncapped legacy containment is not binary evidence. [A,M,P,B]",
+      "social_note": "X and old Reddit are accessible, partial and low-signal—not blocked. Four X article bodies are mostly promotional buy-lists; one chart comment warns of selling pressure and urges waiting for stabilization. No representative sentiment ratio or verified new customer fact. Exact status paths and bodies are archived; promotion is excluded from the thesis. [B] Reddit search shows r/LongOrShortBets debate about sector relief versus a bull trap, consistent with the tape only. Many irrelevant results and unauthenticated flow claims. Search DOM was captured, but an exact thread permalink was not recovered and the thread was not opened: search-snippet evidence only, not full-thread diligence. No sentiment-derived confidence boost. [B]",
+      "google_finance_method": "Frozen note observation; no quote refresh",
+      "_opp_score": 49,
+      "_risk_score": 0
+    },
+    {
+      "ticker": "ARM",
+      "company": "Arm Holdings",
+      "status": "generated",
+      "note_date": "2026-11-23",
+      "note_path": "research/daily-stock-runs/ARM/2026-11-23.md",
+      "source_sha256": "b5bfdb3bbcbe2fb177a86577a2e4803764ec1251969c929ae91da729cac2f174",
+      "reference_price": 152.2,
+      "reference_date": "2026-11-20",
+      "current_price": 165.75,
+      "current_time": "08:30:22 EST",
+      "current_label": "Frozen premarket snapshot",
+      "quote_context": "Yahoo indication; Google separately 165.69 at 08:28 EST",
+      "pct_vs_ref": 8.902759526938242,
+      "mytutopia": {
+        "rsi": 31.8,
+        "vel5": -8.8,
+        "delta1": -6.4,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "bar_date": "2026-11-20",
+        "data_context": "Completed bar; advertised 24-hour delay; not live"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 46,
+        "low": 159.0,
+        "high": 172.0,
+        "thesis": "Fresh retention and broad green premarket support tentative relief despite RSI31.8/VEL5-8.8; deteriorating completed momentum and Friday range miss cap confidence.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Leadership retention and parent-role governance/cost terms; Semiconductor breadth and sustained cash-session recovery; Recurring royalty growth, licensing mix and collection; AGI CPU acceptance, margin allocation, working capital and capacity advances."
+        ],
+        "falsifiers": [
+          "Exact target regular close outside inclusive published bounds means WRONG, irrespective of direction or intraday touch.; Tactical relief fails if the green gap reverses with renewed sector weakness and negative velocity.; Operating upside fails on delayed acceptance, weak royalty cash, supplier-credit losses or dilution outrunning per-share cash."
+        ],
+        "target_session": "2026-11-23",
+        "calendar_target": "2026-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.0755813953488372,
+        "max_window_width_fraction": 0.08,
+        "contract_violation": false
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": 27,
+        "low": 148.0,
+        "high": 174.0,
+        "thesis": "Retention removes one risk and a lower anchor permits fragile recovery; RSI31.8/VEL5-8.8, royalty pace and collection uncertainty keep containment conviction low.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Leadership retention and parent-role governance/cost terms; Semiconductor breadth and sustained cash-session recovery; Recurring royalty growth, licensing mix and collection; AGI CPU acceptance, margin allocation, working capital and capacity advances."
+        ],
+        "falsifiers": [
+          "Exact target regular close outside inclusive published bounds means WRONG, irrespective of direction or intraday touch.; Tactical relief fails if the green gap reverses with renewed sector weakness and negative velocity.; Operating upside fails on delayed acceptance, weak royalty cash, supplier-credit losses or dilution outrunning per-share cash."
+        ],
+        "target_session": "2026-12-23",
+        "calendar_target": "2026-12-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.14942528735632185,
+        "max_window_width_fraction": 0.15,
+        "contract_violation": false
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 30,
+        "low": 164.0,
+        "high": 205.0,
+        "thesis": "Conditional recovery toward Q3/March-quarter commercial readiness; negative RSI velocity lowers timing confidence until deliveries, cost allocation and cash are proven.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Leadership retention and parent-role governance/cost terms; Semiconductor breadth and sustained cash-session recovery; Recurring royalty growth, licensing mix and collection; AGI CPU acceptance, margin allocation, working capital and capacity advances."
+        ],
+        "falsifiers": [
+          "Exact target regular close outside inclusive published bounds means WRONG, irrespective of direction or intraday touch.; Tactical relief fails if the green gap reverses with renewed sector weakness and negative velocity.; Operating upside fails on delayed acceptance, weak royalty cash, supplier-credit losses or dilution outrunning per-share cash."
+        ],
+        "target_session": "2027-02-22",
+        "calendar_target": "2027-02-21",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.2,
+        "max_window_width_fraction": 0.2,
+        "contract_violation": false
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 40,
+        "low": 120.0,
+        "high": 300.0,
+        "thesis": "Architecture/CSS and paid silicon offer conditional upside; RSI31.8/negative VEL5 mostly caution on entry, while cash conversion, dilution and margins control annual value.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Leadership retention and parent-role governance/cost terms; Semiconductor breadth and sustained cash-session recovery; Recurring royalty growth, licensing mix and collection; AGI CPU acceptance, margin allocation, working capital and capacity advances."
+        ],
+        "falsifiers": [
+          "Exact target regular close outside inclusive published bounds means WRONG, irrespective of direction or intraday touch.; Tactical relief fails if the green gap reverses with renewed sector weakness and negative velocity.; Operating upside fails on delayed acceptance, weak royalty cash, supplier-credit losses or dilution outrunning per-share cash."
+        ],
+        "target_session": "2027-11-23",
+        "calendar_target": "2027-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.6,
+        "max_window_width_fraction": null,
+        "contract_violation": false
+      },
+      "top_catalyst": "Note reports Haas retention through 2033 and SoftBank vice-chair role from December 1; no new financial guide.",
+      "unusual_signal": "Relative premarket strength coexists with RSI 31.8 / VEL5 -8.8 and Friday closing-window failure.",
+      "top_risk": "Supplier credit, inventory, royalty collections and dilution remain risks; dual-role governance does not prove cash improvement.",
+      "calibration_note": "Read SCHEMA, entity, the ten latest main notes November 9–20, all 134 existing JSONL rows, both requested NotebookLM briefs, and session_search ARM OR \"Arm Holdings\". Session recall recovered today's NVIDIA context, including Haas retention, but original Arm/SoftBank releases control the conclusion. The Q3 FYE26 briefings remain historical: Q2 FYE27 supersedes their guide and pending-DreamBig status. The outlook's $131M Artisan number is a disposal gain, not sale consideration. [local; P] Every fresh maturity: - November 20 Today — WRONG, close-window-v1. Original $159–172 band; exact November 20 close $152.20, -14.0938% versus $177.17/November 19. Down direction was right, but the regular close missed the lower bound. Intraday touches and directional success do not rescue this forecast. [A] - October 21 30d — PARTLY CORRECT, legacy only. Original reference $221.06/October 20, band $155–295, original target November 20; exact close $152.20, -31.1499%. Flat-to-down direction held, range missed. Do not count this as a binary hit. [A] No fresh 90d/1y maturity. August 25/26 quarterly and October 22/23 monthly contracts resolve on November 23 and remain pending before that session closes. No earlier Friday close is substituted for those targets. No annual numerical forecast has matured. [A] Separate scorecards, correct / partly / wrong: legacy Today 61/42/21; legacy 30d 26/40/47; legacy 90d 8/40/28; legacy 1y 0/0/0. Range-less legacy separately 2 direction-correct/1 direction-wrong. New binary Today 6 correct/3 wrong, nine observations; other binary horizons zero mature, 27 pending before issuance, zero violations in 36 previously published windows. Nine overlapping observations do not validate a 67% forward hit probability. [A] Audit reproduced all 323 prior outcomes, 209 prior pending objects and 532 prior contracts, then independently verified 325 current outcomes. Before issuance: 134 rows /536 unique contracts /325 matured /211 pending, with 24 duplicate schema representations controlled by the prior audit, not extra trials. Only two fresh additive evaluation records; no backfills, rewritten historical bounds or legacy-score migration. After today's four pending contracts: 135 rows /540 contracts /325 matured /215 pending. [A; verified arithmetic]",
+      "adjustment_note": "1. Friday down direction was right but $152.20 missed $159–172: wrong, not partial or “nearly right.” Lower Today containment conviction after a shock; do not widen past8%. 2. Fresh green peer breadth plus retention news changes Today to tentative up rather than mechanically extending negative delayed VEL5. RSI31.8/VEL5-8.8 still caps conviction; no confirmed bottom claimed. 3. October21 monthly legacy partial was another downside band miss, not precision. Monthly confidence stays low; no binary monthly result exists yet, and nine daily observations do not calibrate 30d/90d/annual probabilities. 4. Retention warrants a modest recovery scenario, not a royalty, margin, cash or merchant-capacity upgrade. Keep licensing recognition, statutory cash, agency procurement and silicon revenue separate. 5. Social analyst inventory estimates are useful questions, not forecast inputs at face value. Verify underlying assumptions and distinguish gross cash/net cash and investment balances before importing a FY29 cash target. 6. Preserve prior forecast/legacy evaluation objects exactly; only two additive outcomes and one new daily forecast row. November23 targets remain unscored until cash close. [A; analysis]",
+      "social_note": "Supplementary only; explicitly separate from official earnings. X and old Reddit were readable on visible isolated Chrome. Thin evidence is not an auth block; small samples do not establish representative sentiment or institutional positioning. [B] Higher-signal X: - @EmmanuelInvest, full post opened, displayed November 23 04:10 local: distinguishes leadership continuity from royalty growth, margins, FCF and ROIC. Useful balanced framing; Arm/SoftBank originals independently authenticate the extension. Exact post: https://x.com/EmmanuelInvest/status/2124838108566880419 . [S1] - @OptionKing666, full post opened, November 23 01:02 local, explicitly attributes estimates to a November 16 analyst report: inventory $88M FY27/$351M FY28/$863M FY29, modeled net cash $14.15B FY29. These are unverified external projections; underlying broker model was not retrieved. Its $2.751B FY26 “net cash” starting label is not a substitute for our statutory cash-plus-investments reconciliation. Useful research question: inventory turns, customer acceptance, supplier advances and cash per diluted share as Arm moves into chips. Not new issuer guidance, an actual inventory balance or proof future cash is funded. https://x.com/OptionKing666/status/2124790712160194658 . [S2] News relays / noisy certainty: @Briefingcom https://x.com/Briefingcom/status/2124857429209088231 accurately relays the agreement; @drew5harvey https://x.com/drew5harvey/status/2124857646654333344 goes further with certainty about not joining NVIDIA. The announcement weakens an imminent move but does not publish all exit terms. Automated model scores, headline repetition and price momentum do not create independent financial confirmation. [search articles read, not separate permalink opens] Reddit, exact opened threads: - r/MarketFluxHub, u/MarketFlux, November 23 retention relay, no comments at capture. Its “off the table” framing and prediction-market percentages are not adopted as contractual or probability evidence. News relay, not an investor debate sample. https://old.reddit.com/r/MarketFluxHub/comments/1y3h960/arm_ceo_rene_haas_locks_in_contract_through_2033/ . [S3] - r/StocksAndTrading, u/mentechart, November 21 sector-drawdown post and comments. u/SuspiciousMud6208 anticipates bounce then lower; u/Wondering_Electron expects worse; u/princemousey1 challenges asymmetric panic. These are conflicting tactical opinions, not a technically replicated forecast. Do not import its “worst since 2001” superlative or securities-investigation allegations as primary-source findings. https://old.reddit.com/r/StocksAndTrading/comments/1y25c7w/chip_stocks_just_had_their_worst_week_since/ . [S4] - Focused r/stocks search produced mostly NVIDIA succession/allegation discussions, not a new Arm operating finding. Personal allegations excluded from Arm financial thesis. Broad quoted company search contained unrelated word matches; exact threads, not generic result counts, underpin the discussion section. [B] Net: continuity relief is widely relayed; inventory/cash intensity is the more useful forward diligence lead. No social source authenticates revised royalties, funded backlog or accepted paid merchant deliveries. [analysis]",
+      "google_finance_method": "Frozen note observation; no quote refresh",
+      "_opp_score": 46,
+      "_risk_score": 0
+    },
+    {
+      "ticker": "ASML",
+      "company": "ASML Holding N.V.",
+      "status": "generated",
+      "note_date": "2026-11-23",
+      "note_path": "research/daily-stock-runs/ASML/2026-11-23.md",
+      "source_sha256": "3805b3229de6ede3943b35088df2f61cc5e90f4c5c5e18ad285a438d693397bf",
+      "reference_price": 1266.22,
+      "reference_date": "2026-11-20",
+      "current_price": 1342.12,
+      "current_time": "08:30:38 EST",
+      "current_label": "Frozen premarket snapshot",
+      "quote_context": "Yahoo indication; Google separately 1344.72 at 08:38 EST",
+      "pct_vs_ref": 5.994219014073376,
+      "mytutopia": {
+        "rsi": 28.9,
+        "vel5": -13.4,
+        "delta1": -4.9,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "bar_date": "2026-11-20",
+        "data_context": "Completed bar; advertised 24-hour delay; not live"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 46,
+        "low": 1300.0,
+        "high": 1410.0,
+        "thesis": "Visible roughly 6% sector relief favors a close above Friday, but RSI28.9/VEL5-13.4 deteriorated; this is low-conviction relief, not technical bottom confirmation.",
+        "range_basis": "Regular-session-close anchor; live premarket informs placement. Terminal closing window, not intraday path envelope.",
+        "drivers": [
+          "Broad semiconductor relief and EUR/USD; Fresh weekly buyback execution within existing program; Oversold but worsening RSI/VEL5, funding/policy uncertainty."
+        ],
+        "falsifiers": [
+          "Primary WRONG iff actual exact target regular close lies outside inclusive published bounds, irrespective of direction or intraday touch. Relief thesis fails if the gap fades below Friday close on sustained regular volume. Positive VEL5 and reclaim of broken levels would undermine damaged-momentum caution."
+        ],
+        "target_session": "2026-11-23",
+        "calendar_target": "2026-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.07801418439716312,
+        "max_window_width_fraction": 0.08,
+        "contract_violation": false
+      },
+      "30d": {
+        "direction": "flat",
+        "confidence": 25,
+        "low": 1156.0,
+        "high": 1360.0,
+        "thesis": "Q4 acceptance and collection gates balance a lower valuation anchor; RSI28.9/VEL5-13.4 and poor legacy monthly calibration keep the stance neutral, with a mildly downside-skewed window.",
+        "range_basis": "Regular-session-close anchor; live premarket informs placement. Terminal closing window, not intraday path envelope.",
+        "drivers": [
+          "Q4 scanner acceptance, installations and receivable collections; Customer policy/funding and year-end positioning; Need for RSI/VEL5 stabilization rather than automatic oversold bounce."
+        ],
+        "falsifiers": [
+          "Primary WRONG iff actual exact target regular close lies outside inclusive published bounds, irrespective of direction or intraday touch. Material accepted-system delays or customer cancellations invalidate stabilization. A sustained funded-demand upgrade and positive VEL5 undermine the neutral stance."
+        ],
+        "target_session": "2026-12-23",
+        "calendar_target": "2026-12-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.15,
+        "max_window_width_fraction": 0.15,
+        "contract_violation": false
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": 33,
+        "low": 1200.0,
+        "high": 1500.0,
+        "thesis": "Q4 results and 2027 capacity outlook could support repair, but RSI28.9/VEL5-13.4 lowers confidence and warns against front-loading recovery.",
+        "range_basis": "Regular-session-close anchor; live premarket informs placement. Terminal closing window, not intraday path envelope.",
+        "drivers": [
+          "Q4 results, 2027 output and customer readiness; Cash quality excluding temporary advance/working-capital support; Policy implementation and valuation."
+        ],
+        "falsifiers": [
+          "Primary WRONG iff actual exact target regular close lies outside inclusive published bounds, irrespective of direction or intraday touch. Guidance cuts, collection deterioration or deferred installations invalidate repair. Customer qualifications and shipments failing to convert capacity plans would undermine upside."
+        ],
+        "target_session": "2027-02-22",
+        "calendar_target": "2027-02-21",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.2,
+        "max_window_width_fraction": 0.2,
+        "contract_violation": false
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 47,
+        "low": 900.0,
+        "high": 2200.0,
+        "thesis": "EUV intensity and 2027 capacity/partial pricing support conditional upside; negative RSI/VEL5 lowers entry conviction, not structural moat evidence. Annual uncapped range reflects execution and policy uncertainty.",
+        "range_basis": "Regular-session-close anchor; live premarket informs placement. Terminal closing window, not intraday path envelope.",
+        "drivers": [
+          "2027 system output and partial repricing; EUV layer intensity and memory/logic investment; Per-share return after employee plans and real cash collection."
+        ],
+        "falsifiers": [
+          "Primary WRONG iff actual exact target regular close lies outside inclusive published bounds, irrespective of direction or intraday touch. Structural customer capex cancellation or a durable technology/competitive setback invalidates the thesis. Persistent receivable/cash deterioration, policy expansion or valuation compression without earnings offset undermines per-share upside."
+        ],
+        "target_session": "2027-11-23",
+        "calendar_target": "2027-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.5909090909090909,
+        "max_window_width_fraction": null,
+        "contract_violation": false
+      },
+      "top_catalyst": "New weekly workbook reports 445,000 repurchased shares, allocated to employee plans; no new authorization.",
+      "unusual_signal": "Roughly 6% indication contrasts with RSI 28.9 / VEL5 -13.4; this is damaged-momentum relief.",
+      "top_risk": "Policy restrictions and accepted-system/collection delays remain risks; gross employee-plan buybacks are not permanent share shrinkage.",
+      "calibration_note": "Two newly matured outcomes, each using November 20 actual regular close $1,266.22: - November 20 Today CORRECT under close-window-v1: published $1,265–1,375. Down direction also correct diagnostically, but the close finished close to the floor; do not infer comfortable coverage. - October 21 30d legacy WRONG: published $1,300–2,220, neutral direction from $1,630.84; realized return -22.36%, direction and containment both failed. [A,M] Legacy correct/partly correct/wrong: Today 81/20/8, 30d 29/45/24, 90d 20/34/7. Binary close-window-v1: 8 correct / 1 wrong, all Today; longer horizons have not matured. No annual target has matured. No fresh 90d maturity today. Four older contracts target today's close—August 25/26 90d and October 22/23 30d—and remain pending, not scored using Friday. Weekend targets roll forward, never backward. [A] Before new forecasts: 118 rows / 472 contracts / 277 resolved / 195 pending. All historical published contracts and prior evaluation objects retained. New four calls produce 119 rows / 476 contracts / 277 resolved / 199 pending. Binary width violations: zero. Legacy partial credit stays separate and cannot support claims of accuracy under the new binary contract. [A]",
+      "adjustment_note": "Today moves Friday's down52 to flat_to_up46, not because earnings improved but because the fresh premarket sector rebound warrants a positive-close bias. Falling RSI/VEL5 and the failed November 19 relief prevent a high-confidence continuation claim. November 20's near-floor containment is not evidence that the next window should be narrower or confidence higher. [A,B,M] Monthly confidence 25 remains low after another legacy miss; neutral replaces a mechanically persistent bullish business-to-stock extrapolation. Quarterly 33 and annual 47 retain conditional repair/moat upside, not a claim that better unit demand forces higher equity prices. The nine binary outcomes are dependent, same-regime and all short horizon; no calibrated 30d/90d/1y track record exists. Tight contractual ranges mean explicit low-confidence terminal scenarios, not broad risk envelopes masquerading as high-accuracy forecasts. [A,P]",
+      "social_note": "Supplementary only, explicitly separate from official earnings. Both X and Reddit were readable through isolated visible Chrome; no fabricated blocked-source explanation or representative sentiment ratio. Raw article bodies/links and Reddit thread DOM preserved. [B] - X technical query: @Airte747 asks whether “2nm EUV” shipments are only 10–12 units annually. Exact post: https://x.com/Airte747/status/2124857113671500094 . This is a question, not verified production data; it conflates chip-node labels and scanner categories. Compare with issuer's roughly 65 Low-NA output plan, without pretending output equals shipments or identifying an unmentioned model. - @SergeyCYW, https://x.com/SergeyCYW/status/2124851216861860313 , frames semiconductor multiple compression against growth forecasts. Only the visible truncated body was read, not the entire chart/model; earnings forecasts are unverified social inputs. @PreIPOMedia, https://x.com/PreIPOMedia/status/2124856816064737492 , contrasts monopoly/customer relationships. Moat narrative, no fresh order evidence. Broad ticker-tag promotion excluded. - Reddit r/stocks, u/ChillMeerkat, November 22: https://old.reddit.com/r/stocks/comments/1y2wulv/be_greedy_when_others_are_fearful_fits_todays/ . Original and visible comment tree read. Bull case invokes cheaper multiples and continuing AI buildout; visible commenters contest whether capitulation has occurred and emphasize financing/valuation risks. Neither side is independently verified operating evidence. The post's pasted executive quotes, P/E snapshots and hardware-life assumptions are not reclassified as official sources. Comments alleging wrongdoing remain allegations; personal accusations omitted from the investment thesis. - Reddit search also surfaced r/LouisRossmann policy/property-rights debate, https://old.reddit.com/r/LouisRossmann/comments/1y33ooi/unpopular_opinion_but_us_chip_restrictions_are/ . Search-result body only, thread not opened; sweeping claims about every resale/rental require actual rule-scope verification and are not adopted as legal conclusions. Higher-signal takeaway is the valuation-versus-funding / relief-versus-capitulation debate and a concrete lithography denominator misconception—not a fresh insider order channel. No confidence boost from social engagement counts. [B,P]",
+      "google_finance_method": "Frozen note observation; no quote refresh",
+      "_opp_score": 46,
+      "_risk_score": 0
+    },
+    {
+      "ticker": "TSM",
+      "company": "Taiwan Semiconductor Manufacturing",
+      "status": "generated",
+      "note_date": "2026-11-23",
+      "note_path": "research/daily-stock-runs/TSM/2026-11-23.md",
+      "source_sha256": "08acbceca4ce5e888db2b6cef8e508962e9de5e438930a47789c3b7fe781871a",
+      "reference_price": 318.71,
+      "reference_date": "2026-11-20",
+      "current_price": 337.5,
+      "current_time": "08:44 EST",
+      "current_label": "Frozen premarket snapshot",
+      "quote_context": "Yahoo indication; Google separately 337.08 at 08:46 EST",
+      "pct_vs_ref": 5.8956418060305715,
+      "mytutopia": {
+        "rsi": 28.3,
+        "vel5": -17.0,
+        "delta1": -6.2,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "bar_date": "2026-11-20",
+        "data_context": "Completed bar; advertised 24-hour delay; not live"
+      },
+      "today": {
+        "direction": "up",
+        "confidence": 49,
+        "low": 323.0,
+        "high": 350.0,
+        "thesis": "Fresh broad green tape and reported current order resilience favor a fragile bounce, but RSI28.3/VEL5-17.0 contradict a confirmed bottom and cap confidence.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Broad peer relief retaining gains on regular-session volume; Q4 paid shipments, collections and margin conversion; Customer financing, export-license clarity and order resilience; N2/overseas capacity execution and disciplined cash capital allocation."
+        ],
+        "falsifiers": [
+          "Exact target-session regular close outside the inclusive published window means WRONG irrespective of intraday touch or direction.; Tactical relief fails with a renewed sector liquidation or reversal below the reference.; Operating recovery fails on order/utilization cuts, credit deterioration, margin dilution, roadmap delay or geopolitical disruption."
+        ],
+        "target_session": "2026-11-23",
+        "calendar_target": "2026-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.07714285714285714,
+        "max_window_width_fraction": 0.08,
+        "contract_violation": false
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": 27,
+        "low": 306.0,
+        "high": 360.0,
+        "thesis": "Lower anchor and unchanged Q4 demand allow fragile repair; oversold RSI28.3 with worsening VEL5-17.0, customer credit and policy uncertainty keep monthly containment conviction low.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Broad peer relief retaining gains on regular-session volume; Q4 paid shipments, collections and margin conversion; Customer financing, export-license clarity and order resilience; N2/overseas capacity execution and disciplined cash capital allocation."
+        ],
+        "falsifiers": [
+          "Exact target-session regular close outside the inclusive published window means WRONG irrespective of intraday touch or direction.; Tactical relief fails with a renewed sector liquidation or reversal below the reference.; Operating recovery fails on order/utilization cuts, credit deterioration, margin dilution, roadmap delay or geopolitical disruption."
+        ],
+        "target_session": "2026-12-23",
+        "calendar_target": "2026-12-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.15,
+        "max_window_width_fraction": 0.15,
+        "contract_violation": false
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 29,
+        "low": 320.0,
+        "high": 400.0,
+        "thesis": "Q4 conversion and N2 scaling permit conditional recovery; RSI28.3/VEL5-17.0 and fresh legacy monthly failure reduce timing confidence rather than justify wider windows.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Broad peer relief retaining gains on regular-session volume; Q4 paid shipments, collections and margin conversion; Customer financing, export-license clarity and order resilience; N2/overseas capacity execution and disciplined cash capital allocation."
+        ],
+        "falsifiers": [
+          "Exact target-session regular close outside the inclusive published window means WRONG irrespective of intraday touch or direction.; Tactical relief fails with a renewed sector liquidation or reversal below the reference.; Operating recovery fails on order/utilization cuts, credit deterioration, margin dilution, roadmap delay or geopolitical disruption."
+        ],
+        "target_session": "2027-02-22",
+        "calendar_target": "2027-02-21",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.2,
+        "max_window_width_fraction": 0.2,
+        "contract_violation": false
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 33,
+        "low": 250.0,
+        "high": 550.0,
+        "thesis": "Leading-edge scale supports conditional upside if funded demand earns per-share cash returns; RSI28.3/negative VEL5 mostly caution entry timing, not annual value.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Broad peer relief retaining gains on regular-session volume; Q4 paid shipments, collections and margin conversion; Customer financing, export-license clarity and order resilience; N2/overseas capacity execution and disciplined cash capital allocation."
+        ],
+        "falsifiers": [
+          "Exact target-session regular close outside the inclusive published window means WRONG irrespective of intraday touch or direction.; Tactical relief fails with a renewed sector liquidation or reversal below the reference.; Operating recovery fails on order/utilization cuts, credit deterioration, margin dilution, roadmap delay or geopolitical disruption."
+        ],
+        "target_session": "2027-11-23",
+        "calendar_target": "2027-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.5454545454545454,
+        "max_window_width_fraction": null,
+        "contract_violation": false
+      },
+      "top_catalyst": "Named-management reporting says current order/shipment adjustments were not seen; not a filed revenue increase or future guarantee.",
+      "unusual_signal": "RSI 28.3 / VEL5 -17.0 deteriorate despite relief; price remains far below 20/50-session averages.",
+      "top_risk": "Customer credit, policy/geopolitics and overseas-margin dilution can offset genuine demand; worsening velocity leaves the rebound fragile.",
+      "calibration_note": "Read schema, entity, ten most recent main notes November 9–20, entire ledger, both specified NotebookLM Q1 files and session_search TSM OR TSMC OR Taiwan Semiconductor. Session recall added today's Arm retention and broader rebound context; original sources were independently checked. The official NotebookLM briefing is an access-intercept report, not a financial brief; the historical outlook contains unsupported allocations/yields and A16/PowerVia confusion. Neither controls current guidance. [L] Two fresh maturities, no backfills, both verified November 20 close $318.71: - November 20 Today: CORRECT, close-window-v1. Published $315–342, reference $352.09/November 19. Actual -9.4805%; down direction also right, diagnostic only. Correct because the exact close is inside the inclusive window, not because intraday touched it. - October 21 30d: WRONG, legacy. Preserved November 20 target, $355–535 band, reference $425.08/October 20. Actual -25.0235%; both flat-to-up direction and containment failed. This is not partly correct. [A] No fresh 90d/1y maturity. October 22/23 monthly and August 25/26 quarterly contracts need November 23's actual close and remain pending now. No Friday close substituted for an uncompleted Monday target. Preserve explicit historical targets and prior fallback reference-origin contracts; new horizons use issuance arithmetic prospectively. [A] Separate legacy correct / partly / wrong: Today 64/32/14; 30d 39/35/25; 90d 38/15/10; annual none matured. New binary Today 9 correct / 0 wrong, direction 6/9; longer binary horizons pending. Nine overlapping, same-regime windows do not imply calibrated 100% coverage or nine correct directional theses. Zero contract-width violations. [A] Reproduced prior 472 contracts / 279 resolved outcomes with zero field differences. Before issuance: 119 rows, 480 payloads minus four identical mirrors = 476 unique contracts; 281 resolved /195 pending. After four new pending forecasts: 120 rows /480 contracts /281 resolved /199 pending. Original forecasts and evaluations preserved; only two fresh additive audit outcomes. [A]",
+      "adjustment_note": "1. Friday's binary hit was real, but9/9 is only nine dependent containment observations; direction6/9 is separate. Do not increase confidence mechanically. 2. October21 monthly call failed direction and range despite extremely broad legacy bounds. Keep monthly/quarterly confidence low; another old bull thesis is not a floor. 3. Change Today from Friday down58 to up49 because fresh broad green tape and named-management reporting differ from Friday's evidence. RSI28.3/VEL5-17.0 prevents a high-conviction bottom call; a green gap can still fail. 4. Keep monthly fragile flat-to-up27 and quarterly conditional up29 from a substantially lower anchor, not an earnings upgrade. Annual up33 depends on funded demand, margins and per-share cash, not a low-RSI target. 5. Parent-recovered Hou reporting is a labeled addition after the child official-feed check; its absence from a clean SEC stack is not absence of management commentary. Follow original linked publishers and preserve scope/timestamps. 6. Never reclassify a directional miss as binary partial; do not rescore November23 maturities with Friday's close or widen windows after observing the outcome. [A,P,H; analysis]",
+      "social_note": "Supplementary, explicitly separate from official earnings. X and old Reddit readable in visible isolated Chrome; small nonrepresentative sample. No sentiment percentages, institutional-flow claims or new orders inferred. [B] - Higher signal, @dnystedt: full post and source-link reply opened: https://x.com/dnystedt/status/2124862144332370420 ; reply https://x.com/dnystedt/status/2124862255988887728 . Posted November23 05:46 local. Reports Hou's no-order-adjustment remark and SEMI industry projections; parent followed/read both original publishers, rather than treating X as independent confirmation. Separate management observation, TSIA industry output and SEMI forecast. @firstadopter's quote is a relay, not another management source. [H,B] - Low-signal contrast: @WillBiddy_ https://x.com/WillBiddy_/status/2124862280256893381 calls NVDA/TSM/ASML attractive with limited downside; no normalized-cash valuation supplied. @lRichBl https://x.com/lRichBl/status/2124862724035227765 discusses export-rule shipment holds, but no original rule/issuer-specific order document was read from that post. Claims remain reported leads; unrelated cashtag spam excluded. [B] - r/LongOrShortBets, u/PuddingComplete3081, full thread opened: https://old.reddit.com/r/LongOrShortBets/comments/1y3dq6e/long_or_short_semiconductor_stocks_are_exploding/ . u/Logical-Concept9755 warns about gap fades; u/BedPast5236 wants first-hour confirmation; others see squeeze/recovery. Useful timing debate, no authenticated short-covering flow. Its earlier “TSMC above7%” snapshot is not today's frozen +5.90% quote. [B] - r/stocks, u/ChillMeerkat, November22 post and visible comments read: https://old.reddit.com/r/stocks/comments/1y2wulv/be_greedy_when_others_are_fearful_fits_todays/ . Long-form bull thesis contrasts present multiples with dot-com and repeats prior call quotations. Comments challenge AI-generated prose, peak-fear timing and falling-knife risk. Unverified peer multiples, optimistic terminal assumptions and unrelated allegations are not imported. “Nothing changed” is too broad given real policy/financing risks; growing compute demand alone does not prove returns. [B; analysis]",
+      "google_finance_method": "Frozen note observation; no quote refresh",
+      "_opp_score": 49,
+      "_risk_score": 30
+    },
+    {
+      "ticker": "SIMO",
+      "company": "Silicon Motion Technology Corp.",
+      "status": "generated",
+      "note_date": "2026-11-23",
+      "note_path": "research/daily-stock-runs/SIMO/2026-11-23.md",
+      "source_sha256": "353286833eb4f765d5fb62838178abe36394d4069902045892c1768e9c905584",
+      "reference_price": 130.01,
+      "reference_date": "2026-11-20",
+      "current_price": 141.0,
+      "current_time": "08:56 EST",
+      "current_label": "Frozen premarket snapshot",
+      "quote_context": "Google Finance indication; earlier Yahoo 140 at 08:21 EST",
+      "pct_vs_ref": 8.453195908007082,
+      "mytutopia": {
+        "rsi": 29.3,
+        "vel5": -9.5,
+        "delta1": -3.2,
+        "momentum_gate": null,
+        "bar_date": "2026-11-20",
+        "data_context": "Completed bar; advertised 24-hour delay; not live"
+      },
+      "today": {
+        "direction": "up",
+        "confidence": 47,
+        "low": 134.0,
+        "high": 145.0,
+        "thesis": "Broad green live peer indications and $141 Finance print support a tentative relief bounce. RSI29.3/VEL5-9.5 contradict trend confirmation and cap containment confidence.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Sector relief; Oversold reversal potential; Current indication above Friday close."
+        ],
+        "falsifiers": [
+          "Relief fails and cash close drops below $134; Exact target close above $145 also misses the contract."
+        ],
+        "target_session": "2026-11-23",
+        "calendar_target": "2026-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.07586206896551724,
+        "max_window_width_fraction": 0.08,
+        "contract_violation": false
+      },
+      "30d": {
+        "direction": "flat",
+        "confidence": 22,
+        "low": 124.0,
+        "high": 145.0,
+        "thesis": "No clear monthly edge: Q4 operating leverage conflicts with financed inventory and negative RSI velocity. RSI29.3 supports bounce potential, not a durable floor.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "November30 management webcast; NAND cost/price/mix and collection evidence; Q4 execution."
+        ],
+        "falsifiers": [
+          "Guidance cut or qualification delays; Verified cash conversion changes the quality thesis; Exact target close outside $124–145."
+        ],
+        "target_session": "2026-12-23",
+        "calendar_target": "2026-12-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.14482758620689656,
+        "max_window_width_fraction": 0.15,
+        "contract_violation": false
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": 20,
+        "low": 136.0,
+        "high": 170.0,
+        "thesis": "Conditional Q4/2027 recovery, with confidence restrained by negative VEL5 and weak historical quarterly calibration. Oversold RSI alone does not validate production conversion.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Q4 cash and inventory realization; January 2027 outlook; Recurring qualified MonTitan shipments."
+        ],
+        "falsifiers": [
+          "Persistent negative OCF or inventory impairment; Ramp slippage; Exact target close outside $136–170."
+        ],
+        "target_session": "2027-02-22",
+        "calendar_target": "2027-02-21",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.2,
+        "max_window_width_fraction": 0.2,
+        "contract_violation": false
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 33,
+        "low": 100.0,
+        "high": 240.0,
+        "thesis": "Boot and controller diversification can deliver upside if profits become cash. RSI/VEL5 have little direct annual weight; damaged entry regime and cash risk keep conviction low.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Gen6 qualification/commercialization; Near-CPU boot adoption; FCF per ADS and capital discipline."
+        ],
+        "falsifiers": [
+          "Stranded NAND or lost customers; Further financing without collection improvement; Exact target close outside $100–240."
+        ],
+        "target_session": "2027-11-23",
+        "calendar_target": "2027-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.5833333333333334,
+        "max_window_width_fraction": null,
+        "contract_violation": false
+      },
+      "top_catalyst": "No new issuer operating packet; SK/Kioxia conversion and Micron calendar are coverage corrections, not new orders.",
+      "unusual_signal": "RSI 29.3 / VEL5 -9.5 weaken while broad green peers support a tentative bounce.",
+      "top_risk": "Negative operating cash flow and financed inventory challenge adjusted-profit quality and production-to-cash conversion.",
+      "calibration_note": "Binary close-window-v1: correct iff the exact target regular close falls inclusively inside published bounds. No intraday-touch or direction rescue. Legacy contracts/evaluations remain separate and unchanged. - November20 Today$130–141: CORRECT, November20 actual close$130.01. Down directional diagnostic also correct. Raw unrounded daily close130.0099945 is inside the window; only a one-cent lower-bound cushion, not robust floor evidence. - October22 legacy30d$145–320/flat_to_down: PARTLY CORRECT at November20close$130.01 versus$222.30reference: direction held, range missed. Original target convention retained; not shifted to issuance-plus30 retrospectively. - No fresh90d or1y maturity. Weekend contracts resolving November23 remain pending until today's session actually closes; no Friday substitute. - Binary Today cohort 7 correct/2 wrong,0width violations; longer binary horizons pending. Legacy strict correct/partly/wrong: Today60/34/30,30d29/54/31,90d12/32/32;1y none matured. One direction-only legacy contract in each first three horizons excluded from strict range counts. - Reproduced316 prior legacy and8 prior binary outcomes field-for-field;2fresh additive evaluations; no backfills.536 unique prior contracts from540payloads/four identical mirrors. Full [[research/daily-stock-runs/SIMO/2026-11-23-calibration.json|audit]] retained.",
+      "adjustment_note": "- Friday's binaryhit was marginal lower-bound containment, not proof of market-bottom or reliable77.8%futurecoverage. Do not increaseconfidencefrom9observationsalone. - Another legacy30dpartial shows bearish directioncanworkwhilethewindowmisses; do nottranslate legacywidebands into newbinaryskill. Keep monthly22/quarterly20confidenceandcapsfirm. - ChangeTodaydown→upbecausecurrentsectorbreadthandpremarketchanged,notbecauseoversoldRSIguaranteesreversal. NegativeVEL5isaconfidencebrake,notaninstructiontoignoregreenlivetape. - Preserveeventchronology: SKfilingandMicroncalendarareoldcoveragecorrections; freshmetadataandnewlyreadcommentsarenotnewfinancialguidance. Requireproduct-specificunits/ASP/grossprofit/cashbridgesbeforecallingallgrowthrealorallgrowthinflation.",
+      "social_note": "Supplementary and separate from official earnings analysis; small nonrepresentative visible-Chrome sample. Both platforms readable, not blocked. - Highest-signal debate: freshly opened r/GrowthStockInvesting/u/punkzberryz thread distinguishes purchased-NAND solutions from merchantcontrollers; author fears inflated growth. u/GrowthInvestingWPR discusses capacity substitution/IP/Phison; u/symbaeu says cycle-resilience remains unproven. Newly visible u/GeneralistLab(2drelative age) corrects2027expectations to40%,not100%+. No exact comment publication timestamp retrieved; do not assert conclusively post-prior-issuance. Thread is not independent confirmation of NAND forecasts or customer orders. Exact URL: https://www.reddit.com/r/GrowthStockInvesting/comments/1xydnes/my_bear_thesis_against_simo/ - Technical dissemination: r/NewMaxx SM8466thread remains0comments; secondaryreport recirculation, not another productlaunch: https://www.reddit.com/r/NewMaxx/comments/1y0docr/silicon_motion_demos_sm8466_pcie_60_ssd/ - X mostly low-signal: @sssc basket/gainers post https://x.com/sssc/status/2124857846982688888 ; @TimothyTarab portfolio-drawdown card https://x.com/TimothyTarab/status/2124841440517693881 is truncated/Showmore, not fullread; @WealthBranch chart-app promotion https://x.com/WealthBranch/status/2124816514838573554 . No issuer fundamentals established. - @1jarvis42069 claims no new SECoperatingfilings https://x.com/1jarvis42069/status/2124733682464493572 ; independent issuerfeed,not this token-associated automated-looking post, supports the actual bounded finding. No economic forecast weight assigned to its thesis-intact assertion. Full article-container text/links archived.",
+      "google_finance_method": "Frozen note observation; no quote refresh",
+      "_opp_score": 47,
+      "_risk_score": 0
+    },
+    {
+      "ticker": "NET",
+      "company": "Cloudflare",
+      "status": "generated",
+      "note_date": "2026-11-23",
+      "note_path": "research/daily-stock-runs/NET/2026-11-23.md",
+      "source_sha256": "099d69aded87c2a6732ba6e7f86264944d69f4d72a3be70ab73b46441b4926fd",
+      "reference_price": 274.96,
+      "reference_date": "2026-11-20",
+      "current_price": 289.7112,
+      "current_time": "08:58:43 EST",
+      "current_label": "Frozen premarket snapshot",
+      "quote_context": "Yahoo indication; Google separately 288.26 at 08:56 EST",
+      "pct_vs_ref": 5.364853069537401,
+      "mytutopia": {
+        "rsi": 42.4,
+        "vel5": -8.0,
+        "delta1": -8.1,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "bar_date": "2026-11-20",
+        "data_context": "Completed bar; advertised 24-hour delay; not live"
+      },
+      "today": {
+        "direction": "up",
+        "confidence": 49,
+        "low": 275.0,
+        "high": 298.0,
+        "thesis": "Fresh +5.36% indicative tape and broad relief favor a fragile bounce after Friday liquidation; RSI42.4/VEL5-8.0 contradict confirmed repair and lower conviction.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Broad relief versus a fragile post-selloff gap; Retention of indicative $288–290 and approach to SMA20 $294.24; Cyber consolidation headlines and cash-session volume."
+        ],
+        "falsifiers": [
+          "Actual target-session regular close outside $275–$298 means WRONG regardless of direction or intraday touch.; Gap fades or broad tech reverses; New material issuer-specific operating disruption; Close at or below $274.96 defeats the up-direction diagnostic, scored separately."
+        ],
+        "target_session": "2026-11-23",
+        "calendar_target": "2026-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.07718120805369127,
+        "max_window_width_fraction": 0.08,
+        "contract_violation": false
+      },
+      "30d": {
+        "direction": "flat",
+        "confidence": 28,
+        "low": 255.0,
+        "high": 300.0,
+        "thesis": "December billing and enterprise expansion can support a base, but RSI42.4/VEL5-8.0, poor monthly timing history and CRWD/ZS bundling uncertainty keep the direction neutral.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "December 1 AI Search and Clairic billing checkpoint; Weighted Artifacts billings and retained paid adoption; CRWD/ZS integration opening versus stronger bundling; valuation."
+        ],
+        "falsifiers": [
+          "Actual target-session regular close outside $255–$300 means WRONG regardless of direction or intraday touch.; Paid use fails to retain after promotions/credits; Renewed compression or rival bundling pressure; Close outside reference ±1% defeats the flat-direction diagnostic, scored separately."
+        ],
+        "target_session": "2026-12-23",
+        "calendar_target": "2026-12-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.15,
+        "max_window_width_fraction": 0.15,
+        "contract_violation": false
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 34,
+        "low": 280.0,
+        "high": 350.0,
+        "thesis": "Q3 enterprise/cRPO growth and possible Q4 profitability support conditional recovery; negative RSI velocity and a stronger integrated rival reduce confidence, not the hard window cap.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Q4 results and forward outlook if published by target session; Compute utilization, GAAP profitability and cash per diluted share; Enterprise/Zero Trust competition and developer monetization."
+        ],
+        "falsifiers": [
+          "Actual target-session regular close outside $280–$350 means WRONG regardless of direction or intraday touch.; Growth or cash conversion weakens; Compute costs or competitive losses offset enterprise expansion; Close at or below $274.96 defeats the up-direction diagnostic, scored separately."
+        ],
+        "target_session": "2027-02-22",
+        "calendar_target": "2027-02-21",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.2,
+        "max_window_width_fraction": 0.2,
+        "contract_violation": false
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 45,
+        "low": 170.0,
+        "high": 510.0,
+        "thesis": "Platform convergence supports conditional upside if retained paid use improves per-share cash after compute and dilution; daily RSI42.4/VEL5-8.0 mainly caution entry timing, not annual value.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Paid platform convergence and enterprise expansion; Infrastructure and own-model returns versus SBC/dilution; Reliability, regulation and CRWD/ZS integration execution."
+        ],
+        "falsifiers": [
+          "Actual target-session regular close outside $170–$510 means WRONG regardless of direction or intraday touch.; Structural per-share cash impairment; Persistent dilution, reliability failures or failed investment returns; Close at or below $274.96 defeats the up-direction diagnostic, scored separately."
+        ],
+        "target_session": "2027-11-23",
+        "calendar_target": "2027-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.6666666666666666,
+        "max_window_width_fraction": null,
+        "contract_violation": false
+      },
+      "top_catalyst": "Note reports CRWD/ZS merger agreement as a competitive delta; NET adds developer features without a financial-guidance revision.",
+      "unusual_signal": "RSI 42.4 / VEL5 -8.0 worsen despite green tape; cyber breadth is deal-driven and mixed.",
+      "top_risk": "Stronger rival bundling, paid-retention/compute economics, insider-sale supply and control-plane reliability require scrutiny.",
+      "calibration_note": "Read SCHEMA, entity, ten latest main notes November 9–20, entire 133-row ledger, and both specified Q4-2025 NotebookLM files; frozen full inputs and hashes retained. session_search NET OR Cloudflare returned broad other-ticker cron context, not additional NET operating evidence. NotebookLM's enterprise ACV/channel/cash-quality questions remain useful, but its old FY2026 guidance and capital-light/no-own-model framing are superseded by Q3 and compute commitments. [L,A] Two fresh maturities, both actual November 20 close $274.96: - November 20 Today: WRONG, close-window-v1. Published $282–306 from $303.68 / November 19; actual -9.4573%. Down-direction diagnostic right, closing containment false. No partial credit or intraday-touch rescue. - October 21 30d: partly correct, legacy. Preserved explicit November 20 target, $220–440 from $291.69 / October 20; actual -5.7355%. Range held, flat-direction failed. Legacy flat tolerance is ±1%; flat-to-up requires at least -1%, flat-to-down at most +1%. [A] No fresh 90d or annual maturity. November 23 and preserved weekend-to-Monday targets remain pending until the actual Monday session closes. Never substitute Friday for an uncompleted Monday target. Legacy contracts and outcomes remain unchanged; new calendar horizons originate at issuance and roll to the first XNYS session on/after. [A] Separate cohorts, correct / partial / wrong: - Legacy Today 58/44/22; 30d 35/60/17 plus one direction-only correct; 90d 22/54/1 plus one direction-only correct. No annual maturity. - Binary Today 4 correct / 5 wrong; direction 6/9 is separate. Longer binary horizons pending; zero cap violations. - Latest-ten legacy monthly direction 0/10 versus containment 9/10; quarterly direction 3/10 versus containment 10/10. Wide old bands masked timing weakness. Nine binary observations do not calibrate confidence. [A] Replayed 322 prior authoritative outcomes with zero discrepancies, preserving 528 inherited contracts and every original field. Before issuance 133 rows / 532 contracts = 324 resolved + 208 pending; after four forecasts 134 rows / 536 contracts = 324 resolved + 212 pending. Only two fresh additive evaluations; nine older embedded-history labeling differences remain separately inventoried, not silently rewritten. [A]",
+      "adjustment_note": "1. Friday's bearish direction missed containment; binary 4/9 does not justify higher certainty. Place windows for plausible reversal/continuation without relaxing caps. 2. Switch Today from down/56 to up/49 because fresh +5.36% tape differs from Friday risk-off, not because RSI 42.4 proves a bottom. VEL5 -8 limits conviction. 3. Monthly legacy direction 0/10 and new rival consolidation keep 30d flat/28. The social NET-winner narrative is not an award. Quarterly up/34 requires Q4 cash and paid conversion, not product count alone. 4. Annual up/45 depends on margins, compute utilization and dilution. No annual maturity exists; daily oscillators do not calibrate yearly targets. 5. Preserve backdated source-addition clocks; separate control-plane incidents from production outages and planned sales from fresh discretionary conviction. [A,P,B; analysis]",
+      "social_note": "Supplementary and separate from official earnings. X and old Reddit readable through visible isolated Chrome; narrow, nonrepresentative sample. No sentiment percentages, verified trades or new contracts inferred. [B] - Higher-signal strategy debate, @ErezShapira: full settled post opened, visible November 23 05:30 local. https://x.com/ErezShapira/status/2124858097185271986 . Argues integration/concentration risk creates a NET sales opening and views NET takeover as low likelihood. A useful hypothesis, not verified migrations, guaranteed roadmap freezes or automatic NET wins. Other named M&A leads were not independently adopted. [B] - @robot2trade1: full post, visible 05:28 local. https://x.com/robot2trade1/status/2124857546691264983 . Weighs cross-selling against price, dilution and integration. Official materials verify the core deal; its +17%/-8% tape is an earlier snapshot. Its fixed-ratio wording omits the 8-K's conditional reduction—not a guaranteed cash arbitrage or NET valuation floor. [B,P] - r/cybersecurity, u/GroovyMelodicBliss: https://old.reddit.com/r/cybersecurity/comments/1y3fwo6/crowdstrike_to_acquire_zscaler/ . Visible thread reports 28 comments. u/bitslammer/u/Enxer self-report customer uncertainty; u/JdruuCISO discusses Microsoft bundling and openings for Netskope/Cloudflare One. Practitioner-like friction is supplementary; identities/contracts unverified. No authenticated canceled ZS commitments or NET bookings. [B] - r/CloudFlare, u/Zealousideal-Log2203: full thread opened. https://old.reddit.com/r/CloudFlare/comments/1y3ih53/running_a_multitenant_remote_mcp_server_with/ . Threadpacket promotion describes Workers + D1 + KV/R2, OAuth 2.1 and 25 MiB transfers with free-tier deployment. Technically specific ecosystem example, not an audited implementation, paid invoice or enterprise award. Only AutoModerator comment at capture. [B] - Noise: repeated NET buy-$262–268 lists; @TraderTimes_en relays a TD Cowen 2027 best-idea claim, underlying broker note unread: https://x.com/TraderTimes_en/status/2124851611780386885 . @inthepixels hopes for a NET acquisition: https://x.com/inthepixels/status/2124588853725966564 . Neither becomes issuer guidance or a deal. Social evidence does not increase confidence. [B]",
+      "google_finance_method": "Frozen note observation; no quote refresh",
+      "_opp_score": 49,
+      "_risk_score": 0
+    },
+    {
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "status": "generated",
+      "note_date": "2026-11-23",
+      "note_path": "research/daily-stock-runs/AMD/2026-11-23.md",
+      "source_sha256": "e24cc7cd894242a6c71929c6338e3202c2f973bc8f1112c182fa714544be3e6a",
+      "reference_price": 424.39,
+      "reference_date": "2026-11-20",
+      "current_price": 456.0,
+      "current_time": "09:05:41 EST",
+      "current_label": "Frozen premarket snapshot",
+      "quote_context": "Yahoo indication; Google separately 451.54 at 09:10 EST",
+      "pct_vs_ref": 7.448337613987133,
+      "mytutopia": {
+        "rsi": 38.4,
+        "vel5": -11.9,
+        "delta1": -6.7,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "bar_date": "2026-11-20",
+        "data_context": "Completed bar; advertised 24-hour delay; not live"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 43,
+        "low": 435.0,
+        "high": 472.0,
+        "thesis": "Broad semiconductor relief after authenticated competitor reinstatement favors a fragile rebound despite negative momentum and AMD relative weakness.",
+        "range_basis": "Centered $453.50 around separate Yahoo $456.00 and Google $451.54 premarket samples; $37 total closing window is capped, not a full daily volatility envelope.",
+        "drivers": [
+          "Sector breadth and AMD relative strength versus SOXX/NVIDIA; Q4 revenue/margin, actual receivable and inventory collection; Funded Helios/Instinct acceptance versus customer equity investment; Export compliance and authenticated regulatory outcomes; Venice/ROCm execution, competition and diluted FCF after guarantees."
+        ],
+        "falsifiers": [
+          "Actual target regular close outside inclusive published bounds is WRONG regardless of intraday touch/direction; Relief gap fails on real cash-session volume and relative weakness persists; Material authenticated export restriction, order cancellation or roadmap delay; Collections and diluted FCF fail to support investments, working capital and contingent commitments."
+        ],
+        "target_session": "2026-11-23",
+        "calendar_target": "2026-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.07838983050847458,
+        "max_window_width_fraction": 0.08,
+        "contract_violation": false
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": 27,
+        "low": 415.0,
+        "high": 488.0,
+        "thesis": "Funded customer execution can stabilize valuation, but compliance uncertainty and cash investments constrain rerating.",
+        "range_basis": "Center $451.50; capped $73 terminal window assumes consolidation after the reset, not full monthly volatility coverage.",
+        "drivers": [
+          "Sector breadth and AMD relative strength versus SOXX/NVIDIA; Q4 revenue/margin, actual receivable and inventory collection; Funded Helios/Instinct acceptance versus customer equity investment; Export compliance and authenticated regulatory outcomes; Venice/ROCm execution, competition and diluted FCF after guarantees."
+        ],
+        "falsifiers": [
+          "Actual target regular close outside inclusive published bounds is WRONG regardless of intraday touch/direction; Relief gap fails on real cash-session volume and relative weakness persists; Material authenticated export restriction, order cancellation or roadmap delay; Collections and diluted FCF fail to support investments, working capital and contingent commitments."
+        ],
+        "target_session": "2026-12-23",
+        "calendar_target": "2026-12-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.14959016393442623,
+        "max_window_width_fraction": 0.15,
+        "contract_violation": false
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 32,
+        "low": 460.0,
+        "high": 575.0,
+        "thesis": "Q4 execution and 2027 growth support recovery only if collections improve and deployment funding converts to acceptance.",
+        "range_basis": "Center $517.50; $115 window exactly 20% of upper bound; conditional Q4 delivery and cash conversion scenario.",
+        "drivers": [
+          "Sector breadth and AMD relative strength versus SOXX/NVIDIA; Q4 revenue/margin, actual receivable and inventory collection; Funded Helios/Instinct acceptance versus customer equity investment; Export compliance and authenticated regulatory outcomes; Venice/ROCm execution, competition and diluted FCF after guarantees."
+        ],
+        "falsifiers": [
+          "Actual target regular close outside inclusive published bounds is WRONG regardless of intraday touch/direction; Relief gap fails on real cash-session volume and relative weakness persists; Material authenticated export restriction, order cancellation or roadmap delay; Collections and diluted FCF fail to support investments, working capital and contingent commitments."
+        ],
+        "target_session": "2027-02-22",
+        "calendar_target": "2027-02-21",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.2,
+        "max_window_width_fraction": 0.2,
+        "contract_violation": false
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 38,
+        "low": 490.0,
+        "high": 875.0,
+        "thesis": "EPYC and Instinct adoption can compound per-share value if margins and funded utilization outrun equity investment, dilution and contingent support.",
+        "range_basis": "Uncapped annual earnings and valuation scenarios, dependent on diluted cash growth rather than nominal revenue alone.",
+        "drivers": [
+          "Sector breadth and AMD relative strength versus SOXX/NVIDIA; Q4 revenue/margin, actual receivable and inventory collection; Funded Helios/Instinct acceptance versus customer equity investment; Export compliance and authenticated regulatory outcomes; Venice/ROCm execution, competition and diluted FCF after guarantees."
+        ],
+        "falsifiers": [
+          "Actual target regular close outside inclusive published bounds is WRONG regardless of intraday touch/direction; Relief gap fails on real cash-session volume and relative weakness persists; Material authenticated export restriction, order cancellation or roadmap delay; Collections and diluted FCF fail to support investments, working capital and contingent commitments."
+        ],
+        "target_session": "2027-11-23",
+        "calendar_target": "2027-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.44,
+        "max_window_width_fraction": null,
+        "contract_violation": false
+      },
+      "top_catalyst": "Later note reports NVIDIA reinstatement authenticated by a new 8-K; AMD governance filing and ROCm coverage are not new orders.",
+      "unusual_signal": "A 6–7% indication trails most peers after a 13.25% Friday loss; VEL5 repair is only marginal.",
+      "top_risk": "Customer investments consume cash; compliance, acceptance, collections, guarantees and dilution can overwhelm revenue growth.",
+      "calibration_note": "Read schema, entity, latest ten main notes (November6/9/10/11/12/13/17/18/19/20), complete ledger and session_search AMD OR \"Advanced Micro Devices\". Recall supplied peer/customer context, not primary-source confirmation. [L] Three new maturities, all verified November20 regular close $424.3900146484375: - November20 Today $448–486: WRONG, close-window-v1. Bearish direction was right but the close was below448. No partial credit, intraday-touch or directional rescue. - October21 legacy30d $395–765: PARTLY CORRECT. Range contained the close; bullish direction failed (-20.6362% versus$534.74). - August25 legacy90d $295–625: PARTLY CORRECT. Preserved SundayNovember22 target/on-or-before contract resolves toFridayNovember20; bullish direction failed (-7.0848% versus$456.75). No prospective roll-forward rule imposed retroactively. [A] No annual target matured. August26 quarterly and October22/23 monthly targets require November23 actual regular close and remain pending; no Friday substitution. Legacy correct/partly/wrong: Today60/40/14;30d29/39/35;90d47/19/1;1y0/0/0. New binary Today 4correct/4wrong (50%), 24longer calls pending before issuance. Zero binary width violations. Eight overlapping observations are not calibrated coverage. [A] Before issuance 123rows/492contracts =292resolved+196pending+4missing-anchor exclusions; after four forecasts 124rows/496contracts =292resolved+200pending+4exclusions. All289 prior outcomes reproduced without material drift; all historical fields/bounds retained, only three additive evaluations. Five inherited target-label discrepancies and112 immaterial floating-point differences remain documented. Original ledger, proposed ledger and full audit archived. [A]",
+      "adjustment_note": "1. BinaryToday4/8andFriday's correctdirection-but-wrongwindow prohibit confidenceinflation. Today 43, not55+; pricevolatilityfaroutstripsthecap. 2. ChangeFridaydown 45to flat-to-up 43 because broadgreenbreadth andauthenticatedrivalleadershiprelief differfromFriday. NegativeVEL5blocks pureup; AMDrelativeweakness andunknowncash conversionkeepfadeprobabilityhigh. 3. Monthly27/quarterly32 remainconditionalandlow; legacywidebands caughtpriceswhilebullishthesesfailed. No artificialprobabilityboostfromlegacyrangehits. 4. Quarterly/annualup dependonQ4collections, dilutedFCF andfundeddeployment, notjustthe2027revenueexpectation. DonotdoublecountAnthropicfundingorsoftwarepostsasorders. 5. Preservepublication/event/acceptance/captureclocks; parent-recoveredSuinterviewisoldcoverage, brokerfiresidereassuranceisreportednotoriginal, andNovember20date-onlysoftwarecannotbeconclusivelyplacedafterFridayissuance. [A,P,H]",
+      "social_note": "X and oldReddit readable in visible isolatedChrome; not structurally blocked. Small nonrepresentative sample, supplementary only. No institutional flow or sentiment percentages inferred. [B] - X @HoundCreek describes broad rebound andHuangreturn: https://x.com/HoundCreek/status/2124868402221023523 . Partialpost ends atShowmore; no extrapolation beyond capturedtext. @nirTesla https://x.com/nirTesla/status/2124868687865770348 posts DCA/optimisticprices without valuation proof. Promotionalreply and emoji-onlypost excluded. Statutoryoriginal, notX, authenticates reinstatement. - ActualNovember23daily discussion opened: https://old.reddit.com/r/AMD_Stock/comments/1y39mvc/daily_discussion_monday_20261123/ . Relief/squeezehopes coexist with gap-fade fears and frustration thatNVDA leads. u/Slabbed1738 distinguishes rivalreturn's competitive disadvantage from u/AMD_winning's sectorrelief argument. u/SSPlusUltra distrusts thepump; others target600withoutcashvaluation. No assertion of actualshortcovering. - AStoneXfireside quote in the thread prompted parent recovery ofthepublisher summary; not treated as original managementtranscript. Unsupported wrongdoing/marketmanipulation and personal allegations excluded. Newshiphold/8,192GPU claims remain leads unless separately authenticated. [B,H]",
+      "google_finance_method": "Frozen note observation; no quote refresh",
+      "_opp_score": 43,
+      "_risk_score": 0
+    },
+    {
+      "ticker": "QCOM",
+      "company": "Qualcomm Incorporated",
+      "status": "generated",
+      "note_date": "2026-11-23",
+      "note_path": "research/daily-stock-runs/QCOM/2026-11-23.md",
+      "source_sha256": "53b4296e07993088871a064442495e61b1ed41e230f511b735d3971111243cbd",
+      "reference_price": 149.94,
+      "reference_date": "2026-11-20",
+      "current_price": 166.4645,
+      "current_time": "09:12:47 EST",
+      "current_label": "Frozen premarket snapshot",
+      "quote_context": "Yahoo indication; Google separately 166.42 at 09:17 EST",
+      "pct_vs_ref": 11.02074162998532,
+      "mytutopia": {
+        "rsi": 35.1,
+        "vel5": -13.7,
+        "delta1": -7.1,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "bar_date": "2026-11-20",
+        "data_context": "Completed bar; advertised 24-hour delay; not live"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 43,
+        "low": 157.0,
+        "high": 170.0,
+        "thesis": "Exceptional broad premarket relief allows a higher close, but deteriorating RSI35.1/VEL5-13.7 and no operating upgrade favor partial gap fade and low conviction.",
+        "range_basis": "Window center163.50 below166.42–166.46 indications but above149.94 anchor; ATR10.46 and daily sigma4.64% expose tails. Prior>3% washout would widen uncapped bands;8%cap wins.",
+        "drivers": [
+          "Broad semiconductor relief and regular-session follow-through; Handset units/memory costs, Apple substitution and QTL collections; Two-hyperscaler accelerator deliveries, margin and acceptance; Auto/IoT growth, inventory, debt overlap and FCF per diluted share."
+        ],
+        "falsifiers": [
+          "Exact target regular-session close outside inclusive published bounds means WRONG regardless of direction or intraday touch.; Reversal below the relief zone with ongoing negative velocity falsifies tactical recovery.; Weak collections, delayed paid acceptance, customer losses or dilution/cash spending outpacing FCF falsify long-term owner-cash improvement."
+        ],
+        "target_session": "2026-11-23",
+        "calendar_target": "2026-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.07647058823529412,
+        "max_window_width_fraction": 0.08,
+        "contract_violation": false
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": 32,
+        "low": 148.0,
+        "high": 174.0,
+        "thesis": "Lower anchor and QTL/auto support fragile repair; handset demand and negative velocity prevent a confident mean-reversion thesis.",
+        "range_basis": "Terminal center161;15%upper-normalized cap; no implication the full monthly path is contained. Legacy monthly direction2/22 keeps confidence low.",
+        "drivers": [
+          "Broad semiconductor relief and regular-session follow-through; Handset units/memory costs, Apple substitution and QTL collections; Two-hyperscaler accelerator deliveries, margin and acceptance; Auto/IoT growth, inventory, debt overlap and FCF per diluted share."
+        ],
+        "falsifiers": [
+          "Exact target regular-session close outside inclusive published bounds means WRONG regardless of direction or intraday touch.; Reversal below the relief zone with ongoing negative velocity falsifies tactical recovery.; Weak collections, delayed paid acceptance, customer losses or dilution/cash spending outpacing FCF falsify long-term owner-cash improvement."
+        ],
+        "target_session": "2026-12-23",
+        "calendar_target": "2026-12-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.14942528735632185,
+        "max_window_width_fraction": 0.15,
+        "contract_violation": false
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 35,
+        "low": 160.0,
+        "high": 200.0,
+        "thesis": "Conditional Q1 custom-silicon delivery and collection plus auto growth can improve mix; two-hyperscaler concentration, margin and cash remain unresolved.",
+        "range_basis": "Conditional post-Q1 terminal center180;20%width; no assigned unnamed customer or assumed paid AI200 conversion.",
+        "drivers": [
+          "Broad semiconductor relief and regular-session follow-through; Handset units/memory costs, Apple substitution and QTL collections; Two-hyperscaler accelerator deliveries, margin and acceptance; Auto/IoT growth, inventory, debt overlap and FCF per diluted share."
+        ],
+        "falsifiers": [
+          "Exact target regular-session close outside inclusive published bounds means WRONG regardless of direction or intraday touch.; Reversal below the relief zone with ongoing negative velocity falsifies tactical recovery.; Weak collections, delayed paid acceptance, customer losses or dilution/cash spending outpacing FCF falsify long-term owner-cash improvement."
+        ],
+        "target_session": "2027-02-22",
+        "calendar_target": "2027-02-21",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.2,
+        "max_window_width_fraction": 0.2,
+        "contract_violation": false
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 43,
+        "low": 115.0,
+        "high": 270.0,
+        "thesis": "QTL and diversification permit owner-cash recovery if accepted deliveries outgrow handset erosion and dilution; negative technicals caution timing, not annual intrinsic value.",
+        "range_basis": "Uncapped annual fundamental scenarios; retain Apple, execution, debt, export and dilution downside. NoDCF precision or intrayear-path guarantee.",
+        "drivers": [
+          "Broad semiconductor relief and regular-session follow-through; Handset units/memory costs, Apple substitution and QTL collections; Two-hyperscaler accelerator deliveries, margin and acceptance; Auto/IoT growth, inventory, debt overlap and FCF per diluted share."
+        ],
+        "falsifiers": [
+          "Exact target regular-session close outside inclusive published bounds means WRONG regardless of direction or intraday touch.; Reversal below the relief zone with ongoing negative velocity falsifies tactical recovery.; Weak collections, delayed paid acceptance, customer losses or dilution/cash spending outpacing FCF falsify long-term owner-cash improvement."
+        ],
+        "target_session": "2027-11-23",
+        "calendar_target": "2027-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.5740740740740741,
+        "max_window_width_fraction": null,
+        "contract_violation": false
+      },
+      "top_catalyst": "No authenticated operating upgrade; broad relief rather than a newly quantified award drives the note framing.",
+      "unusual_signal": "An 11% indication contrasts with RSI 35.1 / VEL5 -13.7; zero reported minute volume does not prove depth.",
+      "top_risk": "Capital returns exceed FCF with little net share shrinkage; handset erosion, customer concentration and debt overlap constrain owner cash.",
+      "calibration_note": "Read SCHEMA, entity, all ten latest dated main notes November 9–20, entire 42-row ledger and both November 6 Q4 NotebookLM briefings; read manifests and original snapshots retained. Session search QCOM OR Qualcomm recovered this morning's broader Arm/semiconductor relief context, but its earlier peer prices are not substituted for today's later QCOM sample. [A; local] Fresh maturities, exact targets: - November 20 Today: WRONG, close-window-v1. Published $151–164; target-session regular close $149.94 missed the lower bound. Down direction was right, but neither that nor an intraday touch rescues the primary miss. [A] - October 21 30d: PARTLY CORRECT, legacy only. Published $135–218/neutral, original November 20 target, reference $175.71/October 20. $149.94 was contained but the -14.67% return failed neutral direction. Keep this separate from binary scoring. [A] - No fresh 90d or 1y maturity. October 22/23 monthly weekend targets resolve to November 23 close and remain pending; never substitute Friday. [A] Separate cohorts, correct/partly/wrong: legacy Today 22/11/0, legacy 30d 2/20/0, 90d and annual zero matured; monthly direction only 2/22. Binary Today 7 correct/2 wrong, direction diagnostic 6/9; other binary horizons zero mature, nine pending each. Zero prior width violations. Nine overlapping daily observations do not justify a forward 78% confidence claim. [A] Audit reproduces 62 prior outcomes and 102 prior pending targets, checks 347 nested historical evaluation objects with no substantive discrepancies, and adds only the two new outcomes. Before issuance 42 rows/168 contracts, 64 evaluated/104 pending; after today's four pending forecasts 43 rows/172 contracts, 64 evaluated/108 pending. Original ranges and legacy evaluation objects are preserved. [A]",
+      "adjustment_note": "1. Friday was a primary miss, despite correct down direction. Lower Today confidence43 rather than widen past8% or relabel partial. The $157–170 window places the low above Friday reference because fresh independently corroborated premarket is much higher; it deliberately does not claim to cover a full failed-gap tail. 2. Today's tentative positive direction reflects exceptional broad relief, not an official financial upgrade. flat_to_up, not pure up, respects VEL5-13.7. No confirmed bottom or institutional-flow claim. 3. Legacy monthly direction2/22 argues for low30d conviction32 even though wide old bands contained closes. New tight-window cohorts cannot inherit old containment percentages. 4. Debt wording refined: by-May2027 repayment intent, not immediate retirement. Do not model an already extinguished $65M coupon or pro-forma cash as actual funds. 5. Preserve distinct milestones: evaluation/sampling/availability/accepted paid production; distinguish auto annualized run-rate from realized revenue. Keep owner FCF per diluted share central. 6. Prior records and source identifiers preserved exactly; only two additive evaluations and today's new row. No new earnings warrants regenerating NotebookLM. [A,P; analysis]",
+      "social_note": "Supplementary, small readable samples—not representative positioning or issuer guidance. Browser-harness on isolated9333 used first; neither platform was login-blocked. Initial X shell had no articles; a settled second search yielded actual posts, avoiding a false blockage classification. [B] - X @movesurge relays MRVL/QCOM sector gains: https://x.com/movesurge/status/2124869859062530086 . @CHItrader lists semiconductor premarket relief: https://x.com/CHItrader/status/2124868371699380543 . News/tape relays, not independent demand proof. Percentages are asynchronous and not substituted for our samples. [S1,S2] - X @z35001116 cautiously frames the older SpaceX agreement without disclosed economics: https://x.com/z35001116/status/2124867574693564840 . Useful reminder of execution conditions, not a new customer announcement. Other inspected posts were ticker-spam or unrelated promotions and excluded. Search-container text read; individual permalink pages not separately opened. [S3] - r/SanDiegan, November 21 thread by u/Choobeen, was freshly opened: https://old.reddit.com/r/SanDiegan/comments/1y27sd6/tech_layoffs_flare_up_in_san_diegobased_qualcomm/ . At capture it showed 36 comments; management criticism and recurring-layoff concern dominated visible comments, with counterarguments about sector differences/overhiring. This is local employee/reputation sentiment, not a quantified investor survey. [S4] - Its copied article identifies a November 18 report date and 442+75 planned layoffs, already covered in prior runs. The original publisher was not newly authenticated in this run; do not import the copy's broad non-smartphone-chip-sales claim as management guidance. Prior WARN 517-count/effective-year anomaly remains continuity-only: the workbook was not refreshed today. Anonymous employment histories, causal assertions and nationality commentary are not adopted as financial facts. [S4; prior context] Net: tactical relief chatter versus ongoing management/handset skepticism. No social source authenticates upgraded earnings, accepted orders, incremental layoff savings or cash receipts. [analysis]",
+      "google_finance_method": "Frozen note observation; no quote refresh",
+      "_opp_score": 43,
+      "_risk_score": 0
+    }
+  ],
+  "market_bullets": [
+    "Coverage 10/10; all 10 Today calls lean up/flat-to-up, but all 10 completed VEL5 readings remain negative. Broad relief after Friday liquidation, not confirmed trend repair.",
+    "Quotes are frozen, asynchronous premarket snapshots from 08:00–09:17 Eastern, not current prices. Later peer observations are much stronger than early samples; do not merge them into one live board.",
+    "Important chronology: early NVDA/TSM notes did not establish reinstatement; the later AMD note reports a new NVIDIA 8-K accepted at 13:57:54 UTC. Preserve the early NVIDIA forecast and bounds; do not retrofit it to later news.",
+    "INTC and NET lead tactical containment-confidence ordering at 49/100; TSM ties at 49 but is third alphabetically. This is subjective window conviction, not expected upside or calibrated probability.",
+    "TSM has the most negative displayed VEL5; NVDA has RSI 15 and collection/governance uncertainty. Their caution highlights can coexist with up-biased bounce forecasts.",
+    "ARM retention is fresh management continuity, not new orders. ASML employee-plan repurchases are real execution but not guaranteed net share shrinkage; MU December 17 results remain the operating checkpoint.",
+    "NET notes report a CRWD/ZS merger agreement: fresh competitive context, not NET contract losses. SIMO negative cash conversion, AMD customer-funding outflows and QCOM returns above FCF remain owner-cash tests.",
+    "Close-window-v1: 0 cap violations across 30 capped windows; all 40 horizons remain pending as published. Exact target-close containment only; legacy evaluations remain separate. No new research, scoring, widening or target shifts."
+  ],
+  "top_opportunities": [
+    {
+      "ticker": "INTC",
+      "company": "Intel Corporation",
+      "status": "generated",
+      "note_date": "2026-11-23",
+      "note_path": "research/daily-stock-runs/INTC/2026-11-23.md",
+      "source_sha256": "423e44d4e1b6431421fb98a3b0d1c55ec38c81a4d9978d8b152e9ef538033d2e",
+      "reference_price": 51.28,
+      "reference_date": "2026-11-20",
+      "current_price": 54.39,
+      "current_time": "08:17:09 EST",
+      "current_label": "Frozen premarket snapshot",
+      "quote_context": "Yahoo indication; Google separately 54.46 at 08:20 EST",
+      "pct_vs_ref": 6.064742589703598,
+      "mytutopia": {
+        "rsi": 28.0,
+        "vel5": -4.4,
+        "delta1": -3.0,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "bar_date": "2026-11-20",
+        "data_context": "Completed bar; advertised 24-hour delay; not live"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 49,
+        "low": 52.9,
+        "high": 57.5,
+        "thesis": "Broad green chip tape supports a relief close above Friday; negative fragile VEL5 prevents a confirmed-bottom call.",
+        "range_basis": "Premarket-centered relief window with partial fade and continuation room; $4.60 total width, capped at 8%. Sigma8.08% and ATR8.42% make containment uncertain.",
+        "drivers": [
+          "Broad semiconductor relief versus zero-volume indicative premarket; 18A-P signed-customer economics separate from Microsoft EMIB and CPU capacity; Fab28 usable output, Intel3/18A supply and unit costs, PC inventories; 2027 capex, substrate commitments, subsidies, dilution, NCI and per-share returns."
+        ],
+        "falsifiers": [
+          "An explicit target-session regular close outside the inclusive published window is WRONG, regardless of direction or intraday touch. Near-term relief fails if the gap fades and Intel loses relative strength while VEL5 stays negative. Longer-term repair fails with node delays, weak shipment conversion, or capex/dilution without recurring external margins and per-share cash returns."
+        ],
+        "target_session": "2026-11-23",
+        "calendar_target": "2026-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.08000000000000003,
+        "max_window_width_fraction": 0.08,
+        "contract_violation": false
+      },
+      "30d": {
+        "direction": "flat_to_down",
+        "confidence": 22,
+        "low": 47.6,
+        "high": 56.0,
+        "thesis": "Weak client demand and rising investment can restrain repair until recurring customer economics emerge.",
+        "range_basis": "Conditional Q4 reset versus customer-validation scenario within 15% total width; low conviction reflects poor legacy monthly calibration.",
+        "drivers": [
+          "Broad semiconductor relief versus zero-volume indicative premarket; 18A-P signed-customer economics separate from Microsoft EMIB and CPU capacity; Fab28 usable output, Intel3/18A supply and unit costs, PC inventories; 2027 capex, substrate commitments, subsidies, dilution, NCI and per-share returns."
+        ],
+        "falsifiers": [
+          "An explicit target-session regular close outside the inclusive published window is WRONG, regardless of direction or intraday touch. Near-term relief fails if the gap fades and Intel loses relative strength while VEL5 stays negative. Longer-term repair fails with node delays, weak shipment conversion, or capex/dilution without recurring external margins and per-share cash returns."
+        ],
+        "target_session": "2026-12-23",
+        "calendar_target": "2026-12-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.14999999999999997,
+        "max_window_width_fraction": 0.15,
+        "contract_violation": false
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 23,
+        "low": 52.0,
+        "high": 65.0,
+        "thesis": "DCAI deliveries and 18A unit-cost gains can support recovery, conditional on shipment and margin conversion.",
+        "range_basis": "Conditional next-earnings repair scenario within 20% total width; not an intraperiod envelope.",
+        "drivers": [
+          "Broad semiconductor relief versus zero-volume indicative premarket; 18A-P signed-customer economics separate from Microsoft EMIB and CPU capacity; Fab28 usable output, Intel3/18A supply and unit costs, PC inventories; 2027 capex, substrate commitments, subsidies, dilution, NCI and per-share returns."
+        ],
+        "falsifiers": [
+          "An explicit target-session regular close outside the inclusive published window is WRONG, regardless of direction or intraday touch. Near-term relief fails if the gap fades and Intel loses relative strength while VEL5 stays negative. Longer-term repair fails with node delays, weak shipment conversion, or capex/dilution without recurring external margins and per-share cash returns."
+        ],
+        "target_session": "2027-02-22",
+        "calendar_target": "2027-02-21",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.2,
+        "max_window_width_fraction": 0.2,
+        "contract_violation": false
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 42,
+        "low": 30.0,
+        "high": 90.0,
+        "thesis": "US manufacturing and packaging retain option value if recurring outside demand produces per-share cash returns.",
+        "range_basis": "Uncapped broad turnaround/failure terminal scenario; not a precise valuation or statistically calibrated interval.",
+        "drivers": [
+          "Broad semiconductor relief versus zero-volume indicative premarket; 18A-P signed-customer economics separate from Microsoft EMIB and CPU capacity; Fab28 usable output, Intel3/18A supply and unit costs, PC inventories; 2027 capex, substrate commitments, subsidies, dilution, NCI and per-share returns."
+        ],
+        "falsifiers": [
+          "An explicit target-session regular close outside the inclusive published window is WRONG, regardless of direction or intraday touch. Near-term relief fails if the gap fades and Intel loses relative strength while VEL5 stays negative. Longer-term repair fails with node delays, weak shipment conversion, or capex/dilution without recurring external margins and per-share cash returns."
+        ],
+        "target_session": "2027-11-23",
+        "calendar_target": "2027-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.6666666666666666,
+        "max_window_width_fraction": null,
+        "contract_violation": false
+      },
+      "top_catalyst": "Prior signed unnamed 18A-P customer and Microsoft EMIB/Xeon evidence are not another fresh award.",
+      "unusual_signal": "A 6% indication still fails to reclaim Thursday; RSI 28.0 and VEL5 -4.4 deteriorated.",
+      "top_risk": "Node delays, capex and dilution without recurring outside-customer margins can frustrate a self-funded recovery.",
+      "calibration_note": "Two fresh maturities, both using November 20 actual regular close $51.28: - November 20 Today CORRECT: published inclusive $50.60–55.00. Down direction also hit, diagnostic only; realized return -7.97%. - October 21 legacy 30d CORRECT: $48–133, flat-to-down from $91.69; return -44.07%. Preserve legacy scoring; its wide range does not validate capped monthly forecasts. [A,M] Legacy correct/partial/wrong: Today 27/6/1; 30d 3/5/15. Legacy monthly direction 3/23, containment 8/23. Binary Today 9 correct / 0 wrong, direction 8/9; nine longer binary contracts pending in each horizon before issuance. No 90d or 1y target has matured. October 22/23 monthly calendar targets fell on the weekend and roll to November 23 close; both remain pending premarket, not scored using Friday. [A] Original 43 rows contain 192 payloads minus 20 mirrored duplicates = 172 unique contracts. All 64 prior outcomes reproduced; after two maturities 66 resolved / 106 pending. Four new forecasts yield 44 rows / 176 contracts / 66 resolved / 110 pending. Zero binary width violations. Nine dependent, same-regime containment hits do not justify a confidence ratchet. [A]",
+      "adjustment_note": "Today changes from Friday's down 48 to flat_to_up 49: fresh broad relief supports a positive close, but deteriorating RSI/VEL5 and zero-volume indications prohibit a confirmed-trend call. This is not an earnings upgrade or node-execution endorsement. VEL5 -4.4 indicates fragility rather than requiring down; the -10 constraint is not triggered. Keep confidence below 50. Nine binary hits are dependent and concentrated in the same regime. Thirty-day flat-to-down 22, 90-day up 23 and annual up 42 remain conditional; the lower reference partly offsets Q4/capital risk, but legacy monthly direction 3/23 precludes claiming monthly skill. Uncapped legacy containment is not binary evidence. [A,M,P,B]",
+      "social_note": "X and old Reddit are accessible, partial and low-signal—not blocked. Four X article bodies are mostly promotional buy-lists; one chart comment warns of selling pressure and urges waiting for stabilization. No representative sentiment ratio or verified new customer fact. Exact status paths and bodies are archived; promotion is excluded from the thesis. [B] Reddit search shows r/LongOrShortBets debate about sector relief versus a bull trap, consistent with the tape only. Many irrelevant results and unauthenticated flow claims. Search DOM was captured, but an exact thread permalink was not recovered and the thread was not opened: search-snippet evidence only, not full-thread diligence. No sentiment-derived confidence boost. [B]",
+      "google_finance_method": "Frozen note observation; no quote refresh",
+      "_opp_score": 49,
+      "_risk_score": 0
+    },
+    {
+      "ticker": "NET",
+      "company": "Cloudflare",
+      "status": "generated",
+      "note_date": "2026-11-23",
+      "note_path": "research/daily-stock-runs/NET/2026-11-23.md",
+      "source_sha256": "099d69aded87c2a6732ba6e7f86264944d69f4d72a3be70ab73b46441b4926fd",
+      "reference_price": 274.96,
+      "reference_date": "2026-11-20",
+      "current_price": 289.7112,
+      "current_time": "08:58:43 EST",
+      "current_label": "Frozen premarket snapshot",
+      "quote_context": "Yahoo indication; Google separately 288.26 at 08:56 EST",
+      "pct_vs_ref": 5.364853069537401,
+      "mytutopia": {
+        "rsi": 42.4,
+        "vel5": -8.0,
+        "delta1": -8.1,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "bar_date": "2026-11-20",
+        "data_context": "Completed bar; advertised 24-hour delay; not live"
+      },
+      "today": {
+        "direction": "up",
+        "confidence": 49,
+        "low": 275.0,
+        "high": 298.0,
+        "thesis": "Fresh +5.36% indicative tape and broad relief favor a fragile bounce after Friday liquidation; RSI42.4/VEL5-8.0 contradict confirmed repair and lower conviction.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Broad relief versus a fragile post-selloff gap; Retention of indicative $288–290 and approach to SMA20 $294.24; Cyber consolidation headlines and cash-session volume."
+        ],
+        "falsifiers": [
+          "Actual target-session regular close outside $275–$298 means WRONG regardless of direction or intraday touch.; Gap fades or broad tech reverses; New material issuer-specific operating disruption; Close at or below $274.96 defeats the up-direction diagnostic, scored separately."
+        ],
+        "target_session": "2026-11-23",
+        "calendar_target": "2026-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.07718120805369127,
+        "max_window_width_fraction": 0.08,
+        "contract_violation": false
+      },
+      "30d": {
+        "direction": "flat",
+        "confidence": 28,
+        "low": 255.0,
+        "high": 300.0,
+        "thesis": "December billing and enterprise expansion can support a base, but RSI42.4/VEL5-8.0, poor monthly timing history and CRWD/ZS bundling uncertainty keep the direction neutral.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "December 1 AI Search and Clairic billing checkpoint; Weighted Artifacts billings and retained paid adoption; CRWD/ZS integration opening versus stronger bundling; valuation."
+        ],
+        "falsifiers": [
+          "Actual target-session regular close outside $255–$300 means WRONG regardless of direction or intraday touch.; Paid use fails to retain after promotions/credits; Renewed compression or rival bundling pressure; Close outside reference ±1% defeats the flat-direction diagnostic, scored separately."
+        ],
+        "target_session": "2026-12-23",
+        "calendar_target": "2026-12-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.15,
+        "max_window_width_fraction": 0.15,
+        "contract_violation": false
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 34,
+        "low": 280.0,
+        "high": 350.0,
+        "thesis": "Q3 enterprise/cRPO growth and possible Q4 profitability support conditional recovery; negative RSI velocity and a stronger integrated rival reduce confidence, not the hard window cap.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Q4 results and forward outlook if published by target session; Compute utilization, GAAP profitability and cash per diluted share; Enterprise/Zero Trust competition and developer monetization."
+        ],
+        "falsifiers": [
+          "Actual target-session regular close outside $280–$350 means WRONG regardless of direction or intraday touch.; Growth or cash conversion weakens; Compute costs or competitive losses offset enterprise expansion; Close at or below $274.96 defeats the up-direction diagnostic, scored separately."
+        ],
+        "target_session": "2027-02-22",
+        "calendar_target": "2027-02-21",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.2,
+        "max_window_width_fraction": 0.2,
+        "contract_violation": false
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 45,
+        "low": 170.0,
+        "high": 510.0,
+        "thesis": "Platform convergence supports conditional upside if retained paid use improves per-share cash after compute and dilution; daily RSI42.4/VEL5-8.0 mainly caution entry timing, not annual value.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Paid platform convergence and enterprise expansion; Infrastructure and own-model returns versus SBC/dilution; Reliability, regulation and CRWD/ZS integration execution."
+        ],
+        "falsifiers": [
+          "Actual target-session regular close outside $170–$510 means WRONG regardless of direction or intraday touch.; Structural per-share cash impairment; Persistent dilution, reliability failures or failed investment returns; Close at or below $274.96 defeats the up-direction diagnostic, scored separately."
+        ],
+        "target_session": "2027-11-23",
+        "calendar_target": "2027-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.6666666666666666,
+        "max_window_width_fraction": null,
+        "contract_violation": false
+      },
+      "top_catalyst": "Note reports CRWD/ZS merger agreement as a competitive delta; NET adds developer features without a financial-guidance revision.",
+      "unusual_signal": "RSI 42.4 / VEL5 -8.0 worsen despite green tape; cyber breadth is deal-driven and mixed.",
+      "top_risk": "Stronger rival bundling, paid-retention/compute economics, insider-sale supply and control-plane reliability require scrutiny.",
+      "calibration_note": "Read SCHEMA, entity, ten latest main notes November 9–20, entire 133-row ledger, and both specified Q4-2025 NotebookLM files; frozen full inputs and hashes retained. session_search NET OR Cloudflare returned broad other-ticker cron context, not additional NET operating evidence. NotebookLM's enterprise ACV/channel/cash-quality questions remain useful, but its old FY2026 guidance and capital-light/no-own-model framing are superseded by Q3 and compute commitments. [L,A] Two fresh maturities, both actual November 20 close $274.96: - November 20 Today: WRONG, close-window-v1. Published $282–306 from $303.68 / November 19; actual -9.4573%. Down-direction diagnostic right, closing containment false. No partial credit or intraday-touch rescue. - October 21 30d: partly correct, legacy. Preserved explicit November 20 target, $220–440 from $291.69 / October 20; actual -5.7355%. Range held, flat-direction failed. Legacy flat tolerance is ±1%; flat-to-up requires at least -1%, flat-to-down at most +1%. [A] No fresh 90d or annual maturity. November 23 and preserved weekend-to-Monday targets remain pending until the actual Monday session closes. Never substitute Friday for an uncompleted Monday target. Legacy contracts and outcomes remain unchanged; new calendar horizons originate at issuance and roll to the first XNYS session on/after. [A] Separate cohorts, correct / partial / wrong: - Legacy Today 58/44/22; 30d 35/60/17 plus one direction-only correct; 90d 22/54/1 plus one direction-only correct. No annual maturity. - Binary Today 4 correct / 5 wrong; direction 6/9 is separate. Longer binary horizons pending; zero cap violations. - Latest-ten legacy monthly direction 0/10 versus containment 9/10; quarterly direction 3/10 versus containment 10/10. Wide old bands masked timing weakness. Nine binary observations do not calibrate confidence. [A] Replayed 322 prior authoritative outcomes with zero discrepancies, preserving 528 inherited contracts and every original field. Before issuance 133 rows / 532 contracts = 324 resolved + 208 pending; after four forecasts 134 rows / 536 contracts = 324 resolved + 212 pending. Only two fresh additive evaluations; nine older embedded-history labeling differences remain separately inventoried, not silently rewritten. [A]",
+      "adjustment_note": "1. Friday's bearish direction missed containment; binary 4/9 does not justify higher certainty. Place windows for plausible reversal/continuation without relaxing caps. 2. Switch Today from down/56 to up/49 because fresh +5.36% tape differs from Friday risk-off, not because RSI 42.4 proves a bottom. VEL5 -8 limits conviction. 3. Monthly legacy direction 0/10 and new rival consolidation keep 30d flat/28. The social NET-winner narrative is not an award. Quarterly up/34 requires Q4 cash and paid conversion, not product count alone. 4. Annual up/45 depends on margins, compute utilization and dilution. No annual maturity exists; daily oscillators do not calibrate yearly targets. 5. Preserve backdated source-addition clocks; separate control-plane incidents from production outages and planned sales from fresh discretionary conviction. [A,P,B; analysis]",
+      "social_note": "Supplementary and separate from official earnings. X and old Reddit readable through visible isolated Chrome; narrow, nonrepresentative sample. No sentiment percentages, verified trades or new contracts inferred. [B] - Higher-signal strategy debate, @ErezShapira: full settled post opened, visible November 23 05:30 local. https://x.com/ErezShapira/status/2124858097185271986 . Argues integration/concentration risk creates a NET sales opening and views NET takeover as low likelihood. A useful hypothesis, not verified migrations, guaranteed roadmap freezes or automatic NET wins. Other named M&A leads were not independently adopted. [B] - @robot2trade1: full post, visible 05:28 local. https://x.com/robot2trade1/status/2124857546691264983 . Weighs cross-selling against price, dilution and integration. Official materials verify the core deal; its +17%/-8% tape is an earlier snapshot. Its fixed-ratio wording omits the 8-K's conditional reduction—not a guaranteed cash arbitrage or NET valuation floor. [B,P] - r/cybersecurity, u/GroovyMelodicBliss: https://old.reddit.com/r/cybersecurity/comments/1y3fwo6/crowdstrike_to_acquire_zscaler/ . Visible thread reports 28 comments. u/bitslammer/u/Enxer self-report customer uncertainty; u/JdruuCISO discusses Microsoft bundling and openings for Netskope/Cloudflare One. Practitioner-like friction is supplementary; identities/contracts unverified. No authenticated canceled ZS commitments or NET bookings. [B] - r/CloudFlare, u/Zealousideal-Log2203: full thread opened. https://old.reddit.com/r/CloudFlare/comments/1y3ih53/running_a_multitenant_remote_mcp_server_with/ . Threadpacket promotion describes Workers + D1 + KV/R2, OAuth 2.1 and 25 MiB transfers with free-tier deployment. Technically specific ecosystem example, not an audited implementation, paid invoice or enterprise award. Only AutoModerator comment at capture. [B] - Noise: repeated NET buy-$262–268 lists; @TraderTimes_en relays a TD Cowen 2027 best-idea claim, underlying broker note unread: https://x.com/TraderTimes_en/status/2124851611780386885 . @inthepixels hopes for a NET acquisition: https://x.com/inthepixels/status/2124588853725966564 . Neither becomes issuer guidance or a deal. Social evidence does not increase confidence. [B]",
+      "google_finance_method": "Frozen note observation; no quote refresh",
+      "_opp_score": 49,
+      "_risk_score": 0
+    }
+  ],
+  "top_risks": [
+    {
+      "ticker": "TSM",
+      "company": "Taiwan Semiconductor Manufacturing",
+      "status": "generated",
+      "note_date": "2026-11-23",
+      "note_path": "research/daily-stock-runs/TSM/2026-11-23.md",
+      "source_sha256": "08acbceca4ce5e888db2b6cef8e508962e9de5e438930a47789c3b7fe781871a",
+      "reference_price": 318.71,
+      "reference_date": "2026-11-20",
+      "current_price": 337.5,
+      "current_time": "08:44 EST",
+      "current_label": "Frozen premarket snapshot",
+      "quote_context": "Yahoo indication; Google separately 337.08 at 08:46 EST",
+      "pct_vs_ref": 5.8956418060305715,
+      "mytutopia": {
+        "rsi": 28.3,
+        "vel5": -17.0,
+        "delta1": -6.2,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "bar_date": "2026-11-20",
+        "data_context": "Completed bar; advertised 24-hour delay; not live"
+      },
+      "today": {
+        "direction": "up",
+        "confidence": 49,
+        "low": 323.0,
+        "high": 350.0,
+        "thesis": "Fresh broad green tape and reported current order resilience favor a fragile bounce, but RSI28.3/VEL5-17.0 contradict a confirmed bottom and cap confidence.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Broad peer relief retaining gains on regular-session volume; Q4 paid shipments, collections and margin conversion; Customer financing, export-license clarity and order resilience; N2/overseas capacity execution and disciplined cash capital allocation."
+        ],
+        "falsifiers": [
+          "Exact target-session regular close outside the inclusive published window means WRONG irrespective of intraday touch or direction.; Tactical relief fails with a renewed sector liquidation or reversal below the reference.; Operating recovery fails on order/utilization cuts, credit deterioration, margin dilution, roadmap delay or geopolitical disruption."
+        ],
+        "target_session": "2026-11-23",
+        "calendar_target": "2026-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.07714285714285714,
+        "max_window_width_fraction": 0.08,
+        "contract_violation": false
+      },
+      "30d": {
+        "direction": "flat_to_up",
+        "confidence": 27,
+        "low": 306.0,
+        "high": 360.0,
+        "thesis": "Lower anchor and unchanged Q4 demand allow fragile repair; oversold RSI28.3 with worsening VEL5-17.0, customer credit and policy uncertainty keep monthly containment conviction low.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Broad peer relief retaining gains on regular-session volume; Q4 paid shipments, collections and margin conversion; Customer financing, export-license clarity and order resilience; N2/overseas capacity execution and disciplined cash capital allocation."
+        ],
+        "falsifiers": [
+          "Exact target-session regular close outside the inclusive published window means WRONG irrespective of intraday touch or direction.; Tactical relief fails with a renewed sector liquidation or reversal below the reference.; Operating recovery fails on order/utilization cuts, credit deterioration, margin dilution, roadmap delay or geopolitical disruption."
+        ],
+        "target_session": "2026-12-23",
+        "calendar_target": "2026-12-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.15,
+        "max_window_width_fraction": 0.15,
+        "contract_violation": false
+      },
+      "90d": {
+        "direction": "up",
+        "confidence": 29,
+        "low": 320.0,
+        "high": 400.0,
+        "thesis": "Q4 conversion and N2 scaling permit conditional recovery; RSI28.3/VEL5-17.0 and fresh legacy monthly failure reduce timing confidence rather than justify wider windows.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Broad peer relief retaining gains on regular-session volume; Q4 paid shipments, collections and margin conversion; Customer financing, export-license clarity and order resilience; N2/overseas capacity execution and disciplined cash capital allocation."
+        ],
+        "falsifiers": [
+          "Exact target-session regular close outside the inclusive published window means WRONG irrespective of intraday touch or direction.; Tactical relief fails with a renewed sector liquidation or reversal below the reference.; Operating recovery fails on order/utilization cuts, credit deterioration, margin dilution, roadmap delay or geopolitical disruption."
+        ],
+        "target_session": "2027-02-22",
+        "calendar_target": "2027-02-21",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.2,
+        "max_window_width_fraction": 0.2,
+        "contract_violation": false
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 33,
+        "low": 250.0,
+        "high": 550.0,
+        "thesis": "Leading-edge scale supports conditional upside if funded demand earns per-share cash returns; RSI28.3/negative VEL5 mostly caution entry timing, not annual value.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Broad peer relief retaining gains on regular-session volume; Q4 paid shipments, collections and margin conversion; Customer financing, export-license clarity and order resilience; N2/overseas capacity execution and disciplined cash capital allocation."
+        ],
+        "falsifiers": [
+          "Exact target-session regular close outside the inclusive published window means WRONG irrespective of intraday touch or direction.; Tactical relief fails with a renewed sector liquidation or reversal below the reference.; Operating recovery fails on order/utilization cuts, credit deterioration, margin dilution, roadmap delay or geopolitical disruption."
+        ],
+        "target_session": "2027-11-23",
+        "calendar_target": "2027-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.5454545454545454,
+        "max_window_width_fraction": null,
+        "contract_violation": false
+      },
+      "top_catalyst": "Named-management reporting says current order/shipment adjustments were not seen; not a filed revenue increase or future guarantee.",
+      "unusual_signal": "RSI 28.3 / VEL5 -17.0 deteriorate despite relief; price remains far below 20/50-session averages.",
+      "top_risk": "Customer credit, policy/geopolitics and overseas-margin dilution can offset genuine demand; worsening velocity leaves the rebound fragile.",
+      "calibration_note": "Read schema, entity, ten most recent main notes November 9–20, entire ledger, both specified NotebookLM Q1 files and session_search TSM OR TSMC OR Taiwan Semiconductor. Session recall added today's Arm retention and broader rebound context; original sources were independently checked. The official NotebookLM briefing is an access-intercept report, not a financial brief; the historical outlook contains unsupported allocations/yields and A16/PowerVia confusion. Neither controls current guidance. [L] Two fresh maturities, no backfills, both verified November 20 close $318.71: - November 20 Today: CORRECT, close-window-v1. Published $315–342, reference $352.09/November 19. Actual -9.4805%; down direction also right, diagnostic only. Correct because the exact close is inside the inclusive window, not because intraday touched it. - October 21 30d: WRONG, legacy. Preserved November 20 target, $355–535 band, reference $425.08/October 20. Actual -25.0235%; both flat-to-up direction and containment failed. This is not partly correct. [A] No fresh 90d/1y maturity. October 22/23 monthly and August 25/26 quarterly contracts need November 23's actual close and remain pending now. No Friday close substituted for an uncompleted Monday target. Preserve explicit historical targets and prior fallback reference-origin contracts; new horizons use issuance arithmetic prospectively. [A] Separate legacy correct / partly / wrong: Today 64/32/14; 30d 39/35/25; 90d 38/15/10; annual none matured. New binary Today 9 correct / 0 wrong, direction 6/9; longer binary horizons pending. Nine overlapping, same-regime windows do not imply calibrated 100% coverage or nine correct directional theses. Zero contract-width violations. [A] Reproduced prior 472 contracts / 279 resolved outcomes with zero field differences. Before issuance: 119 rows, 480 payloads minus four identical mirrors = 476 unique contracts; 281 resolved /195 pending. After four new pending forecasts: 120 rows /480 contracts /281 resolved /199 pending. Original forecasts and evaluations preserved; only two fresh additive audit outcomes. [A]",
+      "adjustment_note": "1. Friday's binary hit was real, but9/9 is only nine dependent containment observations; direction6/9 is separate. Do not increase confidence mechanically. 2. October21 monthly call failed direction and range despite extremely broad legacy bounds. Keep monthly/quarterly confidence low; another old bull thesis is not a floor. 3. Change Today from Friday down58 to up49 because fresh broad green tape and named-management reporting differ from Friday's evidence. RSI28.3/VEL5-17.0 prevents a high-conviction bottom call; a green gap can still fail. 4. Keep monthly fragile flat-to-up27 and quarterly conditional up29 from a substantially lower anchor, not an earnings upgrade. Annual up33 depends on funded demand, margins and per-share cash, not a low-RSI target. 5. Parent-recovered Hou reporting is a labeled addition after the child official-feed check; its absence from a clean SEC stack is not absence of management commentary. Follow original linked publishers and preserve scope/timestamps. 6. Never reclassify a directional miss as binary partial; do not rescore November23 maturities with Friday's close or widen windows after observing the outcome. [A,P,H; analysis]",
+      "social_note": "Supplementary, explicitly separate from official earnings. X and old Reddit readable in visible isolated Chrome; small nonrepresentative sample. No sentiment percentages, institutional-flow claims or new orders inferred. [B] - Higher signal, @dnystedt: full post and source-link reply opened: https://x.com/dnystedt/status/2124862144332370420 ; reply https://x.com/dnystedt/status/2124862255988887728 . Posted November23 05:46 local. Reports Hou's no-order-adjustment remark and SEMI industry projections; parent followed/read both original publishers, rather than treating X as independent confirmation. Separate management observation, TSIA industry output and SEMI forecast. @firstadopter's quote is a relay, not another management source. [H,B] - Low-signal contrast: @WillBiddy_ https://x.com/WillBiddy_/status/2124862280256893381 calls NVDA/TSM/ASML attractive with limited downside; no normalized-cash valuation supplied. @lRichBl https://x.com/lRichBl/status/2124862724035227765 discusses export-rule shipment holds, but no original rule/issuer-specific order document was read from that post. Claims remain reported leads; unrelated cashtag spam excluded. [B] - r/LongOrShortBets, u/PuddingComplete3081, full thread opened: https://old.reddit.com/r/LongOrShortBets/comments/1y3dq6e/long_or_short_semiconductor_stocks_are_exploding/ . u/Logical-Concept9755 warns about gap fades; u/BedPast5236 wants first-hour confirmation; others see squeeze/recovery. Useful timing debate, no authenticated short-covering flow. Its earlier “TSMC above7%” snapshot is not today's frozen +5.90% quote. [B] - r/stocks, u/ChillMeerkat, November22 post and visible comments read: https://old.reddit.com/r/stocks/comments/1y2wulv/be_greedy_when_others_are_fearful_fits_todays/ . Long-form bull thesis contrasts present multiples with dot-com and repeats prior call quotations. Comments challenge AI-generated prose, peak-fear timing and falling-knife risk. Unverified peer multiples, optimistic terminal assumptions and unrelated allegations are not imported. “Nothing changed” is too broad given real policy/financing risks; growing compute demand alone does not prove returns. [B; analysis]",
+      "google_finance_method": "Frozen note observation; no quote refresh",
+      "_opp_score": 49,
+      "_risk_score": 30
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "status": "generated",
+      "note_date": "2026-11-23",
+      "note_path": "research/daily-stock-runs/NVDA/2026-11-23.md",
+      "source_sha256": "329906c33877940c2edffe2238ab8aba222642ae3252f36adf775c6a1daa74f5",
+      "reference_price": 125.53,
+      "reference_date": "2026-11-20",
+      "current_price": 135.75,
+      "current_time": "08:03:22 ET",
+      "current_label": "Frozen premarket snapshot",
+      "quote_context": "Yahoo indication; Google separately 135.40 at 08:00 ET. This early note predates later AMD-note leadership news.",
+      "pct_vs_ref": 8.14148012427307,
+      "mytutopia": {
+        "rsi": 15.0,
+        "vel5": -9.8,
+        "delta1": -4.6,
+        "momentum_gate": "MOMENTUM-GATE SELLING",
+        "bar_date": "2026-11-20",
+        "data_context": "Completed bar; advertised 24-hour delay; not live"
+      },
+      "today": {
+        "direction": "flat_to_up",
+        "confidence": 42,
+        "low": 129.0,
+        "high": 140.0,
+        "thesis": "Relief tape and conditional political softening permit an up close from125.53, but RSI15.0/VEL5-9.8 contradict trend confirmation; the indicative8%gap is not a completed recovery.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Broad positive peer tape and short covering; Board succession and investigation headlines; Whether135area relief survives cash-session liquidity."
+        ],
+        "falsifiers": [
+          "Gap fades below129 or squeeze closes above140: endpoint forecast WRONG. Board/policy deterioration or sustained sell pressure defeats relief."
+        ],
+        "target_session": "2026-11-23",
+        "calendar_target": "2026-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.07857142857142857,
+        "max_window_width_fraction": 0.08,
+        "contract_violation": false
+      },
+      "30d": {
+        "direction": "flat",
+        "confidence": 25,
+        "low": 120.0,
+        "high": 141.0,
+        "thesis": "Oversold valuation permits stabilization, not an automatic return to old highs. NegativeVEL5, margin trough, missing full10-Q and collection/leadership uncertainty keep confidence low.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Receivables collections and Q4 shipment acceptance; PermanentCEO and regulatory clarity; Memory costs and funded customer readiness."
+        ],
+        "falsifiers": [
+          "Verified target close below120 or above141 is WRONG. Continuing working-capital deterioration or rapid fully funded demand recovery invalidates stabilization assumptions."
+        ],
+        "target_session": "2026-12-23",
+        "calendar_target": "2026-12-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.14893617021276595,
+        "max_window_width_fraction": 0.15,
+        "contract_violation": false
+      },
+      "90d": {
+        "direction": "flat_to_up",
+        "confidence": 30,
+        "low": 128.0,
+        "high": 160.0,
+        "thesis": "Conditional earnings/cash repair allows modest recovery, not an old-high forecast. RSI15.0/negativeVEL5 lowers timing conviction until a durable turn is observed.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "Q4 results and FY2028 margin trajectory; Rubin delivery/acceptance/collections; Guarantees, supplier prepayments and governance resolution."
+        ],
+        "falsifiers": [
+          "Target close outside128–160 is WRONG. Further margin erosion, credit draws or unresolved leadership/export limits defeat repair."
+        ],
+        "target_session": "2027-02-22",
+        "calendar_target": "2027-02-21",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.2,
+        "max_window_width_fraction": 0.2,
+        "contract_violation": false
+      },
+      "1y": {
+        "direction": "up",
+        "confidence": 40,
+        "low": 90.0,
+        "high": 240.0,
+        "thesis": "CUDA/systems economics and Rubin-generation growth support conditional normalized cash-flow upside. DamagedRSI/VEL5 warns on timing, while financing, competition and governance keep an uncapped wide annual scenario.",
+        "range_basis": "Published regular-close anchor; frozen premarket informs placement only.",
+        "drivers": [
+          "FY2028 growth and owner free cash flow per share; RubinUltra execution and software moat; Capital allocation versus contingent customer support."
+        ],
+        "falsifiers": [
+          "Target close outside90–240 is WRONG. Customer defaults, structural margin/share loss, investigation findings or heavy dilution undermine long-term value."
+        ],
+        "target_session": "2027-11-23",
+        "calendar_target": "2027-11-23",
+        "scoring_rule": "close-window-v1",
+        "status": "pending / unscored (as published)",
+        "window_width_fraction": 0.625,
+        "max_window_width_fraction": null,
+        "contract_violation": false
+      },
+      "top_catalyst": "Early note cites conditional political softening; later AMD note reports reinstatement. Keep issuance chronology, not a new NVIDIA forecast.",
+      "unusual_signal": "RSI 15.0 / VEL5 -9.8 deteriorated despite an early 8% indication; deeply oversold is not trend confirmation.",
+      "top_risk": "Investigation, concentrated receivables, customer financing and collection quality remain unresolved; the early note misses later leadership evidence.",
+      "calibration_note": "Two newly matured contracts, both at actual November 20 close $125.53: - November 20 Today: WRONG, close-window-v1, published $134–145, down, 52/100. Direction was right but the close was below L; absolutely no partial credit for direction or intraday touches. - October 21 30 days: WRONG, legacy, published $155–280, flat-to-up, reference $216.47. Direction and containment failed. [M] Separate scorecards, correct / partly correct / wrong: - Binary close-window-v1 Today 4 / 0 / 4; all binary longer horizons pending. No width violations in the existing cohort. - Legacy Today 80 / 18 / 15; 30 days 43 / 32 / 26; 90 days 42 / 16 / 5; 1 year 0 / 0 / 0 (none mature). - All 283 previously resolved outcomes reproduced without differences. Two new outcomes give 285 mature / 196 pending / 481 contracts, before adding today's four pending forecasts. Five older contracts explicitly target today's session and remain pending until its verified close: August 25–26 quarterly; October 22, 23 and 26 monthly. No premature scoring or earlier-close substitution. Preserve original bounds, targets and all legacy evaluations. [M] Adjustment: an 8/15/20% capped window cannot absorb every crisis tail. Friday's correct down direction was not a successful forecast. Lower containment confidence, condition the bounce on current tape, and keep published caps rather than widening retrospectively. Legacy broad-band hits and binary endpoint hits must never be pooled.",
+      "adjustment_note": "Eight binary daily outcomes give4hits/4misses, far too small/correlated for a calibrated probability. Friday's14% liquidation exceeded the published down window; calling direction correctly did not save it. Today's opposing gap is not evidence that systematic dip-buying works. Recenter around the actual relief sample but leave conviction low; monthly confidence25 reflects repeated wrong neutral/up assumptions and narrowed endpoints. Quarterly30/annual40 remain conditional on collections, margin and governance resolution, not a mechanically assumed return to old highs. Browser-harness first succeeded after -c printed Usage and immediate DOM read preceded body creation; stdin and settled reads recovered. No browser fallback was necessary. One owned target was tracked, blanked/closed and absence verified; three unrelated preexisting tabs, including another NVDA tab, were preserved. Persistent daemon left running. Primary IR403 retained separately; exact SEC/issuer asset recovery succeeded. Generic web.run discovery was unavailable in this runtime; no search success claimed. Direct fresh primary retrieval and authenticated browser evidence support this run instead. [B,P]",
+      "social_note": "Supplementary and separate from earnings evidence. Live visible browser-harness :9333 / hermes-isolated was used successfully for both platforms, not fallback scraping. Full attempted URLs, capture clocks, page text and exact post/thread links are in the companion and browser JSON. No source is labeled blocked. - X exact query: https://x.com/search?q=%24NVDA%20(Huang%20OR%20Kress%20OR%20Bessent)&src=typed_query&f=live. Four readable posts: @therotationwire repeats partnership-continuity remarks; @hi2morrow_x relays a sector/political rebound; @Digeverythings and @SilkLifeMedSpa interpret Haas' extension as succession exclusion. Mostly rapid relay/momentum, not independent procurement evidence. Parent verified the Arm original rather than promoting these accounts into primary confirmation. Exact status URLs preserved. [B] - Reddit live https://old.reddit.com/r/NVDA_Stock/new/, then actual November23 daily thread and Trump-return thread opened. Daily discussion contrasts relief optimism with gap-fade fears and repeated failed dip-buying. Users discuss missing full10-Q and cash quality; these are questions to test against the furnished supplement, not proof fraud. Assertions Friday was down20% conflict with verified14.01%; retain actual close. Claims that green premarket implies an exclusively retail crowd are unsupported. - Trump thread posts an attributed statement and debates reinstatement versus investigation conditions; political conspiracies and personal allegations are unverified and excluded from business conclusions. The primary CBS interview supports a conditional change of tone, not a completed board vote. No representative sentiment statistic or forecast-confidence bonus assigned. [B,G1]",
+      "google_finance_method": "Frozen note observation; no quote refresh",
+      "_opp_score": 42,
+      "_risk_score": 25
+    }
+  ],
+  "opportunity_label": "Top opportunities",
+  "contract_violations": [],
+  "source_mode": "daily notes only; no ledgers, fresh research or new scoring",
+  "telegram_summary": "Broad relief, damaged momentum: all ten Today calls are up-biased, all ten completed VEL5 readings negative. Snapshot timing matters. Coverage 10/10. Top opportunities: INTC, NET. Top risks: TSM, NVDA."
+}
